@@ -73,7 +73,8 @@
 @media (min-width:1500px) and (max-width:1800px) {
 
 		.searchempanneled{
-    min-height: 260px; padding-top: 44px !important;
+           min-height: 252px;
+        padding-top: 44px !important;
    
 }
 	.navbar-nav .nav-item>a span {
@@ -81,19 +82,167 @@
 
 	}
 
+	
+
 }
 
-@media (min-width: 1400px) and (max-width:1440px) {
-
+@media (min-width: 1400px) and (max-width:1499px) {
+.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+    padding: 0px 13px}
 	.online-support {
 		min-height: 292px;
 	}
 
+.getusermanuals p{         font-size: 0.85rem;
+	}
+	#datalistId1>li a {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 0.85rem;
+}
+	.working-hours span {
+    font-size: 0.83rem;
+}
+.working-hours .heading h5{ font-size: 0.95rem;}
+.btnvision {
+    font-size: 11px;
+    padding: 6px 16px 6px 16px;}
+p {
+    font-size: 12px;
+}
 
+.searchempanneled h2 {
+    font-size: 0.8rem;
+}
+.aboutsection p {
+    font-size: 0.81rem;
 
 }
 
-@media (min-width:1281px) and (max-width:1450px) {
+.aboutsection .mission h3 {
+    font-size: 17px; }
+header .all-logins a {
+    padding: 10px;
+   
+}
+.aboutsection .mission .box p {
+    line-height: 23px;
+   text-align: justify;
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+.searchempanneled {
+    min-height: 208px;
+}
+header .all-logins a p {
+    font-size: 0.75rem;
+}
+
+	ul.pdflist .pdfname a {
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 0.85rem;
+	}
+
+	.scroll {
+		height: 410px;
+		overflow-y: auto;
+	}
+
+
+
+
+	.pdfcon {
+		width: 65% !important;
+	}
+
+	header .all-logins a>p {
+		font-size: 0.7rem;
+	}
+
+	.navbar-nav .nav-item>a {
+		        font-size: 0.78rem;
+	}
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		padding: 0px 12px;
+	}
+
+	.owl-prev {
+		right: 30px;
+		top: 42%;
+	}
+
+	.shareSocial.call {
+		top: 37%;
+	}
+
+	.loginbuttton {
+		padding: 3px 11px;
+		max-height: 40px;
+
+	}
+
+	.logo h1 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+}
+
+@media (min-width:1281px) and (max-width:1399px) {
+
+.searchempanneled {
+    background: #00ac7a;
+    margin: 1px 0 10px 1px;
+    border-radius: 14px;
+    min-height: 198px;
+}
+
+	.getusermanuals p{         font-size: 0.85rem;
+	}
+	#datalistId1>li a {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 0.75rem;
+}
+	.working-hours span {
+    font-size: 0.83rem;
+}
+.working-hours .heading h5{ font-size: 0.95rem;}
+.btnvision {
+    font-size: 11px;
+    padding: 6px 16px 6px 16px;}
+p {
+    font-size: 12px;
+}
+
+.searchempanneled h2 {
+    font-size: 0.8rem;
+}
+.aboutsection p {
+    font-size: 0.81rem;
+
+}
+
+.aboutsection .mission h3 {
+    font-size: 17px; }
+header .all-logins a {
+    padding: 10px;
+   
+}
+.aboutsection .mission .box p {
+    line-height: 23px;
+   text-align: justify;
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+header .all-logins a p {
+    font-size: 0.75rem;
+}
+
 
 	ul.pdflist .pdfname a {
 		color: rgba(0, 0, 0, 0.8);
@@ -117,7 +266,7 @@
 	}
 
 	.navbar-nav .nav-item>a {
-		font-size: 0.8rem;
+		        font-size: 0.78rem;
 	}
 
 	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
@@ -163,6 +312,10 @@
 }
 
 @media (min-width:1200px) and (max-width:1280px) {
+
+	.searchempanneled h2 {
+    font-size: 0.8rem;
+}
 
 	.scroll {
 		height: 342px;
