@@ -10,11 +10,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;overflow-y: hidden; max-height: 100vh;
   padding-right: 0 !important;
-  background-color: #F3DDC9;
-  background: url('../images/line-bg.png') no-repeat, #ffffff;
-
-
-
+  background-color: #ffffff;
 }
 
 
