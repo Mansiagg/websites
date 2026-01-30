@@ -7,9 +7,8 @@ body {
   font-weight: 300;
   overflow-x: hidden;overflow-y: hidden; max-height: 100vh;
   padding-right: 0 !important;
-  background-color: #F3DDC9;
-  background: url('../images/line-bg.png') no-repeat, linear-gradient(180deg,rgba(243, 221, 201, 1) 0%, rgba(240, 213, 189, 1) 19%, rgba(239, 212, 187, 1) 39%, rgba(243, 222, 202, 1) 74%, rgba(250, 241, 233, 1) 89%, rgba(252, 247, 242, 1) 100%);;
-
+  background-color: #ffffff;
+ 
 
 
 }
