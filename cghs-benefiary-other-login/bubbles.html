@@ -1,0 +1,75 @@
+<style>
+body {
+  background: #f5faff;
+}
+
+#bubble-area {
+position: absolute;
+  height:100vh;
+  overflow: hidden;
+}
+
+/* bubble styling */
+.bubble {
+  position: absolute; top:-300px;
+  background: rgba(255,255,255,0.2);
+  color: #000000; 
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-weight: 700;
+  opacity: 0; z-index: -1;
+  animation: floatUp linear forwards;
+}
+
+/* floating animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+}
+</style>
+
+<div id="bubble-area"></div>
+
+<script>
+const texts = ["CHC", "PHC", "UPHC", "SHC", "DH", "SDH"];
+
+function createBubble() {
+  const area = document.getElementById("bubble-area");
+  const bubble = document.createElement("div");
+  bubble.classList.add("bubble");
+
+  // random text
+  bubble.innerText = texts[Math.floor(Math.random() * texts.length)];
+
+  // random size
+  let size = Math.floor(Math.random() * 40) + 50; // 50–90px
+  bubble.style.width = size + "px";
+  bubble.style.height = size + "px";
+
+  // random horizontal position
+  bubble.style.left = Math.random() * 90 + "%";
+
+  // random duration
+  let duration = Math.random() * 3 + 3; // 3–6s
+  bubble.style.animationDuration = duration + "s";
+
+  area.appendChild(bubble);
+
+  // remove bubble after animation ends
+  setTimeout(() => {
+    bubble.remove();
+  }, duration * 3000);
+}
+
+// create bubble every 500ms
+setInterval(createBubble, 3000);
+</script>

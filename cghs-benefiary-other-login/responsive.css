@@ -1,0 +1,51 @@
+@media (min-width: 1366px) and (max-width:1500px) {
+    
+.loginbox .animated-text h1 {
+    font-size: 1.3rem;
+
+}
+}
+
+@media (min-width: 1200px) and (max-width:1365px) {
+    
+   
+.loginbox .animated-text h1 {
+    font-size: 1.3rem;
+
+}
+
+
+}
+
+@media (min-width: 1025px) and (max-width:1199px) {
+   .login-header p {
+    font-size: 0.8rem;
+}
+.loginbox .animated-text h1 {
+    font-size: 1.13rem;
+
+}
+
+}
+
+@media (min-width: 992px) and (max-width:1024px) {
+.login-header p {
+    color: #666;
+    font-size: 0.8rem;
+}
+ .w-75 {width: 90% !important;}
+  
+}
+
+
+@media (max-width:767px) {
+    .w-75 {width: 100% !important;}
+    .loginbox .animated-text h1 {
+    font-size: 1.13rem;
+
+}
+}
+
+@media (max-width: 576px) {
+   
+}

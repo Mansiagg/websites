@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Global default */
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  overflow-x: hidden;overflow-y: hidden; max-height: 100vh;
+  padding-right: 0 !important;
+  background-color: #F3DDC9;
+  background: url('../images/line-bg.png') no-repeat, #ffffff;
+
+
+
+}
+
+
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+  overflow: auto;
+}
+
+.logo h1 { font-size: 15px;}
+#rightarea {background: #3F53B7;
+background: linear-gradient(180deg,rgba(63, 83, 183, 1) 0%, rgba(64, 81, 174, 1) 19%, rgba(80, 87, 165, 1) 39%, rgba(107, 106, 183, 1) 74%, rgba(131, 122, 200, 1) 89%, rgba(141, 129, 208, 1) 100%);}
+.punchlines { margin-left: -80px; overflow: hidden; margin-top: -40px;}
+.punchlines .punchline { background: url('../images/punchline-bg.png') no-repeat top center; color: rgba(0,0,0,0.79);   font-size: clamp(0.8rem, 1.5vw, 1.15rem)}
