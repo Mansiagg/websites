@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link href="assets/css/sb-admin-2.css" rel="stylesheet">
 	<link href="assets/css/all.min.css" rel="stylesheet">
-	<link href="assets/css/responsive.css" rel="stylesheet">
+	<link href="responsive.css" rel="stylesheet">
 	<!-- Animate.css (required for WOW.js) -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<!-- WOW.js -->
@@ -36,7 +36,7 @@
 
 <body>
 	<div class="container-fluid" style="height: 100vh;">
-		<div class="row pt-3">
+		<div class="row pt-1">
 			<div class="col-md-7">
 				<div class="logoarea ps-lg-3 d-flex justify-content-between">
 				<div class="logo position-relative pe-1 pt-md-0 pt-2">
@@ -120,12 +120,11 @@
 											<div class="col-md-12 p-0">	<div class="loginbox px-2 py-3 w-75 mt-1 mb-5 ms-2">
 							<img src="icon.png" class="mx-auto d-block"
 								style="margin-top:-50px; text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;" />
-							<div class="heading d-flex justify-content-center align-items-center mb-1 mt-2">
-							</div>
+						
 
 
 							<div class="loginarea px-xl-3 px-lg-3 px-xxl-4">
-								<div class="login-header mt-2">
+								<div class="login-header mt-xxl-2 mt-0">
 									<div class="animated-text">
 										<h1 class="fw-bold mb-0 pb-0 text-center">Sign Into Your Account</h1>
 									</div>
@@ -159,14 +158,12 @@
 											<div class="captcha-image">
 												<img id="imageid" src="assets/images/captcha-image.png">
 											</div>
-											<i class="fas fa-redo-alt captcha-refresh" onclick="captchaReset()"></i>
-										</div>
-
-										<div class="form-group d-flex justify-content-between mt-2">
-											<input type="text" class="form-control" placeholder="Enter Captcha"
+										<input type="text" class="form-control" placeholder="Enter Captcha"
 												autocomplete="off" name="varCaptcha" id="varCaptcha" maxlength="10"
 												onkeyup="validateOnEnter(event);">
-											<div class="error-message" id="captchaError"></div>
+											<div class="error-message" id="captchaError">
+										</div>
+
 										</div>
 
 										<a href="#" onclick="validateFunc();" class="login-btn btn-primary mb-1">
@@ -178,7 +175,7 @@
 
 
 									</form>
-									<p class="text-center mt-1" style="font-size: 0.95rem;">Account Locked? <a
+									<p class="text-center mt-1" style="font-size: 0.85rem;">Account Locked? <a
 											href="#" class="text-decoration-underline fw-semibold"
 											style="color: rgba(0,0,0,0.8);">Unlock Your Account</a></p>
 								</div>

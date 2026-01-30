@@ -1,51 +1,45 @@
-@media (min-width: 1366px) and (max-width:1500px) {
-    
-.loginbox .animated-text h1 {
-    font-size: 1.3rem;
+@media (min-width: 1919px) {}
 
-}
-}
-
-@media (min-width: 1200px) and (max-width:1365px) {
-    
-   
-.loginbox .animated-text h1 {
-    font-size: 1.3rem;
-
-}
+@media (min-width: 1601px) and (max-width:1950px) {}
 
 
-}
+@media (min-width:1500px) and (max-width:1800px) {}
 
-@media (min-width: 1025px) and (max-width:1199px) {
-   .login-header p {
-    font-size: 0.8rem;
-}
-.loginbox .animated-text h1 {
-    font-size: 1.13rem;
+@media (min-width: 1400px) and (max-width:1499px) {}
 
-}
+@media (min-width:1281px) and (max-width:1399px) {
 
-}
-
-@media (min-width: 992px) and (max-width:1024px) {
-.login-header p {
-    color: #666;
-    font-size: 0.8rem;
-}
- .w-75 {width: 90% !important;}
-  
-}
-
-
-@media (max-width:767px) {
-    .w-75 {width: 100% !important;}
     .loginbox .animated-text h1 {
-    font-size: 1.13rem;
+        font-size: 1.1rem;
+    }
+
+    .login-header p {
+        font-size: 0.8rem;
+    }
+
+    .loginbox .btn-section .link-btn {
+        font-size: 0.8rem;
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.92rem;
+        line-height: 25px;
+    }
+.forgot-password{ font-size: 0.8rem;}
+.login-btn {
+    height: 43px;
+    font-size: 15px;}
 
 }
-}
 
-@media (max-width: 576px) {
-   
-}
+@media (min-width:992px) and (max-width:1280px) {}
+
+@media (max-width: 500px) {}
