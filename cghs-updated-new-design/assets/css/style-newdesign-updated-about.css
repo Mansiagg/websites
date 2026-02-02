@@ -40,13 +40,13 @@ h6 {
 #topbar i{ color:#20265b
 }
 .helplineno { font-weight:500}
-.loginbuttton{background: #17449e;
+.loginbuttton{background: #0d47a1;
     border: 1px solid #17449e;
 }
-header .all-logins a {color:#17449e;background: #f0f5ff;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.8);
+header .all-logins a {color:#0d47a1;background: #f0f5ff;box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.8);
     padding: 12px;
     border-radius: 50px; }
-header .all-logins a:hover {background:#17449e; color:#ffffff; transition: ease-in 0.9s;}
+header .all-logins a:hover {background:#0d47a1; color:#ffffff; transition: ease-in 0.5s;}
 header .all-logins a  p{    font-size: 0.82rem; font-weight:500}
 header .main-menu {
     background-color: #0061d3;
