@@ -10,7 +10,8 @@ body {
   background-color: #f9f9fb; overflow-x: hidden;
 }
 
-
+.ssearch{    width: 75%;
+    margin: 0 auto;}
 
 *:-moz-full-screen,
 *:-webkit-full-screen,

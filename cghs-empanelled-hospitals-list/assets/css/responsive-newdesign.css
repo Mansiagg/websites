@@ -18,6 +18,7 @@
 }
 
 @media (min-width: 1400px) and (max-width:1499px) {
+.ssearch { width:84%;}
 
     .dataTables_length label {   font-size: 0.87rem;}
 	.search {width: 84%;
@@ -31,6 +32,7 @@ table {    font-size: 0.82rem;}
 }
 
 @media (min-width:1281px) and (max-width:1399px) {
+    .ssearch { width:84%;}
      .dataTables_length label {   font-size: 0.87rem;}
 	.search {width: 84%;
     margin: 0 auto;}
