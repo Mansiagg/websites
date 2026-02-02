@@ -19,7 +19,7 @@
 
 @media (min-width: 1400px) and (max-width:1499px) {
 
-	#search {width: 79%;
+	.search {width: 79%;
     margin: 0 auto;}
     h3.tablepagetitle {
     font-size: 1rem;
@@ -30,7 +30,7 @@ table {    font-size: 0.82rem;}
 }
 
 @media (min-width:1281px) and (max-width:1399px) {
-	#search {width: 79%;
+	.search {width: 79%;
     margin: 0 auto;}
     h3.tablepagetitle {
     font-size: 1rem;
