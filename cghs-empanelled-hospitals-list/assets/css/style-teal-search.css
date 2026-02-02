@@ -32,7 +32,7 @@ background: linear-gradient(159deg, rgba(0,51,102,1) 0%, rgba(15,82,186,1) 100%)
     padding-top: 3px;
   
 }
-
+.search-width{ width: 90%;}
 
 #search select {
     border: 1px solid rgba(0, 0, 0, 0.15);
