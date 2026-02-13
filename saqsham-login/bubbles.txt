@@ -1,0 +1,61 @@
+<style>
+.bubble-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #f8fafc;
+  padding: 20px 0;
+}
+
+.bubble-track {
+  display: flex;
+  gap: 30px;
+  animation: move 18s linear infinite;
+}
+
+.bubble {
+  width: 90px;
+  height: 90px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0077b6;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+</style>
+
+<div class="bubble-wrapper">
+  <div class="bubble-track">
+    <div class="bubble">CHC</div>
+    <div class="bubble">PHC</div>
+    <div class="bubble">UPHC</div>
+    <div class="bubble">SHC</div>
+    <div class="bubble">DH</div>
+    <div class="bubble">SDH</div>
+
+    <!-- Duplicate to make smooth infinite loop -->
+    <div class="bubble">CHC</div>
+    <div class="bubble">PHC</div>
+    <div class="bubble">UPHC</div>
+    <div class="bubble">SHC</div>
+    <div class="bubble">DH</div>
+    <div class="bubble">SDH</div>
+  </div>
+</div>
