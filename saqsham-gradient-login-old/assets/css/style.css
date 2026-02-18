@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Global default */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;overflow-y: hidden; max-height: 100vh;
+  padding-right: 0 !important;
+  background-color: #F3DDC9;
+  background: url('../images/line-bg.png') no-repeat, linear-gradient(180deg,rgba(243, 221, 201, 1) 0%, rgba(240, 213, 189, 1) 19%, rgba(239, 212, 187, 1) 39%, rgba(243, 222, 202, 1) 74%, rgba(250, 241, 233, 1) 89%, rgba(252, 247, 242, 1) 100%);;
+
+
+
+}
+
+
+
+*:-moz-full-screen,
+*:-webkit-full-screen,
+*:fullscreen *:-ms-fullscreen {
+  overflow: auto;
+}
+
+.logo h1 { font-size: 15px;}
+#rightarea {background: #3F53B7;
+background: linear-gradient(180deg,rgba(63, 83, 183, 1) 0%, rgba(64, 81, 174, 1) 19%, rgba(80, 87, 165, 1) 39%, rgba(107, 106, 183, 1) 74%, rgba(131, 122, 200, 1) 89%, rgba(141, 129, 208, 1) 100%);}
+.punchlines { margin-left: -80px; overflow: hidden; margin-top: -40px;}
+.punchlines .punchline { background: url('../images/punchline-bg.png') no-repeat top center; color: rgba(0,0,0,0.79);   font-size: clamp(0.8rem, 1.5vw, 1.15rem)}

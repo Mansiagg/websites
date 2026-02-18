@@ -1,4 +1,4 @@
-@media (min-width: 1366px) and (max-width:1500px) {
+@media (min-width: 1367px) and (max-width:1500px) {
 
     .carousel-caption h4 {
         font-size: 0.85rem;
@@ -18,29 +18,38 @@
     }
 
     .sliders {
-        margin-top: 60px !important;
+        margin-top: 80px !important;
     }
-        .forgot-password { font-size: 0.85rem;}
-    .loginbox  .btn-section .link-btn {
-    font-size: 14px;
-    line-height: 35px;
-    
-}
+
+    .forgot-password {
+        font-size: 0.85rem;
+    }
+
+    .loginbox .btn-section .link-btn {
+        font-size: 14px;
+        line-height: 35px;
+
+    }
 }
 
-@media (min-width: 1200px) and (max-width:1365px) {
+@media (min-width: 1200px) and (max-width:1366px) {
 
-    .loginbox  .btn-section .link-btn {
-    font-size: 14px;
-    line-height: 35px;
-  
-}
-     .carousel-caption h4 {
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    .loginbox .btn-section .link-btn {
+        font-size: 14px;
+        line-height: 35px;
+
+    }
+
+    .carousel-caption h4 {
         font-size: 0.85rem;
     }
 
     .carousel-caption h5 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .carousel-caption p {
@@ -52,18 +61,60 @@
 
     }
 
-   .sliders {
-        margin-top: 60px !important;
+    .sliders {
+        margin-top: 30px !important;
     }
-    .forgot-password { font-size: 0.85rem;}
+
+    .carousel-item img {
+        width: 400px;
+    }
+
+    .forgot-password {
+        font-size: 0.85rem;
+    }
 
 
     .loginbox .animated-text h1 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
 
     }
 
+    #latestnews .ticker span {
+        font-size: 0.7rem;
+    }
 
+    .loginbox {
+        width: 75%;
+    }
+
+    .loginbox .form-control {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: .4rem .75rem;
+        font-size: 0.9rem;
+        transition: all 0.3s;
+    }
+
+    .loginbox .form-group i {
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: 36px;
+    }
+
+    .loginbox .login-btn {
+        border: none;
+        height: 43px;
+    }
+
+    .certification {
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.1);
+        bottom: 30px;
+        left: 0;
+        right: 20%;
+    }
 }
 
 @media (min-width: 1025px) and (max-width:1199px) {
@@ -84,22 +135,88 @@
         font-size: 0.8rem;
     }
 
-    .w-75 {
-        width: 90% !important;
+    .loginbox {
+        width: 100%;
+    }
+
+    .carousel-caption h4 {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .loginbox {
+        width: 100%;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.1rem;
+    }
+
+    .carousel-caption h4 {
+        font-size: 0.9rem;
     }
 
 }
 
-
 @media (max-width:767px) {
-    .w-75 {
-        width: 100% !important;
+    body {
+        overflow-y: scroll;
+    }
+
+    .loginbox {
+        width: 90% !important;
     }
 
     .loginbox .animated-text h1 {
         font-size: 1.13rem;
 
     }
+
+    .carousel-caption h5 {
+        color: #365ebf;
+        font-size: 1rem;
+    }
+
+    .carousel-caption h4 {
+        color: #365ebf;
+        font-size: 0.85rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+        line-height: 23px;
+        margin-bottom: 80px;
+    }
+
+    footer .links a {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .loginbox {
+        width: 95% !important;
+    }
+
+    .sliders {
+        margin-top: 20px;
+    }
+
+    body {
+        overflow-y: scroll;
+    }
+
+
+}
