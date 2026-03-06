@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>India Map Locations</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+}
+
+#mapContainer{
+position:relative;
+width:600px;
+margin:auto;
+}
+
+#indiaMap{
+width:100%;
+height:auto;
+}
+
+.marker{
+position:absolute;
+width:12px;
+height:12px;
+background:red;
+border-radius:50%;
+transform:translate(-50%,-50%);
+cursor:pointer;
+}
+
+.marker:hover{
+background:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>India Hospital Locations</h2>
+
+<div id="mapContainer">
+
+<img id="indiaMap"
+src="https://upload.wikimedia.org/wikipedia/commons/7/74/India-map-en.svg">
+
+<!-- Markers using percentage -->
+
+<div class="marker" style="top:24%; left:53%;" title="Delhi"></div>
+
+<div class="marker" style="top:55%; left:35%;" title="Mumbai"></div>
+
+<div class="marker" style="top:78%; left:55%;" title="Chennai"></div>
+
+<div class="marker" style="top:45%; left:78%;" title="Kolkata"></div>
+
+</div>
+
+</body>
+</html>
