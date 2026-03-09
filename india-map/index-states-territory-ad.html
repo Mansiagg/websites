@@ -120,24 +120,26 @@ var markers = [];
 
 
 // COLOR FUNCTION
-function getColor(){
+function getColor(stateName){
 
-var colors = [
-"#FFCDD2",
-"#F8BBD0",
-"#E1BEE7",
-"#D1C4E9",
-"#C5CAE9",
-"#BBDEFB",
-"#B2EBF2",
-"#C8E6C9",
-"#DCEDC8",
-"#FFF9C4",
-"#FFE0B2",
-"#FFCCBC"
-];
+var colors = {
+"Uttar Pradesh":"#FFCDD2",
+"Maharashtra":"#F8BBD0",
+"Tamil Nadu":"#E1BEE7",
+"Karnataka":"#D1C4E9",
+"Rajasthan":"#C5CAE9",
+"Gujarat":"#BBDEFB",
+"Madhya Pradesh":"#B2EBF2",
+"Bihar":"#C8E6C9",
+"West Bengal":"#DCEDC8",
+"Punjab":"#FFF9C4",
+"Haryana":"#FFE0B2",
+"Delhi":"#FFCCBC",
+"Ladakh":"#D7CCC8",
+"Jammu and Kashmir":"#CFD8DC"
+};
 
-return colors[Math.floor(Math.random()*colors.length)];
+return colors[stateName] || "#E0E0E0";
 
 }
 
@@ -147,10 +149,15 @@ fetch("india-allstates.geojson")
 .then(res => res.json())
 .then(data => {
 
-function style(){
+function style(feature){
+
+var stateName =
+feature.properties.NAME_1 ||
+feature.properties.st_nm ||
+feature.properties.name;
 
 return{
-fillColor:getColor(),
+fillColor:getColor(stateName),
 weight:1,
 color:"#333",
 fillOpacity:0.8
