@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>India Hospital Map</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+
+body{
+font-family:Arial; 
+text-align:center;
+}
+
+.leaflet-control-attribution.leaflet-control { 
+display: none !important;
+}
+
+/* Responsive Map */
+#map{
+height:93vh; border:1px solid #ccc;
+width:50%;
+margin:auto;
+background:white;
+
+}
+
+#searchBox{
+margin: 0 auto;
+background:white;
+padding:10px;
+width:250px; position: relative;
+}
+
+#searchInput{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+#searchResults{
+max-height:200px;
+overflow-y:auto;
+border:1px solid #ddd;
+}
+
+.resultItem{
+padding:6px;
+cursor:pointer;
+border-bottom:1px solid #eee;
+}
+
+.resultItem:hover{
+background:#f1f1f1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="searchBox">
+
+<input type="text" id="searchInput" placeholder="Search Hospital...">
+
+<div id="searchResults"></div>
+
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+// INDIA BOUNDS (Restrict map to India)
+var indiaBounds = [
+    [6.5, 68.0],
+    [37.5, 97.5]
+];
+
+// Create map (no fixed zoom)
+var map = L.map('map',{
+    maxBounds: indiaBounds,
+    maxBoundsViscosity: 1.0
+});
+
+// Hospital data
+var hospitals = [
+
+{ name:"AIIMS Delhi<br>Ansari Nagar-AIIMS, New Delhi, Delhi 110029", lat:28.5672, lng:77.2100 },
+{ name:"Kokilaben Hospital Mumbai", lat:19.1176, lng:72.8367 },
+{ name:"Apollo Hospital Chennai", lat:13.0827, lng:80.2707 },
+{ name:"Manipal Hospital Bangalore", lat:12.9716, lng:77.5946 },
+{ name:"KGMU Lucknow", lat:26.869, lng:80.923 }
+
+];
+
+var markers = [];
+
+// COLOR FUNCTION
+function getColor(){
+
+var colors = [
+"#FFCDD2","#F8BBD0","#E1BEE7","#D1C4E9",
+"#C5CAE9","#BBDEFB","#B2EBF2","#C8E6C9",
+"#DCEDC8","#FFF9C4","#FFE0B2","#FFCCBC"
+];
+
+return colors[Math.floor(Math.random()*colors.length)];
+
+}
+
+// Load India boundary
+fetch("https://raw.githubusercontent.com/geohacker/india/master/state/india_telengana.geojson")
+.then(res => res.json())
+.then(data => {
+
+function style(){
+return{
+fillColor:getColor(),
+weight:1,
+color:"#333",
+fillOpacity:0.4
+};
+}
+
+// INDIA MAP
+var geojson = L.geoJSON(data,{
+style:style
+}).addTo(map);
+
+// Auto zoom according to container
+map.fitBounds(geojson.getBounds());
+
+// Fix rendering issue
+setTimeout(function(){
+map.invalidateSize();
+},200);
+
+// Add markers
+hospitals.forEach(function(h){
+
+var marker = L.marker([h.lat,h.lng])
+.bindPopup("<b>"+h.name+"</b>")
+.addTo(map);
+
+marker.name = h.name;
+
+markers.push(marker);
+
+});
+
+});
+
+// SEARCH FUNCTION
+var searchInput = document.getElementById("searchInput");
+var resultsBox = document.getElementById("searchResults");
+
+searchInput.addEventListener("keyup",function(){
+
+var query = this.value.toLowerCase();
+
+resultsBox.innerHTML = "";
+
+if(query.length === 0) return;
+
+markers.forEach(function(marker){
+
+if(marker.name.toLowerCase().includes(query)){
+
+var div = document.createElement("div");
+
+div.className = "resultItem";
+
+div.innerHTML = marker.name;
+
+div.onclick = function(){
+
+map.setView(marker.getLatLng(),10);
+
+marker.openPopup();
+
+resultsBox.innerHTML = "";
+
+searchInput.value = marker.name;
+
+};
+
+resultsBox.appendChild(div);
+
+}
+
+});
+
+});
+
+// Resize fix
+window.addEventListener("resize", function(){
+    map.invalidateSize();
+});
+
+</script>
+
+</body>
+</html>
