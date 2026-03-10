@@ -1,0 +1,46 @@
+/* Desktop */
+@media (min-width:1024px){
+#map{
+
+}
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+}
+
+@media (min-width: 1367px) and (max-width:1500px) {
+
+    
+
+}
+
+@media (min-width: 1200px) and (max-width:1366px) {
+
+   
+}
+
+@media (min-width: 1025px) and (max-width:1199px) {
+  
+
+}
+
+@media (min-width: 992px) and (max-width:1024px) {
+   
+
+}
+
+@media (max-width: 991px) {
+  
+
+}
+
+@media (max-width:767px) {
+  
+}
+
+@media (max-width: 576px) {
+   
+
+
+}
