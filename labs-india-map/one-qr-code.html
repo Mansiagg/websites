@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Download Our App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+text-align:center;
+padding:40px;
+}
+
+.app-btn{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#007bff;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Download Our Mobile App</h2>
+<p>Select your platform</p>
+
+<a class="app-btn" href="https://play.google.com/store/apps/details?id=com.cdac.cghsmobileapp">
+Download for Android
+</a>
+
+<a class="app-btn" href="https://apps.apple.com/in/app/mycghs/id6744057914">
+Download for iOS
+</a>
+
+<script>
+
+var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+// Android
+if (/android/i.test(userAgent)) {
+window.location.href="https://play.google.com/store/apps/details?id=com.cdac.cghsmobileapp";
+}
+
+// iOS
+else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+window.location.href="https://apps.apple.com/in/app/mycghs/id6744057914";
+}
+
+</script>
+
+</body>
+</html>
