@@ -102,19 +102,19 @@ var map = L.map('map').setView([22.9734,78.6569],5);
 
 
 // Hospital data
-var hospitals = [
+// var hospitals = [
 
-{ name:"AIIMS Delhi <br>Ansari Nagar-AIIMS, New Delhi, Delhi 110029", lat:28.5672, lng:77.2100 },
+// { name:"AIIMS Delhi <br>Ansari Nagar-AIIMS, New Delhi, Delhi 110029", lat:28.5672, lng:77.2100 },
 
-{ name:"Kokilaben Hospital Mumbai", lat:19.1176, lng:72.8367 },
+// { name:"Kokilaben Hospital Mumbai", lat:19.1176, lng:72.8367 },
 
-{ name:"Apollo Hospital Chennai", lat:13.0827, lng:80.2707 },
+// { name:"Apollo Hospital Chennai", lat:13.0827, lng:80.2707 },
 
-{ name:"Manipal Hospital Bangalore", lat:12.9716, lng:77.5946 },
+// { name:"Manipal Hospital Bangalore", lat:12.9716, lng:77.5946 },
 
-{ name:"KGMU Lucknow", lat:26.869, lng:80.923 }
+// { name:"KGMU Lucknow", lat:26.869, lng:80.923 }
 
-];
+// ];
 
 var markers = [];
 
@@ -129,6 +129,7 @@ var colors = {
 "Karnataka":"#D1C4E9",
 "Rajasthan":"#C5CAE9",
 "Gujarat":"#BBDEFB",
+"Daman and Diu":"#BBDEFB",
 "Madhya Pradesh":"#B2EBF2",
 "Bihar":"#C8E6C9",
 "West Bengal":"#DCEDC8",
@@ -136,7 +137,13 @@ var colors = {
 "Haryana":"#FFE0B2",
 "Delhi":"#FFCCBC",
 "Ladakh":"#D7CCC8",
-"Jammu and Kashmir":"#CFD8DC"
+"Ahmedabad":"#FFD45A",
+"Rajkot":"#FFD45A",
+"Jamnagar":"#FFD45A",
+"Vadodara":"#FFD45A",
+"Surat":"#FFD45A",
+"Bhavnagar":"#FFD45A"
+
 };
 
 return colors[stateName] || "#E0E0E0";
@@ -145,7 +152,7 @@ return colors[stateName] || "#E0E0E0";
 
 
 // Load India boundary
-fetch("india-allstates.geojson")
+fetch("india-allstates-ad.geojson")
 .then(res => res.json())
 .then(data => {
 
@@ -180,6 +187,7 @@ feature.properties.name ||
 "State";
 
 layer.bindTooltip(stateName,{
+fillColor: feature.properties.color,
 permanent:true,
 direction:"center",
 className:"stateLabel"
