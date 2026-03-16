@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>India Hospital Map</title>
+
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="stylee.css" />
+    <link rel="stylesheet" href="responsive.css" />
+   <link href="bootstrap-min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+    <div id="map">
+
+        <div id="searchBox">
+
+            <select id="labSelect">
+                <option value="">Select Lab Location</option>
+            </select>
+
+
+            <select id="adzone" style="outline-style: none;">
+                <option value="">Select AD Zones</option>
+                <option value="0">Delhi - East Zone</option>
+                <option value="0">Delhi - South Zone</option>
+                <option value="0">Delhi - North East Zone</option>
+
+                <option value="1">Pune</option>
+                <option value="2">Ranchi</option>
+
+            </select>
+        </div>
+
+
+    </div>
+
+
+    <script src="leaflet.js"></script>
+    <script>
+
+        // Create map
+        var map = L.map('map').setView([22.9734, 78.6569], 5);
+
+
+        // Hospital data
+        var hospitals = [
+
+            {
+                name: "Domlur",
+                address: "Domlur, Bengaluru, Karnataka 560071",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 12.9611,
+                lng: 77.6387
+            },
+            {
+                name: "Shivajinagar Polyclinic",
+                address: "Shivajinagar, Bengaluru, Karnataka 560051",
+                tests: "CBC, Liver Function Test, Kidney Test",
+                lat: 12.9864,
+                lng: 77.6075
+            },
+            {
+                name: "Napier Town",
+                address: "Jabalpur, Madhya Pradesh 482001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 23.1686,
+                lng: 79.9320
+            },
+            {
+                name: "Aliganj",
+                address: "Lucknow, Uttar Pradesh 226024",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.8896,
+                lng: 80.9490
+            },
+            {
+                name: "Kanpur Road",
+                address: "Lucknow, Uttar Pradesh 226012",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.7606,
+                lng: 80.8893
+            },
+            {
+                name: "Hazratganj Polyclinic",
+                address: "Hazratganj, Lucknow, Uttar Pradesh 226001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.8469,
+                lng: 80.9462
+            },
+            {
+                name: "Ashram Road Polyclinic",
+                address: "Ashram Road, Ahmedabad, Gujarat 380009",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 23.0330,
+                lng: 72.5714
+            },
+            {
+                name: "WC-1 Polyclinic",
+                address: "WC-1, Bhubaneswar, Odisha 751001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 20.2961,
+                lng: 85.8245
+            },
+            {
+                name: "Anna Nagar",
+                address: "Anna Nagar, Chennai, Tamil Nadu 600040",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 13.0849,
+                lng: 80.2101
+            },
+            {
+                name: "KK Nagar",
+                address: "KK Nagar, Chennai, Tamil Nadu 600078",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 13.0418,
+                lng: 80.1994
+            },
+            {
+                name: "Dr. Zakir Hussain Road -Delhi-Central Zone",
+                address: "Dr. Zakir Hussain Road, New Delhi, Delhi 110003",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6074,
+                lng: 77.2425
+            },
+            {
+                name: "Parliament House Annexe - Delhi-Central Zone",
+                address: "New Delhi, Delhi 110001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6180,
+                lng: 77.2089
+            }, {
+                name: "Supreme Court - Delhi-Central Zone",
+                address: "Tilak Marg, New Delhi, Delhi 110001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6214,
+                lng: 77.2381
+            },
+            {
+                name: "Maninagar",
+                address:"Ahmedabad, Gujarat 380008",
+                lat: 22.9951,
+                lng: 72.6042
+            },
+            {
+                name: "Janak Puri-1 - Delhi-North Zone",
+                address: "Janakpuri, New Delhi, Delhi 110058",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6219,
+                lng: 77.0880
+            },
+            {
+                name: "Shakur Basti - Delhi-North Zone",
+                address: "New Delhi, Delhi 110034",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6874,
+                lng: 77.1361
+            },
+            {
+                name: "Pusa Road - Delhi-North Zone",
+                address: "Karol Bagh, New Delhi, Delhi 110005",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6454,
+                lng: 77.1890
+            },
+            {
+                name: "Kingsway Camp - Delhi-East Zone<br>",
+                address: "Delhi 110009",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6993,
+                lng: 77.2053
+            },
+            {
+                name: "Laxmi Nagar (Allopathy) - Delhi-East Zone",
+                address: "New Delhi, Delhi 110092",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 28.6306,
+                lng: 77.2773
+            },
+            {
+                name: "Civil Lines",
+                address: "Kanpur, Uttar Pradesh 208001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.4663,
+                lng: 80.3319
+            },
+            {
+                name: "Kendranchal",
+                address: "Kanpur, Uttar Pradesh 208001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.4512,
+                lng: 80.3305
+            },
+            {
+                name: "Raksha Vihar",
+                address: "Kanpur, Uttar Pradesh 208012",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.4568,
+                lng: 80.3567
+            },
+            {
+                name: "Ratan Lal Nagar",
+                address: "Kanpur, Uttar Pradesh 208022",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.4575,
+                lng: 80.3701
+            },
+            {
+                name: "Jalpaiguri",
+                address: "West Bengal 735101",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.5400,
+                lng: 88.7200
+            },
+            {
+                name: "Polyclinic",
+                address: "Kolkata, West Bengal 700016",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 22.5726,
+                lng: 88.3639
+            },
+            {
+                name: "CGHS Polyclinic-I",
+                address: "Hyderabad, Telangana 500004",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 17.3850,
+                lng: 78.4867
+            },
+            {
+                name: "Polyclinic",
+                address: "Jaipur, Rajasthan 302001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 26.9124,
+                lng: 75.7873
+            },
+            {
+                name: "Ghatkopar",
+                address: "Mumbai, Maharashtra 400077",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 19.0830,
+                lng: 72.9133
+            },
+            {
+                name: "Koliwada",
+                address: "Mumbai, Maharashtra 400005",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 18.9510,
+                lng: 72.8235
+            },
+            {
+                name: "S K Road",
+                address: "Meerut, Uttar Pradesh 250001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 29.0095,
+                lng: 77.6986
+            },
+            {
+                name: "CGHS Polyclinic",
+                address: "Nagpur, Maharashtra 440001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 21.1458,
+                lng: 79.0882
+            },
+            {
+                name: "Budhmarg",
+                address: "Patna, Bihar 800001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 25.6101,
+                lng: 85.1338
+            },
+            {
+                name: "Ganeshkhind Road",
+                address: "Pune, Maharashtra 411001",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 18.5314,
+                lng: 73.8446
+            },
+            {
+                name: "CGHS Polyclinic",
+                address: "Swasthya Sadan, Mukund Nagar, Pune, Maharashtra 411037",
+                tests: "Blood Test, Thyroid Profile, Diabetes Test",
+                lat: 18.4946,
+                lng: 73.8599
+            }
+
+        ];
+
+        var markers = [];
+        // FIXED STATE/CITY COLOR FUNCTION
+        function getColor(stateName) {
+            var colors = {
+                "Uttar Pradesh": "#FFCDD2",
+                "Himachal Pradesh": "#d2cafb",
+                "Uttarakhand": "#ebb360",
+                "Arunachal Pradesh": "#fbe776",
+                "Meghalaya": "#aeb6db",
+                "Assam": "#cce3c9",
+                "Nagaland": "#fbc7c9",
+                "Manipur": "#fdfcfa",
+                "Tripura": "#a9c98a",
+                "Mizoram": "#ebb360",
+                "Maharashtra": "#F8BBD0",
+                "Tamil Nadu": "#E1BEE7",
+                "Karnataka": "#D1C4E9",
+                "Rajasthan": "#C5CAE9",
+                "Gujarat": "#bccf5b",
+                "Daman and Diu": "#BBDEFB",
+                "Madhya Pradesh": "#B2EBF2",
+                "Bihar": "#C8E6C9",
+                "West Bengal": "#DCEDC8",
+                "Punjab": "#ffe979",
+                "Haryana": "#FFE0B2",
+                "Delhi": "#FFCCBC",
+                "Ladakh": "#ffb5c8",
+                "Ahmedabad": "#FFD45A",
+                "Rajkot": "#FFD45A",
+                "Jamnagar": "#FFD45A",
+                "Vadodara": "#FFD45A",
+                "Surat": "#FFD45A",
+                "Amritsar": "#FF8B5A",
+                "Jalandhar": "#FF8B5A",
+                "Jalandhar Cantonment": "#FF8B5A",
+                "Ludhiana": "#FF8B5A",
+                "Panchkula": "#FF8B5A",
+                "Chandigarh": "#FF8B5A",
+                "Jharkhand": "#FF8B5A",
+                "Chhattisgarh": "#fec28c",
+                "Odisha": "#bfa1c7",
+                "Hyderabad": "#f2af56",
+                "Telangana": "#fadf86",
+                "Andhra Pradesh": "#f2b352",
+                "Jammu and Kashmir": "#e9f6a6",
+                "Kerala": "#FFD45A",
+            };
+            return colors[stateName] || "#E0E0E0"; // fallback gray
+        }
+
+
+        // Load India boundary
+        fetch("india-allstates.geojson")
+            .then(res => res.json())
+            .then(data => {
+
+                function style(feature) {
+                    var stateName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.name || "State";
+                    return {
+                        fillColor: getColor(stateName), // fixed color now
+                        weight: 1,
+                        color: "#333",
+                        fillOpacity: 0.8
+                    };
+                }
+
+                // INDIA MAP WITH STATE LABELS
+                var geojson = L.geoJSON(data, {
+                    style: style,
+
+                    onEachFeature: function (feature, layer) {
+                        var stateName = feature.properties.NAME_1 || feature.properties.st_nm || feature.properties.name || "State";
+
+                        // Default tooltip options
+                        var tooltipOptions = {
+                            permanent: true,
+                            direction: "center",
+                            className: "stateLabel"
+                        };
+
+                        // Add offset ONLY for Uttar Pradesh
+                        if (stateName === "Uttar Pradesh") {
+                            tooltipOptions.offset = L.point(-20, -25); // shift 20px upward
+                        }
+
+                        // Add offset ONLY for Uttar Pradesh
+                        if (stateName === "Bihar") {
+                            tooltipOptions.offset = L.point(20, 5); // shift 20px upward
+                        }
+                        // Add offset ONLY for Uttar Pradesh
+                        if (stateName === "Punjab") {
+                            tooltipOptions.offset = L.point(0, -10); // shift 20px upward
+                        }
+
+                        layer.bindTooltip(stateName, tooltipOptions).openTooltip();
+
+                        // Popup (shows when clicked)
+                        layer.bindPopup(stateName);
+                    }
+
+                }).addTo(map);
+
+                map.fitBounds(geojson.getBounds());
+
+                // FIX MAP SIZE AFTER RENDER
+                setTimeout(function () {
+                    map.invalidateSize();
+                }, 200);
+
+
+
+                // Add markers
+                hospitals.forEach(function (h) {
+                    var popupContent = `
+<div class="labPopup">
+<h3>${h.name}</h3>
+
+<p class="labAddress">${h.address}</p>
+
+<div class="labTests">
+<b>Tests Available</b>
+<p>${h.tests}</p>
+</div>
+
+<button class="labBtn booktest py-2 text-center text-white px-2">Book Test</button>
+</div>
+`;
+
+
+
+                    var marker = L.marker([h.lat, h.lng])
+                        .bindPopup(popupContent, {
+                            maxWidth: 350,
+                            minWidth: 300
+                        })
+                        .addTo(map);
+
+                    marker.name = h.name;
+                    markers.push(marker);
+                });
+
+            });
+
+        // SEARCH FUNCTION
+        var labSelect = document.getElementById("labSelect");
+
+        // populate dropdown
+        hospitals.forEach(function (h, index) {
+
+            var option = document.createElement("option");
+
+            option.value = index;
+            option.text = h.name.split("<br>")[0];
+
+            labSelect.appendChild(option);
+
+        });
+
+        // select event
+        labSelect.addEventListener("change", function () {
+
+            var index = this.value;
+
+            if (index === "") return;
+
+            var marker = markers[index];
+
+            map.setView(marker.getLatLng(), 12);
+
+            marker.openPopup();
+
+        });
+    </script>
+
+</body>
+
+</html>

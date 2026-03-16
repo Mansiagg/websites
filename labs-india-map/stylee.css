@@ -1,4 +1,4 @@
-   html, body{
+html, body{
 height:100%;
 margin:0;
 padding:0; font-family: 'Courier New', Courier, monospace;
@@ -69,3 +69,17 @@ margin:0 auto; position: relative;
             font-weight: bold;
             text-align: center;
         }
+
+        #labSelect, #adzone{
+width:260px;
+padding:8px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+.booktest{
+    background: #17449e;
+    border: 1px solid #17449e;
+}
+.labPopup h3 { font-size: 1rem; font-weight: 600;}

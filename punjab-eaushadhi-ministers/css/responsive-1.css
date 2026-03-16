@@ -1,0 +1,419 @@
+@media (min-width: 1366px) and (max-width:1500px) {
+    #slider .carousel-caption {
+        top: 11%;
+    }
+
+    .rightimage {
+        top: 45px;
+    }
+
+    #about .aboutus .punchline {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1365px) {
+    #header-form {
+    width: 330px; }
+
+    #slider .carousel-caption h5 {
+        font-size: 27px;
+    }
+
+    .loginbtn {
+        font-size: 13px;
+    }
+
+    #about .aboutus .punchline {
+        font-size: 19px;
+    }
+
+    #navbarSupportedContent ul li a {
+        padding: 20px 15px;
+    }
+
+    #slider .carousel-caption {
+        top: 10%;
+    }
+
+    .rightimage {
+        top: 50px;
+    }
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+    .logo h2 {
+        font-size: 13px;
+    }
+
+    .capsuleimg {
+        width: 8%;
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width:1199px) {
+    .navbar-toggler {
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 2px 5px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    #navbarSupportedContent ul li a {
+        padding: 20px 11px;
+    }
+
+    .loginbtn {
+        font-size: 12px;
+    }
+
+    #slider .carousel-caption {
+        top: 7%;
+    }
+
+    #slider .carousel-caption h5 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    #slider .carousel-caption p {
+        font-size: 13px;
+        line-height: 25px;
+       width: 92%;
+        text-align: justify;
+    }
+
+    .rightimage {
+        top: 30px;
+        right: 40px;
+    }
+
+    .rightimage img {
+        width: 22%;
+    }
+
+    #header-form {
+        top: 9px;
+        width: 300px;
+        margin: 0 auto;
+        right: 4px;
+    }
+
+    #header-form .card-body span {
+        font-size: 12px;
+    }
+
+    #header-form .loginbg {
+        top: 1px;
+        width: 14%;
+        left: -42px ;
+    }
+    
+
+    #about .aboutus .punchline {
+        font-size: 17px;
+    }
+
+    #services .services p {
+        font-size: 0.86rem;
+    }
+
+    #services .services h4 {
+        font-size: 14px;
+    }
+
+    #features .featureimg {
+        margin-top: -10px;
+    }
+
+    .capsuleimg {
+        width: 5%
+    }
+
+    ;
+
+}
+
+@media (min-width: 992px) and (max-width:1024px) {
+
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    #navbarSupportedContent ul li a {
+        padding: 10px 11px;
+    }
+
+    #slider .carousel-caption h5 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    #slider .carousel-caption p {
+        font-size: 12px;
+    }
+}
+
+
+@media (min-width: 767px) and (max-width:991px) {
+
+    .navbar {
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .navbar-toggler {
+        border-radius: 3px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 2px 5px;
+    }
+
+}
+
+
+@media (max-width:991px) {
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 42px;
+        right: 0;
+        background: #ffffff;
+        border: 0;
+        border-radius: 0;
+        z-index: 999;
+    }
+
+    .navbar-toggler {
+        border: 0;
+        padding: 5px 8px;
+    }
+
+    .logo h1 {
+        font-size: 14px;
+    }
+
+    .logo h2 {
+        font-size: 14px;
+    }
+
+    #header-form {
+        position: relative !important;
+        right: 0;
+        top: 7px;
+    }
+
+    #slider .carousel-caption {
+        top: 6%;
+    }
+
+    #slider .carousel-caption p {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    #slider .carousel-item .rightimage {
+        top: 12px;
+        left: auto;
+        right: 0;
+        text-align: right;
+    }
+
+   
+
+    #about .aboutus .punchline {
+        font-size: 18px;
+    }
+
+    #about .aboutus h2 {
+        font-size: 24px;
+    }
+
+    #services .services p {
+        font-size: 0.86rem;
+        line-height: 21px;
+    }
+
+    #features .featureimg {
+        margin-top: 20px;
+    }
+
+    #slider .carousel-caption h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .carousel-indicators {
+        bottom:0;
+        z-index: 9999;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 9px;
+        height: 9px;
+    }
+
+    #header-form {
+        position: relative;
+        top: 9px;
+        width: 100%;
+        margin: 0 auto;
+      
+    }
+
+    #header-form .card-body span {
+        font-size: 12px;
+    }
+
+    #header-form img {
+        top: -9px;
+    }
+
+    .capsuleimg {
+        width: 15%;
+    }
+
+
+}
+
+@media (max-width:767px) {
+   .carousel-indicators {
+    bottom: 64px;
+   
+}
+    #topbar .contactdetails span {
+        border: none;
+        font-size: 22px;
+    }
+#slider .carousel-caption p {
+        font-size: 13px;
+        width: 98%;
+    }
+
+    #latestnews .heading h2 {
+    font-size: 0.79rem;
+}
+
+    .eaushadhiname {
+        font-size: 39px;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 30px; background: #ffbe3d;
+    }
+  .navbar a { color: #000000 !important; }
+    #slider .carousel-caption {
+        top: -2%
+    }
+
+    #header-form {
+        position: relative;
+        top: 9px;
+        width: 80%;
+    }
+    .boxespanel .box .icon {
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+#about .box {margin-bottom: 70px !important; padding-top: 50px !important;}
+.service.img { margin-bottom: 50px;}
+
+}
+
+@media (max-width: 576px) {
+    .loginbtn {
+        font-size: 12px;
+    }
+
+    #topbar .contactdetails span {
+        font-size: 23px;
+        border: 0px;
+    }
+
+    .logo h1 {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .logo h2 {
+        font-size: 13px;
+    }
+
+    #header-form {
+        position: relative !important;
+        right: 0;
+        top: 7px;
+    }
+
+    #slider .carousel-caption {
+        left: 0;
+    }
+
+    #slider .carousel-caption p {
+        font-size: 0;
+    }
+
+    #slider .carousel-item .rightimage {
+        top: 5px;
+        left: auto;
+        right: 0;
+        text-align: right;
+    }
+
+    #slider .carousel-item img {
+        width: 40%;
+    }
+
+    #about .aboutus .punchline {
+        font-size: 18px;
+    }
+
+    #about .aboutus h2 {
+        font-size: 24px;
+    }
+
+    #services .services p {
+        font-size: 0.86rem;
+        line-height: 21px;
+    }
+
+    #features .featureimg {
+        margin-top: 20px;
+    }
+
+
+    #slider .carousel-caption h5 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .carousel-indicators {
+        bottom: -13px;
+        z-index: 9999;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 9px;
+        height: 9px;
+    }
+}
