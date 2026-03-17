@@ -1,0 +1,1485 @@
+@media (max-width:1500px) {
+    .menu-eff>li>a {
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:991px) and (max-width:1200px) {
+    .container-fluid {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+
+   
+
+    .container-fluid {
+        padding-left: 15px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+        display: block !important;
+    }
+
+    .menu-eff>li>a {
+        font-size: 16px;
+    }
+
+    .logo {
+        padding-left: 107px;
+    }
+
+    .main-menu>li {
+        margin: 0 4px;
+    }
+
+    .middle-text h1 {
+        font-size: 35px;
+    }
+
+    .slide1-text {
+        top: 20px
+    }
+
+    .middle-text .rightimage {
+        position: absolute;
+        top: -13px;
+        right: 0px;
+    }
+
+    .slide-def {
+        left: 11px;
+        top: 11px;
+    }
+
+    #quotation a.cbutton {
+        padding: 12px 17px 12px 17px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1300px) {
+
+    #quote .col-12:first-child .card img {
+        right: -89px;
+        width: 70%;
+    }
+
+    #quote .col-12:nth-child(2) .card img {
+
+        width: 46%;
+    }
+
+
+}
+
+@media (min-width:991px) and (max-width:1199px) {
+    #quote .card {
+        min-height: 466px;
+        padding: 60px 20px 60px 20px;
+    }
+
+
+    #quote .col-12:first-child .card img {
+        right: -89px;
+        width: 87%;
+    }
+
+    #quote .col-12:nth-child(2) .card img {
+
+        width: 54%;
+    }
+
+    .middle-text img.mb-4 {
+        margin-bottom: 0;
+    }
+
+    .phone-mail-area div {
+        font-size: 14px;
+    }
+
+    .logo h2 {
+
+        font-size: 13px;
+    }
+
+    .phone-mail-area .ps-5 {
+        padding: 0
+    }
+
+    .phone-mail-area div i {
+        font-size: 18px;
+    }
+
+    .phone-mail-area:after {
+        width: 448px;
+    }
+
+
+
+    header .loginbtn {
+        margin-right: 10px;
+        width: 120px;
+        float: right;
+   
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 0 0 11px;
+    }
+
+    .middle-text h1 {
+        font-size: 31px;
+        margin: 0 !important;
+    }
+
+    .diffimg h1,
+    .diffimg span {
+        font-size: 29px;
+    }
+
+    .middle-text .rightimage {
+        position: absolute;
+        top: 17px;
+        right: -51px;
+    }
+
+    .middle-text .rightimage img {
+        width: 70%;
+    }
+
+    .slide-def {
+        left: 31px;
+    }
+
+    .middle-text p {
+        font-size: 19px;
+    }
+
+    .slide1-text {
+        position: absolute;
+        top: 24px;
+    }
+
+    .middle-text .read-more {
+        margin: 12px auto !important;
+    }
+
+    .nivo-directionNav a {
+        top: 90%;
+    }
+
+    #quote .card {
+        margin-bottom: 15px;
+    }
+
+    #services .ps-6 {
+        padding: 0 !important;
+    }
+
+    #services .box {
+        min-height: 135px;
+    }
+
+    #quotation {
+        padding: 70px 11px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 34px;
+    }
+
+    #quotation a.cbutton {
+        font-size: 15px;
+    }
+
+    .footer-links .ps-5 {
+        padding: 10px 0
+    }
+
+    .main-menu>li {
+        margin: 0 4px;
+    }
+
+    .menu-eff>li>a {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    #about li {
+        padding-left: 28px;
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (min-width:767px) and (max-width:991px) {
+
+
+
+
+    #quote .card {
+        min-height: 414px;
+    }
+
+    .container-fluid {
+        padding: 0 10px;
+    }
+
+    #primary-menu {
+        display: none
+    }
+
+    .mobile-menu-area .container {
+        width: 750px
+    }
+
+    header .loginbtn {
+        margin-right: 50px;
+    }
+
+    .header-top-bar .punchline {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .header-top-bar .punchline span {
+        font-weight: 500;
+    }
+
+    .phone-mail-area {
+        padding-top: 7px;
+        float: right;
+    }
+
+    .phone-mail-area:after {
+        border-top: 57px solid #cbdff8;
+        border-left: 18px solid transparent;
+        right: -7px;
+        width: 107%;
+    }
+
+    .phone-mail-area div {
+        padding-left: 0;
+        font-size: 13px;
+    }
+
+    .phone-mail-area div i {
+        font-size: 19px;
+    }
+
+    .header-top-bar {
+        min-height: 48px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 0 0 11px;
+    }
+
+    .logo {
+        padding-left: 88px;
+        margin: 10px 0 21px 0;
+    }
+
+    .logo img {
+        margin-right: 0;
+        width: 24%;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    #footer .logo img {
+        margin-right: 0;
+        width: 23%;
+    }
+
+    #footer h4 {
+        font-size: 25px;
+    }
+
+    .footer-copyright div {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .loginbtn {
+        margin-right: 55px;
+        width: 56%;
+        float: right;
+        margin-top: 0;
+    }
+
+    .full-width-dropdown {
+        min-height: 0;
+    }
+
+    .middle-text .rightimage {
+        top: 8px;
+        right: -75px;
+    }
+
+    .middle-text .rightimage img {
+        width: 66%;
+    }
+
+    .nivo-directionNav a {
+        top: 90%;
+    }
+
+    .middle-text h1,
+    .middle-text span {
+        padding: 0 3px !important;
+        font-size: 25px;
+    }
+
+    .diffimg h1,
+    .diffimg span {
+           font-size: 22px;
+    }
+
+    .slide1-text {
+        top: 30px;
+    }
+
+    .middle-text p {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 13px;
+    }
+
+    .slide-def {
+        left: 13px;
+    }
+
+    .slidertext img {
+        width: 10%;
+        margin-bottom: 0 !important;
+    }
+
+    .full-width-dropdown {
+        min-height: 0;
+    }
+
+    .mean-container {
+        top: 89px;
+    }
+
+    .mobile-menu-area .container {
+        width: 350px;
+    }
+
+    .container-fluid {
+        padding: 0 7px !important;
+    }
+
+    section {
+        padding: 85px 0px;
+    }
+
+    #about h2 {
+        font-size: 33px;
+    }
+
+    .about-text .mb-4,
+    .about-text .mt-5,
+    .about-text .ps-2 {
+        margin: 0 !important;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    #about li {
+        font-size: 18px;
+        padding-left: 32px;
+    }
+
+    #quote .card-title {
+        font-size: 25px;
+        color: #0c0c0d;
+    }
+
+    #quote .card-body {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    #quote .card img {
+        opacity: .3;
+    }
+
+    #quote .cname {
+        font-size: 41px;
+        left: 34px;
+        bottom: -8px;
+    }
+
+    #quotation .ps-5 {
+        padding: 0;
+    }
+
+    #quotation a.cbutton {
+        margin-top: 30px;
+    }
+
+    #services .ps-6 {
+        padding: 0;
+    }
+
+    #services .box {
+        cursor: pointer;
+        min-height: 90px;
+    }
+
+    #quotation {
+        min-height: 310px;
+        padding: 22px 20px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 31px;
+    }
+
+    .details .d-flex {
+        display: block;
+    }
+
+    #footer .ps-5 {
+        padding: 0;
+    }
+
+    #footer h4 {
+        padding-top: 10px;
+    }
+
+    #footer .float-end {
+        float: none;
+        text-align: center;
+    }
+
+    #footer .logo {
+        padding-left: 91px;
+    }
+
+    #footer .details {
+        margin-top: 43px !important;
+    }
+
+    #footer .logo h2 {
+        font-size: 13px;
+    }
+
+    .loginform h1 {
+        width: 70%;
+    }
+}
+
+@media (max-width:767px) {
+    .loginform h1 {
+        width: 70%;
+        font-size: 16px;
+    }
+    .loginform .btn-close {
+        right: 5px;
+        top: -8px;
+
+    }
+
+    .mean-container .mean-nav ul {
+        margin-top: -135px;
+    }
+
+    .mean-container {
+        top: 113px;
+        right: -5px;
+    }
+
+    .mean-container a.meanclose {
+        top: -99px;
+    }
+
+
+    .container-fluid {
+        padding: 0 15px !important
+    }
+
+    .mobile-menu-area .container {
+        width: 460px;
+    }
+
+    #primary-menu {
+        display: none;
+    }
+
+    .mobile-menu-area {
+        display: block;
+    }
+
+    .header-top-bar .punchline {
+        font-size: 12px;
+    }
+
+    .phone-mail-area {
+        padding-top: 7px;
+        float: right;
+    }
+
+    .phone-mail-area:after {
+        border-top: 36px solid #cbdff8;
+        border-left: 37px solid transparent;
+        top: 2px;
+        right: -10px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 0 0 11px;
+    }
+
+    .logo {
+        padding-left: 88px;
+        margin-top: 13px;
+    }
+
+    .logo img {
+        margin-right: 0;
+        width: 24%;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    #footer .logo img {
+        margin-right: 0;
+        width: 14%;
+    }
+
+    .footer-copyright div {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .loginbtn {
+        padding: 5px;
+        margin-right: 11px;
+    }
+
+    .middle-text .rightimage {
+        top: 14px;
+        right: -114px;
+    }
+
+    .middle-text .rightimage img {
+        width: 47%;
+    }
+
+    .nivo-directionNav a {
+        top: 105%;
+        margin: 0 auto;
+        width: 49px;
+        height: 49px;
+        line-height: 51px;
+    }
+
+    .nivo-prevNav {
+        left: 240px;
+    }
+
+    .nivo-nextNav {
+        left: -39px;
+    }
+
+    .slider-container:hover .nivo-prevNav {
+        left: 240px;
+    }
+
+    .slider-container:hover .nivo-nextNav {
+        left: -39px;
+    }
+
+    .middle-text h1,
+    .middle-text span {
+        padding: 0 3px !important;
+        font-size: 22px;
+    }
+
+    .diffimg h1,
+    .diffimg span {
+        font-size: 19px;
+    }
+
+    .middle-text .read-more {
+        display: none;
+    }
+
+    .slide1-text {
+        top: 16px;
+    }
+
+    .slide-def {
+        left: 22px;
+    }
+
+    .middle-text p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .slidertext img {
+        width: 10%;
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-menu-area .container {
+        width: 330px;
+    }
+
+    .container-fluid {
+        padding: 0 7px !important;
+    }
+
+    section {
+        padding: 85px 0px;
+    }
+
+    #about h2 {
+        font-size: 33px;
+    }
+
+    .about-text .mb-4,
+    .about-text .mt-5,
+    .about-text .ps-2 {
+        margin: 0 !important;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 15px;
+    }
+
+    #about li {
+        font-size: 18px;
+    }
+
+    #quote .card {
+        margin-bottom: 20px;
+    }
+
+    #quote .card-body {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    #quote .card img {
+        opacity: .3;
+    }
+
+    #quote .cname {
+        font-size: 41px;
+        left: 34px;
+        bottom: -8px;
+    }
+
+    #services .ps-6 {
+        padding: 0;
+    }
+
+    #services .box {
+        cursor: pointer;
+        min-height: 160px;
+    }
+
+    #quotation {
+        min-height: 310px;
+        padding: 22px 20px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 31px;
+    }
+
+    .details .d-flex {
+        display: block;
+    }
+
+    #footer .ps-5 {
+        padding: 0;
+    }
+
+    #footer h4 {
+        padding-top: 10px;
+    }
+
+    #footer .float-end {
+        float: none;
+        text-align: center;
+    }
+
+    #footer .logo {
+        padding-left: 91px;
+    }
+
+    #footer .details {
+        margin-top: 43px !important;
+    }
+
+    #footer .logo h2 {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:577px) and (max-width:633px) {
+    .header-top-bar .punchline {
+        font-size: 12px;
+    }
+
+    .phone-mail-area {
+        margin-left: 57px;
+        padding-top: 7px;
+    }
+
+    .phone-mail-area:after {
+        border-top: 36px solid #cbdff8;
+        border-left: 37px solid transparent;
+        top: 2px;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 0 0 11px;
+    }
+
+    .logo {
+        padding-left: 88px;
+        margin-top: 13px;
+    }
+
+    .logo img {
+        width: 25%;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    header .loginbtn {
+        padding: 5px;
+        margin-right: 11px;
+    }
+
+    .middle-text .rightimage {
+        top: 26px;
+        right: -139px;
+    }
+
+    .middle-text .rightimage img {
+        width: 36%;
+    }
+
+    .nivo-directionNav a {
+        top: 105%;
+        margin: 0 auto;
+    }
+
+    .nivo-prevNav {
+        left: 125px;
+    }
+
+    .nivo-nextNav {
+        left: -39px;
+    }
+
+    .slider-container:hover .nivo-prevNav {
+        left: 207px
+    }
+
+    .slider-container:hover .nivo-nextNav {
+        left: 39px;
+    }
+
+    .middle-text h1,
+    .middle-text span {
+        padding: 0 3px !important;
+        font-size: 20px;
+    }
+    .diffimg h1,
+    .diffimg span {
+        padding: 0 3px !important;
+        font-size: 16px;
+    }
+
+    .middle-text .read-more {
+        display: none;
+    }
+
+    .slide1-text {
+        top: 19px;
+    }
+
+    .slide-def {
+        left: 22px
+    }
+
+    .middle-text p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .slidertext img {
+        width: 10%;
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-menu-area .container {
+        width: 341px;
+
+    }
+
+    .container-fluid {
+        padding: 0 7px !important;
+    }
+
+    section {
+        padding: 85px 0px;
+    }
+
+    #about h2 {
+        font-size: 33px;
+    }
+
+    .about-text .mb-4,
+    .mt-5,
+    .ps-2 {
+        margin: 0 !important;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 15px;
+    }
+
+    #about li {
+        font-size: 16px;
+    }
+
+    #quote .card {
+        margin-bottom: 20px;
+    }
+
+    #quote .card-body {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    #quote .card img {
+        opacity: .3;
+    }
+
+    #quote .cname {
+        font-size: 41px;
+        left: 34px;
+        bottom: -8px;
+    }
+
+    #services .ps-6 {
+        padding: 0;
+    }
+
+    #services .box {
+        cursor: pointer;
+        min-height: 160px;
+    }
+
+    #quotation {
+        min-height: 310px;
+        padding: 22px 20px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 31px;
+    }
+
+    .details .d-flex {
+        display: block;
+    }
+
+    #footer .ps-5 {
+        padding: 0;
+    }
+
+    #footer h4 {
+        padding-top: 10px;
+    }
+
+    #footer .float-end {
+        float: none;
+        text-align: center;
+    }
+
+    #footer .logo {
+        padding-left: 91px;
+    }
+
+    #footer .details {
+        margin-top: 43px !important;
+    }
+
+    #footer .logo h2 {
+        font-size: 13px;
+    }
+
+
+
+
+
+}
+
+@media (min-width:500px) and (max-width:576px) {
+    .mean-container .mean-nav ul {
+        margin-top: -135px;
+    }
+
+    .mean-container a.meanclose {
+        top: -98px;
+        right: 14px !important;
+    }
+
+    .slide-def {
+        left: 10px;
+    }
+
+    .phone-mail-area {
+        margin-left: 68px;
+    }
+
+    .slide1-text {
+        top: 30px;
+    }
+
+    .middle-text p {
+        font-size: 13px;
+    }
+
+    .middle-text h1,
+    .middle-text span {
+        font-size: 15px;
+    }
+
+    .phone-mail-area div {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .phone-mail-area .ps-5 {
+        padding-left: 0;
+    }
+
+    .header-top-bar .punchline {
+        font-weight: 300;
+    }
+
+    .header-top-bar .punchline span {
+        font-weight: 500;
+    }
+
+    .header-top-bar .punchline img {
+        padding-left: 0
+    }
+
+    .header-top-bar .punchline {
+        font-size: 12px;
+    }
+
+    .phone-mail-area:after {
+        border-top: 37px solid #cbdff8;
+        border-left: 33px solid transparent;
+        top: 0px;
+        width: 118%;
+        right: -7px;
+    }
+
+    .logo {
+        padding-left: 90px;
+        margin-top: 13px;
+    }
+
+    .logo img {
+        width: 25%;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    header .loginbtn {
+        padding: 5px;
+        margin-right: 11px;
+    }
+
+    .middle-text .rightimage {
+        top: 18px;
+        right: -169px;
+    }
+
+    .middle-text .rightimage img {
+        width: 30%;
+    }
+
+    .nivo-directionNav a {
+        top: 105%;
+
+        margin: 0 auto;
+        line-height: 51px;
+        width: 49px;
+        height: 49px;
+    }
+
+    .nivo-prevNav {
+        left: 162px;
+    }
+
+    .nivo-nextNav {
+        left: -39px;
+    }
+
+    .slider-container:hover .nivo-prevNav {
+        left: 162px;
+    }
+
+    .slider-container:hover .nivo-nextNav {
+        left: -39px
+    }
+
+    .middle-text h1 span {
+        color: var(--bs-white);
+        -webkit-text-stroke: 0;
+        font-size: 13px;
+        padding: 0 3px !important;
+    }
+
+    .middle-text .read-more {
+        display: none;
+    }
+
+    .middle-text p {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .slidertext img {
+        width: 10%;
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-menu-area .container {
+        width: 336px;
+
+    }
+
+    .container-fluid {
+        padding: 0 7px !important;
+    }
+
+    section {
+        padding: 80px 0px
+    }
+
+    #about h2 {
+        font-size: 33px;
+    }
+
+    .about-text .mb-4,
+    .about-text .mt-5,
+    .about-text .ps-2 {
+        margin: 0 !important;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 15px;
+    }
+
+    #about li {
+        font-size: 14px;
+    }
+
+    #quote .card {
+        margin-bottom: 20px;
+    }
+
+    #quote .card-body {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    #quote .card img {
+        opacity: .3;
+    }
+
+    #quote .cname {
+        font-size: 41px;
+        left: 0;
+        bottom: -8px;
+        right: 0;
+        text-align: center;
+    }
+
+    .middle-text h1 {
+        font-size: 13px;
+    }
+
+    #services .ps-6 {
+        padding: 0;
+    }
+
+    #services .box {
+        cursor: pointer;
+        min-height: 160px;
+    }
+
+    #quotation {
+        padding: 22px 7px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 31px;
+    }
+
+    .details .d-flex {
+        display: block;
+    }
+
+    #footer .ps-5 {
+        padding: 0;
+    }
+
+    #footer h4 {
+        padding-top: 10px;
+    }
+
+    #footer .float-end {
+        float: none;
+        text-align: center;
+    }
+
+    #footer .logo {
+        padding-left: 77px;
+    }
+
+    #footer .logo h2 {
+        font-size: 13px;
+    }
+
+
+}
+
+@media (min-width:300px) and (max-width:499px) {
+    .loginform h1 {
+        width: 100%;
+    }
+
+
+    .mean-container .mean-nav ul {
+        margin-top: -129px;
+    }
+
+    .mean-container a.meanclose {
+        top: -99px;
+        right: 14px !important;
+    }
+
+    .phone-mail-area div i {
+        font-size: 16px;
+    }
+
+    .phone-mail-area {
+        padding-right: 5px;
+    }
+
+    .slide-def {
+        left: 10px;
+    }
+
+    .phone-mail-area div {
+        margin-right: 5px !important;
+        ;
+        font-size: 13px;
+    }
+
+    .phone-mail-area .ps-5 {
+        padding-left: 0;
+    }
+
+    .header-top-bar .punchline {
+        font-weight: 300;
+    }
+
+    .header-top-bar .punchline span {
+        font-weight: 500;
+    }
+
+    .header-top-bar .punchline img {
+        padding-left: 0;
+        width: 8%;
+    }
+
+    .header-top-bar .punchline {
+        font-size: 11px;
+    }
+
+    .phone-mail-area:after {
+        border-top: 36px solid #cbdff8;
+        border-left: 35px solid transparent;
+        top: 0;
+        right: -10px;
+        width: 111%;
+    }
+
+    .mean-container a.meanmenu-reveal {
+        padding: 0 0 11px;
+    }
+
+    .logo {
+        padding-left: 82px;
+        margin-top: 13px;
+    }
+
+    .logo img {
+        width: 24%;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .logo h2 {
+        font-size: 12px;
+    }
+
+    header .loginbtn {
+        padding: 5px;
+        margin-right: 11px;
+    }
+
+    .middle-text .rightimage {
+        top: 18px;
+        right: -169px;
+    }
+
+    .middle-text .rightimage img {
+        width: 30%;
+    }
+
+    .nivo-directionNav a {
+        top: 105%;
+        margin: 0 auto;
+    }
+
+    .nivo-prevNav {
+        left: 120px;
+    }
+
+    .nivo-nextNav {
+        left: -39px;
+    }
+
+    .slider-container:hover .nivo-prevNav {
+        left: 125px;
+    }
+
+    .slider-container:hover .nivo-nextNav {
+        left: 30px;
+    }
+
+    .middle-text h1 {
+        margin: 0;
+    }
+
+
+    .middle-text .read-more {
+        display: none;
+    }
+
+    .slide1-text {
+        top: 10px;
+    }
+
+    .middle-text p { display: none;
+    }
+    .middle-text h1 { display: block;}
+    .middle-text h1,.middle-text h1 span {
+        font-size: 16px;
+    color: var(--bs-white);
+    -webkit-text-stroke: 0;
+    }
+
+
+    .slidertext img {
+        width: 10%;
+        margin-bottom: 0 !important;
+    }
+
+    .mobile-menu-area .container {
+        width: 300px;
+    }
+
+    .container-fluid {
+        padding: 0 7px !important;
+    }
+
+    section {
+        padding: 85px 0px;
+    }
+
+    #about h2 {
+        font-size: 33px;
+    }
+
+    .about-text .mb-4,
+    .about-text  .mt-5,
+    .about-text .ps-2 {
+        margin: 0 !important;
+    }
+
+    #about p {
+        font-size: 15px;
+    }
+
+    #about .iconbox h4 {
+        font-size: 15px;
+    }
+
+    #about ul {
+        display: block;
+    }
+
+    #about li {
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    #about li {
+        background: url(../img/list-icon.png) 0 4px no-repeat;
+
+        padding-left: 30px;
+    }
+
+    #quote .card {
+        margin-bottom: 20px;
+    }
+
+    #quote .card-body {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+    }
+
+    #quote .card img {
+        opacity: .3;
+    }
+
+    #quote .cname {
+        font-size: 41px;
+        left: 0;
+        bottom: -8px;
+        right: 0;
+        text-align: center;
+    }
+
+  
+   
+
+    #services .ps-6 {
+        padding: 0;
+    }
+
+    #services .box {
+        cursor: pointer;
+        min-height: 121px;
+    }
+
+    #quotation {
+        padding: 22px 7px;
+    }
+
+    #quotation .quotetext p {
+        font-size: 31px;
+    }
+
+    .details .d-flex {
+        display: block;
+    }
+
+    #footer .ps-5 {
+        padding: 0;
+    }
+
+    #footer h4 {
+        padding-top: 10px;
+    }
+
+    #footer .float-end {
+        float: none;
+        text-align: center;
+    }
+
+    #footer .logo {
+        padding-left: 77px;
+    }
+
+    #footer .logo h2 {
+        font-size: 13px;
+    }
+
+    .loginform .btn-close {
+        right: 0;
+        top: -9px;
+
+
+    }
+}

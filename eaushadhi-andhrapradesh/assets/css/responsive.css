@@ -1,0 +1,251 @@
+@media (min-width:1500px) and (max-width:1800px) {
+    .navbar-nav .nav-item>a span {
+        font-size: 24px;
+
+    }
+
+}
+
+@media (min-width:1400px) and (max-width:1499px) {
+
+    .logo h1 {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .logo h3 {
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-item>a {
+        font-size: 1.1rem;
+    }
+
+    #slider p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #services p.servicescontent {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1399px) {
+    .logo h1 {
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .logo h3 {
+        font-size: 19px;
+    }
+
+    .navbar-nav .nav-item>a {
+        font-size: 0.95rem;
+    }
+
+    .navbar-nav {
+        padding: 0 72px;
+    }
+
+    #slider p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1280px) {
+
+
+    #slider p {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-item>a {
+        font-size: 0.95rem;
+
+    }
+
+    .navbar-nav {
+        padding: 0 72px;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+        line-height: 23px;
+    }
+
+    .logo h3 {
+        font-size: 19px;
+    }
+
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+
+    .navbar-nav .nav-item>a {
+        font-size: 0.89rem;
+        padding: 13px 16px !important;
+    }
+
+    .navbar-nav {
+        background: rgba(238, 53, 57, 0.9);
+        border-radius: 50px;
+        padding: 0 60px;
+    }
+
+    #slider .banner-text h1,
+    #slider h2 {
+        font-size: 56px;
+        line-height: 55px;
+    }
+
+    .logo h2 {
+        font-size: 0.89rem;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+
+
+}
+
+@media (max-width: 991px) {
+
+    #slider {
+        padding: 57px 0px 86px 0px;
+    }
+
+    #header-form {
+        margin: 0px 0 auto auto;
+    }
+
+    .navbar-toggler .close-icon {
+        display: none;
+    }
+
+    .navbar-toggler .close-icon:focus-visible {
+        border: 0;
+        outline: 0;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        display: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .close-icon {
+        display: inline-block;
+        position: fixed;
+        top: 5px;
+        right: 7px;
+        transition: 0.3s ease-in-out;
+        z-index: 9999999;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999999;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-nav .nav-item>a {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 500;
+        font-size: 0.845rem;
+        padding: 10px 14px;
+
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .navbar-nav .nav-item>a span {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    #slider {
+        padding: 9px 0px 61px 0px;
+    }
+
+    #slider .banner-text h1,
+    #slider .banner-text h2 {
+        font-size: 39px;
+        line-height: 44px;
+    }
+
+    #header-form {
+        margin: 0 0 auto auto;
+    }
+
+
+    .navbar-toggler {
+        border: 0;
+        position: absolute;
+        top: 24px;
+    }
+
+    .loginbuttton {
+        padding: 0 6px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .navbar-toggler {
+        border: 0;
+        position: absolute;
+        top: -86px;
+        right: 3px;
+        z-index: 999999999;
+        padding: 0;
+    }
+
+
+
+    #page p {
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: justify;
+        line-height: 25px;
+    }
+
+
+}
