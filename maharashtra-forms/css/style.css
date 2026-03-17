@@ -1,0 +1,89 @@
+   body {
+       overflow-x: hidden;
+       font-family: "Poppins", sans-serif;
+       font-weight: 300;
+       font-style: normal; 
+   }
+
+     
+   .pagecontent {
+       background: #f3f3f9;
+    
+   }
+
+   .card {
+       box-shadow:0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); border: 0;
+   }
+
+   .card-header {
+       border-bottom: 1px solid #e9ebec;
+   }
+
+   .card-title {
+       font-size: 0.95rem;
+       margin: 0 0 7px 0;color:rgba(0,0,0,0.9) ; font-weight: 500 !important;
+   }
+
+   label {
+       margin-bottom: .3rem !important; font-size: 0.82rem;
+       font-weight: 500;color:rgba(0,0,0,0.8)
+   }
+
+.form-select, .form-control {display: block;color:rgba(0,0,0,0.7);
+    width: 100%;
+    padding: .5rem .9rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+   
+    background-color: var(--vz-input-bg-custom);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;}
+
+    .form-check-input { border: 1px solid rgba(0,0,0,0.5);transform: scale(1.1)}
+
+    .choices { margin-bottom: 14px !important;  }
+    .choices__inner { padding: 0 !important; min-height: auto !important; background: #ffffff;}
+    .choices__list--multiple .choices__item {background-color: #405189 !important;
+    border: 1px solid #405189 !important;
+    margin-top: 3px;
+    font-size: 11px;
+    padding: 4px
+    }
+    .choices__input {  background-color: #ffffff;}
+select option {   font-size: 0.85rem;}
+    .form-wrapper .buttons .btn {
+    font-size: 0.86rem;
+}
+
+.form-wrapper .btn {
+    font-size: 0.7rem;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px #e4e3e3;
+}
+.choices {
+  position: relative;
+}
+
+.choices::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%236c757d' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  pointer-events: none;
+}

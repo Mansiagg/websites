@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-md-0">
+        <img src="images/header.png" />
+  <div class="pagecontent py-2 px-5 form-wrapper">
+        <div class="row">
+          
+                <div class="mt-3">
+                    <div class="card">
+                        <div class="card-header align-items-center d-flex bg-white">
+                            <h4 class="card-title mb-0 flex-grow-1 py-1">Stock in Hand Record</h4>
+
+                        </div>
+
+                        <form action="" class="mt-2">
+                            <div class="row row-cols-md-5 px-3 d-flex justify-content-between">
+
+                                <!-- Basic Input -->
+                                <div class="col">
+                                    <label for="basiInput" class="form-label">Circle Name</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <!-- Input with Label -->
+                                <div class="col">
+                                    <label for="labelInput" class="form-label">District Name</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <!-- Input with Placeholder -->
+                                <div class="col">
+                                    <label for="placeholderInput" class="form-label">Store Name</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <!-- Input with Value -->
+                                <div class="col">
+                                    <label for="valueInput" class="form-label">Store Type</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">Only District Warehouse</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="valueInput" class="form-label">Sub Store Name</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+
+
+
+                            </div>
+
+                            <div class="row px-3  row-cols-md-5 d-flex align-items-center">
+
+                                <!-- Basic Input -->
+                                <div class="col">
+                                    <label for="basiInput" class="form-label">Item Category</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <div class="col">
+                                    <label for="basiInput" class="form-label">Group Name</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <div class="col">
+                                    <label for="basiInput" class="form-label">Drug Type</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <!-- Input with Label -->
+                                <div class="col">
+                                    <label for="labelInput" class="form-label">Status</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected="">All</option>
+                                        <option value="1">Declined Payment</option>
+                                        <option value="2">Delivery Error</option>
+                                        <option value="3">Wrong Amount</option>
+                                    </select>
+                                </div>
+
+                                <!-- Input with Placeholder -->
+                                <div class="col">
+                                       <label for="labelInput" class="form-label mb-0">Select Item</label>
+<select 
+  class="form-select m-0 p-0" 
+  name="options" 
+  multiple 
+  data-choices 
+  data-choices-removeItem
+>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+  <option value="4">Option 4</option>
+</select>
+
+<script>
+  document.querySelectorAll('[data-choices]').forEach(function(el) {
+    new Choices(el, {
+      removeItemButton: true
+    });
+  });
+</script>
+                                </div>
+
+                                <!-- Input with Value -->
+
+
+
+
+
+                            </div>
+
+
+                            <div class="row px-4 d-flex align-items-center mt-1">
+                                <div class="col-2"><div class="form-check form-check-secondary mb-3">
+                                                            <input class="form-check-input" type="checkbox" id="formCheck7" checked="">
+                                                            <label class="form-check-label fw-semibold" for="formCheck7">
+                                                               Group Wise Report
+                                                            </label>
+                                                        </div></div>
+
+                                                         <div class="col-2"><div class="form-check form-check-secondary mb-3">
+                                                            <input class="form-check-input" type="checkbox" id="formCheck7">
+                                                            <label class="form-check-label fw-semibold" for="formCheck7">
+                                                             Item Type Qise Report
+                                                            </label>
+                                                        </div></div>
+
+                                                         <div class="col-2"><div class="form-check form-check-secondary mb-3">
+                                                            <input class="form-check-input" type="checkbox" id="formCheck7">
+                                                            <label class="form-check-label fw-semibold" for="formCheck7">
+                                                              Batch No.
+                                                            </label>
+                                                        </div></div>
+
+
+                            </div>
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+      
+
+
+
+
+   <div class="row">
+             <div class="mt-4">
+                    <div class="card">
+                        <div class="card-header align-items-center d-flex bg-white">
+                            <h4 class="card-title mb-0 flex-grow-1 py-1">Drug Name</h4>
+
+                        </div>
+
+                        <form action="" class="mt-2">
+
+<div class="row d-flex align-items-top px-3 pb-3">
+<div class="col-md-4">
+   <div class="">
+                                    <label for="basiInput" class="form-label">Drug Classsification</label>
+
+
+                                    <select name="strDrugClassCode" id="strDrugClassCode" class="form-select form-select-sm" onchange="getDrugName();">
+												<option title="All" selected="" value="0">All</option>
+<option title="Ayurvedic" value="12">Ayurvedic</option>
+<option title="Consumables" value="11">Consumables</option>
+<option title="Drug" value="10">Drug</option>
+<option title="Homeopathy" value="14">Homeopathy</option>
+<option title="NCD" value="16">NCD</option>
+<option title="Other" value="15">Other</option>
+<option title="Surgical" value="17">Surgical</option>
+<option title="Unani" value="13">Unani</option>
+
+											</select>
+                                   
+                                </div>
+
+                                   <div class="mt-2">
+                                    <label for="basiInput" class="form-label">Item Name</label>
+                                    <input type="password" class="form-control" id="basiInput">
+                                </div>
+
+
+</div>
+
+<div class="col-md-8">
+
+<div class="formcontent mx-4 py-1">
+									<div class="row g-0 d-flex align-items-center justify-content-between">
+
+										<table class="table table-borderless mx-auto mb-0" style="width: 100%; table-layout: fixed;">
+											<tbody><tr>
+												<td class="text-start py-0" style="vertical-align: middle; padding: 0 !important; width: 45%;">
+													<div id="LeftItemIds">
+														<select id="strLeftItemIds" name="strLeftItemIds" size="7" style="width: 100%; font-size: 15px; height: 170px;" class="form-select" multiple="" onchange="showSelection(this);">
+															<option title="0.5% Hcl acid [R743]" value="10104158">0.5% Hcl acid [R743]</option>
+<option title="2-Deoxy-D-Glucose Powder [7515]" value="10107539">2-Deoxy-D-Glucose Powder [7515]</option>
+<option title="3 % Acetic acid [L89]" value="10103257">3 % Acetic acid [L89]</option>
+<option title="3 WAY FOLLYES CATHETER 22,24 [R424]" value="10103840">3 WAY FOLLYES CATHETER 22,24 [R424]</option>
+<option title="4 ACT (1 -- 4 years) Strip [126.1]" value="10100234">4 ACT (1 -- 4 years) Strip [126.1]</option>
+<option title="5 ACT (5 -- 8 years)  Strip [127.1]" value="10100235">5 ACT (5 -- 8 years)  Strip [127.1]</option>
+<option title="Abacavir 600mg + Lamivudine 300mg (FDC) [99.2a155]" value="10102027">Abacavir 600mg + Lamivudine 300mg (FDC) [99.2a155]</option>
+<option title="Abdominal Drain Kit no. 16  Each [547.1]" value="10100781">Abdominal Drain Kit no. 16  Each [547.1]</option>
+<option title="Abdominal Drain Kit no. 20  Each [548.1]" value="10100782">Abdominal Drain Kit no. 20  Each [548.1]</option>
+<option title="Abdominal Drain Kit no. 24  Each [549.1]" value="10100783">Abdominal Drain Kit no. 24  Each [549.1]</option>
+<option title="Abdominal Drain Kit no. 28  Each [550.1]" value="10100784">Abdominal Drain Kit no. 28  Each [550.1]</option>
+<option title="Abdominal Drain Kit no. 32  Each [551.1]" value="10100785">Abdominal Drain Kit no. 32  Each [551.1]</option>
+<option title="ABGEL(GEL FOAM) [R211]" value="10103626">ABGEL(GEL FOAM) [R211]</option>
+<option title="Abhiyarisht [178.21]" value="10101139">Abhiyarisht [178.21]</option>
+<option title="Abies Nigra 30 (30 ml) [HM67]" value="10104400">Abies Nigra 30 (30 ml) [HM67]</option>
+<option title="Absorable Antibacterial Surgical suture 1 Half Circle CT Round &amp;  40 Polyglactin&amp;  41  [638.5]" value="10100961">Absorable Antibacterial Surgical suture 1 Half Circle CT Round &amp;  40 Polyglactin&amp;  41  [638.5]</option>
+<option title="Absorable Antibacterial Surgical suture 1 Half Circle CT Round &amp;  40 Polyglycolic&amp;  41  [638.2]" value="10100958">Absorable Antibacterial Surgical suture 1 Half Circle CT Round &amp;  40 Polyglycolic&amp;  41  [638.2]</option>
+<option title="Absorable Antibacterial Surgical suture 2-0 &amp;  40 Polyglactin&amp;  41  [638.7]" value="10100963">Absorable Antibacterial Surgical suture 2-0 &amp;  40 Polyglactin&amp;  41  [638.7]</option>
+<option title="Absorable Antibacterial Surgical suture 2-0 &amp;  40 Polyglycolic&amp;  41  [638]" value="10100960">Absorable Antibacterial Surgical suture 2-0 &amp;  40 Polyglycolic&amp;  41  [638]</option>
+<option title="Absorable Antibacterial Surgical suture size 1-0 &amp;  40 Polyglactin&amp;  41  [638.6]" value="10100962">Absorable Antibacterial Surgical suture size 1-0 &amp;  40 Polyglactin&amp;  41  [638.6]</option>
+<option title="Absorable Antibacterial Surgical suture size 1-0 &amp;  40 Polyglycolic&amp;  41  [638.3]" value="10100959">Absorable Antibacterial Surgical suture size 1-0 &amp;  40 Polyglycolic&amp;  41  [638.3]</option>
+<option title="Absorable Surgical Suture Synthetic Polyglactin Acid Size 1/0, Length 90 cm Box of 12 Foils [637.3]" value="10100955">Absorable Surgical Suture Synthetic Polyglactin Acid Size 1/0, Length 90 cm Box of 12 Foils [637.3]</option>
+<option title="Absorable Surgical Suture Synthetic Polyglactin Acid Size 1, Length 90cm Box of 12 Foils [637.2]" value="10100953">Absorable Surgical Suture Synthetic Polyglactin Acid Size 1, Length 90cm Box of 12 Foils [637.2]</option>
+<option title="Absorable Surgical Suture Synthetic Polyglactin Acid Size 2/0, Length 90 cm Box of 12 Foils [637.4]" value="10100954">Absorable Surgical Suture Synthetic Polyglactin Acid Size 2/0, Length 90 cm Box of 12 Foils [637.4]</option>
+<option title="Absorable Surgical Suture Synthetic Polyglactin Acid Size 2 Box of 12 Foils [637.5]" value="10100956">Absorable Surgical Suture Synthetic Polyglactin Acid Size 2 Box of 12 Foils [637.5]</option>
+<option title="Absorable Surgical Suture Synthetic Polyglactin Acid Size 3/0 Box of 12 Foils [637.6]" value="10100957">Absorable Surgical Suture Synthetic Polyglactin Acid Size 3/0 Box of 12 Foils [637.6]</option>
+<option title="Absorable Surgical suture Synthetic Polyglycolic Acid Size 1/0 , Length90 cm  Box of 12 Foils [635.1]" value="10100869">Absorable Surgical suture Synthetic Polyglycolic Acid Size 1/0 , Length90 cm  Box of 12 Foils [635.1]</option>
+<option title="Absorable Surgical suture  Synthetic Polyglycolic Acid Size 1 , Length90 cm  Box of 12 Foils [223]" value="10100930">Absorable Surgical suture  Synthetic Polyglycolic Acid Size 1 , Length90 cm  Box of 12 Foils [223]</option>
+<option title="Absorable Surgical suture Synthetic Polyglycolic Acid Size 2/0 , Length 90 cm  Box of 12 Foils [636.1]" value="10100870">Absorable Surgical suture Synthetic Polyglycolic Acid Size 2/0 , Length 90 cm  Box of 12 Foils [636.1]</option>
+<option title="Absorable Surgical suture Synthetic Polyglycolic Acid Size 2 Box of 12 Foils [637.1]" value="10100871">Absorable Surgical suture Synthetic Polyglycolic Acid Size 2 Box of 12 Foils [637.1]</option>
+<option title="Absorable Surgical suture Synthetic Polyglycolic Acid Size 3/0  Box of12 Foils [639.1]" value="10100873">Absorable Surgical suture Synthetic Polyglycolic Acid Size 3/0  Box of12 Foils [639.1]</option>
+<option title="Absorbable gelatin sponge U.S.P  70 mm x 50 mm x 10mm [440.1]" value="10100674">Absorbable gelatin sponge U.S.P  70 mm x 50 mm x 10mm [440.1]</option>
+<option title="Absorbable Gel Sponge [O83]" value="10103410">Absorbable Gel Sponge [O83]</option>
+<option title="Absorbable Surgical Suture U.S.P.-1 [R880]" value="10104759">Absorbable Surgical Suture U.S.P.-1 [R880]</option>
+<option title="Absorbable Surgical Suture U.S.P. -2 [R794]" value="10104493">Absorbable Surgical Suture U.S.P. -2 [R794]</option>
+<option title="Absorbable Surgical Suture U.S.P.-8 [R802]" value="10104501">Absorbable Surgical Suture U.S.P.-8 [R802]</option>
+<option title="Absorbant Surgical Gauze  50 cm x 18 mtr [454.1]" value="10100688">Absorbant Surgical Gauze  50 cm x 18 mtr [454.1]</option>
+<option title="Absorbent Cotton Wool  100 gm  Packet [441.1]" value="10100675">Absorbent Cotton Wool  100 gm  Packet [441.1]</option>
+<option title="Absorbent Cotton Wool  300 gm  Packet [442.1]" value="10100676">Absorbent Cotton Wool  300 gm  Packet [442.1]</option>
+<option title="Absorbent Cotton Wool  500 gm  Packet [443.1]" value="10100677">Absorbent Cotton Wool  500 gm  Packet [443.1]</option>
+<option title="Aceclofenac Tab 100 mg [42.1]" value="10100072">Aceclofenac Tab 100 mg [42.1]</option>
+<option title="Acetazolamide Tab [349.1]" value="10100563">Acetazolamide Tab [349.1]</option>
+<option title="Acetyl Salicylic Acid Tab 150 mg [973]" value="10101833">Acetyl Salicylic Acid Tab 150 mg [973]</option>
+<option title="Acetyl Salicylic Acid Tab. 150mg I.P                                        [12.7]" value="10104208">Acetyl Salicylic Acid Tab. 150mg I.P                                        [12.7]</option>
+<option title="Acetyl Salicylic Acid Tab 75 mg [202.1]" value="10100355">Acetyl Salicylic Acid Tab 75 mg [202.1]</option>
+<option title="Aconitum Napellus 200 (30ml) [HM3]" value="10104307">Aconitum Napellus 200 (30ml) [HM3]</option>
+<option title="Aconitum Napellus 30 (30ml) [HM47]" value="10104371">Aconitum Napellus 30 (30ml) [HM47]</option>
+<option title="Aconitym Napelluss 1M (30ml) [HM4]" value="10104308">Aconitym Napelluss 1M (30ml) [HM4]</option>
+<option title="Acrylic resin teeth (anatomic) [O22]" value="10103350">Acrylic resin teeth (anatomic) [O22]</option>
+<option title="Adhesive Plaster cotton based&amp;  40 hypo allergic&amp;  41    10 cm x 5 Mtr  Roll [445.1]" value="10100679">Adhesive Plaster cotton based&amp;  40 hypo allergic&amp;  41    10 cm x 5 Mtr  Roll [445.1]</option>
+<option title="Adhesive Plaster cotton based&amp;  40 hypo allergic&amp;  41    7.5 cm x 5 Mtr  Roll [444.1]" value="10100678">Adhesive Plaster cotton based&amp;  40 hypo allergic&amp;  41    7.5 cm x 5 Mtr  Roll [444.1]</option>
+<option title="Adrenaline Inj 1 mg 1 ml Amp [34.1]" value="10100059">Adrenaline Inj 1 mg 1 ml Amp [34.1]</option>
+<option title="Aesculus Hip 200 [55.7.1]" value="10101212">Aesculus Hip 200 [55.7.1]</option>
+<option title="Aesculus Hippocastanum (30ml) [HM41]" value="10104365">Aesculus Hippocastanum (30ml) [HM41]</option>
+<option title="Agaricur Mus 200 [57.6]" value="10101231">Agaricur Mus 200 [57.6]</option>
+<option title="Airway No. 00, 1, 2, 3, 4, 5.,plastic [A18]" value="10102792">Airway No. 00, 1, 2, 3, 4, 5.,plastic [A18]</option>
+<option title="Airway Plastic [323.21]" value="10100936">Airway Plastic [323.21]</option>
+<option title="Albendazole Susp 200 mg 10 ml [118.2]" value="10100220">Albendazole Susp 200 mg 10 ml [118.2]</option>
+<option title="Albendazole Tab 400 mg [118.1]" value="10100219">Albendazole Tab 400 mg [118.1]</option>
+<option title="Albumin Inj 20 % 100 ml [212.1]" value="10100368">Albumin Inj 20 % 100 ml [212.1]</option>
+<option title="Alcohol based surgical hand antiseptic solution 500ml [962]" value="10101823">Alcohol based surgical hand antiseptic solution 500ml [962]</option>
+<option title="Alcohol/spirit swab [323]" value="10100938">Alcohol/spirit swab [323]</option>
+<option title="Alliess Tissue Forceps 5 inch [GS35]" value="10102867">Alliess Tissue Forceps 5 inch [GS35]</option>
+<option title="Alliess Tissue Forceps  6inch [GS36]" value="10102868">Alliess Tissue Forceps  6inch [GS36]</option>
+<option title="Alliess Tissue Forceps  8inch [GS37]" value="10102869">Alliess Tissue Forceps  8inch [GS37]</option>
+<option title="Allium Cepa 200 [57.8]" value="10101233">Allium Cepa 200 [57.8]</option>
+<option title="Allumina 200 [58]" value="10101235">Allumina 200 [58]</option>
+<option title="Aloe Soc 200 [57.9]" value="10101234">Aloe Soc 200 [57.9]</option>
+<option title="Ambu Bag with Valve - Adult (Silicon) [A1]" value="10102775">Ambu Bag with Valve - Adult (Silicon) [A1]</option>
+<option title="Ambu Bag with Valve - Neonatal (Silicon) [A3]" value="10102777">Ambu Bag with Valve - Neonatal (Silicon) [A3]</option>
+<option title="Ambu Bag with Valve - Paediatric (Silicon) [A2]" value="10102776">Ambu Bag with Valve - Paediatric (Silicon) [A2]</option>
+<option title="Amidarone Tab 100 mg [153.1]" value="10100278">Amidarone Tab 100 mg [153.1]</option>
+<option title="Amikacin Inj 100 mg 2 ml [67.1]" value="10100129">Amikacin Inj 100 mg 2 ml [67.1]</option>
+<option title="Amikacin Inj 500 mg 2 ml [67.3]" value="10100131">Amikacin Inj 500 mg 2 ml [67.3]</option>
+<option title="Amino Acid IV 100 ml [310.1]" value="10100515">Amino Acid IV 100 ml [310.1]</option>
+<option title="Aminophylline Inj 25 mg/ml 10 ml [187.1]" value="10100332">Aminophylline Inj 25 mg/ml 10 ml [187.1]</option>
+<option title="Amiodarone Inj 150 mg/3ml 3 ml Amp [153.2]" value="10100279">Amiodarone Inj 150 mg/3ml 3 ml Amp [153.2]</option>
+<option title="Amisalpride 100mg Tab [D70]" value="10104656">Amisalpride 100mg Tab [D70]</option>
+<option title="Amitryptillin Hydrochloride Tab 25 mg [377.1]" value="10100596">Amitryptillin Hydrochloride Tab 25 mg [377.1]</option>
+<option title="Amlodepine Tab 10 mg [163.3]" value="10100968">Amlodepine Tab 10 mg [163.3]</option>
+<option title="Amlodepine Tab 2.5 mg [163.1]" value="10100295">Amlodepine Tab 2.5 mg [163.1]</option>
+<option title="Amlodepine Tab 5 mg [163.2]" value="10100296">Amlodepine Tab 5 mg [163.2]</option>
+<option title="Ammonium Carbonium 200 (30ml) [HM52]" value="10104385">Ammonium Carbonium 200 (30ml) [HM52]</option>
+<option title="Amoxicillin powder for suspension 125 mg/5ml [IPHS38]" value="10104917">Amoxicillin powder for suspension 125 mg/5ml [IPHS38]</option>
+<option title="Amoxycillin Cap 250 mg [55.2]" value="10100098">Amoxycillin Cap 250 mg [55.2]</option>
+<option title="Amoxycillin Cap 500 mg [55.3]" value="10100099">Amoxycillin Cap 500 mg [55.3]</option>
+<option title="Amoxycillin + Clavulanic acid dry Syrup 200 mg + 28.5 mg/5ml [55.5]" value="10100101">Amoxycillin + Clavulanic acid dry Syrup 200 mg + 28.5 mg/5ml [55.5]</option>
+<option title="Amoxycillin + Clavulanic Acid Inj 1000 mg + 200 mg Vial [55.10]" value="10100106">Amoxycillin + Clavulanic Acid Inj 1000 mg + 200 mg Vial [55.10]</option>
+<option title="Amoxycillin + Clavulanic Acid Inj 250 mg + 50 mg Vial [55.11]" value="10100107">Amoxycillin + Clavulanic Acid Inj 250 mg + 50 mg Vial [55.11]</option>
+<option title="Amoxycillin + Clavulanic acid Tab 250 mg + 125 mg [55.7]" value="10100103">Amoxycillin + Clavulanic acid Tab 250 mg + 125 mg [55.7]</option>
+<option title="Amoxycillin + Clavulanic acid Tab 500 mg +125 mg [55.6]" value="10100102">Amoxycillin + Clavulanic acid Tab 500 mg +125 mg [55.6]</option>
+<option title="Amoxycillin Syrup 125 mg 60 ml Bottle [55.4]" value="10100100">Amoxycillin Syrup 125 mg 60 ml Bottle [55.4]</option>
+<option title="Ampicillin Cap 500 mg [54.2]" value="10100093">Ampicillin Cap 500 mg [54.2]</option>
+<option title="Ampicillin Dry Suspension 125 mg 60 ml Bottle [54.3]" value="10100094">Ampicillin Dry Suspension 125 mg 60 ml Bottle [54.3]</option>
+<option title="Ampicillin Inj 1 gm Vial [54.5]" value="10100096">Ampicillin Inj 1 gm Vial [54.5]</option>
+<option title="Ampicillin Inj 500 mg Vial [54.4]" value="10100095">Ampicillin Inj 500 mg Vial [54.4]</option>
+<option title="AMPLANZE SHICTH WITH DILATOR SET 12TO34 FR [R432]" value="10103848">AMPLANZE SHICTH WITH DILATOR SET 12TO34 FR [R432]</option>
+<option title="Amplaz Sheeth with Dialator Set [R411]" value="10103827">Amplaz Sheeth with Dialator Set [R411]</option>
+<option title="Amritarishta 200ml [105.1.2]" value="10101598">Amritarishta 200ml [105.1.2]</option>
+<option title="Anacardium Orientale 200 (30ml) bottles [58.3000000]" value="10101238">Anacardium Orientale 200 (30ml) bottles [58.3000000]</option>
+<option title="Anti-D Immunoglobulin Inj Mono/Polyclonal 300 mcg PFS [243.2]" value="10100412">Anti-D Immunoglobulin Inj Mono/Polyclonal 300 mcg PFS [243.2]</option>
+<option title="Anti Hemophilic Factor VIII with Willebrands Factor 250 IU [99.2a42]" value="10101955">Anti Hemophilic Factor VIII with Willebrands Factor 250 IU [99.2a42]</option>
+<option title="Antimonium Tartaricum 1M [56]" value="10101215">Antimonium Tartaricum 1M [56]</option>
+<option title="Antimonium Tartaricum 200 [55.9.1]" value="10101214">Antimonium Tartaricum 200 [55.9.1]</option>
+<option title="Antimonium Tartaricum 30 [55.8.1]" value="10101213">Antimonium Tartaricum 30 [55.8.1]</option>
+<option title="Anti Rabies Vaccine ID (Human Tissue culture)  0.5 ml [220.1]" value="10100377">Anti Rabies Vaccine ID (Human Tissue culture)  0.5 ml [220.1]</option>
+<option title="Anti Rabies Vaccine IM (Human Tissue culture)  0.5 ml [220.2]" value="10100378">Anti Rabies Vaccine IM (Human Tissue culture)  0.5 ml [220.2]</option>
+<option title="Anti Rabies Vaccine IM (Human Tissue culture) 1ml [220.4]" value="10104283">Anti Rabies Vaccine IM (Human Tissue culture) 1ml [220.4]</option>
+<option title="Antiscorpion Venum Serum Inj  10 ml [218.1]" value="10100374">Antiscorpion Venum Serum Inj  10 ml [218.1]</option>
+<option title="Antisera ABD [R676]" value="10104092">Antisera ABD [R676]</option>
+<option title="Antisnake Venom Serum Inj  10 ml [215.1]" value="10100371">Antisnake Venom Serum Inj  10 ml [215.1]</option>
+<option title="Antitetanus Human immunoglobin Inj 250 IU 1 ml Vial [219.1]" value="10100375">Antitetanus Human immunoglobin Inj 250 IU 1 ml Vial [219.1]</option>
+<option title="AORTIC CANNULA ADULT 20FR ( ANGLED TIP) [R250]" value="10103665">AORTIC CANNULA ADULT 20FR ( ANGLED TIP) [R250]</option>
+<option title="AORTIC CANNULA ADULT 22FR ( ANGLED TIP) [R251]" value="10103666">AORTIC CANNULA ADULT 22FR ( ANGLED TIP) [R251]</option>
+<option title="AORTIC CANNULA ADULT 24FR ( ANGLED TIP) [R252]" value="10103667">AORTIC CANNULA ADULT 24FR ( ANGLED TIP) [R252]</option>
+<option title="Apis Mellifica 200 [56.2]" value="10101217">Apis Mellifica 200 [56.2]</option>
+<option title="Apis Mellifica 30 [56.1.2]" value="10101216">Apis Mellifica 30 [56.1.2]</option>
+<option title="Argentum Nitricum 200 (30ml) [HM53]" value="10104386">Argentum Nitricum 200 (30ml) [HM53]</option>
+<option title="Aripiprazole 10mg tab [D71]" value="10104661">Aripiprazole 10mg tab [D71]</option>
+<option title="Arjunarishta 200ml [179.21]" value="10101140">Arjunarishta 200ml [179.21]</option>
+<option title="Arnica Montana  1M (30ml) [57]" value="10101225">Arnica Montana  1M (30ml) [57]</option>
+<option title="Arnica Montana 200(30ml) [56.9]" value="10101224">Arnica Montana 200(30ml) [56.9]</option>
+<option title="Arogya Vardhani Gutika [231]" value="10101192">Arogya Vardhani Gutika [231]</option>
+<option title="Arsenic album 200 (30ml) bottle [57.3]" value="10101228">Arsenic album 200 (30ml) bottle [57.3]</option>
+<option title="Arsenicum album 30 (30ml) syrup [57.2.1]" value="10101227">Arsenicum album 30 (30ml) syrup [57.2.1]</option>
+<option title="Arsenicum Iodatum 200 (30ml) [HM14]" value="10104323">Arsenicum Iodatum 200 (30ml) [HM14]</option>
+<option title="Arsenicum Iodatum 30 (30ml) [HM13]" value="10104322">Arsenicum Iodatum 30 (30ml) [HM13]</option>
+<option title="Arsha Kuthara Rasa 5gm [AV38]" value="10104313">Arsha Kuthara Rasa 5gm [AV38]</option>
+<option title="Artery Forceps Curved  (Kochers Pattern) 6inch [GS78]" value="10102910">Artery Forceps Curved  (Kochers Pattern) 6inch [GS78]</option>
+<option title="Artery Forceps Curved on Flat, (Cairns Pattern ) 5inch [GS39]" value="10102871">Artery Forceps Curved on Flat, (Cairns Pattern ) 5inch [GS39]</option>
+<option title="Artery Forceps Curved on Flat, (Cairns Pattern ) 6inch [GS40]" value="10102872">Artery Forceps Curved on Flat, (Cairns Pattern ) 6inch [GS40]</option>
+<option title="Artery Forceps  Straight  6inch [GS48]" value="10102880">Artery Forceps  Straight  6inch [GS48]</option>
+<option title="Artery Forceps Straight  (Kochers Pattern) 6inch [GS80]" value="10102912">Artery Forceps Straight  (Kochers Pattern) 6inch [GS80]</option>
+<option title="Artesunate Tab 50 mg [124.1]" value="10100229">Artesunate Tab 50 mg [124.1]</option>
+<option title="Ascorbic acid (Vitamin C) 500 mg [312.2]" value="10100519">Ascorbic acid (Vitamin C) 500 mg [312.2]</option>
+<option title="Ashokarisht [176]" value="10101137">Ashokarisht [176]</option>
+<option title="Ashwagandha Churna 1kg [AV2]" value="10104340">Ashwagandha Churna 1kg [AV2]</option>
+<option title="Ashwagandharisht [180.21]" value="10101141">Ashwagandharisht [180.21]</option>
+<option title="Assorted teeth set for RPD various shades (ANTERIOR AND POSTERIOR) [O24]" value="10103352">Assorted teeth set for RPD various shades (ANTERIOR AND POSTERIOR) [O24]</option>
+<option title="Asthalin Solution [R93]" value="10103508">Asthalin Solution [R93]</option>
+<option title="Atenelol Tab 25 mg 14 Tab [167.1]" value="10100302">Atenelol Tab 25 mg 14 Tab [167.1]</option>
+<option title="Atenelol Tab 50 mg 14 Tab [167.2]" value="10100303">Atenelol Tab 50 mg 14 Tab [167.2]</option>
+<option title="Atorvastatin 40mg [R6]" value="10103420">Atorvastatin 40mg [R6]</option>
+<option title="Atorvastatin Tab 10 mg [176.1]" value="10100315">Atorvastatin Tab 10 mg [176.1]</option>
+<option title="Atracurium Besylate Inj 10 mg 2.5 ml [14.1]" value="10100023">Atracurium Besylate Inj 10 mg 2.5 ml [14.1]</option>
+<option title="Atropine Inj 0.6 mg/ml 1 ml [154.1]" value="10100280">Atropine Inj 0.6 mg/ml 1 ml [154.1]</option>
+<option title="Atropine Sulphate  Eye Ointment  5 gm [352.1]" value="10100566">Atropine Sulphate  Eye Ointment  5 gm [352.1]</option>
+<option title="Aurum Metallium 200 (30ml) [HM45]" value="10104369">Aurum Metallium 200 (30ml) [HM45]</option>
+<option title="Autoclave indicator Tape [452.1]" value="10100686">Autoclave indicator Tape [452.1]</option>
+<option title="Auto Disable Syringes 0.1 ml for BCG vaccine [194]" value="10101524">Auto Disable Syringes 0.1 ml for BCG vaccine [194]</option>
+<option title="Auto Disable Syringes 0.5 ml for  other  RI vaccine [195]" value="10101525">Auto Disable Syringes 0.5 ml for  other  RI vaccine [195]</option>
+<option title="Autodisable Syringe with needle 0.1 ml Each [560.1]" value="10100794">Autodisable Syringe with needle 0.1 ml Each [560.1]</option>
+<option title="Autodisable Syringe with needle  0.5 ml  Each [561.1]" value="10100795">Autodisable Syringe with needle  0.5 ml  Each [561.1]</option>
+<option title="A.V.Fistula Needle Set 15G,1inch BE 30cms with individually siliconised needles     Each [680.1]" value="10100914">A.V.Fistula Needle Set 15G,1inch BE 30cms with individually siliconised needles     Each [680.1]</option>
+<option title="Azithromycin Syrup 200 mg/5ml 15ml [73.4]" value="10100145">Azithromycin Syrup 200 mg/5ml 15ml [73.4]</option>
+<option title="Azithromycin Tab 250 mg [73.2]" value="10100143">Azithromycin Tab 250 mg [73.2]</option>
+<option title="Azithromycin Tab 500 mg [73.3]" value="10100144">Azithromycin Tab 500 mg [73.3]</option>
+<option title="Bacilliium 200 (30ml) [HM35]" value="10104356">Bacilliium 200 (30ml) [HM35]</option>
+<option title="Bacilliium 30ml [HM48]" value="10104372">Bacilliium 30ml [HM48]</option>
+<option title="Bandage Cloth as per Schedule F-II than   100 cm x 20 mtr [453.1]" value="10100687">Bandage Cloth as per Schedule F-II than   100 cm x 20 mtr [453.1]</option>
+<option title="Baptisia Tinctoria 200(30ml) [59.3.1]" value="10101248">Baptisia Tinctoria 200(30ml) [59.3.1]</option>
+<option title="Barbor Linen Thread no. 100  Reel [564.1]" value="10100798">Barbor Linen Thread no. 100  Reel [564.1]</option>
+<option title="Barbor Linen Thread no. 40  Reel [562.1]" value="10100796">Barbor Linen Thread no. 40  Reel [562.1]</option>
+<option title="Barbor Linen Thread No. 60 Reel [562.2]" value="10100980">Barbor Linen Thread No. 60 Reel [562.2]</option>
+<option title="Barbor Linen Thread no. 80  Reel [563.1]" value="10100797">Barbor Linen Thread no. 80  Reel [563.1]</option>
+<option title="Barbour linen thread no.20 [562.4]" value="10104572">Barbour linen thread no.20 [562.4]</option>
+<option title="Barbour linen thread no.30 [562.5]" value="10104573">Barbour linen thread no.30 [562.5]</option>
+<option title="Baryta Carbonicum 200 (30ml) [HM26]" value="10104344">Baryta Carbonicum 200 (30ml) [HM26]</option>
+<option title="base plate [O33]" value="10103360">base plate [O33]</option>
+<option title="Belladonna 1M (30ml) [HM29]" value="10104347">Belladonna 1M (30ml) [HM29]</option>
+<option title="Belladonna 200 (30ml) [HM28]" value="10104346">Belladonna 200 (30ml) [HM28]</option>
+<option title="Belladonna 30 (30ml) [HM27]" value="10104345">Belladonna 30 (30ml) [HM27]</option>
+<option title="Bellis Perennis 30 (30ml) [HM30]" value="10104348">Bellis Perennis 30 (30ml) [HM30]</option>
+<option title="Benedicts Reagent (Qualitative)  [L4]" value="10103172">Benedicts Reagent (Qualitative)  [L4]</option>
+<option title="Benzalkonium Chloride I.P.  500 ml [425.1]" value="10100654">Benzalkonium Chloride I.P.  500 ml [425.1]</option>
+<option title="Benzoic acid 200 (30ml) [HM31]" value="10104349">Benzoic acid 200 (30ml) [HM31]</option>
+<option title="Beptisia Tinctoria Q (30ml) [HM15]" value="10104324">Beptisia Tinctoria Q (30ml) [HM15]</option>
+<option title="Berberis Vulgaris 200 (30ml) [HM34]" value="10104354">Berberis Vulgaris 200 (30ml) [HM34]</option>
+<option title="Berberis Vulgaris 30 (30ml) [HM32]" value="10104350">Berberis Vulgaris 30 (30ml) [HM32]</option>
+<option title="Berberis vulgaris Q 30ml [HM7]" value="10104314">Berberis vulgaris Q 30ml [HM7]</option>
+<option title="Betahistine Tab 16 mg [396.1]" value="10100622">Betahistine Tab 16 mg [396.1]</option>
+<option title="Betamethasone Inj 4 mg/ml 1 ml [242.1]" value="10100410">Betamethasone Inj 4 mg/ml 1 ml [242.1]</option>
+<option title="Bicarbonate Powder Packet [678.1]" value="10100912">Bicarbonate Powder Packet [678.1]</option>
+<option title="Biomedical Waste  Bag [890]" value="10101751">Biomedical Waste  Bag [890]</option>
+<option title="Biomedical Waste bag [R530]" value="10103946">Biomedical Waste bag [R530]</option>
+<option title="Bisacodyl Tab 5 mg [225.1]" value="10100385">Bisacodyl Tab 5 mg [225.1]</option>
+<option title="Bivalve connection Set &amp;  40 3 way&amp;  41     Each [455.1]" value="10100689">Bivalve connection Set &amp;  40 3 way&amp;  41     Each [455.1]</option>
+<option title="Black braided silk Size 1-0 Box of 12 Foils [641.3]" value="10100987">Black braided silk Size 1-0 Box of 12 Foils [641.3]</option>
+<option title="Black braided silk Size 1 Box of 12 Foils [642.2]" value="10100986">Black braided silk Size 1 Box of 12 Foils [642.2]</option>
+<option title="Black braided silk   Size 2-0  Box of 12 Foils [640.1]" value="10100874">Black braided silk   Size 2-0  Box of 12 Foils [640.1]</option>
+<option title="Black braided silk   Size 3-0  Box of 12 Foils [641.1]" value="10100875">Black braided silk   Size 3-0  Box of 12 Foils [641.1]</option>
+<option title="Black Braide Silk With Needle 1/2 circle round body , 20mm size 3/0 Length 76cm OR Equivalent (NW5037) [R478]" value="10103894">Black Braide Silk With Needle 1/2 circle round body , 20mm size 3/0 Length 76cm OR Equivalent (NW5037) [R478]</option>
+<option title="Black Braide Silk with Needle 3/8 Circle cutting 16mm Size length 76cm or 60mm Equivalent (NW5062)  [R476]" value="10103892">Black Braide Silk with Needle 3/8 Circle cutting 16mm Size length 76cm or 60mm Equivalent (NW5062)  [R476]</option>
+<option title="Black Goggles for Cata. Patients [691.1]" value="10100925">Black Goggles for Cata. Patients [691.1]</option>
+<option title="Black  Monofilament Polymaide 3/8 circle reserve cutting needle length 35cm / 26mm - 3 - 0 ( LNW 3325S ) [R511]" value="10103927">Black  Monofilament Polymaide 3/8 circle reserve cutting needle length 35cm / 26mm - 3 - 0 ( LNW 3325S ) [R511]</option>
+<option title="Black Phynel [956]" value="10101817">Black Phynel [956]</option>
+<option title="Blatta Orientalis 30 (30ml) [59.1.1]" value="10101246">Blatta Orientalis 30 (30ml) [59.1.1]</option>
+<option title="Blatta Orientalis Q (30ml) [HM33]" value="10104352">Blatta Orientalis Q (30ml) [HM33]</option>
+<option title="Blood Collection Bags &amp;  40 CPD&amp;  41      Each [540.1]" value="10100774">Blood Collection Bags &amp;  40 CPD&amp;  41      Each [540.1]</option>
+<option title="Blood malaria Staining Kits Readymade Stain Kit  Bottle   [L7]" value="10103175">Blood malaria Staining Kits Readymade Stain Kit  Bottle   [L7]</option>
+<option title="Blood Pressure Apparatus aneroid portable/Stand Model [7672]" value="10107700">Blood Pressure Apparatus aneroid portable/Stand Model [7672]</option>
+<option title="Blood Transfusion Filters  170 - 260 micron  Each [572.1]" value="10100806">Blood Transfusion Filters  170 - 260 micron  Each [572.1]</option>
+<option title="Blood Transfusion  Set    Each [622.1]" value="10100856">Blood Transfusion  Set    Each [622.1]</option>
+<option title="Blue Monofilament Polypropylene 1/2 circle Taper  DA needle Length 90cm/ 26mm - 2-0 (PL8977) [R503]" value="10103919">Blue Monofilament Polypropylene 1/2 circle Taper  DA needle Length 90cm/ 26mm - 2-0 (PL8977) [R503]</option>
+<option title="Blue Monofilament Polypropylene 1/2 circle Taper point DA needle Length 90cm/ 26mm -  3-0  (PL8522) [R502]" value="10103918">Blue Monofilament Polypropylene 1/2 circle Taper point DA needle Length 90cm/ 26mm -  3-0  (PL8522) [R502]</option>
+<option title="Bone Wax [944]" value="10101805">Bone Wax [944]</option>
+<option title="Borax 200 - 30 ml [60.5000000]" value="10101260">Borax 200 - 30 ml [60.5000000]</option>
+<option title="Boro- Spirit Ear Drops 5ml [99.2a149]" value="10102007">Boro- Spirit Ear Drops 5ml [99.2a149]</option>
+<option title="Bowls, H. W. Mark [GS18]" value="10102850">Bowls, H. W. Mark [GS18]</option>
+<option title="B P Appratus  stand model [GS22]" value="10102854">B P Appratus  stand model [GS22]</option>
+<option title="bp blade holder [DLAB134]" value="10102763">bp blade holder [DLAB134]</option>
+<option title="Bryonia Alba 1M (30ml) [HM88]" value="10104421">Bryonia Alba 1M (30ml) [HM88]</option>
+<option title="Bryonia Alba 200 (30ml) [60.8000000]" value="10101263">Bryonia Alba 200 (30ml) [60.8000000]</option>
+<option title="Bryonia Alba  30 - (30 ml) [60.7000000]" value="10101262">Bryonia Alba  30 - (30 ml) [60.7000000]</option>
+<option title="Bucket with cover [GS19]" value="10102851">Bucket with cover [GS19]</option>
+<option title="Budesonide Resp. Solution 0.5mg / 1mg [12.4]" value="10104205">Budesonide Resp. Solution 0.5mg / 1mg [12.4]</option>
+<option title="Bulls eye lamp with head mirror [A30]" value="10102804">Bulls eye lamp with head mirror [A30]</option>
+<option title="Bupivacaine Heavy mixed with glucose solution Inj 0.5% + 7.5% 4 ml Amp [2.2]" value="10100009">Bupivacaine Heavy mixed with glucose solution Inj 0.5% + 7.5% 4 ml Amp [2.2]</option>
+<option title="Bupivacaine Hydrochloride Inj 0.5% 10 ml Vial [2.1]" value="10100008">Bupivacaine Hydrochloride Inj 0.5% 10 ml Vial [2.1]</option>
+<option title="Cactus Grandiflorus Q (30ml) [63.8000000]" value="10101293">Cactus Grandiflorus Q (30ml) [63.8000000]</option>
+<option title="Calamine Lotion Bottle  50 ml [332.1]" value="10100545">Calamine Lotion Bottle  50 ml [332.1]</option>
+<option title="Calcarea Carbonica 200(30ml) [64.0000000]" value="10101295">Calcarea Carbonica 200(30ml) [64.0000000]</option>
+<option title="Calcarea Fluorica 200(30ml) [64.3000000]" value="10101298">Calcarea Fluorica 200(30ml) [64.3000000]</option>
+<option title="Calcarea Fluorica 30(30ml) [64.2000000]" value="10101297">Calcarea Fluorica 30(30ml) [64.2000000]</option>
+<option title="Calcarea Phosphoricum 200(30ml) [64.4000000]" value="10101299">Calcarea Phosphoricum 200(30ml) [64.4000000]</option>
+<option title="Calcium Carbonate Tab + vit D3 1.25 gm [308.1]" value="10100510">Calcium Carbonate Tab + vit D3 1.25 gm [308.1]</option>
+<option title="Calcium Gluconate Inj 100 mg/ml 10 ml [308.2.1]" value="10100511">Calcium Gluconate Inj 100 mg/ml 10 ml [308.2.1]</option>
+<option title="Calendula officinalis 30ml [HM8]" value="10104316">Calendula officinalis 30ml [HM8]</option>
+<option title="Canagliflozin 100mg Tab. [99.2a49]" value="10101854">Canagliflozin 100mg Tab. [99.2a49]</option>
+<option title="Cantharis 200 [64.6000000]" value="10101301">Cantharis 200 [64.6000000]</option>
+<option title="Cantharis Q [64.5000000]" value="10101300">Cantharis Q [64.5000000]</option>
+<option title="Cap. Hydroxy Urea 500 [861]" value="10101722">Cap. Hydroxy Urea 500 [861]</option>
+<option title="Cap.Hydroxy Urea [R132]" value="10103547">Cap.Hydroxy Urea [R132]</option>
+<option title="Cap. Mefenamic Acid 250mg [99.2a8]" value="10102005">Cap. Mefenamic Acid 250mg [99.2a8]</option>
+<option title="Capsicum 200 [64.7.1]" value="10101302">Capsicum 200 [64.7.1]</option>
+<option title="Capsule Oseltamivir 75mg [18.8]" value="10104253">Capsule Oseltamivir 75mg [18.8]</option>
+<option title="Carbamezapine Syrup 100 mg/5 ml 100 ml [196.3]" value="10100348">Carbamezapine Syrup 100 mg/5 ml 100 ml [196.3]</option>
+<option title="Carbamezapine Tab 100 mg [196.1]" value="10100346">Carbamezapine Tab 100 mg [196.1]</option>
+<option title="Carbamezapine Tab 200 mg [196.2]" value="10100347">Carbamezapine Tab 200 mg [196.2]</option>
+<option title="Carboprost Inj 250 mcg 1 ml [252.1]" value="10100426">Carboprost Inj 250 mcg 1 ml [252.1]</option>
+<option title="carbo vegetabilis 200 (30 ml) [HM90]" value="10104423">carbo vegetabilis 200 (30 ml) [HM90]</option>
+<option title="Carbo Vegetabilis 30 (30 ml) [HM89]" value="10104422">Carbo Vegetabilis 30 (30 ml) [HM89]</option>
+<option title="Carcinosinum 200 (30ml) [61.5000000]" value="10101270">Carcinosinum 200 (30ml) [61.5000000]</option>
+<option title="CARDIOPLEGIA CANNULA ANTEGLAD 16 GA [R283]" value="10103698">CARDIOPLEGIA CANNULA ANTEGLAD 16 GA [R283]</option>
+<option title="Cardus Marianus 200(30ml) [61.2.1]" value="10101267">Cardus Marianus 200(30ml) [61.2.1]</option>
+<option title="Cardus Marianus 30ml [HM42]" value="10104366">Cardus Marianus 30ml [HM42]</option>
+<option title="Catgut Cutting [R820]" value="10104520">Catgut Cutting [R820]</option>
+<option title="Catgut Round body [R821]" value="10104521">Catgut Round body [R821]</option>
+<option title="Catheters, metal,Female  [OBG7]" value="10102972">Catheters, metal,Female  [OBG7]</option>
+<option title="Caulophyllum 200 (30ml) [61.7000000]" value="10101272">Caulophyllum 200 (30ml) [61.7000000]</option>
+<option title="Caulophyllum 30 (30ml) bottle [HM50]" value="10104383">Caulophyllum 30 (30ml) bottle [HM50]</option>
+<option title="Causticum 1M (30ml) [HM51]" value="10104384">Causticum 1M (30ml) [HM51]</option>
+<option title="Causticum 200 (30ml) bottle [61.9000000]" value="10101274">Causticum 200 (30ml) bottle [61.9000000]</option>
+<option title="Causticum 30 (30ml) [61.8000000]" value="10101273">Causticum 30 (30ml) [61.8000000]</option>
+<option title="Cautery Pencil martin Make [R532]" value="10103948">Cautery Pencil martin Make [R532]</option>
+<option title="Cedron 30 (30ml) bottle [62.0000000]" value="10101275">Cedron 30 (30ml) bottle [62.0000000]</option>
+<option title="Cefixime Tab 200 mg [58.2]" value="10100113">Cefixime Tab 200 mg [58.2]</option>
+<option title="Cefoperazone and Sulbactum for Inj 500 mg+ 500 mg Vial [86.1]" value="10100165">Cefoperazone and Sulbactum for Inj 500 mg+ 500 mg Vial [86.1]</option>
+<option title="Cefotoxime Inj 1 gm Vial [62.3]" value="10100123">Cefotoxime Inj 1 gm Vial [62.3]</option>
+<option title="Cefotoxime Inj 500 mg Vial [62.2]" value="10100122">Cefotoxime Inj 500 mg Vial [62.2]</option>
+<option title="Ceftriaxone Inj 1 gm Vial [60.2]" value="10100118">Ceftriaxone Inj 1 gm Vial [60.2]</option>
+<option title="Ceftriaxone Inj 500 mg Vial [60.1]" value="10100117">Ceftriaxone Inj 500 mg Vial [60.1]</option>
+<option title="Cephalandra indica (30ml) [HM6]" value="10104310">Cephalandra indica (30ml) [HM6]</option>
+<option title="Cetrimide + Chlorhexidine Solution  5 ltr Jar [426.1]" value="10100655">Cetrimide + Chlorhexidine Solution  5 ltr Jar [426.1]</option>
+<option title="Cetrizine Hydrochloride Tab 10 mg [37.1]" value="10100062">Cetrizine Hydrochloride Tab 10 mg [37.1]</option>
+<option title="Cetrizine Syrup 5 mg/5 ml 30 ml [37.2]" value="10100063">Cetrizine Syrup 5 mg/5 ml 30 ml [37.2]</option>
+<option title="Chamomilla 200 (30ml) bottle [62.2.1]" value="10101277">Chamomilla 200 (30ml) bottle [62.2.1]</option>
+<option title="Chamomilla 30 (30ml) bottle [62.1.2]" value="10101276">Chamomilla 30 (30ml) bottle [62.1.2]</option>
+<option title="Chandanaasav [181.21]" value="10101142">Chandanaasav [181.21]</option>
+<option title="Chandraprabha Vati [220]" value="10101181">Chandraprabha Vati [220]</option>
+<option title="Chelidonium Majus 30 (30ml) bottles [62.5000000]" value="10101280">Chelidonium Majus 30 (30ml) bottles [62.5000000]</option>
+<option title="Chelidonium Majus Q (30ml) bottles [62.4000000]" value="10101279">Chelidonium Majus Q (30ml) bottles [62.4000000]</option>
+<option title="China officinalis - 200 (30 ml) [HM43]" value="10104367">China officinalis - 200 (30 ml) [HM43]</option>
+<option title="China officinalis 30 - (30ml) [HM59]" value="10104392">China officinalis 30 - (30ml) [HM59]</option>
+<option title="Chininum arsenicosum 30 (30ml) bottle [HM62]" value="10104395">Chininum arsenicosum 30 (30ml) bottle [HM62]</option>
+<option title="Chininum sulphuricum 30 (30ml) bottle [HM61]" value="10104394">Chininum sulphuricum 30 (30ml) bottle [HM61]</option>
+<option title="Chloramphenicol Eye Applicaps [342.1]" value="10100555">Chloramphenicol Eye Applicaps [342.1]</option>
+<option title="Chloroquine base Tab 250 mg [131.1]" value="10100239">Chloroquine base Tab 250 mg [131.1]</option>
+<option title="Chloroquine base Tab 600 mg [131.3]" value="10100241">Chloroquine base Tab 600 mg [131.3]</option>
+<option title="Chlorpheniramine Maleate Tab 4 mg [39.1]" value="10100065">Chlorpheniramine Maleate Tab 4 mg [39.1]</option>
+<option title="Chlorpromazine Tab 50 mg [385.2]" value="10100605">Chlorpromazine Tab 50 mg [385.2]</option>
+<option title="Chlorthalidone Tab 12.5 mg [369.1]" value="10100586">Chlorthalidone Tab 12.5 mg [369.1]</option>
+<option title="Cholecalciferol Granules sachet 60000 IU 1  gm [235.1]" value="10100401">Cholecalciferol Granules sachet 60000 IU 1  gm [235.1]</option>
+<option title="Cholecalciferol Oral Liquid 400 IU/ ml [99.2a141]" value="10102000">Cholecalciferol Oral Liquid 400 IU/ ml [99.2a141]</option>
+<option title="Chromic Catgut   Size 1/0 Length 100 cm  Box of 12 Foils [632.1]" value="10100866">Chromic Catgut   Size 1/0 Length 100 cm  Box of 12 Foils [632.1]</option>
+<option title="Chromic Catgut   Size 1/0 Length 76 cm  Box of 12 Foils [631.1]" value="10100865">Chromic Catgut   Size 1/0 Length 76 cm  Box of 12 Foils [631.1]</option>
+<option title="Chromic Catgut   Size 1 Length 76 cm  Box of 12 Foils [630.1]" value="10100864">Chromic Catgut   Size 1 Length 76 cm  Box of 12 Foils [630.1]</option>
+<option title="Chromic Catgut   Size 2-0  Box of 12 Foils [633.1]" value="10100867">Chromic Catgut   Size 2-0  Box of 12 Foils [633.1]</option>
+<option title="Chromic Catgut Size 2 Box of 12 Foils [635.2]" value="10100985">Chromic Catgut Size 2 Box of 12 Foils [635.2]</option>
+<option title="Chromic Catgut   Size 3-0  Box of 12 Foils [634.1]" value="10100868">Chromic Catgut   Size 3-0  Box of 12 Foils [634.1]</option>
+<option title="Cicuta virosa  200 (30ml) bottles [HM60]" value="10104393">Cicuta virosa  200 (30ml) bottles [HM60]</option>
+<option title="Cina 200 30 ml [61.4000000]" value="10101269">Cina 200 30 ml [61.4000000]</option>
+<option title="Cina  30 [61.3000000]" value="10101268">Cina  30 [61.3000000]</option>
+<option title="Ciprofloxacin + Dexamethasone Eye Drops  5 ml [344.1]" value="10100558">Ciprofloxacin + Dexamethasone Eye Drops  5 ml [344.1]</option>
+<option title="Ciprofloxacine 500mg + Tinidazole 600mg Tab [789.43]" value="10100997">Ciprofloxacine 500mg + Tinidazole 600mg Tab [789.43]</option>
+<option title="Ciprofloxacin Eye/Ear  drop   5 ml [343.1]" value="10100556">Ciprofloxacin Eye/Ear  drop   5 ml [343.1]</option>
+<option title="Ciprofloxacin I.V Inj 200 mg 100 ml Bottle [69.3]" value="10100136">Ciprofloxacin I.V Inj 200 mg 100 ml Bottle [69.3]</option>
+<option title="Ciprofloxacin Tab 250 mg [69.1]" value="10100134">Ciprofloxacin Tab 250 mg [69.1]</option>
+<option title="Ciprofloxacin Tab 500 mg [69.2]" value="10100135">Ciprofloxacin Tab 500 mg [69.2]</option>
+<option title="Clamp Flask [DN15]" value="10102617">Clamp Flask [DN15]</option>
+<option title="Clamps Umbilical Cord Ring Handle [S54]" value="10103079">Clamps Umbilical Cord Ring Handle [S54]</option>
+<option title="Clobazam  Tab 10 mg [195.1]" value="10100345">Clobazam  Tab 10 mg [195.1]</option>
+<option title="Clonazepam Tab 0.5 mg [374.1]" value="10100591">Clonazepam Tab 0.5 mg [374.1]</option>
+<option title="Clopidogrel Tab 75 mg [203.1]" value="10100356">Clopidogrel Tab 75 mg [203.1]</option>
+<option title="Closed IV Catheter System 18 G [99.2a95]" value="10101910">Closed IV Catheter System 18 G [99.2a95]</option>
+<option title="Closed IV Catheter System 20 G [99.2a96]" value="10101911">Closed IV Catheter System 20 G [99.2a96]</option>
+<option title="Closed IV Catheter System 22 G [99.2a97]" value="10101912">Closed IV Catheter System 22 G [99.2a97]</option>
+<option title="Closed IV Catheter System 24 G [99.2a98]" value="10101913">Closed IV Catheter System 24 G [99.2a98]</option>
+<option title="Clotrimazole Cream  1% 15 gm [317.1]" value="10100526">Clotrimazole Cream  1% 15 gm [317.1]</option>
+<option title="Clotrimazole  Dusting Powder 1 % 30 gm [317.4]" value="10100529">Clotrimazole  Dusting Powder 1 % 30 gm [317.4]</option>
+<option title="Clotrimazole Ear Drops  10 ml [356.1]" value="10100570">Clotrimazole Ear Drops  10 ml [356.1]</option>
+<option title="Clotrimazole vaginal Pessaries with applicator 100 mg [111.1]" value="10100209">Clotrimazole vaginal Pessaries with applicator 100 mg [111.1]</option>
+<option title="Clozapine Tab 50 mg [392.1]" value="10100617">Clozapine Tab 50 mg [392.1]</option>
+<option title="Cocculus Indicus 200 [62.8000000]" value="10101283">Cocculus Indicus 200 [62.8000000]</option>
+<option title="Coffea Cruda 200 [62.9000000]" value="10101284">Coffea Cruda 200 [62.9000000]</option>
+<option title="Colchicum Autumnale 200 (30ml) bottle [65.0000000]" value="10101305">Colchicum Autumnale 200 (30ml) bottle [65.0000000]</option>
+<option title="Cold Cure Acrylic Power and Liquid [O79]" value="10103406">Cold Cure Acrylic Power and Liquid [O79]</option>
+<option title="Collinsonia canadensis 200 (30ml) bottle [65.1.1]" value="10101306">Collinsonia canadensis 200 (30ml) bottle [65.1.1]</option>
+<option title="Colocynthis 1M  (30ml) bottle [HM57]" value="10104390">Colocynthis 1M  (30ml) bottle [HM57]</option>
+<option title="Colocynthis 200 [63.0000000]" value="10101285">Colocynthis 200 [63.0000000]</option>
+<option title="Composite shade A1  [O47]" value="10103374">Composite shade A1  [O47]</option>
+<option title="Composite shade A2  [O48]" value="10103375">Composite shade A2  [O48]</option>
+<option title="Composite shade A3  [O49]" value="10103376">Composite shade A3  [O49]</option>
+<option title="Concentrated Haemodialysis Fluid B.P. 10 Ltr [677.1]" value="10100911">Concentrated Haemodialysis Fluid B.P. 10 Ltr [677.1]</option>
+<option title="Condom [198]" value="10101528">Condom [198]</option>
+<option title="Condom &amp;  40 ASHA&amp;  41 [199]" value="10101529">Condom &amp;  40 ASHA&amp;  41 [199]</option>
+<option title="Condurango Q  (30ml) bottle [HM56]" value="10104389">Condurango Q  (30ml) bottle [HM56]</option>
+<option title="Conium maaaculatum 200 (30ml) bottle [65.2000000]" value="10101307">Conium maaaculatum 200 (30ml) bottle [65.2000000]</option>
+<option title="Coombs anti human sera [L98]" value="10103266">Coombs anti human sera [L98]</option>
+<option title="Copper - T  375 [202]" value="10101532">Copper - T  375 [202]</option>
+<option title="Copper - T  380 [201]" value="10101531">Copper - T  380 [201]</option>
+<option title="Cotrimaxazol Syrup (Trimethoprim + Sulphamethoxazole)  40 mg + 200 mg 50 ml Bottle [53.3]" value="10100091">Cotrimaxazol Syrup (Trimethoprim + Sulphamethoxazole)  40 mg + 200 mg 50 ml Bottle [53.3]</option>
+<option title="Cotrimoxazole DS (Trimethoprim + Sulphamethoxazole) Tab 160 mg + 800 mg [53.1]" value="10100089">Cotrimoxazole DS (Trimethoprim + Sulphamethoxazole) Tab 160 mg + 800 mg [53.1]</option>
+<option title="Cotrimoxazole SS (Trimethoprim + Sulphamethoxazole) Tab 80 mg + 400 mg [53.2]" value="10100090">Cotrimoxazole SS (Trimethoprim + Sulphamethoxazole) Tab 80 mg + 400 mg [53.2]</option>
+<option title="Cotton thread no.  10  Reel [569.1]" value="10100803">Cotton thread no.  10  Reel [569.1]</option>
+<option title="Cotton thread no.  20  Reel [570.1]" value="10100804">Cotton thread no.  20  Reel [570.1]</option>
+<option title="Cotton thread no. 40 Reel [570.2]" value="10100981">Cotton thread no. 40 Reel [570.2]</option>
+<option title="Cough Expectorant Diphenhydramine hydrochloride 15 mg (IP) +  AmmoniumChloride 150 mg (IP) + Sodium Citrate IP - 60 mg + Menthol -1 mg (IP 30mg 100 ml [189.1]" value="10100334">Cough Expectorant Diphenhydramine hydrochloride 15 mg (IP) +  AmmoniumChloride 150 mg (IP) + Sodium Citrate IP - 60 mg + Menthol -1 mg (IP 30mg 100 ml [189.1]</option>
+<option title="C-PAP Mask (Large) [R172]" value="10103587">C-PAP Mask (Large) [R172]</option>
+<option title="Crataegus (30ml) [HM10]" value="10104319">Crataegus (30ml) [HM10]</option>
+<option title="Crepe Bandage [R159]" value="10103574">Crepe Bandage [R159]</option>
+<option title="Cuscos Vaginal Specullam Medium [OBG4]" value="10102969">Cuscos Vaginal Specullam Medium [OBG4]</option>
+<option title="Cyanocobalamine Inj 1000 mcg/ml 10 ml Vial [307.1]" value="10100509">Cyanocobalamine Inj 1000 mcg/ml 10 ml Vial [307.1]</option>
+<option title="Dashang Lep 50gm [214]" value="10101175">Dashang Lep 50gm [214]</option>
+<option title="Dashmularisht 200ml [177]" value="10101138">Dashmularisht 200ml [177]</option>
+<option title="Dead Body Suit [4.0]" value="10104292">Dead Body Suit [4.0]</option>
+<option title="Deionised water [TFA20]" value="10103300">Deionised water [TFA20]</option>
+<option title="Densitising Paste Containing Stronium Chloride + Potassium Nitrate 10 % + 5 % 50 gm [405.1]" value="10100633">Densitising Paste Containing Stronium Chloride + Potassium Nitrate 10 % + 5 % 50 gm [405.1]</option>
+<option title="Dexamethasone Inj 4 mg 2 ml [257.2]" value="10100437">Dexamethasone Inj 4 mg 2 ml [257.2]</option>
+<option title="Dexketoprofen + Paracetamol Tab [5392]" value="10105378">Dexketoprofen + Paracetamol Tab [5392]</option>
+<option title="Dextran-40 In 10 % Dextrose   500 ml [222.1]" value="10100380">Dextran-40 In 10 % Dextrose   500 ml [222.1]</option>
+<option title="Dextrose I.V 10 % 500 ml Bottle [260.2]" value="10100441">Dextrose I.V 10 % 500 ml Bottle [260.2]</option>
+<option title="Dextrose I.V 25 % 100 ml [260.3]" value="10100442">Dextrose I.V 25 % 100 ml [260.3]</option>
+<option title="Dextrose I.V 5 % 500 ml Bottle [260.1]" value="10100440">Dextrose I.V 5 % 500 ml Bottle [260.1]</option>
+<option title="Dextrose with Normal Saline I.V 5% 500 ml Bottle [261.1]" value="10100443">Dextrose with Normal Saline I.V 5% 500 ml Bottle [261.1]</option>
+<option title="Dhatri Loha 5gm [AV12]" value="10104355">Dhatri Loha 5gm [AV12]</option>
+<option title="Dialysis tubings&amp;  40 Universal Blood Line&amp;  41 [123.53]" value="10101004">Dialysis tubings&amp;  40 Universal Blood Line&amp;  41 [123.53]</option>
+<option title="Diamond burs for contra angle for Air rotor hand piece   (Burs for conservative and crown preparation )Round Set of 5 Tappered Set of 5    Inverted cone Set of 5  Straight Set of 5 ,Safe end bur Set 5,Polishing yellow collor ,Short Shank, Extra long, [DLAB79]" value="10102708">Diamond burs for contra angle for Air rotor hand piece   (Burs for conservative and crown preparation )Round Set of 5 Tappered Set of 5    Inverted cone Set of 5  Straight Set of 5 ,Safe end bur Set 5,Polishing yellow collor ,Short Shank, Extra long, [DLAB79]</option>
+<option title="Diaper for New Born [C9]" value="10104674">Diaper for New Born [C9]</option>
+<option title="Diazepam Inj 5 mg 2 ml Amp [20.2]" value="10100034">Diazepam Inj 5 mg 2 ml Amp [20.2]</option>
+<option title="Diazepam Tab 5 mg [20.1]" value="10100033">Diazepam Tab 5 mg [20.1]</option>
+<option title="Diclofenac Gel 1 % 30 gm [43.3]" value="10100075">Diclofenac Gel 1 % 30 gm [43.3]</option>
+<option title="Diclofenac Pottassium Suppository 50 mg Tab [238.1]" value="10100404">Diclofenac Pottassium Suppository 50 mg Tab [238.1]</option>
+<option title="Diclofenac sodium 75 mg/ml Inj. Pack size - 1 ml  I V Bolus Injection [99.2a12]" value="10101885">Diclofenac sodium 75 mg/ml Inj. Pack size - 1 ml  I V Bolus Injection [99.2a12]</option>
+<option title="Diclofenac Sodium Inj 25 mg/ml 3 ml Amp [43.1]" value="10100073">Diclofenac Sodium Inj 25 mg/ml 3 ml Amp [43.1]</option>
+<option title="Diclofenac Sodium Tab 50 mg [43.2]" value="10100074">Diclofenac Sodium Tab 50 mg [43.2]</option>
+<option title="Diclofenac Suppository 100 mg single [43.4]" value="10100076">Diclofenac Suppository 100 mg single [43.4]</option>
+<option title="Diclofenac Suppository 12.5 mg [R91]" value="10103506">Diclofenac Suppository 12.5 mg [R91]</option>
+<option title="Dicyclomine Hydrochloride 20mg + Paracetamol 500mg Tab [789.38]" value="10100992">Dicyclomine Hydrochloride 20mg + Paracetamol 500mg Tab [789.38]</option>
+<option title="Dicyclomine Hydrochloride Inj 10 mg/ml 2 ml [439.1]" value="10100673">Dicyclomine Hydrochloride Inj 10 mg/ml 2 ml [439.1]</option>
+<option title="Dicyclomine Hydrochloride Tab 10 mg [371.1]" value="10100588">Dicyclomine Hydrochloride Tab 10 mg [371.1]</option>
+<option title="Diethylcarbamazine citrate Oral Liquid 100 ml  [D26]" value="10104638">Diethylcarbamazine citrate Oral Liquid 100 ml  [D26]</option>
+<option title="Diethylcarbamazine citrate Tab 100 mg [117.2]" value="10100218">Diethylcarbamazine citrate Tab 100 mg [117.2]</option>
+<option title="Digital B.P. Appratus ISO [MS8]" value="10102823">Digital B.P. Appratus ISO [MS8]</option>
+<option title="Digoxin Inj 0.25 mg 2 ml [175.2]" value="10100314">Digoxin Inj 0.25 mg 2 ml [175.2]</option>
+<option title="Digoxin Tab 0.25 mg [175.1]" value="10100313">Digoxin Tab 0.25 mg [175.1]</option>
+<option title="Dioscorea villosa 200 (30ml) bottle [HM55]" value="10104388">Dioscorea villosa 200 (30ml) bottle [HM55]</option>
+<option title="Disc Holding Foreceps Straight &amp; Angled [C30]" value="10104722">Disc Holding Foreceps Straight &amp; Angled [C30]</option>
+<option title="Disp.N-95 Mask [546.06]" value="10101014">Disp.N-95 Mask [546.06]</option>
+<option title="Disp. Needle no. 18 [921]" value="10101782">Disp. Needle no. 18 [921]</option>
+<option title="Disp. Needle no. 20 - [922]" value="10101783">Disp. Needle no. 20 - [922]</option>
+<option title="Disp. Negative suction drain set   12G  Each [546.1]" value="10100780">Disp. Negative suction drain set   12G  Each [546.1]</option>
+<option title="Disp. Negative suction drain set 14G Each [545.2]" value="10100978">Disp. Negative suction drain set 14G Each [545.2]</option>
+<option title="Disp. Negative suction drain set 16G Each [546.3]" value="10100979">Disp. Negative suction drain set 16G Each [546.3]</option>
+<option title="Disp. Negative Suction Drain Set 18g Each [123.3.18]" value="10101030">Disp. Negative Suction Drain Set 18g Each [123.3.18]</option>
+<option title="Dispo Inj. Needles 26GX 1&amp;1/2 inch  [O38]" value="10103365">Dispo Inj. Needles 26GX 1&amp;1/2 inch  [O38]</option>
+<option title="Disposable cap [620.1]" value="10100854">Disposable cap [620.1]</option>
+<option title="Disposable Coverall [701]" value="10104260">Disposable Coverall [701]</option>
+<option title="Disposable delivery kit    Each [621.1]" value="10100855">Disposable delivery kit    Each [621.1]</option>
+<option title="Disposable HIV kit     Each [581.1]" value="10100815">Disposable HIV kit     Each [581.1]</option>
+<option title="Disposable Insulin Syringes  40 IU/1ml  Each [610.1]" value="10100844">Disposable Insulin Syringes  40 IU/1ml  Each [610.1]</option>
+<option title="Disposable Needle  21G  Each [623.1]" value="10100857">Disposable Needle  21G  Each [623.1]</option>
+<option title="Disposable Needle  22G  Each [624.1]" value="10100858">Disposable Needle  22G  Each [624.1]</option>
+<option title="Disposable Needle  23G  Each [625.1]" value="10100859">Disposable Needle  23G  Each [625.1]</option>
+<option title="Disposable Needle  24G  Each [626.1]" value="10100860">Disposable Needle  24G  Each [626.1]</option>
+<option title="Disposable Needle  25G  Each [627.1]" value="10100861">Disposable Needle  25G  Each [627.1]</option>
+<option title="Disposable Needle  26G  Each [628.1]" value="10100862">Disposable Needle  26G  Each [628.1]</option>
+<option title="Disposable Non Traumatic Razer    Each [588.1]" value="10100822">Disposable Non Traumatic Razer    Each [588.1]</option>
+<option title="Disposable Plastic gloves    Each [629.1]" value="10100863">Disposable Plastic gloves    Each [629.1]</option>
+<option title="Disposable plastic tube with cap [L46]" value="10103214">Disposable plastic tube with cap [L46]</option>
+<option title="Disposable plastic tube without  cap [L47]" value="10103215">Disposable plastic tube without  cap [L47]</option>
+<option title="Disposable Scalp Vein Set No. 18  Each [589.1]" value="10100823">Disposable Scalp Vein Set No. 18  Each [589.1]</option>
+<option title="Disposable Scalp Vein Set No. 20 Each [593.2]" value="10100984">Disposable Scalp Vein Set No. 20 Each [593.2]</option>
+<option title="Disposable Scalp Vein Set No. 21  Each [590.1]" value="10100824">Disposable Scalp Vein Set No. 21  Each [590.1]</option>
+<option title="Disposable Scalp Vein Set No. 22  Each [591.1]" value="10100825">Disposable Scalp Vein Set No. 22  Each [591.1]</option>
+<option title="Disposable Scalp Vein Set No. 23  Each [592.1]" value="10100826">Disposable Scalp Vein Set No. 23  Each [592.1]</option>
+<option title="Disposable Scalp Vein Set No. 24  Each [593.1]" value="10100827">Disposable Scalp Vein Set No. 24  Each [593.1]</option>
+<option title="Disposable Spinal Needle No. 22G, 23G,24G, 25G needle having Length 89 mm,sterilized with Ethylene Oxide [A19]" value="10102793">Disposable Spinal Needle No. 22G, 23G,24G, 25G needle having Length 89 mm,sterilized with Ethylene Oxide [A19]</option>
+<option title="Disposable Surgeon Gown [C14C15]" value="10104680">Disposable Surgeon Gown [C14C15]</option>
+<option title="Disposable syringe  10 ml [607.1]" value="10100841">Disposable syringe  10 ml [607.1]</option>
+<option title="Disposable syringe  1 ml [604.1]" value="10100838">Disposable syringe  1 ml [604.1]</option>
+<option title="Disposable syringe  20 ml [608.1]" value="10100842">Disposable syringe  20 ml [608.1]</option>
+<option title="Disposable syringe  2 ml [605.1]" value="10100839">Disposable syringe  2 ml [605.1]</option>
+<option title="Disposable syringe  50 ml [609.1]" value="10100843">Disposable syringe  50 ml [609.1]</option>
+<option title="Disposable syringe  5 ml [606.1]" value="10100840">Disposable syringe  5 ml [606.1]</option>
+<option title="Disposable syringe sterile with needle 1inch  10 ml [602.1]" value="10100836">Disposable syringe sterile with needle 1inch  10 ml [602.1]</option>
+<option title="Disposable syringe sterile with needle 1inch  1 ml [599.1]" value="10100833">Disposable syringe sterile with needle 1inch  1 ml [599.1]</option>
+<option title="Disposable syringe sterile with needle 1inch  20 ml [603.1]" value="10100837">Disposable syringe sterile with needle 1inch  20 ml [603.1]</option>
+<option title="Disposable syringe sterile with needle 1inch  2 ml [600.1]" value="10100834">Disposable syringe sterile with needle 1inch  2 ml [600.1]</option>
+<option title="Disposable syringe sterile with needle 1inch  5 ml  Each [601.1]" value="10100835">Disposable syringe sterile with needle 1inch  5 ml  Each [601.1]</option>
+<option title="Disposable Urinal Bags [600.4]" value="10102057">Disposable Urinal Bags [600.4]</option>
+<option title="Dispo Syringes with Leur Lock 3ml &amp; 5ml [O39]" value="10103366">Dispo Syringes with Leur Lock 3ml &amp; 5ml [O39]</option>
+<option title="Disp. PPE Kit - Large Size [546.09]" value="10104268">Disp. PPE Kit - Large Size [546.09]</option>
+<option title="Disp. PPE Kit - Medium Size [546.08]" value="10104267">Disp. PPE Kit - Medium Size [546.08]</option>
+<option title="Disp.PPE Kit - XL Size [546.07]" value="10101015">Disp.PPE Kit - XL Size [546.07]</option>
+<option title="Disp. Readyvac bottle no. 12 (Romovac set) [MS18]" value="10104574">Disp. Readyvac bottle no. 12 (Romovac set) [MS18]</option>
+<option title="Disp. Readyvac bottle no. 14 (Romovac set ) [MS19]" value="10104575">Disp. Readyvac bottle no. 14 (Romovac set ) [MS19]</option>
+<option title="Disp. Spinal needle   22G  Each [594.1]" value="10100828">Disp. Spinal needle   22G  Each [594.1]</option>
+<option title="Disp. Spinal needle   23G  Each [595.1]" value="10100829">Disp. Spinal needle   23G  Each [595.1]</option>
+<option title="Disp. Spinal needle   24G  Each [596.1]" value="10100830">Disp. Spinal needle   24G  Each [596.1]</option>
+<option title="Disp. Spinal needle   25G  Each [597.1]" value="10100831">Disp. Spinal needle   25G  Each [597.1]</option>
+<option title="Disp. Spinal needle   26G  Each [598.1]" value="10100832">Disp. Spinal needle   26G  Each [598.1]</option>
+<option title="Dissecting Forceps, Non Tooth serrated  jaws 6inch [GS61]" value="10102893">Dissecting Forceps, Non Tooth serrated  jaws 6inch [GS61]</option>
+<option title="Dissecting Forceps, Non Tooth serrated  jaws 8inch [GS62]" value="10102894">Dissecting Forceps, Non Tooth serrated  jaws 8inch [GS62]</option>
+<option title="Dissecting Forceps,Tooth serrated  jaws  6inch [GS59]" value="10102891">Dissecting Forceps,Tooth serrated  jaws  6inch [GS59]</option>
+<option title="Dissecting Forceps,Tooth serrated  jaws  8inch [GS60]" value="10102892">Dissecting Forceps,Tooth serrated  jaws  8inch [GS60]</option>
+<option title="Dissecting Forecep [R330]" value="10103745">Dissecting Forecep [R330]</option>
+<option title="Distilled Water 5 Ltr Jar [99.2a112]" value="10101948">Distilled Water 5 Ltr Jar [99.2a112]</option>
+<option title="Distil Water [R717]" value="10104132">Distil Water [R717]</option>
+<option title="Disttiled water [R702]" value="10104117">Disttiled water [R702]</option>
+<option title="D J Stent 6/26 [R417]" value="10103833">D J Stent 6/26 [R417]</option>
+<option title="Domperidone Tab 10 mg [28.1]" value="10100047">Domperidone Tab 10 mg [28.1]</option>
+<option title="Donepezil  Tab 5 mg [389.1]" value="10100613">Donepezil  Tab 5 mg [389.1]</option>
+<option title="Dopamine Inj 40 mg/ml 5 ml [171.1]" value="10100309">Dopamine Inj 40 mg/ml 5 ml [171.1]</option>
+<option title="Double Blood Collection Bags [540.2]" value="10101548">Double Blood Collection Bags [540.2]</option>
+<option title="Double Lumen Catheter [923]" value="10101784">Double Lumen Catheter [923]</option>
+<option title="Doxycycline Cap 100 mg [65.1]" value="10100127">Doxycycline Cap 100 mg [65.1]</option>
+<option title="Doyen Retractor Large [OBG30]" value="10102995">Doyen Retractor Large [OBG30]</option>
+<option title="DPT Vaccine [181]" value="10101511">DPT Vaccine [181]</option>
+<option title="Drakshasava [106]" value="10101607">Drakshasava [106]</option>
+<option title="Dressing Drum SS 11x9 ISI [MS3]" value="10102818">Dressing Drum SS 11x9 ISI [MS3]</option>
+<option title="Dressing Drum SS 6 x 6 ISI [MS1]" value="10102816">Dressing Drum SS 6 x 6 ISI [MS1]</option>
+<option title="Dressing Drum SS 9x9 ISI [MS2]" value="10102817">Dressing Drum SS 9x9 ISI [MS2]</option>
+<option title="dressing Forceps  SS [GS87]" value="10102919">dressing Forceps  SS [GS87]</option>
+<option title="Dressing Scissor Sharp  6inch   SS [GS84]" value="10102916">Dressing Scissor Sharp  6inch   SS [GS84]</option>
+<option title="Dressing Scissor Sharp  7  SS [GS85]" value="10102917">Dressing Scissor Sharp  7  SS [GS85]</option>
+<option title="Drosera rotundifolia 200 (30ml) [65.5000000]" value="10101310">Drosera rotundifolia 200 (30ml) [65.5000000]</option>
+<option title="Dual Lumen Catheter Kit &amp;  40 Curved&amp;  41  With Introducer Needle, Nitinol core Guide Wire 13.5 cm Each [684.1]" value="10100918">Dual Lumen Catheter Kit &amp;  40 Curved&amp;  41  With Introducer Needle, Nitinol core Guide Wire 13.5 cm Each [684.1]</option>
+<option title="Dual Lumen Catheter Kit &amp;  40 Curved&amp;  41  With Introducer Needle, Nitinol core Guide Wire 16 cm Each [685.1]" value="10100919">Dual Lumen Catheter Kit &amp;  40 Curved&amp;  41  With Introducer Needle, Nitinol core Guide Wire 16 cm Each [685.1]</option>
+<option title="Dual Lumen Catheter Kit (Curved) With Introducer Needle, Nitinol core Guide Wire 24 cm Each [687.1]" value="10100921">Dual Lumen Catheter Kit (Curved) With Introducer Needle, Nitinol core Guide Wire 24 cm Each [687.1]</option>
+<option title="Dual Lumen Catheter Kit (Straight) With Introducer Needle, Nitinol core Guide Wire 13.5 cm Each [688.1]" value="10100922">Dual Lumen Catheter Kit (Straight) With Introducer Needle, Nitinol core Guide Wire 13.5 cm Each [688.1]</option>
+<option title="Dulcamara 200(30ml) [65.6000000]" value="10101311">Dulcamara 200(30ml) [65.6000000]</option>
+<option title="Ear speculum various sizes - otoscope [A31]" value="10102805">Ear speculum various sizes - otoscope [A31]</option>
+<option title="ECG Chest Electrode Set [R523]" value="10103939">ECG Chest Electrode Set [R523]</option>
+<option title="ECG/EEG Gel     200 gm [673.1]" value="10100907">ECG/EEG Gel     200 gm [673.1]</option>
+<option title="ECG  Electrodes(Adult and Child)    Each [611.1]" value="10100845">ECG  Electrodes(Adult and Child)    Each [611.1]</option>
+<option title="ECG Roll [20]" value="10100940">ECG Roll [20]</option>
+<option title="ECG Roll 80 * 20 mtr. [926]" value="10101787">ECG Roll 80 * 20 mtr. [926]</option>
+<option title="Echinacea angustifolia 30(30ml) [65.8000000]" value="10101313">Echinacea angustifolia 30(30ml) [65.8000000]</option>
+<option title="Echinacea angustifolia Q(30ml) [65.7000000]" value="10101312">Echinacea angustifolia Q(30ml) [65.7000000]</option>
+<option title="ECL serum 30 (30ml) [HM9]" value="10104317">ECL serum 30 (30ml) [HM9]</option>
+<option title="EDTA solution  [L69]" value="10103237">EDTA solution  [L69]</option>
+<option title="Ekangavir Rasa 5GM [AV40]" value="10104318">Ekangavir Rasa 5GM [AV40]</option>
+<option title="Elastic Adhesive Tape   10 cm x 4 mtr  Roll [450.1]" value="10100684">Elastic Adhesive Tape   10 cm x 4 mtr  Roll [450.1]</option>
+<option title="Elastic Adhesive Tape   6 cm x 4 mtr  Roll [451.1]" value="10100685">Elastic Adhesive Tape   6 cm x 4 mtr  Roll [451.1]</option>
+<option title="Elastic Crape Bandage 10 cm x 2.5 mtr [462.1]" value="10100696">Elastic Crape Bandage 10 cm x 2.5 mtr [462.1]</option>
+<option title="Elastic Crape Bandage   15 cm x 2.5 mtr [463.1]" value="10100697">Elastic Crape Bandage   15 cm x 2.5 mtr [463.1]</option>
+<option title="Enalapril Tab 5 mg [160.1]" value="10100292">Enalapril Tab 5 mg [160.1]</option>
+<option title="Endodontic files (8, 10, 15- 40) [O66]" value="10103393">Endodontic files (8, 10, 15- 40) [O66]</option>
+<option title="Endotracheal Tube Cuff 5.5 [1.2.1]" value="10101031">Endotracheal Tube Cuff 5.5 [1.2.1]</option>
+<option title="Endotracheal Tube Cuff    5 [612.1]" value="10100846">Endotracheal Tube Cuff    5 [612.1]</option>
+<option title="Endotracheal tube Cuff 6 [1.21.3]" value="10101032">Endotracheal tube Cuff 6 [1.21.3]</option>
+<option title="Endotracheal Tube Cuff 6.5 [1.21.31.4]" value="10101033">Endotracheal Tube Cuff 6.5 [1.21.31.4]</option>
+<option title="Endotracheal Tube Cuff 7 [12.32]" value="10101034">Endotracheal Tube Cuff 7 [12.32]</option>
+<option title="Endotracheal Tube Cuff  7.5 [126.32]" value="10101035">Endotracheal Tube Cuff  7.5 [126.32]</option>
+<option title="Endotracheal Tube Cuff  8 [136.32]" value="10101036">Endotracheal Tube Cuff  8 [136.32]</option>
+<option title="Endotracheal Tube Cuff 8.5 [1352.2]" value="10101037">Endotracheal Tube Cuff 8.5 [1352.2]</option>
+<option title="Endotracheal Tube Plain 2.5    Each [613.1]" value="10100847">Endotracheal Tube Plain 2.5    Each [613.1]</option>
+<option title="Endotracheal Tube Plain 3.5 [120.12]" value="10101038">Endotracheal Tube Plain 3.5 [120.12]</option>
+<option title="Endotracheal Tube Plain 5 [120.13]" value="10101039">Endotracheal Tube Plain 5 [120.13]</option>
+<option title="Endotracheal Tube Plain 5.5 [120.15]" value="10101041">Endotracheal Tube Plain 5.5 [120.15]</option>
+<option title="Endotracheal Tube Plain 6 [120.14]" value="10101040">Endotracheal Tube Plain 6 [120.14]</option>
+<option title="Endotracheal Tube Plain 6.5 [120.16]" value="10101042">Endotracheal Tube Plain 6.5 [120.16]</option>
+<option title="Endotracheal Tube Plain 7 [12..21]" value="10101046">Endotracheal Tube Plain 7 [12..21]</option>
+<option title="Endotracheal Tube Plain 7.5 [120.17]" value="10101043">Endotracheal Tube Plain 7.5 [120.17]</option>
+<option title="Endotracheal Tube Plain 8 [120.18]" value="10101044">Endotracheal Tube Plain 8 [120.18]</option>
+<option title="Endotracheal Tube Plain 8.5 [120.19]" value="10101045">Endotracheal Tube Plain 8.5 [120.19]</option>
+<option title="Endotrachel Tube Plain Nasal / Oral PVC Disposable 2.5 to 6.5 [A30]" value="10104569">Endotrachel Tube Plain Nasal / Oral PVC Disposable 2.5 to 6.5 [A30]</option>
+<option title="Enema  can  with connection [GS23]" value="10102855">Enema  can  with connection [GS23]</option>
+<option title="Epidural Catheter 16 G and 18 G  Each [538.1]" value="10100772">Epidural Catheter 16 G and 18 G  Each [538.1]</option>
+<option title="Epidural Catheter  19 G  Each [539.1]" value="10100773">Epidural Catheter  19 G  Each [539.1]</option>
+<option title="Epidural Needles  17G  Each [552.1]" value="10100786">Epidural Needles  17G  Each [552.1]</option>
+<option title="Epidural Needles  18G  Each [553.1]" value="10100787">Epidural Needles  18G  Each [553.1]</option>
+<option title="Epidural Needles  20G  Each [554.1]" value="10100788">Epidural Needles  20G  Each [554.1]</option>
+<option title="Epidural Needles  22G  Each [555.1]" value="10100789">Epidural Needles  22G  Each [555.1]</option>
+<option title="Epidural  set [21]" value="10100929">Epidural  set [21]</option>
+<option title="Erythropoetin Recombinant Inj 2000 IU Vial [234.1]" value="10100400">Erythropoetin Recombinant Inj 2000 IU Vial [234.1]</option>
+<option title="Escitalopram Tab 10 mg [373.1]" value="10100590">Escitalopram Tab 10 mg [373.1]</option>
+<option title="E.S.R tube [R687]" value="10103792">E.S.R tube [R687]</option>
+<option title="Ethamsylate Tab 250 mg [206.1]" value="10100361">Ethamsylate Tab 250 mg [206.1]</option>
+<option title="Ethibond 2-0 NW 617 [R192]" value="10103607">Ethibond 2-0 NW 617 [R192]</option>
+<option title="Ethilon Cutting [R816]" value="10104516">Ethilon Cutting [R816]</option>
+<option title="Etophylin + Theophyillin SR Tab 231 mg + 69 mg [182.2]" value="10100324">Etophylin + Theophyillin SR Tab 231 mg + 69 mg [182.2]</option>
+<option title="Etophylin + Theophylline Inj 169.4 mg + 50.6 mg 2 ml [182.1]" value="10100323">Etophylin + Theophylline Inj 169.4 mg + 50.6 mg 2 ml [182.1]</option>
+<option title="Eupatarium   Perfoliatum 200 [65.9000000]" value="10101314">Eupatarium   Perfoliatum 200 [65.9000000]</option>
+<option title="Euphrasia officinalis 200 (30ml) [HM40]" value="10104364">Euphrasia officinalis 200 (30ml) [HM40]</option>
+<option title="Extention Line-150 [R164]" value="10103579">Extention Line-150 [R164]</option>
+<option title="Extention Line (Verious sizes ) [937]" value="10101798">Extention Line (Verious sizes ) [937]</option>
+<option title="Extra Large Amplaz Sheeth  [R412]" value="10103828">Extra Large Amplaz Sheeth  [R412]</option>
+<option title="F5 Dialyser(1.0m2)ETo STERILIZED [123.50]" value="10101001">F5 Dialyser(1.0m2)ETo STERILIZED [123.50]</option>
+<option title="Falcon Tube [546.9]" value="10101555">Falcon Tube [546.9]</option>
+<option title="Fcps Babcock Jaw 20CM/8inch  [S45]" value="10103069">Fcps Babcock Jaw 20CM/8inch  [S45]</option>
+<option title="Feracrylum 1% Gel 15gm Tube [99.2a185]" value="10101849">Feracrylum 1% Gel 15gm Tube [99.2a185]</option>
+<option title="Ferrum Metallicum 200 (30ml) [HM39]" value="10104363">Ferrum Metallicum 200 (30ml) [HM39]</option>
+<option title="Ficus religiosa Q (30ml) [HM2]" value="10104306">Ficus religiosa Q (30ml) [HM2]</option>
+<option title="Field stain A [L65]" value="10103233">Field stain A [L65]</option>
+<option title="Field Stain B [L66]" value="10103234">Field Stain B [L66]</option>
+<option title="Flucanazole Tab 150 mg [112.2.2]" value="10100211">Flucanazole Tab 150 mg [112.2.2]</option>
+<option title="Fluocinolone Ointment  15 gm [336.1]" value="10100549">Fluocinolone Ointment  15 gm [336.1]</option>
+<option title="Fluoricum acidum 200 (30ml) [HM5]" value="10104309">Fluoricum acidum 200 (30ml) [HM5]</option>
+<option title="Fluoxetine Cap 20 mg [378.1]" value="10100597">Fluoxetine Cap 20 mg [378.1]</option>
+<option title="Fluphenazine Decanoate Inj 25 mg/ml 1 ml [386.1]" value="10100607">Fluphenazine Decanoate Inj 25 mg/ml 1 ml [386.1]</option>
+<option title="Folic acid Tab 5 mg [306.2]" value="10100506">Folic acid Tab 5 mg [306.2]</option>
+<option title="Folleys Catheter (2way) no.  10  Each [467.1]" value="10100701">Folleys Catheter (2way) no.  10  Each [467.1]</option>
+<option title="Folleys Catheter (2way) no.  12  Each [468.1]" value="10100702">Folleys Catheter (2way) no.  12  Each [468.1]</option>
+<option title="Folleys Catheter (2way) no.  14  Each [469.1]" value="10100703">Folleys Catheter (2way) no.  14  Each [469.1]</option>
+<option title="Folleys Catheter (2way) no.  16  Each [470.1]" value="10100704">Folleys Catheter (2way) no.  16  Each [470.1]</option>
+<option title="Folleys Catheter (2way) no.  18  Each [471.1]" value="10100705">Folleys Catheter (2way) no.  18  Each [471.1]</option>
+<option title="Folleys Catheter (2way) no.  6  Each [465.1]" value="10100699">Folleys Catheter (2way) no.  6  Each [465.1]</option>
+<option title="Folleys Catheter (2way) no.  8  Each [466.1]" value="10100700">Folleys Catheter (2way) no.  8  Each [466.1]</option>
+<option title="Folleys Urinary Catheter (3 way) no.  16-24  Each [464.1]" value="10100698">Folleys Urinary Catheter (3 way) no.  16-24  Each [464.1]</option>
+<option title="For Digital Radiography Film Image Size 8x10,10x12,14x17 [R790]" value="10104489">For Digital Radiography Film Image Size 8x10,10x12,14x17 [R790]</option>
+<option title="Formaldehyde solution 37-41 % [L64]" value="10103232">Formaldehyde solution 37-41 % [L64]</option>
+<option title="Formaldehyde Solution  500 ml [424.2]" value="10100653">Formaldehyde Solution  500 ml [424.2]</option>
+<option title="Formaldehyde Tab [424.1]" value="10100652">Formaldehyde Tab [424.1]</option>
+<option title="Formaline Chamber 10 Inch Each [576.1]" value="10100810">Formaline Chamber 10 Inch Each [576.1]</option>
+<option title="Formaline Chamber 14 Inch Each [577.1]" value="10100811">Formaline Chamber 14 Inch Each [577.1]</option>
+<option title="Formaline Chamber 20 Inch Each [578.1]" value="10100812">Formaline Chamber 20 Inch Each [578.1]</option>
+<option title="Formaline Chamber 23 Inch Each [579.1]" value="10100813">Formaline Chamber 23 Inch Each [579.1]</option>
+<option title="Formaline Chamber 26 Inch Each [580.1]" value="10100814">Formaline Chamber 26 Inch Each [580.1]</option>
+<option title="Formica rufa 200 (30ml ) [HM1]" value="10104305">Formica rufa 200 (30ml ) [HM1]</option>
+<option title="Formoldehyde solution 500 ml [R727]" value="10104142">Formoldehyde solution 500 ml [R727]</option>
+<option title="Formoterol 6 mcg  + Budesonide 100 mcg Inhaler 120MDI [D32]" value="10104683">Formoterol 6 mcg  + Budesonide 100 mcg Inhaler 120MDI [D32]</option>
+<option title="Frusemide and Spironolactone [R22]" value="10103436">Frusemide and Spironolactone [R22]</option>
+<option title="Frusemide Inj 10 mg/ml 2 ml [168.1]" value="10100305">Frusemide Inj 10 mg/ml 2 ml [168.1]</option>
+<option title="Frusemide Tab 40 mg [168.2]" value="10100306">Frusemide Tab 40 mg [168.2]</option>
+<option title="Furazolidone Tab 100 mg [121.1]" value="10100223">Furazolidone Tab 100 mg [121.1]</option>
+<option title="Gamma Benzene Hydrochloride Lotion  100 ml [333.1]" value="10100546">Gamma Benzene Hydrochloride Lotion  100 ml [333.1]</option>
+<option title="Gandhak Rasayan [233]" value="10101194">Gandhak Rasayan [233]</option>
+<option title="Gelsemium sempervirens 200(30ml) [67.1.1]" value="10101326">Gelsemium sempervirens 200(30ml) [67.1.1]</option>
+<option title="General Examination Gloves [565.1]" value="10100799">General Examination Gloves [565.1]</option>
+<option title="Gentamycine eye drops 0.3%w/v- 5 ml [789.37]" value="10100991">Gentamycine eye drops 0.3%w/v- 5 ml [789.37]</option>
+<option title="Gentamycine Inj 40 mg/ml 2 ml [66.1]" value="10100128">Gentamycine Inj 40 mg/ml 2 ml [66.1]</option>
+<option title="Gentiana Chirata Q (30 ml) [HM69]" value="10104402">Gentiana Chirata Q (30 ml) [HM69]</option>
+<option title="Glass slide 22 x40 [R730]" value="10104145">Glass slide 22 x40 [R730]</option>
+<option title="Glass slide 22 x 50 [R731]" value="10104146">Glass slide 22 x 50 [R731]</option>
+<option title="Glass Slide [R699]" value="10104114">Glass Slide [R699]</option>
+<option title="Glass Syringe Hypodermic  2 ml  Each [535.1]" value="10100769">Glass Syringe Hypodermic  2 ml  Each [535.1]</option>
+<option title="Glass Syringe Hypodermic  5 ml  Each [536.1]" value="10100770">Glass Syringe Hypodermic  5 ml  Each [536.1]</option>
+<option title="Glimiperide 1mg Tab [181.2]" value="10102054">Glimiperide 1mg Tab [181.2]</option>
+<option title="Glimiperide Tab 2 mg [181.1]" value="10100322">Glimiperide Tab 2 mg [181.1]</option>
+<option title="Glipizide Tab 2.5 mg [177.2]" value="10101205">Glipizide Tab 2.5 mg [177.2]</option>
+<option title="Glonoine 200 (30 ml) [HM68]" value="10104401">Glonoine 200 (30 ml) [HM68]</option>
+<option title="Glucoane glucometer strip [R100]" value="10103515">Glucoane glucometer strip [R100]</option>
+<option title="Glucometer accucheck performa [R689]" value="10104104">Glucometer accucheck performa [R689]</option>
+<option title="Glucometer [L111]" value="10103279">Glucometer [L111]</option>
+<option title="Glucometer strips [L112]" value="10103280">Glucometer strips [L112]</option>
+<option title="Glucometer strips [R690]" value="10104105">Glucometer strips [R690]</option>
+<option title="Glucostrips [29.3]" value="10101638">Glucostrips [29.3]</option>
+<option title="Glycerine 500 ml Glass Bottle [340.1]" value="10100553">Glycerine 500 ml Glass Bottle [340.1]</option>
+<option title="Glycerine 500 ml [R724]" value="10104139">Glycerine 500 ml [R724]</option>
+<option title="Glycerine Bottls [R700]" value="10104115">Glycerine Bottls [R700]</option>
+<option title="Glycine Irrigation 3Ltr. [917]" value="10101778">Glycine Irrigation 3Ltr. [917]</option>
+<option title="Glycopyrolate Inj  1 ml [419.1]" value="10100647">Glycopyrolate Inj  1 ml [419.1]</option>
+<option title="Goggles [702]" value="10104261">Goggles [702]</option>
+<option title="Gokshuraadi  Guggul [197]" value="10101158">Gokshuraadi  Guggul [197]</option>
+<option title="Graphitess 1M (30 ml) [HM70]" value="10104403">Graphitess 1M (30 ml) [HM70]</option>
+<option title="Graphitess 200 (30 ml) [HM72]" value="10104405">Graphitess 200 (30 ml) [HM72]</option>
+<option title="Graphitess 30 (30 ml) [HM71]" value="10104404">Graphitess 30 (30 ml) [HM71]</option>
+<option title="Guaiacum 30 (30 ml) [HM66]" value="10104399">Guaiacum 30 (30 ml) [HM66]</option>
+<option title="Habb-e-Mudir [105]" value="10101066">Habb-e-Mudir [105]</option>
+<option title="Haemodialyser Size F6 [123.51]" value="10101002">Haemodialyser Size F6 [123.51]</option>
+<option title="Haemodialyser Size F8 [123.52]" value="10101003">Haemodialyser Size F8 [123.52]</option>
+<option title="Haemoglobinometer [LAB16]" value="10103022">Haemoglobinometer [LAB16]</option>
+<option title="Haemoglobinometer square tube [R686]" value="10104102">Haemoglobinometer square tube [R686]</option>
+<option title="Haemoglobin Pipete [R685]" value="10104101">Haemoglobin Pipete [R685]</option>
+<option title="Haloperidol Deconoate Depot Inj  1 ml [387.1]" value="10100608">Haloperidol Deconoate Depot Inj  1 ml [387.1]</option>
+<option title="Haloperidol Inj 5 mg/ml 1 ml [387.2]" value="10100609">Haloperidol Inj 5 mg/ml 1 ml [387.2]</option>
+<option title="Haloperidol Tab 5 mg [387.4]" value="10100611">Haloperidol Tab 5 mg [387.4]</option>
+<option title="Halothane with Vaporiser  250 ml [6.1]" value="10100015">Halothane with Vaporiser  250 ml [6.1]</option>
+<option title="Hamamelis virginica 200(30ml) [67.3.1]" value="10101328">Hamamelis virginica 200(30ml) [67.3.1]</option>
+<option title="Haridra khand Pak 100gm [185.21]" value="10101146">Haridra khand Pak 100gm [185.21]</option>
+<option title="HbsAg (Australian Antigen Card) Rapid [R680]" value="10104096">HbsAg (Australian Antigen Card) Rapid [R680]</option>
+<option title="Heat Cure Acrylic Pwder and Liquid [O78]" value="10103405">Heat Cure Acrylic Pwder and Liquid [O78]</option>
+<option title="Hemodialysis Tubing Set - AL-J008K/VL-J005C (PRE-PUMP TYPE) Each [681.1]" value="10100915">Hemodialysis Tubing Set - AL-J008K/VL-J005C (PRE-PUMP TYPE) Each [681.1]</option>
+<option title="Hemophilia Factor IX Plasma Devired 500 IU [210.3]" value="10104431">Hemophilia Factor IX Plasma Devired 500 IU [210.3]</option>
+<option title="Hemophilia Factor VIII Plasma Devired 250 IU [210.2]" value="10104430">Hemophilia Factor VIII Plasma Devired 250 IU [210.2]</option>
+<option title="Hemophilia Factor VIII Plasma Devired 500 IU [210.4]" value="10104432">Hemophilia Factor VIII Plasma Devired 500 IU [210.4]</option>
+<option title="Heparin sodium Inj 5000 IU/ml - 5 ml vial [158.2]" value="10100290">Heparin sodium Inj 5000 IU/ml - 5 ml vial [158.2]</option>
+<option title="Hepar Sulphuris calcareum 1M (30ml) [67.7000000]" value="10101332">Hepar Sulphuris calcareum 1M (30ml) [67.7000000]</option>
+<option title="Hepar Sulphuris calcareum 200 (30ml) [67.6000000]" value="10101331">Hepar Sulphuris calcareum 200 (30ml) [67.6000000]</option>
+<option title="Hepar Sulphuris calcareum 30 (30ml) [67.5000000]" value="10101330">Hepar Sulphuris calcareum 30 (30ml) [67.5000000]</option>
+<option title="Hepatitis B Immunoglobulin 100 i. u. [99.2a20]" value="10101887">Hepatitis B Immunoglobulin 100 i. u. [99.2a20]</option>
+<option title="Homatropine Drops  5 ml [353.1]" value="10100567">Homatropine Drops  5 ml [353.1]</option>
+<option title="Hub Cutter [99.2a93]" value="10101908">Hub Cutter [99.2a93]</option>
+<option title="Human Insulin NPH/Isophane 40 IU/ml 10 ml Vial [229.2]" value="10100391">Human Insulin NPH/Isophane 40 IU/ml 10 ml Vial [229.2]</option>
+<option title="Hyaluronidase Inj 150 usp/ml [789.42]" value="10100996">Hyaluronidase Inj 150 usp/ml [789.42]</option>
+<option title="Hydrastis Canadensis Q (30ml) [HM74]" value="10104407">Hydrastis Canadensis Q (30ml) [HM74]</option>
+<option title="Hydrochloric acid- AR Grade N/10 [L68]" value="10103236">Hydrochloric acid- AR Grade N/10 [L68]</option>
+<option title="Hydrochlorothiazide Tab 12.5 mg [971]" value="10101832">Hydrochlorothiazide Tab 12.5 mg [971]</option>
+<option title="Hydrochlorothiazide Tab  25 mg [370.1]" value="10100587">Hydrochlorothiazide Tab  25 mg [370.1]</option>
+<option title="Hydrocortisone Sodium Succinate Inj 100 mg Vial [256.1]" value="10100435">Hydrocortisone Sodium Succinate Inj 100 mg Vial [256.1]</option>
+<option title="Hydrogen Peroxide IP  500 ml [420.1]" value="10100648">Hydrogen Peroxide IP  500 ml [420.1]</option>
+<option title="Hydrogen Peroxide [O17]" value="10103345">Hydrogen Peroxide [O17]</option>
+<option title="Hydroxyethyl Starch (Hetastarch) Inj 6 % 500 ml Bottle [224.1]" value="10100384">Hydroxyethyl Starch (Hetastarch) Inj 6 % 500 ml Bottle [224.1]</option>
+<option title="Hydroxy Urea Tab 500 mg [397.1]" value="10100623">Hydroxy Urea Tab 500 mg [397.1]</option>
+<option title="Hyoscine Butyl Bromide Inj 20 mg/ml 1 ml [372.1]" value="10100589">Hyoscine Butyl Bromide Inj 20 mg/ml 1 ml [372.1]</option>
+<option title="Hypericum perforatum 1M(30ml) [68.0000000]" value="10101335">Hypericum perforatum 1M(30ml) [68.0000000]</option>
+<option title="Ibuprofen Syrup 100mg/5ml 60 ml Bottle [44.2]" value="10100078">Ibuprofen Syrup 100mg/5ml 60 ml Bottle [44.2]</option>
+<option title="Ibuprofen Tab. 200mg [44]" value="10101008">Ibuprofen Tab. 200mg [44]</option>
+<option title="Ibuprofen Tab 400 mg [44.1]" value="10100077">Ibuprofen Tab 400 mg [44.1]</option>
+<option title="Ignatia amara 1M (30ml) [68.4000000]" value="10101339">Ignatia amara 1M (30ml) [68.4000000]</option>
+<option title="Ignatia amara 200 (30ml) [68.3000000]" value="10101338">Ignatia amara 200 (30ml) [68.3000000]</option>
+<option title="Imipramine Tab 25 mg [379.1]" value="10100598">Imipramine Tab 25 mg [379.1]</option>
+<option title="Infant Feeding Tube   10G  Each [491.1]" value="10100725">Infant Feeding Tube   10G  Each [491.1]</option>
+<option title="Infant Feeding Tube   4G  Each [485.1]" value="10100719">Infant Feeding Tube   4G  Each [485.1]</option>
+<option title="Infant Feeding Tube   5G  Each [486.1]" value="10100720">Infant Feeding Tube   5G  Each [486.1]</option>
+<option title="Infant Feeding Tube   6G  Each [487.1]" value="10100721">Infant Feeding Tube   6G  Each [487.1]</option>
+<option title="Infant Feeding Tube   7G  Each [488.1]" value="10100722">Infant Feeding Tube   7G  Each [488.1]</option>
+<option title="Infant Feeding Tube   8G  Each [489.1]" value="10100723">Infant Feeding Tube   8G  Each [489.1]</option>
+<option title="Infant Feeding Tube   9G  Each [490.1]" value="10100724">Infant Feeding Tube   9G  Each [490.1]</option>
+<option title="Inj Anti Rabies Serum 300 IU/ml-2ML Vail(ARS) / 1500 IU /ml-5ML IM/SC [9568.00]" value="10101052">Inj Anti Rabies Serum 300 IU/ml-2ML Vail(ARS) / 1500 IU /ml-5ML IM/SC [9568.00]</option>
+<option title="Inj.anti Tetanus Serum [45.356]" value="10101048">Inj.anti Tetanus Serum [45.356]</option>
+<option title="Inj. Buprigesic 0.3 mg. [R757]" value="10104456">Inj. Buprigesic 0.3 mg. [R757]</option>
+<option title="Inj. Butorphenol 2mg. [R755]" value="10104454">Inj. Butorphenol 2mg. [R755]</option>
+<option title="Inj.Dobutamine50mg/ml-5mlAmpoule(i.e.250mg) [172.1]" value="10100310">Inj.Dobutamine50mg/ml-5mlAmpoule(i.e.250mg) [172.1]</option>
+<option title="Inj. Drotaverine 40mg, 2ml [15.9]" value="10104233">Inj. Drotaverine 40mg, 2ml [15.9]</option>
+<option title="Injection MVI [D58]" value="10104709">Injection MVI [D58]</option>
+<option title="Inj Erythropoitin 10000 IU [R50]" value="10103464">Inj Erythropoitin 10000 IU [R50]</option>
+<option title="Inj. Fluphenazin 25mg [99.2a110]" value="10101930">Inj. Fluphenazin 25mg [99.2a110]</option>
+<option title="Inj. Gentamycin 10mg/ml  [99.2a38]" value="10101993">Inj. Gentamycin 10mg/ml  [99.2a38]</option>
+<option title="Inj. Human Albumin 20% (Low Salt) 50 ml [99.2a72]" value="10101880">Inj. Human Albumin 20% (Low Salt) 50 ml [99.2a72]</option>
+<option title="Inj Human Albumin 20%  [R82]" value="10103497">Inj Human Albumin 20%  [R82]</option>
+<option title="Inj. Human Albumin 5% (Isotonic) 250 ml  [99.2a73]" value="10101881">Inj. Human Albumin 5% (Isotonic) 250 ml  [99.2a73]</option>
+<option title="Inj. Hydroxy Progesteron Depot 250 mg [13.6]" value="10104215">Inj. Hydroxy Progesteron Depot 250 mg [13.6]</option>
+<option title="Inj. Hydroxy Propyl Methyl Cellulose USP 2 % In Sterile Isonic Base PFS  2 ml PFS [346.1]" value="10100560">Inj. Hydroxy Propyl Methyl Cellulose USP 2 % In Sterile Isonic Base PFS  2 ml PFS [346.1]</option>
+<option title="Inj. Iron sucrose 20 mg/ 5ml [787]" value="10101648">Inj. Iron sucrose 20 mg/ 5ml [787]</option>
+<option title="Inj labetalol Hcl 5mg/ml [R43]" value="10103457">Inj labetalol Hcl 5mg/ml [R43]</option>
+<option title="Inj. Levetiracetam 500mg [12.6]" value="10104207">Inj. Levetiracetam 500mg [12.6]</option>
+<option title="Inj Lignocaine 2% andadranaline [R55]" value="10103470">Inj Lignocaine 2% andadranaline [R55]</option>
+<option title="Inj. Lorazepam 2mg [99.2a4]" value="10101933">Inj. Lorazepam 2mg [99.2a4]</option>
+<option title="Inj. Lung Surfactant 5ml [17.3]" value="10104242">Inj. Lung Surfactant 5ml [17.3]</option>
+<option title="Inj. Menadion Bisulphate Trihydrate 10 mg/ml (aqueous)(Vitamin K ) - 1 ml [209.1]" value="10100365">Inj. Menadion Bisulphate Trihydrate 10 mg/ml (aqueous)(Vitamin K ) - 1 ml [209.1]</option>
+<option title="Inj methylene Prednisolone125 mg [R47]" value="10103461">Inj methylene Prednisolone125 mg [R47]</option>
+<option title="Inj Paracetamol 2 ml [R39]" value="10103453">Inj Paracetamol 2 ml [R39]</option>
+<option title="Inj. Paracetamol IV 1gm100ml [10.8]" value="10104174">Inj. Paracetamol IV 1gm100ml [10.8]</option>
+<option title="Inj PiperacillinandTozobactum 4.5gm [R38]" value="10103452">Inj PiperacillinandTozobactum 4.5gm [R38]</option>
+<option title="Inj. Pralidoxime chloride 1 gm (PAM) [366.2]" value="10100583">Inj. Pralidoxime chloride 1 gm (PAM) [366.2]</option>
+<option title="Inj. Pralidoxime chloride 500 mg (PAM) [366.1]" value="10100582">Inj. Pralidoxime chloride 500 mg (PAM) [366.1]</option>
+<option title="Inj. Promethazine 50mg [99.2a39]" value="10101936">Inj. Promethazine 50mg [99.2a39]</option>
+<option title="Inj Scorpion Antivenum [4569.365]" value="10101051">Inj Scorpion Antivenum [4569.365]</option>
+<option title="Inj Sodium Biocarbonate [R51]" value="10103465">Inj Sodium Biocarbonate [R51]</option>
+<option title="Inj.  Tranexamic  Acid  ( Pause ) 5 ml [866]" value="10101727">Inj.  Tranexamic  Acid  ( Pause ) 5 ml [866]</option>
+<option title="Inj.Vitamin K1 [209.2]" value="10101552">Inj.Vitamin K1 [209.2]</option>
+<option title="Insulin Soluble plain (Human) 40 IU/ml 10 ml Vial [229.1]" value="10100390">Insulin Soluble plain (Human) 40 IU/ml 10 ml Vial [229.1]</option>
+<option title="Intracostal drainage Catheter No. 16 Each [614.1]" value="10100848">Intracostal drainage Catheter No. 16 Each [614.1]</option>
+<option title="Intracostal drainage Catheter  No. 20 Each [615.1]" value="10100849">Intracostal drainage Catheter  No. 20 Each [615.1]</option>
+<option title="Intracostal drainage Catheter No. 24 Each [616.1]" value="10100850">Intracostal drainage Catheter No. 24 Each [616.1]</option>
+<option title="Intracostal drainage Catheter No. 28 Each [617.1]" value="10100851">Intracostal drainage Catheter No. 28 Each [617.1]</option>
+<option title="Intracostal drainage Catheter No. 32 Each [618.1]" value="10100852">Intracostal drainage Catheter No. 32 Each [618.1]</option>
+<option title="Intra Ocular Lenses  Each [412.1]" value="10100640">Intra Ocular Lenses  Each [412.1]</option>
+<option title="Iodium 200 [68.6000000]" value="10101341">Iodium 200 [68.6000000]</option>
+<option title="Iohexol  100 ml [888]" value="10101749">Iohexol  100 ml [888]</option>
+<option title="Ipecacunha 200 [68.8000000]" value="10101343">Ipecacunha 200 [68.8000000]</option>
+<option title="Ipecacunha  30 [68.7000000]" value="10101342">Ipecacunha  30 [68.7000000]</option>
+<option title="Iris versicolor 200 (30ml) bottle [HM54]" value="10104387">Iris versicolor 200 (30ml) bottle [HM54]</option>
+<option title="Iron 100 mg + Folic Acid 0.5 mg Enteric Coated Tablet (Pack of 10 Tablets) [306.4.21]" value="10101047">Iron 100 mg + Folic Acid 0.5 mg Enteric Coated Tablet (Pack of 10 Tablets) [306.4.21]</option>
+<option title="Iron and Folic Acid Syrup with Autodispenser (50ml Bottle) [26.6]" value="10101637">Iron and Folic Acid Syrup with Autodispenser (50ml Bottle) [26.6]</option>
+<option title="Iron Sucrose Inj 200 mg in 10ml Amp (Parenteral Iron) [239.2]" value="10100406">Iron Sucrose Inj 200 mg in 10ml Amp (Parenteral Iron) [239.2]</option>
+<option title="Iron Sucrose Inj 50 mg in 2.5ml Amp (Parenteral Iron) [239.1]" value="10100405">Iron Sucrose Inj 50 mg in 2.5ml Amp (Parenteral Iron) [239.1]</option>
+<option title="Isoflurane  100 ml Bottle [7.1]" value="10100016">Isoflurane  100 ml Bottle [7.1]</option>
+<option title="Isosorbide Dinitrate Tab 10 mg [150.2]" value="10100274">Isosorbide Dinitrate Tab 10 mg [150.2]</option>
+<option title="Isosorbide Dinitrate Tab 5 mg [150.1]" value="10100273">Isosorbide Dinitrate Tab 5 mg [150.1]</option>
+<option title="Isosorbide Mono nitrate  Tab 5 mg + 10 mg [151.1]" value="10100275">Isosorbide Mono nitrate  Tab 5 mg + 10 mg [151.1]</option>
+<option title="Isoxsuprine Inj 5 mg/ml 2 ml [241.2]" value="10100409">Isoxsuprine Inj 5 mg/ml 2 ml [241.2]</option>
+<option title="Isoxsuprine Tab 10 mg [241.1]" value="10100408">Isoxsuprine Tab 10 mg [241.1]</option>
+<option title="Itraconazole Cap 100 mg [113.1]" value="10100213">Itraconazole Cap 100 mg [113.1]</option>
+<option title="Itrifal-e-Kishneezi [102.8]" value="10101575">Itrifal-e-Kishneezi [102.8]</option>
+<option title="Itrifal-e-Shahtara [102.9]" value="10101576">Itrifal-e-Shahtara [102.9]</option>
+<option title="Itrifal Ustekhoodus [121]" value="10101082">Itrifal Ustekhoodus [121]</option>
+<option title="IV 0.45 % DNS (500 ml) [D44]" value="10104711">IV 0.45 % DNS (500 ml) [D44]</option>
+<option title="I.V.Cannula  18G  Each [472.1]" value="10100706">I.V.Cannula  18G  Each [472.1]</option>
+<option title="I.V.Cannula  20G  Each [473.1]" value="10100707">I.V.Cannula  20G  Each [473.1]</option>
+<option title="I.V.Cannula  22G  Each [474.1]" value="10100708">I.V.Cannula  22G  Each [474.1]</option>
+<option title="I.V.Cannula  24G  Each [475.1]" value="10100709">I.V.Cannula  24G  Each [475.1]</option>
+<option title="I.V.Cannula  26G  Each [476.1]" value="10100710">I.V.Cannula  26G  Each [476.1]</option>
+<option title="I.V. Cannula with integrated 3 Way stop cock.    18G  Each [477.1]" value="10100711">I.V. Cannula with integrated 3 Way stop cock.    18G  Each [477.1]</option>
+<option title="I.V. Cannula with integrated 3 Way stop cock.    20G  Each [478.1]" value="10100712">I.V. Cannula with integrated 3 Way stop cock.    20G  Each [478.1]</option>
+<option title="I.V. Cannula with integrated 3 Way stop cock.    22G  Each [479.1]" value="10100713">I.V. Cannula with integrated 3 Way stop cock.    22G  Each [479.1]</option>
+<option title="I.V. Cannula with integrated 3 Way stop cock.    24G  Each [480.1]" value="10100714">I.V. Cannula with integrated 3 Way stop cock.    24G  Each [480.1]</option>
+<option title="I.V. Dextrose 0.45 % [R58]" value="10103473">I.V. Dextrose 0.45 % [R58]</option>
+<option title="I.V. Normal Saline  45%  100ml [902]" value="10101763">I.V. Normal Saline  45%  100ml [902]</option>
+<option title="I   V   Saline  stand [GS33]" value="10102865">I   V   Saline  stand [GS33]</option>
+<option title="I.V.Sets with hypodermic needle 21 G of 1.5 inch length  Each [481.1]" value="10100715">I.V.Sets with hypodermic needle 21 G of 1.5 inch length  Each [481.1]</option>
+<option title="I,V.Sodium chloride 0.9 % [R57]" value="10103472">I,V.Sodium chloride 0.9 % [R57]</option>
+<option title="I.V.  Sodium chloride IP 0.9% 100ml [898]" value="10101759">I.V.  Sodium chloride IP 0.9% 100ml [898]</option>
+<option title="I.V.  Sodium chloride IP 0.9% 500ml [901]" value="10101762">I.V.  Sodium chloride IP 0.9% 500ml [901]</option>
+<option title="I.V.  Sodium chloride IP 0.9% 500ml Glass Bottle [900]" value="10101761">I.V.  Sodium chloride IP 0.9% 500ml Glass Bottle [900]</option>
+<option title="Janosia asoka (30ml) [HM46]" value="10104370">Janosia asoka (30ml) [HM46]</option>
+<option title="Jawarish-e-Mastagi [U103.1.1]" value="10101578">Jawarish-e-Mastagi [U103.1.1]</option>
+<option title="Jawarish Kamooni [125]" value="10101086">Jawarish Kamooni [125]</option>
+<option title="Jawarish Zarooni Sada [127]" value="10101088">Jawarish Zarooni Sada [127]</option>
+<option title="Jeerakadyarishta 200ml [AV14]" value="10104359">Jeerakadyarishta 200ml [AV14]</option>
+<option title="JMS I.V.set for kidney patients [R574]" value="10103990">JMS I.V.set for kidney patients [R574]</option>
+<option title="J.R. Circuit  ,Plastic ,ISO Paediatric [A6]" value="10102780">J.R. Circuit  ,Plastic ,ISO Paediatric [A6]</option>
+<option title="Jumbo Oxygen Cylinder 47lit -7m [R616]" value="10104032">Jumbo Oxygen Cylinder 47lit -7m [R616]</option>
+<option title="Justicia adhatoda (30ml)  [HM58]" value="10104391">Justicia adhatoda (30ml)  [HM58]</option>
+<option title="K3-EDTA Bulb Tube [R752]" value="10103467">K3-EDTA Bulb Tube [R752]</option>
+<option title="Kaishor  Guggul [195]" value="10101156">Kaishor  Guggul [195]</option>
+<option title="Kali Bichromicum 200 [69.6000000]" value="10101351">Kali Bichromicum 200 [69.6000000]</option>
+<option title="Kali -Carbinicum 200 [68.9000000]" value="10101344">Kali -Carbinicum 200 [68.9000000]</option>
+<option title="Kali Muriaticum 200 [69.3.1]" value="10101348">Kali Muriaticum 200 [69.3.1]</option>
+<option title="Kali suphuricum 30 (30ml)bottle [69.4000000]" value="10101349">Kali suphuricum 30 (30ml)bottle [69.4000000]</option>
+<option title="Kamadudha Rasa [230]" value="10101191">Kamadudha Rasa [230]</option>
+<option title="Kanchanar  Guggul 20 gm [199]" value="10101160">Kanchanar  Guggul 20 gm [199]</option>
+<option title="Kankasava [106.5]" value="10101612">Kankasava [106.5]</option>
+<option title="Ketamine Hydrochloride Inj 10 mg 10 ml Vial [4.1]" value="10100012">Ketamine Hydrochloride Inj 10 mg 10 ml Vial [4.1]</option>
+<option title="Ketamine Hydrochloride Inj 50 mg 10 ml Vial [4.2]" value="10100013">Ketamine Hydrochloride Inj 50 mg 10 ml Vial [4.2]</option>
+<option title="Khadirasht [182.21]" value="10101143">Khadirasht [182.21]</option>
+<option title="Kidney tray  8inch   [S129]" value="10103154">Kidney tray  8inch   [S129]</option>
+<option title="Kidney  Tray, H. W. Mark [MS10]" value="10102825">Kidney  Tray, H. W. Mark [MS10]</option>
+<option title="Kreosotum 200 30ml bottle [69.7000000]" value="10101352">Kreosotum 200 30ml bottle [69.7000000]</option>
+<option title="Kumari Asav 200ml [175]" value="10101136">Kumari Asav 200ml [175]</option>
+<option title="Kushata e Hajarul Yahood [Una149]" value="10101110">Kushata e Hajarul Yahood [Una149]</option>
+<option title="Kushta-e-faulad (10gms) [22.27]" value="10104297">Kushta-e-faulad (10gms) [22.27]</option>
+<option title="Kushta-e-Gaodanti [103.4]" value="10101581">Kushta-e-Gaodanti [103.4]</option>
+<option title="Kutajarisht [183.21]" value="10101144">Kutajarisht [183.21]</option>
+<option title="Labetalol Tab  100 mg [166.1]" value="10100300">Labetalol Tab  100 mg [166.1]</option>
+<option title="Laboob e Sagheer [132]" value="10101093">Laboob e Sagheer [132]</option>
+<option title="Lachesis 200 30ml bottle [70.1.1]" value="10101356">Lachesis 200 30ml bottle [70.1.1]</option>
+<option title="Lactulose Syrup 667 mg/ml 100 ml [226.1]" value="10100387">Lactulose Syrup 667 mg/ml 100 ml [226.1]</option>
+<option title="Laghumalinivasant Rasa [235]" value="10101196">Laghumalinivasant Rasa [235]</option>
+<option title="Laghu Sutshekhar Rasa 5gm [236]" value="10101197">Laghu Sutshekhar Rasa 5gm [236]</option>
+<option title="Lakshadi Guggula 20gm [AV39]" value="10104315">Lakshadi Guggula 20gm [AV39]</option>
+<option title="Lamotrigine Tab 50 mg [384.1]" value="10100603">Lamotrigine Tab 50 mg [384.1]</option>
+<option title="Lancet [28.6]" value="10101639">Lancet [28.6]</option>
+<option title="Lancet NCD [80.1]" value="10101848">Lancet NCD [80.1]</option>
+<option title="Laryngoscope with Blade No. 00, 0, 1, 2, 3, 4 (Adult) (4 Blades) Stainless steel handle with two medium size Battery [A9]" value="10102783">Laryngoscope with Blade No. 00, 0, 1, 2, 3, 4 (Adult) (4 Blades) Stainless steel handle with two medium size Battery [A9]</option>
+<option title="Laryngoscope with Blade No. 00, 0, 1, 2, 3, 4 (Paediatric) (4 Blades) Stainless steel handle with two medium size Battery [A10]" value="10102784">Laryngoscope with Blade No. 00, 0, 1, 2, 3, 4 (Paediatric) (4 Blades) Stainless steel handle with two medium size Battery [A10]</option>
+<option title="Ledum Palustre 30  [HM63]" value="10104398">Ledum Palustre 30  [HM63]</option>
+<option title="Leishmain stain solution [L71]" value="10103239">Leishmain stain solution [L71]</option>
+<option title="Levofloxacin I.V. Inj 500 mg 100 ml Bottle [70.2]" value="10100138">Levofloxacin I.V. Inj 500 mg 100 ml Bottle [70.2]</option>
+<option title="Levofloxacin Tab 500 mg [70.1]" value="10100137">Levofloxacin Tab 500 mg [70.1]</option>
+<option title="Lignocaine HCI I.P Inj 2 % 30 ml Vial [1.2]" value="10100002">Lignocaine HCI I.P Inj 2 % 30 ml Vial [1.2]</option>
+<option title="Lignocaine Hydrochloride IP with dextrose hyperbaric (heavy) Inj. 5% + 7.5% 2 ml Amp [1.3]" value="10100003">Lignocaine Hydrochloride IP with dextrose hyperbaric (heavy) Inj. 5% + 7.5% 2 ml Amp [1.3]</option>
+<option title="Lignocaine Spray 10% [14.7]" value="10104224">Lignocaine Spray 10% [14.7]</option>
+<option title="Lignocaine with Adrenaline Inj 20 mg + 0.01 mg 30 ml Vial [1.7]" value="10100007">Lignocaine with Adrenaline Inj 20 mg + 0.01 mg 30 ml Vial [1.7]</option>
+<option title="Lignocaine with Hydrocortisone , Zinc Oxide (Anovate/ Pilorute) Cream [11.2]" value="10104177">Lignocaine with Hydrocortisone , Zinc Oxide (Anovate/ Pilorute) Cream [11.2]</option>
+<option title="Lignocaine (Xylocard) [R32]" value="10103446">Lignocaine (Xylocard) [R32]</option>
+<option title="Linezolid Inj 100 mg/ml 100 ml [71.1]" value="10100139">Linezolid Inj 100 mg/ml 100 ml [71.1]</option>
+<option title="Linezolid  Tab 600 mg [71.2]" value="10100140">Linezolid  Tab 600 mg [71.2]</option>
+<option title="Liquid hand wash [L63]" value="10103231">Liquid hand wash [L63]</option>
+<option title="Liquid Paraffin Bottle  500 ml Bottle [227.1]" value="10100388">Liquid Paraffin Bottle  500 ml Bottle [227.1]</option>
+<option title="Liquid Paraffin ? Menthol Drops [99.2a150]" value="10102009">Liquid Paraffin ? Menthol Drops [99.2a150]</option>
+<option title="Lithium Carbonate Tab 300 mg [383.1]" value="10100602">Lithium Carbonate Tab 300 mg [383.1]</option>
+<option title="Lohasava [107.3.1]" value="10101620">Lohasava [107.3.1]</option>
+<option title="Loperamide Tab 2mg [IPHS295]" value="10105086">Loperamide Tab 2mg [IPHS295]</option>
+<option title="Lorazepam Tab 2 mg [194.1]" value="10100344">Lorazepam Tab 2 mg [194.1]</option>
+<option title="Losartan Potassium Tab 50 mg [161.1]" value="10100293">Losartan Potassium Tab 50 mg [161.1]</option>
+<option title="Lycopodium clavatum 1M [70.7000000]" value="10101362">Lycopodium clavatum 1M [70.7000000]</option>
+<option title="Lycopodium clavatum 200 30ml bottle [70.6000000]" value="10101361">Lycopodium clavatum 200 30ml bottle [70.6000000]</option>
+<option title="Lycopodium clavatum 30 30ml bottle [70.5000000]" value="10101360">Lycopodium clavatum 30 30ml bottle [70.5000000]</option>
+<option title="Magenesium sulphate Inj 50 % w/v - 2 ml [244.1]" value="10100413">Magenesium sulphate Inj 50 % w/v - 2 ml [244.1]</option>
+<option title="Magnesium sulphate powder Sachet  500 gm [228.1]" value="10100389">Magnesium sulphate powder Sachet  500 gm [228.1]</option>
+<option title="Magnessium Carbonicum 200 [70.8000000]" value="10101363">Magnessium Carbonicum 200 [70.8000000]</option>
+<option title="Magnessium Phosphoricum 200 [70.9000000]" value="10101364">Magnessium Phosphoricum 200 [70.9000000]</option>
+<option title="Majoon Ard khurma [135]" value="10101096">Majoon Ard khurma [135]</option>
+<option title="Majoon Azraqi [136]" value="10101097">Majoon Azraqi [136]</option>
+<option title="Majoon Chob chini [137]" value="10101098">Majoon Chob chini [137]</option>
+<option title="Majoon Dabeedulward [138]" value="10101099">Majoon Dabeedulward [138]</option>
+<option title="Majoon  Hajrul Yahood [134]" value="10101095">Majoon  Hajrul Yahood [134]</option>
+<option title="Majoon Ispand Sokhatani [103.7]" value="10101584">Majoon Ispand Sokhatani [103.7]</option>
+<option title="Majoon Jograj Guggulu [103.8]" value="10101585">Majoon Jograj Guggulu [103.8]</option>
+<option title="Majoon Kundur [140]" value="10101101">Majoon Kundur [140]</option>
+<option title="Majoon Muqawwi e Raham [142]" value="10101103">Majoon Muqawwi e Raham [142]</option>
+<option title="Majoon Supari paak [144]" value="10101105">Majoon Supari paak [144]</option>
+<option title="Makintosh Double Colour Water Proof Rubber   Width-110cm in meter [511.1]" value="10100745">Makintosh Double Colour Water Proof Rubber   Width-110cm in meter [511.1]</option>
+<option title="Makintosh Double Colour Water Proof Rubber   Width- 90 cm in meter [512.1]" value="10100746">Makintosh Double Colour Water Proof Rubber   Width- 90 cm in meter [512.1]</option>
+<option title="Mala [205]" value="10101535">Mala [205]</option>
+<option title="Malaria Staining Kit [123]" value="10103191">Malaria Staining Kit [123]</option>
+<option title="Malicot PCN No 10.12.14,16 [R413]" value="10103829">Malicot PCN No 10.12.14,16 [R413]</option>
+<option title="Mannitol Inj  100 ml [264.1]" value="10100447">Mannitol Inj  100 ml [264.1]</option>
+<option title="Marham Quba [104.2]" value="10101589">Marham Quba [104.2]</option>
+<option title="Mastoid retractors [A36]" value="10102810">Mastoid retractors [A36]</option>
+<option title="MB (Adullt) [547.6.1]" value="10101561">MB (Adullt) [547.6.1]</option>
+<option title="MB (Child) [547.6]" value="10101562">MB (Child) [547.6]</option>
+<option title="Measured Volume set 100ml [958]" value="10101819">Measured Volume set 100ml [958]</option>
+<option title="Mebendazole Tab 100 mg [119.1]" value="10100221">Mebendazole Tab 100 mg [119.1]</option>
+<option title="Mecetronium and Alchohol Dry Hand Rub 500ml [935]" value="10101796">Mecetronium and Alchohol Dry Hand Rub 500ml [935]</option>
+<option title="Medorrhinum 200 [71.2.1]" value="10101367">Medorrhinum 200 [71.2.1]</option>
+<option title="Mephenteramine Inj 30mg/ml [D1]" value="10104624">Mephenteramine Inj 30mg/ml [D1]</option>
+<option title="Mephenteramine Inj 35 mg 10 ml Vial [12.1]" value="10100021">Mephenteramine Inj 35 mg 10 ml Vial [12.1]</option>
+<option title="Mercurial B. P. Appratus [GS26]" value="10102858">Mercurial B. P. Appratus [GS26]</option>
+<option title="Mercurius Corrosivus 30 [71.4000000]" value="10101369">Mercurius Corrosivus 30 [71.4000000]</option>
+<option title="Mercurius Solubilis 30 [HM73]" value="10104406">Mercurius Solubilis 30 [HM73]</option>
+<option title="Metformin Tab 500 mg [179.1]" value="10100320">Metformin Tab 500 mg [179.1]</option>
+<option title="Methotrexate Tab 5 mg [51.1]" value="10100086">Methotrexate Tab 5 mg [51.1]</option>
+<option title="Methyl Ergometrine Inj 0.2 mg/ml 1 ml [250.2]" value="10100424">Methyl Ergometrine Inj 0.2 mg/ml 1 ml [250.2]</option>
+<option title="Methyl Ergometrin Tab 0.125 mg [250.1]" value="10100423">Methyl Ergometrin Tab 0.125 mg [250.1]</option>
+<option title="Methylrosanilinium Chloride  (Gentian Violet) [99.2a146]" value="10101995">Methylrosanilinium Chloride  (Gentian Violet) [99.2a146]</option>
+<option title="Methylthioninium Chloride (Methylene blue) Inj 10 mg/ml 5 ml [360.1]" value="10100576">Methylthioninium Chloride (Methylene blue) Inj 10 mg/ml 5 ml [360.1]</option>
+<option title="Metoclopramide Inj 5 mg/ml 2 ml Amp [31.2]" value="10100055">Metoclopramide Inj 5 mg/ml 2 ml Amp [31.2]</option>
+<option title="Metoclopramide Tab 10 mg [31.1]" value="10100054">Metoclopramide Tab 10 mg [31.1]</option>
+<option title="Metoprolol Inj 1 mg 5 ml [165.2]" value="10100299">Metoprolol Inj 1 mg 5 ml [165.2]</option>
+<option title="Metoprolol Tab 50 mg [165.1]" value="10100298">Metoprolol Tab 50 mg [165.1]</option>
+<option title="Metronidazole Gel  45 gm [320.1]" value="10100532">Metronidazole Gel  45 gm [320.1]</option>
+<option title="Metronidazole I.V Inj 500 mg 100 ml Bottle [78.4]" value="10100156">Metronidazole I.V Inj 500 mg 100 ml Bottle [78.4]</option>
+<option title="Metronidazole Susp 200 mg/5ml 60 ml Bottle [78.3]" value="10100155">Metronidazole Susp 200 mg/5ml 60 ml Bottle [78.3]</option>
+<option title="Metronidazole Tab 200 mg [78.1]" value="10100153">Metronidazole Tab 200 mg [78.1]</option>
+<option title="Metronidazole Tab 400 mg [78.2]" value="10100154">Metronidazole Tab 400 mg [78.2]</option>
+<option title="Mezerium 200 [71.7000000]" value="10101372">Mezerium 200 [71.7000000]</option>
+<option title="Miconazole Cream 2% 15 gm [318.1]" value="10100530">Miconazole Cream 2% 15 gm [318.1]</option>
+<option title="Micro cuvettes For Digital haemoglobinometer [99.2a184]" value="10102045">Micro cuvettes For Digital haemoglobinometer [99.2a184]</option>
+<option title="Micro cuvette used for Hemocue Hb 201+ with Lancet used for Lancet gun [686.33]" value="10101507">Micro cuvette used for Hemocue Hb 201+ with Lancet used for Lancet gun [686.33]</option>
+<option title="Microdrip I.V. sets with  Volumetric chamber    Each [492.1]" value="10100726">Microdrip I.V. sets with  Volumetric chamber    Each [492.1]</option>
+<option title="Micro ear suction tips canula [A39]" value="10102813">Micro ear suction tips canula [A39]</option>
+<option title="Microslide (1*50) [546.8]" value="10101554">Microslide (1*50) [546.8]</option>
+<option title="Micro Slides Size -75 mm, long 25 mm (in the packet of 50 slides) [L77]" value="10103245">Micro Slides Size -75 mm, long 25 mm (in the packet of 50 slides) [L77]</option>
+<option title="Microtip Big pack of 1000 tip blue [R697]" value="10104112">Microtip Big pack of 1000 tip blue [R697]</option>
+<option title="Microtip Small pack of 1000 tip yellow [R698]" value="10104113">Microtip Small pack of 1000 tip yellow [R698]</option>
+<option title="Midazolam Inj 1 mg 10 ml [18.2]" value="10100030">Midazolam Inj 1 mg 10 ml [18.2]</option>
+<option title="Midazolam Inj 5 mg 1 ml [18.1]" value="10100029">Midazolam Inj 5 mg 1 ml [18.1]</option>
+<option title="Misoprostol Tab 100 mcg [249.2]" value="10100421">Misoprostol Tab 100 mcg [249.2]</option>
+<option title="Misoprostol Tab 200 mcg [249.3.1]" value="10100422">Misoprostol Tab 200 mcg [249.3.1]</option>
+<option title="Modelling Wax [O25]" value="10103353">Modelling Wax [O25]</option>
+<option title="Monofilament Nylone with needle 1/2 circle Reserve cutting Heavy needle 40mm. Size 45mm Length 100cm Or Equivalent. (NW3338) [R479]" value="10103895">Monofilament Nylone with needle 1/2 circle Reserve cutting Heavy needle 40mm. Size 45mm Length 100cm Or Equivalent. (NW3338) [R479]</option>
+<option title="Monofilament Nylone with needle 3/8 circle Reserve cutting  26mm. Size 3/0 Length 70cm Or Equivalent.( NW 3328) [R480]" value="10103896">Monofilament Nylone with needle 3/8 circle Reserve cutting  26mm. Size 3/0 Length 70cm Or Equivalent.( NW 3328) [R480]</option>
+<option title="Moxifloxacin Eye Drop 0.5% [99.2a83]" value="10101897">Moxifloxacin Eye Drop 0.5% [99.2a83]</option>
+<option title="Moxifloxacin + Prednisolone Acetate Eye Drop  5 ml [410.1]" value="10100638">Moxifloxacin + Prednisolone Acetate Eye Drop  5 ml [410.1]</option>
+<option title="Mucus extractor for neonatal deelee catheter Each [542.1]" value="10100776">Mucus extractor for neonatal deelee catheter Each [542.1]</option>
+<option title="Mucus sucker    [S130]" value="10103155">Mucus sucker    [S130]</option>
+<option title="Multiple Electrolyte 500ml [R31]" value="10103445">Multiple Electrolyte 500ml [R31]</option>
+<option title="Multiple Electrolytes and Dextrose Injection Type III  IP for Maintenance  500 ml Bottle [263.2]" value="10100446">Multiple Electrolytes and Dextrose Injection Type III  IP for Maintenance  500 ml Bottle [263.2]</option>
+<option title="Multiple Electrolytes and Dextrose Injection Type I  IP  for Pediatric use  500 ml Bottle [263.1]" value="10100445">Multiple Electrolytes and Dextrose Injection Type I  IP  for Pediatric use  500 ml Bottle [263.1]</option>
+<option title="MVA Kit [546.10]" value="10104289">MVA Kit [546.10]</option>
+<option title="N/10 Hydrochloric acid [R679]" value="10104095">N/10 Hydrochloric acid [R679]</option>
+<option title="Naja tripuduans 30 (30ml) [HM64]" value="10104397">Naja tripuduans 30 (30ml) [HM64]</option>
+<option title="Nasal Cannula [A2022]" value="10104286">Nasal Cannula [A2022]</option>
+<option title="Nasal Splint (External) [C44]" value="10104736">Nasal Splint (External) [C44]</option>
+<option title="Natrum -Carbonicum 200 [72.0000000]" value="10101375">Natrum -Carbonicum 200 [72.0000000]</option>
+<option title="Natrum Muriaticum 200(30ml) [72.3000000]" value="10101378">Natrum Muriaticum 200(30ml) [72.3000000]</option>
+<option title="Natrum Muriaticum 30 [72.1.1]" value="10101376">Natrum Muriaticum 30 [72.1.1]</option>
+<option title="Natrum Sulphuricum 200 (30ml) [72.7000000]" value="10101382">Natrum Sulphuricum 200 (30ml) [72.7000000]</option>
+<option title="Natrum Sulphuricum 30 (30ml) [72.6000000]" value="10101381">Natrum Sulphuricum 30 (30ml) [72.6000000]</option>
+<option title="Navayas Loha [240]" value="10101201">Navayas Loha [240]</option>
+<option title="Nebulisation mask with hudsons chamber pre-sterilised disposable     Each [571.1]" value="10100805">Nebulisation mask with hudsons chamber pre-sterilised disposable     Each [571.1]</option>
+<option title="Nebulizer Adult &amp; Paed [GS27]" value="10102859">Nebulizer Adult &amp; Paed [GS27]</option>
+<option title="Needle Holder 6inch [GS100]" value="10102932">Needle Holder 6inch [GS100]</option>
+<option title="Needle Holder 8inch [GS101]" value="10102933">Needle Holder 8inch [GS101]</option>
+<option title="needle holder [DLAB133]" value="10102762">needle holder [DLAB133]</option>
+<option title="NEEDLE HOLDER MEDIUM [R326]" value="10103741">NEEDLE HOLDER MEDIUM [R326]</option>
+<option title="Neil cathter No.10,12,14 fr [R557]" value="10103973">Neil cathter No.10,12,14 fr [R557]</option>
+<option title="Neostigmine Inj 0.5 mg 1 ml Amp [16.1]" value="10100026">Neostigmine Inj 0.5 mg 1 ml Amp [16.1]</option>
+<option title="Nephroctomy Tube No.12,14,16,18,20,22,24,26,28 [R560]" value="10103976">Nephroctomy Tube No.12,14,16,18,20,22,24,26,28 [R560]</option>
+<option title="Neutral  Buffer  formalin 5 lit [R721]" value="10104136">Neutral  Buffer  formalin 5 lit [R721]</option>
+<option title="Nifedipine 10 mg Tab [164.3]" value="10100970">Nifedipine 10 mg Tab [164.3]</option>
+<option title="Nifedipine Cap (Liquid) 10 mg [167.5]" value="10100945">Nifedipine Cap (Liquid) 10 mg [167.5]</option>
+<option title="Nifidepine 20 mg [R24]" value="10103438">Nifidepine 20 mg [R24]</option>
+<option title="Nitrazepam Tab 5 mg [375.1]" value="10100593">Nitrazepam Tab 5 mg [375.1]</option>
+<option title="Nitric Acid 200 (30ml) [72.9000000]" value="10101384">Nitric Acid 200 (30ml) [72.9000000]</option>
+<option title="Nitroglycerine Inj 5 mg 5 ml [416.1]" value="10100644">Nitroglycerine Inj 5 mg 5 ml [416.1]</option>
+<option title="Nonabsorable microsuture monofilament nylon  Size 10-0  Box of 12 Foils [652.1]" value="10100886">Nonabsorable microsuture monofilament nylon  Size 10-0  Box of 12 Foils [652.1]</option>
+<option title="Non absorbable surgical suture USP -12 [R817]" value="10104517">Non absorbable surgical suture USP -12 [R817]</option>
+<option title="Non absorbable surgical suture USP -3 [R807]" value="10104506">Non absorbable surgical suture USP -3 [R807]</option>
+<option title="Non absorbable surgical suture USP  [R804]" value="10104503">Non absorbable surgical suture USP  [R804]</option>
+<option title="Non DHEP IV Set [C3]" value="10104667">Non DHEP IV Set [C3]</option>
+<option title="Noradrenaline Inj 2 mg/ml 2 ml [173.1]" value="10100311">Noradrenaline Inj 2 mg/ml 2 ml [173.1]</option>
+<option title="Norethisterone Tab 5 mg [246.1]" value="10100416">Norethisterone Tab 5 mg [246.1]</option>
+<option title="Norfloxacin Tab 400 mg [87.1]" value="10100167">Norfloxacin Tab 400 mg [87.1]</option>
+<option title="Norflox + Tinidazole Tab 400 mg + 600 mg [88.1]" value="10100168">Norflox + Tinidazole Tab 400 mg + 600 mg [88.1]</option>
+<option title="Nux moschata 200 (30ml) [HM65]" value="10104396">Nux moschata 200 (30ml) [HM65]</option>
+<option title="Nux vomica 1M 30ml [73.2.1]" value="10101387">Nux vomica 1M 30ml [73.2.1]</option>
+<option title="Nux vomica 200 (30ml) [73.1.1]" value="10101386">Nux vomica 200 (30ml) [73.1.1]</option>
+<option title="Nux vomica 30 (30ml) [73.0000000]" value="10101385">Nux vomica 30 (30ml) [73.0000000]</option>
+<option title="Nylon  Monofilament nonabsorbable polymers   40 mm Size  1/0 Length  150 cm  Box of 12 Foils [643.1]" value="10100877">Nylon  Monofilament nonabsorbable polymers   40 mm Size  1/0 Length  150 cm  Box of 12 Foils [643.1]</option>
+<option title="Nylon  Monofilament nonabsorbable polymers   50 mm Size  1 Length  150 cm  Box of 12 Foils [642.1]" value="10100876">Nylon  Monofilament nonabsorbable polymers   50 mm Size  1 Length  150 cm  Box of 12 Foils [642.1]</option>
+<option title="Nylon  Monofilament nonabsorbable polymers   50 mm Size  2-0  Box of 12 Foils [644.1]" value="10100878">Nylon  Monofilament nonabsorbable polymers   50 mm Size  2-0  Box of 12 Foils [644.1]</option>
+<option title="Nylon  Monofilament Polymide 3/8 Circle  cutting needle   30 mm70cm.Size 3-0 Box of 12 Foils [645.1]" value="10100879">Nylon  Monofilament Polymide 3/8 Circle  cutting needle   30 mm70cm.Size 3-0 Box of 12 Foils [645.1]</option>
+<option title="Nylon  Monofilament Polymide 3/8 Circle precise cutting needle  19mm70cm. Size 4-0 Box of 12 Foils [646.1]" value="10100880">Nylon  Monofilament Polymide 3/8 Circle precise cutting needle  19mm70cm. Size 4-0 Box of 12 Foils [646.1]</option>
+<option title="Ofloxacin Tab 200 mg [77.1]" value="10100151">Ofloxacin Tab 200 mg [77.1]</option>
+<option title="Olanzapine Tab 10 mg [391.2]" value="10100616">Olanzapine Tab 10 mg [391.2]</option>
+<option title="Olanzapine Tab 5 mg [391.1]" value="10100615">Olanzapine Tab 5 mg [391.1]</option>
+<option title="Omeprazole Cap 20 mg [26.1]" value="10100043">Omeprazole Cap 20 mg [26.1]</option>
+<option title="Ondansetron Inj 2 mg/ml 2 ml Amp [29.2]" value="10100050">Ondansetron Inj 2 mg/ml 2 ml Amp [29.2]</option>
+<option title="Ondansetron Syrup 2 mg/5 ml 30 ml [29.3.1]" value="10100051">Ondansetron Syrup 2 mg/5 ml 30 ml [29.3.1]</option>
+<option title="Ondansetron Tab 4 mg [29.1]" value="10100049">Ondansetron Tab 4 mg [29.1]</option>
+<option title="Opium 200 (30ml) [73.4.1]" value="10101389">Opium 200 (30ml) [73.4.1]</option>
+<option title="Oral Rehydration Salt Powder WHO Formula 20.5 gms Sachet [32.1]" value="10100056">Oral Rehydration Salt Powder WHO Formula 20.5 gms Sachet [32.1]</option>
+<option title="Oseltamivir Phosphate Cap 45 mg [546.01]" value="10101010">Oseltamivir Phosphate Cap 45 mg [546.01]</option>
+<option title="Oseltamivir Phosphate Cap 75 mg [546.02]" value="10101011">Oseltamivir Phosphate Cap 75 mg [546.02]</option>
+<option title="Oxygen Cylinder Refilling [R614]" value="10104030">Oxygen Cylinder Refilling [R614]</option>
+<option title="Oxygen flowmeter Key [A15]" value="10102789">Oxygen flowmeter Key [A15]</option>
+<option title="Oxygen Mask [A16]" value="10102790">Oxygen Mask [A16]</option>
+<option title="Oxygen Refilling I.P. Standard 660 Ltr, 1720 Ltr. [9.1]" value="10100018">Oxygen Refilling I.P. Standard 660 Ltr, 1720 Ltr. [9.1]</option>
+<option title="Oxygen regulator with humidifier bottle + Key compete set [A14]" value="10102788">Oxygen regulator with humidifier bottle + Key compete set [A14]</option>
+<option title="Oxygen tube with nasal prongs    Each [493.1]" value="10100727">Oxygen tube with nasal prongs    Each [493.1]</option>
+<option title="Oxymetazoline Nasal Drop 0.05% 10 ml [D7]" value="10104665">Oxymetazoline Nasal Drop 0.05% 10 ml [D7]</option>
+<option title="Oxytocin Inj 5 IU 1 ml [251.1]" value="10100425">Oxytocin Inj 5 IU 1 ml [251.1]</option>
+<option title="Panchamrut Parpati [224]" value="10101185">Panchamrut Parpati [224]</option>
+<option title="Pantoprazole Inj 40 mg 10 ml Vial [27.1]" value="10100045">Pantoprazole Inj 40 mg 10 ml Vial [27.1]</option>
+<option title="Pantoprazole Tab 40 mg [27.2]" value="10100046">Pantoprazole Tab 40 mg [27.2]</option>
+<option title="Paper Adhesive Plaster    1/2inch  x 5 mtr  Roll [446.1]" value="10100680">Paper Adhesive Plaster    1/2inch  x 5 mtr  Roll [446.1]</option>
+<option title="Paper Adhesive Plaster     1inch  x 5 mtr  Roll [447.1]" value="10100681">Paper Adhesive Plaster     1inch  x 5 mtr  Roll [447.1]</option>
+<option title="Paper Adhesive Plaster    2inch  x 5 mtr  Roll [448.1]" value="10100682">Paper Adhesive Plaster    2inch  x 5 mtr  Roll [448.1]</option>
+<option title="Paper Adhesive Plaster    3inch  x 5 mtr  Roll [449.1]" value="10100683">Paper Adhesive Plaster    3inch  x 5 mtr  Roll [449.1]</option>
+<option title="Paper Based Adhesive Tape [C8]" value="10104673">Paper Based Adhesive Tape [C8]</option>
+<option title="Paracetamol  125 mg/5 ml Bottle of 60 ml syrup [D17]" value="10104690">Paracetamol  125 mg/5 ml Bottle of 60 ml syrup [D17]</option>
+<option title="Paracetamol 50 ml IV  [D18]" value="10104641">Paracetamol 50 ml IV  [D18]</option>
+<option title="Paracetamol Drops 150 mg/ml 15 ml [41.4]" value="10100070">Paracetamol Drops 150 mg/ml 15 ml [41.4]</option>
+<option title="Paracetamol Inj 150 mg/ml 2 ml Amp [41.2]" value="10100068">Paracetamol Inj 150 mg/ml 2 ml Amp [41.2]</option>
+<option title="Paracetamol Suppository 250 mg [R88]" value="10103503">Paracetamol Suppository 250 mg [R88]</option>
+<option title="Paracetamol Suppository Tab 170  mg [41.1]" value="10100067">Paracetamol Suppository Tab 170  mg [41.1]</option>
+<option title="Paracetamol Syrup 250 mg /5 ml 60 ml [41.5]" value="10100071">Paracetamol Syrup 250 mg /5 ml 60 ml [41.5]</option>
+<option title="Paracetamol Tab 250mg [D16]" value="10104688">Paracetamol Tab 250mg [D16]</option>
+<option title="Paracetamol Tab 500 mg [41.3]" value="10100069">Paracetamol Tab 500 mg [41.3]</option>
+<option title="Passiflora Incarnate 30ml [HM12]" value="10104321">Passiflora Incarnate 30ml [HM12]</option>
+<option title="PB (Adult) [547.7]" value="10101563">PB (Adult) [547.7]</option>
+<option title="PB (Child) [547.8]" value="10101564">PB (Child) [547.8]</option>
+<option title="Pencil Cautery [R215]" value="10103630">Pencil Cautery [R215]</option>
+<option title="Pentazocine Inj 30 mg 1 ml Amp [46.1]" value="10100081">Pentazocine Inj 30 mg 1 ml Amp [46.1]</option>
+<option title="Permethrin Cream   30 gm [321.1]" value="10100533">Permethrin Cream   30 gm [321.1]</option>
+<option title="Personal Protective Equipment (PPE) kit - XXL Size [R214]" value="10103629">Personal Protective Equipment (PPE) kit - XXL Size [R214]</option>
+<option title="Petroleum 1M (30 ml) [HM94]" value="10104427">Petroleum 1M (30 ml) [HM94]</option>
+<option title="Petroleum 200 [73.5000000]" value="10101390">Petroleum 200 [73.5000000]</option>
+<option title="Petroleum 30ml [HM38]" value="10104362">Petroleum 30ml [HM38]</option>
+<option title="Pheniramine Maleate Inj 22.75mg/2ml [40.2]" value="10100967">Pheniramine Maleate Inj 22.75mg/2ml [40.2]</option>
+<option title="Phenobarbitone Inj 200 mg/ml 1 ml [190.4]" value="10100338">Phenobarbitone Inj 200 mg/ml 1 ml [190.4]</option>
+<option title="Phenobarbitone Tab 30 mg [190.1]" value="10100335">Phenobarbitone Tab 30 mg [190.1]</option>
+<option title="Phenobarbitone Tab 60 mg [190.2]" value="10100336">Phenobarbitone Tab 60 mg [190.2]</option>
+<option title="Phenytoin Inj 50 mg/ml 2 ml [191.2]" value="10100340">Phenytoin Inj 50 mg/ml 2 ml [191.2]</option>
+<option title="Phenytoin Sodium Tab 100 mg [191.1]" value="10100339">Phenytoin Sodium Tab 100 mg [191.1]</option>
+<option title="Phosphoric Acid 200 (30 ml) [73.7000000]" value="10101392">Phosphoric Acid 200 (30 ml) [73.7000000]</option>
+<option title="Phosphorus - 1M (30 ml) [HM93]" value="10104426">Phosphorus - 1M (30 ml) [HM93]</option>
+<option title="Phosphorus 200 (30 ml) [74.0000000]" value="10101395">Phosphorus 200 (30 ml) [74.0000000]</option>
+<option title="Phosphorus 30 (30 ml) [73.9000000]" value="10101394">Phosphorus 30 (30 ml) [73.9000000]</option>
+<option title="plane tube with double cap, singel cap [R846]" value="10104545">plane tube with double cap, singel cap [R846]</option>
+<option title="plantago major Q (30 ml) [HM92]" value="10104425">plantago major Q (30 ml) [HM92]</option>
+<option title="Plasma Derived Factor - IX 600 IU [99.2a47]" value="10101964">Plasma Derived Factor - IX 600 IU [99.2a47]</option>
+<option title="Plaster of Paris Bandages 10cm x 2.7 m Rolls [494.1]" value="10100728">Plaster of Paris Bandages 10cm x 2.7 m Rolls [494.1]</option>
+<option title="Plaster of Paris Bandages 15cm x 2.7 m Rolls [495.1]" value="10100729">Plaster of Paris Bandages 15cm x 2.7 m Rolls [495.1]</option>
+<option title="Plaster of Paris Bandages 20cm x 2.7 m Rolls [496.1]" value="10100730">Plaster of Paris Bandages 20cm x 2.7 m Rolls [496.1]</option>
+<option title="Plaster Of Paris Plast Bandage 4 [183.30]" value="10101053">Plaster Of Paris Plast Bandage 4 [183.30]</option>
+<option title="Plaster of Paris Powder Bag  I.P. [566.1]" value="10100800">Plaster of Paris Powder Bag  I.P. [566.1]</option>
+<option title="Plastic Appron    Each [582.1]" value="10100816">Plastic Appron    Each [582.1]</option>
+<option title="Platinum metallicum 200 (30 ml) [HM91]" value="10104424">Platinum metallicum 200 (30 ml) [HM91]</option>
+<option title="Podophyllum peltatum 200 (30 ml) [74.8000000]" value="10101403">Podophyllum peltatum 200 (30 ml) [74.8000000]</option>
+<option title="Podophyllum peltatum 30 (30 ml) [74.7000000]" value="10101402">Podophyllum peltatum 30 (30 ml) [74.7000000]</option>
+<option title="Poly Drain set under water sealed drainage system No.10 to 16 [R548]" value="10103964">Poly Drain set under water sealed drainage system No.10 to 16 [R548]</option>
+<option title="Polydrapes (Eye) Disposable [692.2]" value="10100964">Polydrapes (Eye) Disposable [692.2]</option>
+<option title="Polypropelene Synthetic Monofilament nonabsorbable mesh  3 [568.1]" value="10100802">Polypropelene Synthetic Monofilament nonabsorbable mesh  3 [568.1]</option>
+<option title="Polypropelene Synthetic Monofilament    Size 1/0   Box of 12 Foils [648.1]" value="10100882">Polypropelene Synthetic Monofilament    Size 1/0   Box of 12 Foils [648.1]</option>
+<option title="Polypropelene Synthetic Monofilament    Size 1   Box of 12 Foils [647.1]" value="10100881">Polypropelene Synthetic Monofilament    Size 1   Box of 12 Foils [647.1]</option>
+<option title="Polypropelene Synthetic Monofilament    Size 2/0   Box of 12 Foils [649.1]" value="10100883">Polypropelene Synthetic Monofilament    Size 2/0   Box of 12 Foils [649.1]</option>
+<option title="Polypropelene Synthetic Monofilament    Size 3/0   Box of 12 Foils [650.1]" value="10100884">Polypropelene Synthetic Monofilament    Size 3/0   Box of 12 Foils [650.1]</option>
+<option title="Polypropelene Synthetic Monofilament    Size 4/0   Box of 12 Foils [651.1]" value="10100885">Polypropelene Synthetic Monofilament    Size 4/0   Box of 12 Foils [651.1]</option>
+<option title="Polypropylene mesh with double bar knitted contrsuction pore size &amp; gt 1,micron 6 [567.1]" value="10100801">Polypropylene mesh with double bar knitted contrsuction pore size &amp; gt 1,micron 6 [567.1]</option>
+<option title="Polypropylene Suture 1/2 circle Round Body 25mm. Size 3/0 Length 70 cm OR Equivalent  (NW 838 ) [R473]" value="10103889">Polypropylene Suture 1/2 circle Round Body 25mm. Size 3/0 Length 70 cm OR Equivalent  (NW 838 ) [R473]</option>
+<option title="Polysulphone Low -Flux Dialysers F4 [R778]" value="10104477">Polysulphone Low -Flux Dialysers F4 [R778]</option>
+<option title="Potassium Permangnate Packet 500 gm [403.1]" value="10100631">Potassium Permangnate Packet 500 gm [403.1]</option>
+<option title="Potassiun chloride Inj 150 mg/ml 10 ml [258.1]" value="10100438">Potassiun chloride Inj 150 mg/ml 10 ml [258.1]</option>
+<option title="Povidine lodine solution scrub  7.50 % 500 ml [316.3]" value="10100525">Povidine lodine solution scrub  7.50 % 500 ml [316.3]</option>
+<option title="Povidone Iodine Ointment 5 % 15 gm [316.1]" value="10100523">Povidone Iodine Ointment 5 % 15 gm [316.1]</option>
+<option title="Povidone Iodine Solution 5 % 500 ml [316.2]" value="10100524">Povidone Iodine Solution 5 % 500 ml [316.2]</option>
+<option title="Praval Pishti [107.9]" value="10101626">Praval Pishti [107.9]</option>
+<option title="Prednisolone Tab 10 mg [254.2]" value="10100429">Prednisolone Tab 10 mg [254.2]</option>
+<option title="Prednisolone Tab 20 mg [254.3]" value="10100430">Prednisolone Tab 20 mg [254.3]</option>
+<option title="Prednisolone Tab 5 mg [254.1]" value="10100428">Prednisolone Tab 5 mg [254.1]</option>
+<option title="Premix Insulin 30:70 Inj  10 ml [229.5]" value="10100394">Premix Insulin 30:70 Inj  10 ml [229.5]</option>
+<option title="Pricking Lancet [32]" value="10100935">Pricking Lancet [32]</option>
+<option title="Pricking Lancet Needles [12]" value="10100934">Pricking Lancet Needles [12]</option>
+<option title="Primaquine Tab 15 mg [123.3]" value="10100228">Primaquine Tab 15 mg [123.3]</option>
+<option title="Primaquine Tab 2.5 mg [123.1]" value="10100226">Primaquine Tab 2.5 mg [123.1]</option>
+<option title="Primaquine Tab 7.5 mg [123.2]" value="10100227">Primaquine Tab 7.5 mg [123.2]</option>
+<option title="Prolene 3.0 NKL838 [R182]" value="10103597">Prolene 3.0 NKL838 [R182]</option>
+<option title="Prolene 4.0 NW 8830 [R183]" value="10103598">Prolene 4.0 NW 8830 [R183]</option>
+<option title="Prolene 7-0 NW873 [R186]" value="10103601">Prolene 7-0 NW873 [R186]</option>
+<option title="Promethazine Inj 25 mg/ml 2 ml Amp [30.2]" value="10100053">Promethazine Inj 25 mg/ml 2 ml Amp [30.2]</option>
+<option title="Propofol 1% 10MG/ML-10 ml Vial [5.03]" value="10104288">Propofol 1% 10MG/ML-10 ml Vial [5.03]</option>
+<option title="Propofol Inj 1 % (10 mg) 20 ml Vial [5.1]" value="10100014">Propofol Inj 1 % (10 mg) 20 ml Vial [5.1]</option>
+<option title="Propofol Inj 2% (10 mg) 10 ml Vial [5.2]" value="10100966">Propofol Inj 2% (10 mg) 10 ml Vial [5.2]</option>
+<option title="Propranolol Tab 40 mg [376.2]" value="10100595">Propranolol Tab 40 mg [376.2]</option>
+<option title="Psorinum 200 (30 ml) [74.9000000]" value="10101404">Psorinum 200 (30 ml) [74.9000000]</option>
+<option title="Pulsutilla migricans 1 M (30 ml) [HM84]" value="10104417">Pulsutilla migricans 1 M (30 ml) [HM84]</option>
+<option title="Pulsutilla migricans 200 (30 ml) [HM85]" value="10104418">Pulsutilla migricans 200 (30 ml) [HM85]</option>
+<option title="Pulsutilla migricans 30 (30 ml) [HM86]" value="10104419">Pulsutilla migricans 30 (30 ml) [HM86]</option>
+<option title="Punarnavaadi Mandur 10gm [226]" value="10101187">Punarnavaadi Mandur 10gm [226]</option>
+<option title="Punarnavaasav [184.21]" value="10101145">Punarnavaasav [184.21]</option>
+<option title="Punarnava Mandura 5gm [AV4]" value="10104301">Punarnava Mandura 5gm [AV4]</option>
+<option title="Purified Talc &amp;  40  Gloves Powder &amp;  41  &amp;  40 Any Size&amp;  41  [789.40]" value="10100994">Purified Talc &amp;  40  Gloves Powder &amp;  41  &amp;  40 Any Size&amp;  41  [789.40]</option>
+<option title="Pyrogenium 200 (30 ml) [HM83]" value="10104416">Pyrogenium 200 (30 ml) [HM83]</option>
+<option title="Quetiapine Tab 100 mg [395.2]" value="10100621">Quetiapine Tab 100 mg [395.2]</option>
+<option title="Quetiapine Tab 50 mg [395.1]" value="10100620">Quetiapine Tab 50 mg [395.1]</option>
+<option title="Quinine Inj 300 mg 2 ml Amp [132.1]" value="10100243">Quinine Inj 300 mg 2 ml Amp [132.1]</option>
+<option title="Quinine Tab 300 mg [132.2]" value="10100244">Quinine Tab 300 mg [132.2]</option>
+<option title="Qurs e  Anjbar [141]" value="10101102">Qurs e  Anjbar [141]</option>
+<option title="Qurs-e-Deedan [154]" value="10101115">Qurs-e-Deedan [154]</option>
+<option title="Qurs-e-Habis [150]" value="10101111">Qurs-e-Habis [150]</option>
+<option title="Qurs e Mulayyan [151]" value="10101112">Qurs e Mulayyan [151]</option>
+<option title="Qurs-Ziyabetus-Khas [155]" value="10101116">Qurs-Ziyabetus-Khas [155]</option>
+<option title="Qushta-e-Baiza-e-murgh [U153.2]" value="10101114">Qushta-e-Baiza-e-murgh [U153.2]</option>
+<option title="Rabies immunoglobin - Anti Rabies Serum Inj  2 ml [216.1]" value="10100372">Rabies immunoglobin - Anti Rabies Serum Inj  2 ml [216.1]</option>
+<option title="Ranitidine Inj 25 mg 2 ml Amp [24.1]" value="10100040">Ranitidine Inj 25 mg 2 ml Amp [24.1]</option>
+<option title="Ranitidine Tab 150 mg [24.2]" value="10100041">Ranitidine Tab 150 mg [24.2]</option>
+<option title="Rapid Antigen Test Kit - Novel Corona Virus [21.22]" value="10104264">Rapid Antigen Test Kit - Novel Corona Virus [21.22]</option>
+<option title="Ratanhia 200 (30 ml) [HM82]" value="10104415">Ratanhia 200 (30 ml) [HM82]</option>
+<option title="Rauwolfia serpentina Q (30ml) [HM36]" value="10104357">Rauwolfia serpentina Q (30ml) [HM36]</option>
+<option title="Recombinant Erythropoietin Injection 4000  IU [R49]" value="10103463">Recombinant Erythropoietin Injection 4000  IU [R49]</option>
+<option title="Recombinant Factor VIII 250 IU [99.2a190]" value="10101958">Recombinant Factor VIII 250 IU [99.2a190]</option>
+<option title="Recombinant Factor VIII 500 IU [99.2a131]" value="10101959">Recombinant Factor VIII 500 IU [99.2a131]</option>
+<option title="Reserver bag with O2 Mask [R176]" value="10103591">Reserver bag with O2 Mask [R176]</option>
+<option title="Respridone 2 mg [363.12]" value="10101203">Respridone 2 mg [363.12]</option>
+<option title="Retractor Abdominal, Morris  Pattern Double  Ended [OBG18]" value="10102983">Retractor Abdominal, Morris  Pattern Double  Ended [OBG18]</option>
+<option title="Retractor Anterior Vaginal wall  Sims Specullam  6inch [OBG2]" value="10102967">Retractor Anterior Vaginal wall  Sims Specullam  6inch [OBG2]</option>
+<option title="Retractor Anterior Vaginal wall  Sims Specullam  8inch [OBG3]" value="10102968">Retractor Anterior Vaginal wall  Sims Specullam  8inch [OBG3]</option>
+<option title="Reuse prevention syringes 10ml [99.2a103]" value="10101917">Reuse prevention syringes 10ml [99.2a103]</option>
+<option title="Reuse prevention syringes 2ml [99.2a100]" value="10101914">Reuse prevention syringes 2ml [99.2a100]</option>
+<option title="Reuse prevention syringes 3ml [99.2a101]" value="10101915">Reuse prevention syringes 3ml [99.2a101]</option>
+<option title="Rhus toxicodendron 1M (30ml) [HM20]" value="10104329">Rhus toxicodendron 1M (30ml) [HM20]</option>
+<option title="Rhus toxicodendron 200 (30ml) [HM21]" value="10104330">Rhus toxicodendron 200 (30ml) [HM21]</option>
+<option title="Rhus toxicodendron 30 (30ml) [HM22]" value="10104331">Rhus toxicodendron 30 (30ml) [HM22]</option>
+<option title="Ringer Lactate I.V 500 ml Bottle [262.1]" value="10100444">Ringer Lactate I.V 500 ml Bottle [262.1]</option>
+<option title="Risperidone Tab 2 mg [393.1]" value="10100618">Risperidone Tab 2 mg [393.1]</option>
+<option title="Roghan Babuna Sada [157]" value="10101118">Roghan Babuna Sada [157]</option>
+<option title="Rolled cotton Bandage as per Schedule F-II   10 cm x 4 Mtr  Roll [503.1]" value="10100737">Rolled cotton Bandage as per Schedule F-II   10 cm x 4 Mtr  Roll [503.1]</option>
+<option title="Rolled cotton Bandage as per Schedule F-II   15 cm x 4 Mtr  Roll [504.1]" value="10100738">Rolled cotton Bandage as per Schedule F-II   15 cm x 4 Mtr  Roll [504.1]</option>
+<option title="Rolled cotton Bandage as per Schedule F-II   7.5 cm x 4 Mtr  Roll [505.1]" value="10100739">Rolled cotton Bandage as per Schedule F-II   7.5 cm x 4 Mtr  Roll [505.1]</option>
+<option title="Rolled cotton Bandage as per Schedule F-II 7.5 cm x 5 Mtr Roll [2021.1]" value="10104265">Rolled cotton Bandage as per Schedule F-II 7.5 cm x 5 Mtr Roll [2021.1]</option>
+<option title="Rotahalers [12.5]" value="10104206">Rotahalers [12.5]</option>
+<option title="RTI-STI KIT No. 2 (Tab. Secinidazole 1 grams (2 Tablets ) / Tab. Fluconazole 150 mg (1 Tablet) ) [29.4]" value="10101843">RTI-STI KIT No. 2 (Tab. Secinidazole 1 grams (2 Tablets ) / Tab. Fluconazole 150 mg (1 Tablet) ) [29.4]</option>
+<option title="Rubber Catheter Plain  Size 4 [506.1]" value="10100740">Rubber Catheter Plain  Size 4 [506.1]</option>
+<option title="Rubber Catheter Plain  Size 5 [507.1]" value="10100741">Rubber Catheter Plain  Size 5 [507.1]</option>
+<option title="Rubber Catheter Plain  Size 6 [508.1]" value="10100742">Rubber Catheter Plain  Size 6 [508.1]</option>
+<option title="Rubber Catheter Plain  Size 7 [509.1]" value="10100743">Rubber Catheter Plain  Size 7 [509.1]</option>
+<option title="Rubber Catheter Plain  Size 8 [510.1]" value="10100744">Rubber Catheter Plain  Size 8 [510.1]</option>
+<option title="Ruta graveolens 200 (30ml) [76.0000000]" value="10101415">Ruta graveolens 200 (30ml) [76.0000000]</option>
+<option title="Ruta graveolens 30 [75.9000000]" value="10101414">Ruta graveolens 30 [75.9000000]</option>
+<option title="Ryles Tube 40 Nasogastric Tube 41 No. 12 [585.1]" value="10100819">Ryles Tube 40 Nasogastric Tube 41 No. 12 [585.1]</option>
+<option title="Ryles Tube -(Nasogastric Tube) No. 14 [586.1]" value="10100820">Ryles Tube -(Nasogastric Tube) No. 14 [586.1]</option>
+<option title="Ryles Tube -(Nasogastric Tube) No. 16 [586.2]" value="10100982">Ryles Tube -(Nasogastric Tube) No. 16 [586.2]</option>
+<option title="Ryles Tube -(Nasogastric Tube) No. 18 [586.2586.3]" value="10100983">Ryles Tube -(Nasogastric Tube) No. 18 [586.2586.3]</option>
+<option title="Ryles Tube -(Nasogastric Tube) No. 7 [583.1]" value="10100817">Ryles Tube -(Nasogastric Tube) No. 7 [583.1]</option>
+<option title="Ryles Tube -(Nasogastric Tube) No. 8 [584.1]" value="10100818">Ryles Tube -(Nasogastric Tube) No. 8 [584.1]</option>
+<option title="Sabal Serrulata 30 (30 ml) [HM81]" value="10104414">Sabal Serrulata 30 (30 ml) [HM81]</option>
+<option title="Sabal Serrulata  Q (30ml) [76.1.1]" value="10101416">Sabal Serrulata  Q (30ml) [76.1.1]</option>
+<option title="Sabina 200 (30 ml) [76.3000000]" value="10101418">Sabina 200 (30 ml) [76.3000000]</option>
+<option title="Safe Delivery Kits [105.35]" value="10101062">Safe Delivery Kits [105.35]</option>
+<option title="Safoof Bars [162]" value="10101123">Safoof Bars [162]</option>
+<option title="Safoof-e-Mohazzil [165]" value="10101126">Safoof-e-Mohazzil [165]</option>
+<option title="Safoof Sailaan [164]" value="10101125">Safoof Sailaan [164]</option>
+<option title="Salbutamol Rotacaps Powder Puff 200 mcg [184.2]" value="10100327">Salbutamol Rotacaps Powder Puff 200 mcg [184.2]</option>
+<option title="Salbutamol Syrup 2 mg/5ml 100 ml [184.3]" value="10100328">Salbutamol Syrup 2 mg/5ml 100 ml [184.3]</option>
+<option title="Salbutamol Tab 4 mg [184.1]" value="10100326">Salbutamol Tab 4 mg [184.1]</option>
+<option title="Saline Nasal Drop  10 ml [423.1]" value="10100651">Saline Nasal Drop  10 ml [423.1]</option>
+<option title="Sanitary Napkin [4.10]" value="10104293">Sanitary Napkin [4.10]</option>
+<option title="Saptamruta Loha 5gm [AV3]" value="10104300">Saptamruta Loha 5gm [AV3]</option>
+<option title="Saptamrut Loha [241]" value="10101202">Saptamrut Loha [241]</option>
+<option title="Sarsaaparilla 30ml [HM44]" value="10104368">Sarsaaparilla 30ml [HM44]</option>
+<option title="Sarsaparilla 200 (30 ml) [76.5000000]" value="10101420">Sarsaparilla 200 (30 ml) [76.5000000]</option>
+<option title="Scalpel/B.P. Handle. 14cm. No. 3   [S102]" value="10103127">Scalpel/B.P. Handle. 14cm. No. 3   [S102]</option>
+<option title="Scalpel Handle No.3 [GS16]" value="10102848">Scalpel Handle No.3 [GS16]</option>
+<option title="Scalpel Handle No.4 [GS17]" value="10102849">Scalpel Handle No.4 [GS17]</option>
+<option title="Scissor Mayoes  6inch [GS105]" value="10102937">Scissor Mayoes  6inch [GS105]</option>
+<option title="Scissor Mayoes  8inch [GS10]" value="10102842">Scissor Mayoes  8inch [GS10]</option>
+<option title="Scissors Dissecting Curved   6inch  [GS109]" value="10102941">Scissors Dissecting Curved   6inch  [GS109]</option>
+<option title="Scissors Dissecting Curved   8inch  [GS110]" value="10102942">Scissors Dissecting Curved   8inch  [GS110]</option>
+<option title="Scissors Dissecting Straight  6inch  [GS107]" value="10102939">Scissors Dissecting Straight  6inch  [GS107]</option>
+<option title="Scissors Dissecting Straight  8inch  [GS108]" value="10102940">Scissors Dissecting Straight  8inch  [GS108]</option>
+<option title="Scissors Nail Curved for venesection 4inch [GS111]" value="10102943">Scissors Nail Curved for venesection 4inch [GS111]</option>
+<option title="Secale Cornutum 200 (30 ml) [76.6000000]" value="10101421">Secale Cornutum 200 (30 ml) [76.6000000]</option>
+<option title="Secale Cornutum  30 (30ml) [76.7000000]" value="10101422">Secale Cornutum  30 (30ml) [76.7000000]</option>
+<option title="Selenium 200 (30ml) [HM37]" value="10104361">Selenium 200 (30ml) [HM37]</option>
+<option title="Sepia 200 (30ml) [HM19]" value="10104328">Sepia 200 (30ml) [HM19]</option>
+<option title="Sepia 30 (30ml) [HM25]" value="10104338">Sepia 30 (30ml) [HM25]</option>
+<option title="Sertraline Tab 50 mg [381.1]" value="10100600">Sertraline Tab 50 mg [381.1]</option>
+<option title="Silastic Band pair [574.1]" value="10100808">Silastic Band pair [574.1]</option>
+<option title="Silicea 200 (30ml) [HM24]" value="10104336">Silicea 200 (30ml) [HM24]</option>
+<option title="Silicea 30 (30ml) [HM23]" value="10104334">Silicea 30 (30ml) [HM23]</option>
+<option title="Silicon Cathter No.12,14,16,18 [R567]" value="10103983">Silicon Cathter No.12,14,16,18 [R567]</option>
+<option title="SILK 2-0 Round Body [R200]" value="10103615">SILK 2-0 Round Body [R200]</option>
+<option title="SILK 3-0 Round body [R201]" value="10103616">SILK 3-0 Round body [R201]</option>
+<option title="Silver Nitrate for Fogging [99.2a45]" value="10101950">Silver Nitrate for Fogging [99.2a45]</option>
+<option title="Silver Sulphadiazine Cream   250 gm [330.1]" value="10100543">Silver Sulphadiazine Cream   250 gm [330.1]</option>
+<option title="Single Blood Collection Bags [540.5]" value="10101551">Single Blood Collection Bags [540.5]</option>
+<option title="Sinhanaad  Guggul [196]" value="10101157">Sinhanaad  Guggul [196]</option>
+<option title="Sinus Forceps 6inch [GS72]" value="10102904">Sinus Forceps 6inch [GS72]</option>
+<option title="Sitopaladi Churna [200]" value="10101161">Sitopaladi Churna [200]</option>
+<option title="Skin Stapler  [GS116]" value="10102948">Skin Stapler  [GS116]</option>
+<option title="Small Micro Tips [L58]" value="10103226">Small Micro Tips [L58]</option>
+<option title="Small YellowTips  [L57]" value="10103225">Small YellowTips  [L57]</option>
+<option title="Snake Venom Antiserum Lyophilized polyvalent Powder for Injection 10 ml [D12]" value="10104749">Snake Venom Antiserum Lyophilized polyvalent Powder for Injection 10 ml [D12]</option>
+<option title="Sodium and Pottasium  Chloride(Combine pack) Roach Make (snape pack) [R650]" value="10104066">Sodium and Pottasium  Chloride(Combine pack) Roach Make (snape pack) [R650]</option>
+<option title="Sodium bicarbonate Inj 7.5 % 10 ml [266.1]" value="10100450">Sodium bicarbonate Inj 7.5 % 10 ml [266.1]</option>
+<option title="Sodium Chloride 3 lit [R25]" value="10103439">Sodium Chloride 3 lit [R25]</option>
+<option title="Sodium Chloride IP 15% w/v,Glycerin IP 15% w/v ENEMA [99.2a1]" value="10101883">Sodium Chloride IP 15% w/v,Glycerin IP 15% w/v ENEMA [99.2a1]</option>
+<option title="Sodium Chloride - Normal Saline 0.9% Inj. I.V. 100ml [13.7]" value="10104216">Sodium Chloride - Normal Saline 0.9% Inj. I.V. 100ml [13.7]</option>
+<option title="Sodium Chloride (Normal saline) 0.9% IV 500 ml Bottle [259.1]" value="10100439">Sodium Chloride (Normal saline) 0.9% IV 500 ml Bottle [259.1]</option>
+<option title="Sodium Hypochlorite Solution  200 ml [428.1]" value="10100657">Sodium Hypochlorite Solution  200 ml [428.1]</option>
+<option title="Sodium Hypochlorite Solution  5000 ml [428.2]" value="10100658">Sodium Hypochlorite Solution  5000 ml [428.2]</option>
+<option title="Sodium Hypochlorite solution [R692]" value="10104107">Sodium Hypochlorite solution [R692]</option>
+<option title="Sodium Valporate Tab 200 mg [192.1]" value="10100341">Sodium Valporate Tab 200 mg [192.1]</option>
+<option title="Soft Cotton Roll 50 gm Packet [674.1]" value="10100908">Soft Cotton Roll 50 gm Packet [674.1]</option>
+<option title="Solubility kit ( For sicklecell) [L92]" value="10103260">Solubility kit ( For sicklecell) [L92]</option>
+<option title="Sonography Jelly    250 gm [672.1]" value="10100906">Sonography Jelly    250 gm [672.1]</option>
+<option title="Spirometer [R155]" value="10103570">Spirometer [R155]</option>
+<option title="Spirometer [R572]" value="10103988">Spirometer [R572]</option>
+<option title="Spironolactone Tab 25 mg [368.1]" value="10100585">Spironolactone Tab 25 mg [368.1]</option>
+<option title="Sponge Holder [R308]" value="10103723">Sponge Holder [R308]</option>
+<option title="Sponge holding forceps 10inch   [S112]" value="10103137">Sponge holding forceps 10inch   [S112]</option>
+<option title="Sponge  holding Forceps [S12]" value="10103036">Sponge  holding Forceps [S12]</option>
+<option title="Spongia 200 (30ml) [HM18]" value="10104327">Spongia 200 (30ml) [HM18]</option>
+<option title="Sputum Container [546.7]" value="10101553">Sputum Container [546.7]</option>
+<option title="Stainless Steel  Tray  with  cover  12 inch x 10inch [MS16]" value="10102831">Stainless Steel  Tray  with  cover  12 inch x 10inch [MS16]</option>
+<option title="Stainless Steel  Tray  with  cover  18 inch x 13inch [MS17]" value="10102832">Stainless Steel  Tray  with  cover  18 inch x 13inch [MS17]</option>
+<option title="Stainless Steel  Tray  with out cover  12 inch x 10inch [MS12]" value="10102827">Stainless Steel  Tray  with out cover  12 inch x 10inch [MS12]</option>
+<option title="Stainless Steel  Tray  with out cover  12 inch x 12inch [MS13]" value="10102828">Stainless Steel  Tray  with out cover  12 inch x 12inch [MS13]</option>
+<option title="Stainless Steel  Tray  with out cover  18 inch x 13inch [MS14]" value="10102829">Stainless Steel  Tray  with out cover  18 inch x 13inch [MS14]</option>
+<option title="Stainless Steel  Tray  with out  cover    8inch x8 inch [MS11]" value="10102826">Stainless Steel  Tray  with out  cover    8inch x8 inch [MS11]</option>
+<option title="Stannum Metallicum 200 [78.1.1]" value="10101436">Stannum Metallicum 200 [78.1.1]</option>
+<option title="Staphysagria 200 (30ml) [HM17]" value="10104326">Staphysagria 200 (30ml) [HM17]</option>
+<option title="Starile Evacuated Fluoride &amp; EDTA  Tube 3ml [L50]" value="10103218">Starile Evacuated Fluoride &amp; EDTA  Tube 3ml [L50]</option>
+<option title="Steril Disp. Umbilical Cord Clamp     Each [543.1]" value="10100777">Steril Disp. Umbilical Cord Clamp     Each [543.1]</option>
+<option title="Sterile Absorbent Sheet for New Born [C14]" value="10104679">Sterile Absorbent Sheet for New Born [C14]</option>
+<option title="Sterile Biological Skin Dressing Collagen sheets &amp;  40 in wet form&amp;  41   2 x 10 x 10 cms  Each [558.1]" value="10100792">Sterile Biological Skin Dressing Collagen sheets &amp;  40 in wet form&amp;  41   2 x 10 x 10 cms  Each [558.1]</option>
+<option title="Sterile Biological Skin Dressing Collagen sheets (in wet form)  2 x 15 x 30 cms  Each [559.1]" value="10100793">Sterile Biological Skin Dressing Collagen sheets (in wet form)  2 x 15 x 30 cms  Each [559.1]</option>
+<option title="Sterile Plastic Sheets (Adult) [C13]" value="10104678">Sterile Plastic Sheets (Adult) [C13]</option>
+<option title="Sterlizer instrument (Table Model) Electrical [GS21]" value="10102853">Sterlizer instrument (Table Model) Electrical [GS21]</option>
+<option title="Stethoscope ( Paed &amp; Adult) [OBG35]" value="10103000">Stethoscope ( Paed &amp; Adult) [OBG35]</option>
+<option title="Sticta Pulmonaria  30 [78.4.1]" value="10101439">Sticta Pulmonaria  30 [78.4.1]</option>
+<option title="Stramonium 200 (30ml) [HM16]" value="10104325">Stramonium 200 (30ml) [HM16]</option>
+<option title="Suction Catheter, Sterile no. 10 [514.1]" value="10100748">Suction Catheter, Sterile no. 10 [514.1]</option>
+<option title="Suction Catheter, Sterile no. 11 [515.1]" value="10100749">Suction Catheter, Sterile no. 11 [515.1]</option>
+<option title="Suction Catheter, Sterile  no. 12 [516.1]" value="10100750">Suction Catheter, Sterile  no. 12 [516.1]</option>
+<option title="Suction Catheter, Sterile no. 8 [513.2]" value="10101027">Suction Catheter, Sterile no. 8 [513.2]</option>
+<option title="Suction Catheter, Sterile no. 9 [513.1]" value="10100747">Suction Catheter, Sterile no. 9 [513.1]</option>
+<option title="Suction Machine foot  [OBG33]" value="10102998">Suction Machine foot  [OBG33]</option>
+<option title="Suction tube/catheter   [S131]" value="10103156">Suction tube/catheter   [S131]</option>
+<option title="Suction tube     Each [544.1]" value="10100778">Suction tube     Each [544.1]</option>
+<option title="Sulpher powder [R694]" value="10104109">Sulpher powder [R694]</option>
+<option title="Sulphur 1M (30 ml) [79.1.1]" value="10101446">Sulphur 1M (30 ml) [79.1.1]</option>
+<option title="Sulphur 200 (30ml) [79.0000000]" value="10101445">Sulphur 200 (30ml) [79.0000000]</option>
+<option title="Sulphur 30 (30 ml) [78.9000000]" value="10101444">Sulphur 30 (30 ml) [78.9000000]</option>
+<option title="Surgical Blade no. 11 [456.1]" value="10100690">Surgical Blade no. 11 [456.1]</option>
+<option title="Surgical Blade no. 12 [457.1]" value="10100691">Surgical Blade no. 12 [457.1]</option>
+<option title="Surgical Blade no. 15 [458.1]" value="10100692">Surgical Blade no. 15 [458.1]</option>
+<option title="Surgical Blade  no. 20 [125]" value="10100928">Surgical Blade  no. 20 [125]</option>
+<option title="Surgical Blade no .21 [530.45]" value="10101025">Surgical Blade no .21 [530.45]</option>
+<option title="Surgical Blade no. 22 [459.1]" value="10100693">Surgical Blade no. 22 [459.1]</option>
+<option title="Surgical Blade no. 23 [460.1]" value="10100694">Surgical Blade no. 23 [460.1]</option>
+<option title="Surgical Blade no.  24 [461.1]" value="10100695">Surgical Blade no.  24 [461.1]</option>
+<option title="Surgical Gloves sterile no.  6.5 Pair [523.1]" value="10100757">Surgical Gloves sterile no.  6.5 Pair [523.1]</option>
+<option title="Surgical  Gloves Sterile no.  6 Pair [522.1]" value="10100756">Surgical  Gloves Sterile no.  6 Pair [522.1]</option>
+<option title="Surgical Gloves Sterile no.  7.5 Pair [525.1]" value="10100759">Surgical Gloves Sterile no.  7.5 Pair [525.1]</option>
+<option title="Surgical Gloves Sterile no. 7 Pair [524.1]" value="10100758">Surgical Gloves Sterile no. 7 Pair [524.1]</option>
+<option title="Surgical Gloves Sterile no. 8 Pair [526.1]" value="10100760">Surgical Gloves Sterile no. 8 Pair [526.1]</option>
+<option title="Surgical Rubber Gloves no.  6.5 Pair [518.1]" value="10100752">Surgical Rubber Gloves no.  6.5 Pair [518.1]</option>
+<option title="Surgical Rubber Gloves  no.  6 Pair [517.1]" value="10100751">Surgical Rubber Gloves  no.  6 Pair [517.1]</option>
+<option title="Surgical Rubber Gloves no.  7.5 Pair [520.1]" value="10100754">Surgical Rubber Gloves no.  7.5 Pair [520.1]</option>
+<option title="Surgical Rubber Gloves no.  7 Pair [519.1]" value="10100753">Surgical Rubber Gloves no.  7 Pair [519.1]</option>
+<option title="Surgical Rubber Gloves no.  8 Pair [521.1]" value="10100755">Surgical Rubber Gloves no.  8 Pair [521.1]</option>
+<option title="Surgical Spirit B.P. [421.1]" value="10100649">Surgical Spirit B.P. [421.1]</option>
+<option title="SURGICEL [R210]" value="10103625">SURGICEL [R210]</option>
+<option title="Sutashekhara (5gm) [HM96]" value="10104429">Sutashekhara (5gm) [HM96]</option>
+<option title="Suture Cutting Scissor-Curved -Small [GS88]" value="10102920">Suture Cutting Scissor-Curved -Small [GS88]</option>
+<option title="Suture Needle Curved and Cutting  1/2 Circle     Box of 12 Foils [654.1]" value="10100888">Suture Needle Curved and Cutting  1/2 Circle     Box of 12 Foils [654.1]</option>
+<option title="Suturing Needle (Cutting) [GS136]" value="10104579">Suturing Needle (Cutting) [GS136]</option>
+<option title="Suturing Needle (Round Body) [GS137]" value="10104580">Suturing Needle (Round Body) [GS137]</option>
+<option title="Suturing needles Straight    Box of 12 Foils [655.1]" value="10100889">Suturing needles Straight    Box of 12 Foils [655.1]</option>
+<option title="Suxamethonium Hydrocholride Inj 50 mg 10 ml Vial [13.1]" value="10100022">Suxamethonium Hydrocholride Inj 50 mg 10 ml Vial [13.1]</option>
+<option title="Swash Kuthar Ras 5gm [237]" value="10101198">Swash Kuthar Ras 5gm [237]</option>
+<option title="Sy. Amoxycillin Trihydrate 250 mg / 5 ml- Bottle of 60 ml [99.2a6]" value="10101994">Sy. Amoxycillin Trihydrate 250 mg / 5 ml- Bottle of 60 ml [99.2a6]</option>
+<option title="Sy. Antacid [25.1]" value="10100042">Sy. Antacid [25.1]</option>
+<option title="Syp. Dihydrogen Sodium Citrate [16.7]" value="10104239">Syp. Dihydrogen Sodium Citrate [16.7]</option>
+<option title="Syphilinum 200  (30 ml) [79.3000000]" value="10101448">Syphilinum 200  (30 ml) [79.3000000]</option>
+<option title="Syp. Potassium Chloride 1.5gm, 200ml [17.8]" value="10104247">Syp. Potassium Chloride 1.5gm, 200ml [17.8]</option>
+<option title="Syrup Calcium with phosphate [365.4]" value="10100950">Syrup Calcium with phosphate [365.4]</option>
+<option title="Syzygium Jambolanum 30ml [HM11]" value="10104320">Syzygium Jambolanum 30ml [HM11]</option>
+<option title="Tab. Atenolol 100 mg [99.2a159]" value="10102011">Tab. Atenolol 100 mg [99.2a159]</option>
+<option title="Tab. Chlorthalidone 12.5mg [99.2a37]" value="10101941">Tab. Chlorthalidone 12.5mg [99.2a37]</option>
+<option title="Tab. Chlorthalidone 25mg [99.2a113]" value="10101942">Tab. Chlorthalidone 25mg [99.2a113]</option>
+<option title="Tab. Chlorthalidone 6.25mg [99.2a36]" value="10101940">Tab. Chlorthalidone 6.25mg [99.2a36]</option>
+<option title="Tab. Diphenylhydantoin 100mg [99.2a5]" value="10101934">Tab. Diphenylhydantoin 100mg [99.2a5]</option>
+<option title="Tab Enalpril Maleate 10 mg [R64]" value="10103479">Tab Enalpril Maleate 10 mg [R64]</option>
+<option title="Tab. Folic Acid 400mcg [99.2a18]" value="10101928">Tab. Folic Acid 400mcg [99.2a18]</option>
+<option title="Tab-Gasex [968]" value="10101829">Tab-Gasex [968]</option>
+<option title="Tab. Gasex  (Ayurvedic ) [886]" value="10101747">Tab. Gasex  (Ayurvedic ) [886]</option>
+<option title="Tab.Glimepiride 1 mg [867]" value="10101728">Tab.Glimepiride 1 mg [867]</option>
+<option title="Tab Glimiperide 1 mg [R63]" value="10103478">Tab Glimiperide 1 mg [R63]</option>
+<option title="Tab.  Iso-sorbide  Monotrate  10mg [790]" value="10101651">Tab.  Iso-sorbide  Monotrate  10mg [790]</option>
+<option title="Tablet Calcium with Vitamin &amp; Minerals [99.2a17]" value="10101884">Tablet Calcium with Vitamin &amp; Minerals [99.2a17]</option>
+<option title="Tablet IFA (Iron 60mg + Folic Acid 500mcg) - Red Coloured tablet [306.5]" value="10102053">Tablet IFA (Iron 60mg + Folic Acid 500mcg) - Red Coloured tablet [306.5]</option>
+<option title="Tablet Iron 45 mg + Folic Acid 400 mcg Sugar Coated (Junior) [557.6]" value="10101565">Tablet Iron 45 mg + Folic Acid 400 mcg Sugar Coated (Junior) [557.6]</option>
+<option title="Tablet Iron + Folic Acid  (100 mg + 0.5 mg) (WIFS) [306.3]" value="10100507">Tablet Iron + Folic Acid  (100 mg + 0.5 mg) (WIFS) [306.3]</option>
+<option title="Tablet Thyroxine Sodium IP 50 mcg [99.2a59]" value="10101863">Tablet Thyroxine Sodium IP 50 mcg [99.2a59]</option>
+<option title="Tab. Levocetrizine 10 mg [D10]" value="10104644">Tab. Levocetrizine 10 mg [D10]</option>
+<option title="Tab. Levocetrizine 5 mg [D9]" value="10104643">Tab. Levocetrizine 5 mg [D9]</option>
+<option title="Tab. Lorazepam 1mg [99.2a27]" value="10101932">Tab. Lorazepam 1mg [99.2a27]</option>
+<option title="Tab Naltrexone IP 50mg [D73]" value="10104658">Tab Naltrexone IP 50mg [D73]</option>
+<option title="Tab. Nifedipine 20mg [792]" value="10101653">Tab. Nifedipine 20mg [792]</option>
+<option title="Tab Nifidipine 20 mg [R61]" value="10103476">Tab Nifidipine 20 mg [R61]</option>
+<option title="Tab. Paracetamol 650mg [99.2a151]" value="10101992">Tab. Paracetamol 650mg [99.2a151]</option>
+<option title="Tab. Perampanel 4mg  [99.2a69]" value="10101877">Tab. Perampanel 4mg  [99.2a69]</option>
+<option title="Tab. Phenytoin Sodium 50 mg [99.2a29]" value="10102018">Tab. Phenytoin Sodium 50 mg [99.2a29]</option>
+<option title="Tab Pyridoxin 40mg [103.1.2]" value="10102061">Tab Pyridoxin 40mg [103.1.2]</option>
+<option title="Tab. Salbutamol Sulphate 2 mg [99.2a16]" value="10102022">Tab. Salbutamol Sulphate 2 mg [99.2a16]</option>
+<option title="Tab. Sodium Valporate 500mg [99.2a9]" value="10101935">Tab. Sodium Valporate 500mg [99.2a9]</option>
+<option title="Tab. Sodium Valproate 500mg [99.2a161]" value="10102021">Tab. Sodium Valproate 500mg [99.2a161]</option>
+<option title="Tab.  Spirinolactone  IP  50 mg [893]" value="10101754">Tab.  Spirinolactone  IP  50 mg [893]</option>
+<option title="Tab. Spironolactone 50 mg [99.2a40]" value="10102014">Tab. Spironolactone 50 mg [99.2a40]</option>
+<option title="Tab SpironoLactone 50 mg and Frusemide 20 mg [R68]" value="10103483">Tab SpironoLactone 50 mg and Frusemide 20 mg [R68]</option>
+<option title="Tab.  Telmisartan  40 mg [882]" value="10101743">Tab.  Telmisartan  40 mg [882]</option>
+<option title="Tab. Telmisartan 40mg [99.2a13]" value="10101938">Tab. Telmisartan 40mg [99.2a13]</option>
+<option title="Tailor Scissor (Steel &amp; Brass)10inch [GS89]" value="10102921">Tailor Scissor (Steel &amp; Brass)10inch [GS89]</option>
+<option title="Talisadi Churna 1 kg [108.4.1]" value="10101631">Talisadi Churna 1 kg [108.4.1]</option>
+<option title="Talisadi Churna 50 gm [108.5]" value="10101632">Talisadi Churna 50 gm [108.5]</option>
+<option title="Teicoplanin Inj 200 mg Vial [72.1]" value="10100141">Teicoplanin Inj 200 mg Vial [72.1]</option>
+<option title="Tellurium - 30 (30 ml) [HM77]" value="10104410">Tellurium - 30 (30 ml) [HM77]</option>
+<option title="Terebinthina - 30 (30 ml) [HM76]" value="10104409">Terebinthina - 30 (30 ml) [HM76]</option>
+<option title="Terminalia arjuna 30ml [HM49]" value="10104373">Terminalia arjuna 30ml [HM49]</option>
+<option title="Test Tube Disposible with cap [L53]" value="10103221">Test Tube Disposible with cap [L53]</option>
+<option title="Test Tube Disposible without cap [L54]" value="10103222">Test Tube Disposible without cap [L54]</option>
+<option title="Tetanus Toxoid  40 Adsorbed 41  I.P. [220.3]" value="10100973">Tetanus Toxoid  40 Adsorbed 41  I.P. [220.3]</option>
+<option title="Tetanus Toxoid 5 ml Vial [221.1]" value="10100379">Tetanus Toxoid 5 ml Vial [221.1]</option>
+<option title="Tetracycline Cap 250 mg [90.1]" value="10100170">Tetracycline Cap 250 mg [90.1]</option>
+<option title="Teucrium marum - 30 (30ml) [HM75]" value="10104408">Teucrium marum - 30 (30ml) [HM75]</option>
+<option title="Thermal paper roll for printing [BCCC 6]" value="10103327">Thermal paper roll for printing [BCCC 6]</option>
+<option title="Thermocol Boxes [547.2]" value="10101557">Thermocol Boxes [547.2]</option>
+<option title="Thermometer (Mercury) ISITemperature level visible from 35cc to 42cc &amp; 94F to 108F [MS9]" value="10102824">Thermometer (Mercury) ISITemperature level visible from 35cc to 42cc &amp; 94F to 108F [MS9]</option>
+<option title="Thiocolchicosid Tab 4 mg [49.1]" value="10100084">Thiocolchicosid Tab 4 mg [49.1]</option>
+<option title="Thiopentone Sodium Inj 500 mg powder Vial [3.2.1]" value="10100941">Thiopentone Sodium Inj 500 mg powder Vial [3.2.1]</option>
+<option title="Thuja Occidentalis  1M (30 ml) [80.1.1]" value="10101456">Thuja Occidentalis  1M (30 ml) [80.1.1]</option>
+<option title="Thuja Occidentalis 200 (30ml) [80.0000000]" value="10101455">Thuja Occidentalis 200 (30ml) [80.0000000]</option>
+<option title="Thuja Occidentalis  30 (30 ml) [79.9000000]" value="10101454">Thuja Occidentalis  30 (30 ml) [79.9000000]</option>
+<option title="Thyroidinum  1M (30 ml) [80.5000000]" value="10101460">Thyroidinum  1M (30 ml) [80.5000000]</option>
+<option title="Thyroidinum 200 (30ml) [80.2000000]" value="10101457">Thyroidinum 200 (30ml) [80.2000000]</option>
+<option title="Ticagrelor 90 mg [R140]" value="10103555">Ticagrelor 90 mg [R140]</option>
+<option title="Tigaderm 3M [R521]" value="10103937">Tigaderm 3M [R521]</option>
+<option title="Timolol Maleate Eye Drops  5 ml [351.1]" value="10100565">Timolol Maleate Eye Drops  5 ml [351.1]</option>
+<option title="Tincture Benzoin Bottle  500 ml [422.1]" value="10100650">Tincture Benzoin Bottle  500 ml [422.1]</option>
+<option title="Tinidazole Tab 300 mg [89.1]" value="10100169">Tinidazole Tab 300 mg [89.1]</option>
+<option title="Tongue  Depressor  inch L inch  Shape [A25]" value="10102799">Tongue  Depressor  inch L inch  Shape [A25]</option>
+<option title="Tongue  Depressor  inch S inch  Shape [A24]" value="10102798">Tongue  Depressor  inch S inch  Shape [A24]</option>
+<option title="Toothed Dissecting forceps 5inch   [S114]" value="10103139">Toothed Dissecting forceps 5inch   [S114]</option>
+<option title="Tooth forcep tooth &amp; plain [GS1]" value="10102833">Tooth forcep tooth &amp; plain [GS1]</option>
+<option title="Topical Lignocaine 5 % 10 gm [1.5]" value="10100005">Topical Lignocaine 5 % 10 gm [1.5]</option>
+<option title="Topical  Lignocaine (Xylocaine ) 4 % 30 ml Vial [1.6]" value="10100006">Topical  Lignocaine (Xylocaine ) 4 % 30 ml Vial [1.6]</option>
+<option title="Topical (oint.) Lignocaine 2 % 30 gm [1.4]" value="10100004">Topical (oint.) Lignocaine 2 % 30 gm [1.4]</option>
+<option title="Topiramate 50 mg tablet [D39]" value="10104637">Topiramate 50 mg tablet [D39]</option>
+<option title="Toung dipressr ss S/L [GS133]" value="10104576">Toung dipressr ss S/L [GS133]</option>
+<option title="Tpyadi Loha 5gm [AV15]" value="10104374">Tpyadi Loha 5gm [AV15]</option>
+<option title="Tracheostomy Set [R462]" value="10103878">Tracheostomy Set [R462]</option>
+<option title="Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  6.5 [527.1]" value="10100761">Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  6.5 [527.1]</option>
+<option title="Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  7 [528.1]" value="10100762">Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  7 [528.1]</option>
+<option title="Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  7.5 [529.1]" value="10100763">Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  7.5 [529.1]</option>
+<option title="Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  8 [530.1]" value="10100764">Tracheostomy Tube &amp;  40 PVC&amp;  41 , Cuffed, Sterile, Single Use no.  8 [530.1]</option>
+<option title="Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  8.5 [531.1]" value="10100765">Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  8.5 [531.1]</option>
+<option title="Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  9 [532.1]" value="10100766">Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  9 [532.1]</option>
+<option title="Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  9.5 [533.1]" value="10100767">Tracheostomy Tube (PVC), Cuffed, Sterile, Single Use no.  9.5 [533.1]</option>
+<option title="Trachestomy tubes Plain &amp; with cuff [A26]" value="10102800">Trachestomy tubes Plain &amp; with cuff [A26]</option>
+<option title="Tramadol Inj 50 mg 2 ml Amp [45.2]" value="10100080">Tramadol Inj 50 mg 2 ml Amp [45.2]</option>
+<option title="Tramadol Tab 50 mg [45.1]" value="10100079">Tramadol Tab 50 mg [45.1]</option>
+<option title="Tranexemic Acid Inj. 500mg [12.8]" value="10104209">Tranexemic Acid Inj. 500mg [12.8]</option>
+<option title="Tranexemic Acid Tab 500 mg [205.1]" value="10100360">Tranexemic Acid Tab 500 mg [205.1]</option>
+<option title="Transducer Protector individually packed and sterile,    Each [682.1]" value="10100916">Transducer Protector individually packed and sterile,    Each [682.1]</option>
+<option title="Transducer [R163]" value="10103578">Transducer [R163]</option>
+<option title="Trayodashang guggula 20 gm [AV50]" value="10104380">Trayodashang guggula 20 gm [AV50]</option>
+<option title="Tribhuvan Kirti 5gm [AV8]" value="10104343">Tribhuvan Kirti 5gm [AV8]</option>
+<option title="Tribhuvan Kirti  Rasa [229]" value="10101190">Tribhuvan Kirti  Rasa [229]</option>
+<option title="Trifluroperazine + Trihexyphenidyl Tab 5 mg + 2 mg [394.1]" value="10100619">Trifluroperazine + Trihexyphenidyl Tab 5 mg + 2 mg [394.1]</option>
+<option title="Trihexyphenidyl Hydrochloride Tab 2 mg [200.1]" value="10100353">Trihexyphenidyl Hydrochloride Tab 2 mg [200.1]</option>
+<option title="Trimethoprim + Sulphamethoxazole Paed Tab.. [52.4]" value="10100942">Trimethoprim + Sulphamethoxazole Paed Tab.. [52.4]</option>
+<option title="Tr. Iodine bottle  450 ml [334.1]" value="10100547">Tr. Iodine bottle  450 ml [334.1]</option>
+<option title="Triphala  Guggul [198]" value="10101159">Triphala  Guggul [198]</option>
+<option title="Triphala Guggul 5gm [AV35]" value="10104311">Triphala Guggul 5gm [AV35]</option>
+<option title="Triple Blood Collection Bags [540.3]" value="10101549">Triple Blood Collection Bags [540.3]</option>
+<option title="Triple layer face mask    Each [573.1]" value="10100807">Triple layer face mask    Each [573.1]</option>
+<option title="Triple Lumen Catheter [963]" value="10101824">Triple Lumen Catheter [963]</option>
+<option title="Tropicamide Eye Drop 1 % 5 ml [347.1]" value="10100561">Tropicamide Eye Drop 1 % 5 ml [347.1]</option>
+<option title="Tropicamide + Phenylephrine HCL Eye Drop (Paediatric Dose) [99.2a117]" value="10101947">Tropicamide + Phenylephrine HCL Eye Drop (Paediatric Dose) [99.2a117]</option>
+<option title="Trypan Blue Inj  1 ml [406.1]" value="10100634">Trypan Blue Inj  1 ml [406.1]</option>
+<option title="Tuberculinum bovinum 1 M (30 ml) [HM80]" value="10104413">Tuberculinum bovinum 1 M (30 ml) [HM80]</option>
+<option title="Tube Rings [200]" value="10101530">Tube Rings [200]</option>
+<option title="Tunnel Blade [692.1]" value="10100926">Tunnel Blade [692.1]</option>
+<option title="Turpentine Oil  500 ml Bottle [326.1]" value="10100539">Turpentine Oil  500 ml Bottle [326.1]</option>
+<option title="uranium nitricum 30 (30 ml) [HM79]" value="10104412">uranium nitricum 30 (30 ml) [HM79]</option>
+<option title="Urine Albumin sugar strips [R706]" value="10104121">Urine Albumin sugar strips [R706]</option>
+<option title="Urine bag with volumetric chamber [R535]" value="10103951">Urine bag with volumetric chamber [R535]</option>
+<option title="Urine Bag with volum Meter [934]" value="10101795">Urine Bag with volum Meter [934]</option>
+<option title="Urine Collection Bag     Each [534.1]" value="10100768">Urine Collection Bag     Each [534.1]</option>
+<option title="Urine Pot plastic ( M/F) [325]" value="10100937">Urine Pot plastic ( M/F) [325]</option>
+<option title="Uristick (AlbuminandSugar) [R745]" value="10104160">Uristick (AlbuminandSugar) [R745]</option>
+<option title="Urostomy bag [R469]" value="10103885">Urostomy bag [R469]</option>
+<option title="Urtica Urens  30 (30 ml) [80.9000000]" value="10101464">Urtica Urens  30 (30 ml) [80.9000000]</option>
+<option title="Urtica Urens - 6C (30 ml) [81.0000000]" value="10101465">Urtica Urens - 6C (30 ml) [81.0000000]</option>
+<option title="Uterus hoding cord clamp with double grip   [OBG27]" value="10102992">Uterus hoding cord clamp with double grip   [OBG27]</option>
+<option title="Vaccum Extractor Set for delivery baby  [OBG31]" value="10102996">Vaccum Extractor Set for delivery baby  [OBG31]</option>
+<option title="Vaccum Extractor Set for delivery baby (Silicone) [OBG32]" value="10102997">Vaccum Extractor Set for delivery baby (Silicone) [OBG32]</option>
+<option title="Vaccum Tube Plain 4 ml  [L49]" value="10103217">Vaccum Tube Plain 4 ml  [L49]</option>
+<option title="Vaginal speculum- Sims speculum [S15]" value="10103039">Vaginal speculum- Sims speculum [S15]</option>
+<option title="Valethamate Bromide Inj 8mg/ml [250.3]" value="10100975">Valethamate Bromide Inj 8mg/ml [250.3]</option>
+<option title="Vanadium - 6 (30 ml) [HM78]" value="10104411">Vanadium - 6 (30 ml) [HM78]</option>
+<option title="Vat vidhwansan Ras [239]" value="10101200">Vat vidhwansan Ras [239]</option>
+<option title="VDRL kit [R705]" value="10104120">VDRL kit [R705]</option>
+<option title="Vecuronium Bromide Inj. 10 mg [15.2]" value="10100025">Vecuronium Bromide Inj. 10 mg [15.2]</option>
+<option title="Vecuronium Bromide Inj. 4 mg 2 ml Amp [15.1]" value="10100024">Vecuronium Bromide Inj. 4 mg 2 ml Amp [15.1]</option>
+<option title="VENOUS CANNULA STRAIGHT TIP 16 FR [R271]" value="10103686">VENOUS CANNULA STRAIGHT TIP 16 FR [R271]</option>
+<option title="VENOUS CANNULA STRAIGHT TIP 24 FR [R275]" value="10103690">VENOUS CANNULA STRAIGHT TIP 24 FR [R275]</option>
+<option title="VENTI CIRCUIT [R212]" value="10103627">VENTI CIRCUIT [R212]</option>
+<option title="Ventriculoperitoneal Shunt(VP Shunt) [R776]" value="10104475">Ventriculoperitoneal Shunt(VP Shunt) [R776]</option>
+<option title="Vicryl 1-0 NW 2346 [R198]" value="10103613">Vicryl 1-0 NW 2346 [R198]</option>
+<option title="Vicryl 1 NW 2347 [R197]" value="10103612">Vicryl 1 NW 2347 [R197]</option>
+<option title="Vicryl 2-0 NW 2317 [R199]" value="10103614">Vicryl 2-0 NW 2317 [R199]</option>
+<option title="VICRYL C.Cutting [R796]" value="10104495">VICRYL C.Cutting [R796]</option>
+<option title="VICRYL Round body( 12 foils in single box) [R792]" value="10104491">VICRYL Round body( 12 foils in single box) [R792]</option>
+<option title="Viglibose Tab 0.2 mg [414.1]" value="10100642">Viglibose Tab 0.2 mg [414.1]</option>
+<option title="Vishagarbha Taila 50 ml [AV46]" value="10104376">Vishagarbha Taila 50 ml [AV46]</option>
+<option title="Vitamin A Capsule 50000 IU [99.2a143]" value="10102002">Vitamin A Capsule 50000 IU [99.2a143]</option>
+<option title="Vitamin A Concetrated Solution  100 ml [311.2]" value="10100517">Vitamin A Concetrated Solution  100 ml [311.2]</option>
+<option title="Vitamine B Complex Tab [309.2]" value="10100514">Vitamine B Complex Tab [309.2]</option>
+<option title="VTM Kit &amp;  40  Viral Transport Media&amp;  41 [546.05]" value="10101013">VTM Kit &amp;  40  Viral Transport Media&amp;  41 [546.05]</option>
+<option title="Vulsellum forceps [S11]" value="10103035">Vulsellum forceps [S11]</option>
+<option title="Water for injection 10 ml [265.2]" value="10100449">Water for injection 10 ml [265.2]</option>
+<option title="Water for injection 5 ml [265.1]" value="10100448">Water for injection 5 ml [265.1]</option>
+<option title="Wheel   Chair [ORTH9]" value="10104590">Wheel   Chair [ORTH9]</option>
+<option title="White Petroleum Jelly  1 Kg [322.1]" value="10100535">White Petroleum Jelly  1 Kg [322.1]</option>
+<option title="Widal Kit [R696]" value="10104111">Widal Kit [R696]</option>
+<option title="Wooden container for slide [R750]" value="10104165">Wooden container for slide [R750]</option>
+<option title="X-ray Developer   22.5 Ltr  Packet [659.1]" value="10100893">X-ray Developer   22.5 Ltr  Packet [659.1]</option>
+<option title="X-ray films Green base  10 x 12  Packet of 50 film [664.1]" value="10100898">X-ray films Green base  10 x 12  Packet of 50 film [664.1]</option>
+<option title="X-ray films Green base  12 x 15  Packet of 50 film [665.1]" value="10100899">X-ray films Green base  12 x 15  Packet of 50 film [665.1]</option>
+<option title="X-ray films Green base  8 x 10  Packet of 50 film [663.1]" value="10100897">X-ray films Green base  8 x 10  Packet of 50 film [663.1]</option>
+<option title="X-ray Fixer  22.5 Ltr  Packet [661.1]" value="10100895">X-ray Fixer  22.5 Ltr  Packet [661.1]</option>
+<option title="Yankur Suction set [R569]" value="10103985">Yankur Suction set [R569]</option>
+<option title="Yogaraj  Guggul [193]" value="10101154">Yogaraj  Guggul [193]</option>
+<option title="Zamad-e-Mohallil [174]" value="10101135">Zamad-e-Mohallil [174]</option>
+<option title="Zinc Oxide  [O1]" value="10103330">Zinc Oxide  [O1]</option>
+<option title="Zinc sulphate DT 20 mg [33.2]" value="10100058">Zinc sulphate DT 20 mg [33.2]</option>
+<option title="Zinc sulphate or gluconate  syrup [33.1]" value="10100057">Zinc sulphate or gluconate  syrup [33.1]</option>
+<option title="Zinucum Metallicum  200 (30 ml) [81.2000000]" value="10101467">Zinucum Metallicum  200 (30 ml) [81.2000000]</option>
+<option title="Zolpidem Tab 10 mg [390.1]" value="10100614">Zolpidem Tab 10 mg [390.1]</option>
+
+														</select>
+													</div>
+												</td>
+
+												<td class="text-center py-0" style="vertical-align: middle; padding: 0 !important; width: 10%;">
+													<div class="transfer-buttons d-flex flex-column align-items-center gap-1">
+														<button type="button" class="btn btn-sm btn-secondary" onclick="LeftListTransfer();" style="margin-top: 5px;">
+															<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"></path>
+                            </svg>
+														</button>
+
+														<img src="/DWH_MASTERS/resources/hisglobal/images/forward3.gif" width="25" height="18" style="display: none;" align="middle" onclick="shiftAllToRight('strLeftItemIds','strRightItemIds',1);">
+
+														<img src="/DWH_MASTERS/resources/hisglobal/images/back3.gif" width="25" height="18" style="display: none;" onclick="shiftAllToLeft('strLeftItemIds','strRightItemIds',1);">
+
+														<button type="button" class="btn btn-sm btn-secondary" onclick="shiftToLeft('strLeftItemIds','strRightItemIds',1);" style="margin-top: 5px;">
+															<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"></path>
+                            </svg>
+														</button>
+													</div>
+												</td>
+
+												<td class="text-end py-0" style="vertical-align: middle; padding: 0 !important; width: 45%;">
+													<div id="RightItemIds">
+														<select id="strRightItemIds" name="strRightItemIds" size="7" style="width: 100%; font-size: 15px; height: 170px;" class="form-select" multiple="">
+															
+														</select>
+													</div>
+												</td>
+											</tr>
+										</tbody></table>
+
+									</div>
+								</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+      
+
+        </div>
+ <div id="normalRpt " class="my-4">
+					<div class="d-flex buttons flex-wrap gap-2 align-items-center justify-content-center">
+
+
+						<button type="button" class="btn btn-success" onclick="return validate1();">
+							<i class="fa-solid fa-paper-plane me-1 align-middle"></i>
+							Generate
+						</button>
+						<button type="button" class="btn btn-warning" onclick="cancelPage();">
+							<i class="fa-solid fa-eraser me-1 align-middle"></i> Clear
+						</button>
+						<!-- <button type="button" class="btn btn-danger"
+						onClick="cancelPage();">
+						<i class="fa-solid fa-xmark me-1 align-middle"></i>Cancel
+					</button> -->
+
+					</div>
+				</div>
+
+     </div>     
+
+    
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

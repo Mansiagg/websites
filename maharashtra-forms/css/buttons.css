@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Mooli&family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	font-size: 0.845rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.btn {
+	font-size: 0.85rem;
+	    margin-bottom: 12px;
+    margin-left: 8px;
+}
+.btn-label .label-icon {
+    background-color: #ffffff1a;
+    border-right: 1px solid #ffffff1a;
+    font-size: 16px;
+    height: 100%;
+    width: 32px;
+}
