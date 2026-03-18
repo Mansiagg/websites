@@ -1126,246 +1126,175 @@
                                 <script>      // Create map
                                     var map = L.map('map').setView([22.9734, 78.6569], 5);
                                     // Hospital data
-        var hospitals = [
-
-            {
-                name: "Domlur",
-                address: "Domlur, Bengaluru, Karnataka 560071",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 12.9611,
-                lng: 77.6387
-            },
-            {
-                name: "Shivajinagar Polyclinic",
-                address: "Shivajinagar, Bengaluru, Karnataka 560051",
-                tests: "CBC, Liver Function Test, Kidney Test",
-                lat: 12.9864,
-                lng: 77.6075
-            },
-            {
-                name: "Napier Town",
-                address: "Jabalpur, Madhya Pradesh 482001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 23.1686,
-                lng: 79.9320
-            },
-            {
-                name: "Aliganj",
-                address: "Lucknow, Uttar Pradesh 226024",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.8896,
-                lng: 80.9490
-            },
-            {
-                name: "Kanpur Road",
-                address: "Lucknow, Uttar Pradesh 226012",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.7606,
-                lng: 80.8893
-            },
-            {
-                name: "Hazratganj Polyclinic",
-                address: "Hazratganj, Lucknow, Uttar Pradesh 226001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.8469,
-                lng: 80.9462
-            },
-            {
-                name: "Ashram Road Polyclinic",
-                address: "Ashram Road, Ahmedabad, Gujarat 380009",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 23.0330,
-                lng: 72.5714
-            },
-            {
-                name: "WC-1 Polyclinic",
-                address: "WC-1, Bhubaneswar, Odisha 751001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 20.2961,
-                lng: 85.8245
-            },
-            {
-                name: "Anna Nagar",
-                address: "Anna Nagar, Chennai, Tamil Nadu 600040",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 13.0849,
-                lng: 80.2101
-            },
-            {
-                name: "KK Nagar",
-                address: "KK Nagar, Chennai, Tamil Nadu 600078",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 13.0418,
-                lng: 80.1994
-            },
-            {
-                name: "Dr. Zakir Hussain Road -Delhi-Central Zone",
-                address: "Dr. Zakir Hussain Road, New Delhi, Delhi 110003",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6074,
-                lng: 77.2425
-            },
-            {
-                name: "Parliament House Annexe - Delhi-Central Zone",
-                address: "New Delhi, Delhi 110001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6180,
-                lng: 77.2089
-            }, {
-                name: "Supreme Court - Delhi-Central Zone",
-                address: "Tilak Marg, New Delhi, Delhi 110001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6214,
-                lng: 77.2381
-            },
-            {
-                name: "Maninagar",
-                address:"Ahmedabad, Gujarat 380008",
-                lat: 22.9951,
-                lng: 72.6042
-            },
-            {
-                name: "Janak Puri-1 - Delhi-North Zone",
-                address: "Janakpuri, New Delhi, Delhi 110058",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6219,
-                lng: 77.0880
-            },
-            {
-                name: "Shakur Basti - Delhi-North Zone",
-                address: "New Delhi, Delhi 110034",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6874,
-                lng: 77.1361
-            },
-            {
-                name: "Pusa Road - Delhi-North Zone",
-                address: "Karol Bagh, New Delhi, Delhi 110005",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6454,
-                lng: 77.1890
-            },
-            {
-                name: "Kingsway Camp - Delhi-East Zone<br>",
-                address: "Delhi 110009",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6993,
-                lng: 77.2053
-            },
-            {
-                name: "Laxmi Nagar (Allopathy) - Delhi-East Zone",
-                address: "New Delhi, Delhi 110092",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 28.6306,
-                lng: 77.2773
-            },
-            {
-                name: "Civil Lines",
-                address: "Kanpur, Uttar Pradesh 208001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.4663,
-                lng: 80.3319
-            },
-            {
-                name: "Kendranchal",
-                address: "Kanpur, Uttar Pradesh 208001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.4512,
-                lng: 80.3305
-            },
-            {
-                name: "Raksha Vihar",
-                address: "Kanpur, Uttar Pradesh 208012",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.4568,
-                lng: 80.3567
-            },
-            {
-                name: "Ratan Lal Nagar",
-                address: "Kanpur, Uttar Pradesh 208022",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.4575,
-                lng: 80.3701
-            },
-            {
-                name: "Jalpaiguri",
-                address: "West Bengal 735101",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.5400,
-                lng: 88.7200
-            },
-            {
-                name: "Polyclinic",
-                address: "Kolkata, West Bengal 700016",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 22.5726,
-                lng: 88.3639
-            },
-            {
-                name: "CGHS Polyclinic-I",
-                address: "Hyderabad, Telangana 500004",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 17.3850,
-                lng: 78.4867
-            },
-            {
-                name: "Polyclinic",
-                address: "Jaipur, Rajasthan 302001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 26.9124,
-                lng: 75.7873
-            },
-            {
-                name: "Ghatkopar",
-                address: "Mumbai, Maharashtra 400077",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 19.0830,
-                lng: 72.9133
-            },
-            {
-                name: "Koliwada",
-                address: "Mumbai, Maharashtra 400005",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 18.9510,
-                lng: 72.8235
-            },
-            {
-                name: "S K Road",
-                address: "Meerut, Uttar Pradesh 250001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 29.0095,
-                lng: 77.6986
-            },
-            {
-                name: "CGHS Polyclinic",
-                address: "Nagpur, Maharashtra 440001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 21.1458,
-                lng: 79.0882
-            },
-            {
-                name: "Budhmarg",
-                address: "Patna, Bihar 800001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 25.6101,
-                lng: 85.1338
-            },
-            {
-                name: "Ganeshkhind Road",
-                address: "Pune, Maharashtra 411001",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 18.5314,
-                lng: 73.8446
-            },
-            {
-                name: "CGHS Polyclinic",
-                address: "Swasthya Sadan, Mukund Nagar, Pune, Maharashtra 411037",
-                tests: "Blood Test, Thyroid Profile, Diabetes Test",
-                lat: 18.4946,
-                lng: 73.8599
-            }
-
-        ]; var markers = [];
+                                    var hospitals = [{
+                                        name: "Domlur <br>Domlur, Bengaluru, Karnataka 560071",
+                                        lat: 12.9611,
+                                        lng: 77.6387
+                                    },
+                                    {
+                                        name: "Shivajinagar Polyclinic <br>Shivajinagar, Bengaluru, Karnataka 560051",
+                                        lat: 12.9864,
+                                        lng: 77.6075
+                                    },
+                                    {
+                                        name: "Napier Town <br>Jabalpur, Madhya Pradesh 482001",
+                                        lat: 23.1686,
+                                        lng: 79.9320
+                                    },
+                                    {
+                                        name: "Aliganj <br>Lucknow, Uttar Pradesh 226024",
+                                        lat: 26.8896,
+                                        lng: 80.9490
+                                    },
+                                    {
+                                        name: "Kanpur Road <br>Lucknow, Uttar Pradesh 226012",
+                                        lat: 26.7606,
+                                        lng: 80.8893
+                                    },
+                                    {
+                                        name: "Hazratganj Polyclinic <br>Hazratganj, Lucknow, Uttar Pradesh 226001",
+                                        lat: 26.8469,
+                                        lng: 80.9462
+                                    },
+                                    {
+                                        name: "Ashram Road Polyclinic <br>Ashram Road, Ahmedabad, Gujarat 380009",
+                                        lat: 23.0330,
+                                        lng: 72.5714
+                                    },
+                                    {
+                                        name: "WC-1 Polyclinic <br>WC-1, Bhubaneswar, Odisha 751001",
+                                        lat: 20.2961,
+                                        lng: 85.8245
+                                    },
+                                    {
+                                        name: "Anna Nagar <br>Anna Nagar, Chennai, Tamil Nadu 600040",
+                                        lat: 13.0849,
+                                        lng: 80.2101
+                                    },
+                                    {
+                                        name: "KK Nagar <br>KK Nagar, Chennai, Tamil Nadu 600078",
+                                        lat: 13.0418,
+                                        lng: 80.1994
+                                    },
+                                    {
+                                        name: "Dr. Zakir Hussain Road -Delhi-Central Zone<br>Dr. Zakir Hussain Road, New Delhi, Delhi 110003",
+                                        lat: 28.6074,
+                                        lng: 77.2425
+                                    },
+                                    {
+                                        name: "Parliament House Annexe - Delhi-Central Zone<br>New Delhi, Delhi 110001",
+                                        lat: 28.6180,
+                                        lng: 77.2089
+                                    }, {
+                                        name: "Supreme Court - Delhi-Central Zone<br>Tilak Marg, New Delhi, Delhi 110001",
+                                        lat: 28.6214,
+                                        lng: 77.2381
+                                    },
+                                    {
+                                        name: "Maninagar <br>Ahmedabad, Gujarat 380008",
+                                        lat: 22.9951,
+                                        lng: 72.6042
+                                    },
+                                    {
+                                        name: "Janak Puri-1 - Delhi-North Zone<br>Janakpuri, New Delhi, Delhi 110058",
+                                        lat: 28.6219,
+                                        lng: 77.0880
+                                    },
+                                    {
+                                        name: "Shakur Basti - Delhi-North Zone<br>New Delhi, Delhi 110034",
+                                        lat: 28.6874,
+                                        lng: 77.1361
+                                    },
+                                    {
+                                        name: "Pusa Road - Delhi-North Zone<br>Karol Bagh, New Delhi, Delhi 110005",
+                                        lat: 28.6454,
+                                        lng: 77.1890
+                                    },
+                                    {
+                                        name: "Kingsway Camp - Delhi-East Zone<br>Delhi 110009",
+                                        lat: 28.6993,
+                                        lng: 77.2053
+                                    },
+                                    {
+                                        name: "Laxmi Nagar (Allopathy) - Delhi-East Zone <br>New Delhi, Delhi 110092",
+                                        lat: 28.6306,
+                                        lng: 77.2773
+                                    },
+                                    {
+                                        name: "Civil Lines <br>Kanpur, Uttar Pradesh 208001",
+                                        lat: 26.4663,
+                                        lng: 80.3319
+                                    },
+                                    {
+                                        name: "Kendranchal <br>Kanpur, Uttar Pradesh 208001",
+                                        lat: 26.4512,
+                                        lng: 80.3305
+                                    },
+                                    {
+                                        name: "Raksha Vihar <br>Kanpur, Uttar Pradesh 208012",
+                                        lat: 26.4568,
+                                        lng: 80.3567
+                                    },
+                                    {
+                                        name: "Ratan Lal Nagar <br>Kanpur, Uttar Pradesh 208022",
+                                        lat: 26.4575,
+                                        lng: 80.3701
+                                    },
+                                    {
+                                        name: "Jalpaiguri <br>West Bengal 735101",
+                                        lat: 26.5400,
+                                        lng: 88.7200
+                                    },
+                                    {
+                                        name: "Polyclinic <br>Kolkata, West Bengal 700016",
+                                        lat: 22.5726,
+                                        lng: 88.3639
+                                    },
+                                    {
+                                        name: "CGHS Polyclinic-I <br>Hyderabad, Telangana 500004",
+                                        lat: 17.3850,
+                                        lng: 78.4867
+                                    },
+                                    {
+                                        name: "Polyclinic <br>Jaipur, Rajasthan 302001",
+                                        lat: 26.9124,
+                                        lng: 75.7873
+                                    },
+                                    {
+                                        name: "Ghatkopar <br>Mumbai, Maharashtra 400077",
+                                        lat: 19.0830,
+                                        lng: 72.9133
+                                    },
+                                    {
+                                        name: "Koliwada <br>Mumbai, Maharashtra 400005",
+                                        lat: 18.9510,
+                                        lng: 72.8235
+                                    },
+                                    {
+                                        name: "S K Road <br>Meerut, Uttar Pradesh 250001",
+                                        lat: 29.0095,
+                                        lng: 77.6986
+                                    },
+                                    {
+                                        name: "CGHS Polyclinic <br>Nagpur, Maharashtra 440001",
+                                        lat: 21.1458,
+                                        lng: 79.0882
+                                    },
+                                    {
+                                        name: "Budhmarg <br>Patna, Bihar 800001",
+                                        lat: 25.6101,
+                                        lng: 85.1338
+                                    },
+                                    {
+                                        name: "Ganeshkhind Road <br>Pune, Maharashtra 411001",
+                                        lat: 18.5314,
+                                        lng: 73.8446
+                                    },
+                                    {
+                                        name: "CGHS Polyclinic <br>Swasthya Sadan, Mukund Nagar, Pune, Maharashtra 411037",
+                                        lat: 18.4946,
+                                        lng: 73.8599
+                                    }]; var markers = [];
                                     // FIXED STATE/CITY COLOR FUNCTION
                                     function getColor(stateName) {
                                         var colors = {
@@ -1452,37 +1381,14 @@
                                                 map.invalidateSize();
                                             }, 200);
 
-                                           // Add markers
-                hospitals.forEach(function (h) {
-                    var popupContent = `
-<div class="labPopup">
-<h3>${h.name}</h3>
-
-<p class="labAddress">${h.address}</p>
-
-<div class="labTests">
-<b>Tests Available</b>
-<p>${h.tests}</p>
-</div>
-
-<button class="labBtn booktest py-2 text-center text-white px-2">Book Test</button>
-</div>
-`;
-
-
-
-                    var marker = L.marker([h.lat, h.lng])
-                        .bindPopup(popupContent, {
-                            maxWidth: 350,
-                            minWidth: 300
-                        })
-                        .addTo(map);
-
-                    marker.name = h.name;
-                    markers.push(marker);
-                });
-
-            });   // SEARCH FUNCTION
+                                            // Add markers
+                                            hospitals.forEach(function (h) {
+                                                var marker = L.marker([h.lat, h.lng])
+                                                    .bindPopup("<b>" + h.name + "</b>")
+                                                    .addTo(map); marker.name = h.name;
+                                                markers.push(marker);
+                                            });
+                                        });      // SEARCH FUNCTION
                                     var searchInput = document.getElementById("searchInput");
                                     var resultsBox = document.getElementById("searchResults"); searchInput.addEventListener("keyup", function () {
                                         var query = this.value.toLowerCase(); resultsBox.innerHTML = ""; if (query.length === 0) return; markers.forEach(function (marker) { if (marker.name.toLowerCase().includes(query)) { var div = document.createElement("div"); div.className = "resultItem"; div.innerHTML = marker.name; div.onclick = function () { map.setView(marker.getLatLng(), 12); marker.openPopup(); resultsBox.innerHTML = ""; searchInput.value = marker.name; }; resultsBox.appendChild(div); } });
