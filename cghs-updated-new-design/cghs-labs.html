@@ -1455,17 +1455,22 @@
                                            // Add markers
                 hospitals.forEach(function (h) {
                     var popupContent = `
-<div class="labPopup">
-<h3>${h.name}</h3>
+<div class="labPopup position-relative">
+<div class="address border-bottom border-1 border-dark border-opacity-25">
+  
+<h3 class="border-bottom border-1 border-dark border-opacity-25 fw-bold pb-1"><i class="fa-solid fa-location-dot me-1"></i> ${h.name}</h3>
 
-<p class="labAddress">${h.address}</p>
+<p class="labAddress d-flex align-items-center m-0 py-2">  ${h.address}</p>
 
-<div class="labTests">
-<b>Tests Available</b>
-<p>${h.tests}</p>
+</div>
+<div class="labTests mt-2">
+<p class="fw-bold m-0 p-0">Available Tests:</p>
+    <ul class="my-2 ps-3">
+        ${h.tests.split(',').map(test => `<li class="mb-1">${test.trim()}</li>`).join('')}
+    </ul>
 </div>
 
-<button class="labBtn booktest py-2 text-center text-white px-2">Book Test</button>
+<button class="labBtn booktest mt-1 py-2 text-center text-white px-2">Book Test</button>
 </div>
 `;
 

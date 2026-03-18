@@ -2124,4 +2124,6 @@ margin:0 auto; position: relative;
     background: #17449e;
     border: 1px solid #17449e;
 }
-.labPopup h3 { font-size: 1rem; font-weight: 600;}
+.labPopup h3 { font-size: 1rem !important; font-weight: 500; color: #3e8ced !important ;}
+.labPopup .address i{ font-size:1rem; top: 1px;}
+.labPopup .address p {color: #212529 !important;}
