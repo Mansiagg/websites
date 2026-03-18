@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 body,
 html {
-    /* font-family: "Poppins", sans-serif; */
-    
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
@@ -82,12 +80,11 @@ a {
 
 #topbar .logo {
     color: #1f1f1f;
-  
+    font-family: "Mulish", sans-serif;
 }
 
 .rightarea {
     font-size: 13px;
-    padding: 2px 0;
 }
 
 .rightarea span {
@@ -509,12 +506,19 @@ ul.pdflist .download a{ font-size: 0.88rem; font-weight:400; cursor: pointer;}
 .loginbtn .raise-ticket {
     font-size: 14px;
 }
-.carousel-item img { border-radius: 20px; margin-top: 1px;}
-.searchempanneled {
-    background: #00ac7a;
-     margin: 1px 0 1px 1px; border-radius: 20px;
+
+
+.searchempanneled:first-child {
+    background: #34c38f url(../images/hospital-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 1px;
 }
 
+.searchempanneled {
+    background: #2db181;
+     margin: 1px;
+}
 
 .searchempanneled .icon {
     top: 8px;
@@ -771,7 +775,7 @@ ul.pdflist .download a{ font-size: 0.88rem; font-weight:400; cursor: pointer;}
 
 .scroll {
     height: 463px;
-    overflow-y: auto;overflow-x: hidden; padding-right: 20px;
+    overflow-y: auto;
 }
 
 .scroll::-webkit-scrollbar {
@@ -844,10 +848,10 @@ ul.pdflist .download a{ font-size: 0.88rem; font-weight:400; cursor: pointer;}
     min-height: 59px;
 }
 
-#aboutsection  { margin-top: 50px;}
+
 .aboutsection p {
     color: rgba(0, 0, 0, 0.68);
-    font-size: 0.91rem;
+    font-size: 0.85rem;
     text-align: justify;
     line-height: 22px;
 }
@@ -866,30 +870,14 @@ ul.pdflist .download a{ font-size: 0.88rem; font-weight:400; cursor: pointer;}
 }
 
 .aboutsection .mission .box {
-    min-height: 313px;
 
-    -webkit-transition: border-color 300ms, border-width 100ms;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    min-height: 336px;
 
 }
 
-.btnvision {font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #ffffff;
-    padding: 10px 35px 10px 35px;
-    text-transform: uppercase;
-    /* background: #ffffff; */
-   background-color: #0176d5;
-    border: 2px solid #0176d5;
-    border-radius: 50px;
-margin-top: 20px; width: max-content; }
- 
-
-.working-hours { background: #ed1848; border-radius: 20px;}
 .aboutsection .mission .box p {
-   line-height: 25px;
-    text-align: justify;
-    hyphens: auto;
+    line-height: 20px;
 }
 
 .aboutsection .important span {
@@ -1396,27 +1384,20 @@ footer .logos img {
     padding-left: 27px;
 }
 
-#aboutsection .get ul li i {
+#aboutsection ul li i {
     position: absolute;
     left: 0;
     top: 3px
 }
-.working-hours span{ font-size: 0.9rem;}
-.working-hours i{ font-size: 1rem;}
-.getusermanuals a {
-    
-    color: #17449e;
-   }
-#aboutsection .get ul li i {
+
+#aboutsection ul li i {
     border: 1px solid #b9b9c0;
     border-radius: 3px;
     padding: 3px 4px;
     font-size: 10px;
 }
-.getusermanuals i{ color: red; font-size: 1.2rem;}
-.getusermanuals p{     font-size: 0.95rem;    font-weight: 500;
-    line-height: 19px;}
-#aboutsection  .heading .line,
+
+#aboutsection .heading .line,
 #page .content .heading .line,
 #content-display .content .heading .line {
     color: rgba(0, 0, 0, 0.88);
@@ -2011,7 +1992,7 @@ footer .logos img {
 
 
         }
-    } }
+    }
 
     .modalIframe {
         z-index: 999999;
@@ -2065,17 +2046,3 @@ footer .logos img {
     #myInput::placeholder {
         text-align: center;
     }
-    #datalistId1 .datetime {width: 41px;
-    min-width: 41px;
-    flex-shrink: 0;
-    font-size: 0.75rem;
-    color: #003fab;
-    font-weight: 500;}
-
-    #datalistId1>li {
-    background: #f3f7ff; align-items: flex-start;
-    border-radius: 50px;
-    border: 1px solid #cbdeff;
-}
-    #datalistId1>li a { text-align: justify;hyphens: auto;}
-    
