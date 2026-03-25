@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NHSRC   Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/feather/feather.css">
+    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css"> -->
+    <link rel="stylesheet" href="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css">
+    <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="assets/images/logo/logo-mini.png" />
+
+    <style>
+.navbar {}
+.sidebar {background: linear-gradient(180deg, #365ebf 0%, rgba(54, 94, 191, 0.85)70%, transparent 100%)}
+.navbar-nav-right i { color:rgba(0,0,0,0.8) !important; font-size: 1.1rem !important;}
+
+.bg-gradient-primary {
+    background: linear-gradient(to right, #d26310, #ed7419) !important;
+}
+.navbar .navbar-menu-wrapper {
+    background: #ffffff;
+    transition: width 0.25s ease;
+    -webkit-transition: width 0.25s ease;
+    -moz-transition: width 0.25s ease;
+    -ms-transition: width 0.25s ease;
+    color: #6C7383;
+    padding-right: 2.375rem;
+    padding-left: 2.375rem;
+    width: calc(100% - 268px);
+}
+.navbar .navbar-brand-wrapper {
+    background: #ffffff;
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+    width: 268px;
+    padding-left: 1rem;
+}
+#session-timer { color:rgba(0,0,0,0.8)}
+.sidebar .nav .nav-item .nav-link, .sidebar .nav .nav-item .nav-link i.menu-icon { color: rgba(255,255,255,0.95);}
+.sidebar .nav .nav-item.active i.menu-icon {  color: rgba(0,0,0,0.95);}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item {
+    border:0 !important;
+ 
+}
+.navbar {
+  
+   -webkit-box-shadow: none; 
+    -moz-box-shadow: none;
+     box-shadow: none;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item {
+  margin-left:0.5rem;
+  margin-right: 0.5rem;
+}
+
+          .navbar .navbar-menu-wrapper .navbar-nav .nav-item {
+    border: 1px solid #efefef;
+    padding: 0rem 0.35rem;
+    border-radius: 4px;
+    background: rgba(251, 251, 251, 0.8);
+    margin: 0.3rem 0.55rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    line-height: 20px;
+}
+     .navbar .navbar-menu-wrapper .navbar-nav .nav-item:last-child  { margin: 0 !important; background: transparent;}
+    </style>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start" style="    background-color: #365ebf;">
+    <a class="navbar-brand brand-logo me-5" href="index.html"><img src="assets/images/logo/logo.png" class="me-2" alt="logo" /></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo/logo-mini.png" alt="logo" /></a>
+  </div>
+  <div class="navbar-menu-wrapper ps-0 pe-2 text-white d-flex align-items-center justify-content-between bg-transparent">
+    <div class="d-flex align-items-center justify-content-start">
+   <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+      <span class="icon-menu"></span>
+    </button>
+   <div class="d-flex align-items-center">
+          <span id="session-timer"><span class="ps-3 fw-normal">Session Time Remaining:</span> 19Min : 50Sec</span>
+        </div>
+
+    </div>
+ 
+        <style>
+
+        </style>
+<ul class="navbar-nav navbar-nav-right">
+  <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-download"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+       
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-refresh"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+       
+          </li>
+<style>
+  .rotate {
+      display: inline-block; /* important */
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.count {
+  display: inline-block;
+  animation: pulse 1.2s infinite;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+</style>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-cog rotate"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+       
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="mdi mdi-email-outline"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <h6 class="p-3 mb-0">Messages</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/faces/face28.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                  <p class="text-gray mb-0"> 1 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/faces/face28.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                  <p class="text-gray mb-0"> 15 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/faces/face28.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                  <p class="text-gray mb-0"> 18 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+            </div>
+          </li>
+        <li class="nav-item dropdown me-4">
+        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+          <i class="icon-bell mx-0"></i>
+          <span class="count"></span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+          <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-success">
+                <i class="ti-info-alt mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content d-flex align-items-top">
+              <h6 class="preview-subject font-weight-normal">Application Error</h6>
+              <p class="font-weight-light small-text mb-0 text-muted"> Just now </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-warning">
+                <i class="ti-settings mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content  d-flex align-items-top">
+              <h6 class="preview-subject font-weight-normal">Settings</h6>
+              <p class="font-weight-light small-text mb-0 text-muted"> Private message </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <div class="preview-icon bg-info">
+                <i class="ti-user mx-0"></i>
+              </div>
+            </div>
+            <div class="preview-item-content  d-flex align-items-top">
+              <h6 class="preview-subject font-weight-normal">New user registration</h6>
+              <p class="font-weight-light small-text mb-0 text-muted"> 2 days ago </p>
+            </div>
+          </a>
+        </div>
+      </li>
+       
+          <!-- <li class="nav-item d-none d-lg-block full-screen-link">
+            <a class="nav-link">
+              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            </a>
+          </li> -->
+          <li class="nav-item nav-profile dropdown ms-5" style="background: #efefef;
+    padding: 0 10px;">
+            <a class="nav-link dropdown-toggle d-flex align-items-center p-0 m-0" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="assets/images/faces/face28.jpg" alt="image">
+                <span class="availability-status online"></span>
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black ms-2 fw-semibold">Welcome Shruti</p>
+              </div>
+            </a>
+           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+          <a class="dropdown-item">
+            <i class="ti-settings text-primary"></i> Settings </a>
+          <a class="dropdown-item">
+            <i class="ti-power-off text-primary"></i> Logout </a>
+        </div>
+          </li>
+ 
+      
+        </ul>
+
+
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+      <span class="icon-menu"></span>
+    </button>
+  </div>
+</nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas pt-1" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">
+        <i class="icon-grid menu-icon"></i>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+ <i class="mdi mdi-contacts menu-icon"></i>
+        <span class="menu-title">HR Management</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-basic">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="#">Mision Director List</a></li>
+          <li class="nav-item"> <a class="nav-link" href="#">Provisional User List</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+ <i class="mdi mdi-account-edit menu-icon"></i>
+        <span class="menu-title">Services</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="form-elements">
+       <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a href="#" class="nav-link" id="Application List">Application List</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Assessor Selection">Assessor Selection</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Document Generation">Document Generation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Hold Cancel Assessment">Hold Cancel Assessment</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Result Generation">Result Generation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="File Forward">File Forward</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Declare Result">Declare Result</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Upload Certificate">Upload Certificate</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="CU Feedback List">CU Feedback List</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Assessment Result View">Assessment Result View</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Manage Lapsed Application">Manage Lapsed
+                    Application</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Track Application">Track Application</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="State Certification including Aspirational Blocks">State Certification including Aspirational
+                    Blocks</a> <b class="arrow"></b></li>
+                <li class="nav-item"><a href="#" class="nav-link" id="Annual Feedback">Annual Feedback</a></li>
+
+
+
+              </ul>
+      </div>
+    </li>
+   
+ 
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#r-elements" aria-expanded="false" aria-controls="form-elements">
+        <i class="mdi mdi-file-chart menu-icon"></i>
+        <span class="menu-title">Reports</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="r-elements">
+     <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="#" id="View Scheduled Assessment">View Scheduled
+                    Assessment</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="Assessment Feedbacks">Assessment Feedbacks</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="Statewise Registration Status">Statewise
+                    Registration Status</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="User Details">User Details</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="Details of Applications Facility Type Wise">Details of Applications Facility Type Wise</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="Details of Applications Program Wise">Details of
+                    Applications Program Wise</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="Certification Unit Dashboard">Certification Unit
+                    Dashboard</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#" id="State Level Dashboard">State Level Dashboard</a>
+                </li>
+
+             
+              </ul>
+      </div>
+    </li>
+       <li class="nav-item mt-4 text-center mx-3">
+            <a class="nav-link bg-gradient-primary  px-2 py-2 text-center d-flex align-items-center justify-content-center" href="#" target="_blank">
+        <span class="text-white rounded d-flex align-items-center justify-content-center">   <i class="icon-paper menu-icon me-2 text-white"></i>     Download User Manual</span>
+        
+            </a>
+          </li>
+  
+  </ul>
+</nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-md-12 grid-margin">
+                <div class="row">
+                  <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                    <h3 class="font-weight-bold">Welcome Shruti !</h3>
+                    <h6 class="font-weight-normal mb-0">All systems are running smoothly! You have <span class="text-primary">3 unread alerts!</span></h6>
+                  </div>
+                  <div class="col-12 col-xl-4">
+                    <div class="justify-content-end d-flex">
+                      <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                        <button class="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          <i class="mdi mdi-calendar"></i> Today (10 Jan 2021) </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
+                          <a class="dropdown-item" href="#">January - March</a>
+                          <a class="dropdown-item" href="#">March - June</a>
+                          <a class="dropdown-item" href="#">June - August</a>
+                          <a class="dropdown-item" href="#">August - November</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-12 grid-margin transparent">
+                <div class="row">
+                  <div class="col-md-3 mb-4 stretch-card transparent">
+                    <div class="card card-tale">
+                      <div class="card-body">
+                        <p class="mb-4">Today’s Bookings</p>
+                        <p class="fs-30 mb-2">4006</p>
+                        <p>10.00% (30 days)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4 stretch-card transparent">
+                    <div class="card card-dark-blue">
+                      <div class="card-body">
+                        <p class="mb-4">Total Bookings</p>
+                        <p class="fs-30 mb-2">61344</p>
+                        <p>22.00% (30 days)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="col-md-3 mb-4 stretch-card transparent">
+                    <div class="card card-light-blue">
+                      <div class="card-body">
+                        <p class="mb-4">Total Bookings</p>
+                        <p class="fs-30 mb-2">61344</p>
+                        <p>22.00% (30 days)</p>
+                      </div>
+                    </div>
+                  </div>
+
+             
+                   <div class="col-md-3 mb-4 stretch-card transparent">
+                    <div class="card card-light-danger">
+                      <div class="card-body">
+                        <p class="mb-4">Total Bookings</p>
+                        <p class="fs-30 mb-2">61344</p>
+                        <p>22.00% (30 days)</p>
+                      </div>
+                    </div>
+                  </div>
+           
+                
+               
+              </div>
+            </div>
+     
+          </div>
+     
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+  <div class="d-sm-flex justify-content-center justify-content-sm-between">
+    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2026. Saqsham <a href="#" target="_blank"></a> from Cdac. All rights reserved.</span>
+   
+  </div>
+</footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/chart.js/chart.umd.js"></script>
+    <script src="assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="assets/vendors/datatables.net-bs5/dataTables.bootstrap5.js"></script>
+    <script src="assets/js/dataTables.select.min.js"></script>
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/template.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/js/dashboard.js"></script>
+ 
+  </body>
+</html>
