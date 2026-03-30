@@ -1,20 +1,7 @@
-@media (min-width: 1601px) and (max-width:2500px){.carousel-item img, .bimage { width: 100%;}}
-
 @media (min-width: 1366px) and (max-width:1500px) {
     #slider .carousel-caption {
         top: 11%;
     }
-
-    .boxespanel .box h3 {
-    font-size: 0.85rem;}
-
-    .counter-box p {
-    margin: 5px 0 0;
-    padding: 0; line-height: 21px;
-    color: #909090;
-    font-size: 15px;
-    font-weight: 500
-}
 
 }
 
@@ -36,7 +23,7 @@
     }
 
     .logo h1 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .logo h2 {

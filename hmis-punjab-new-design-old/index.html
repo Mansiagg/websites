@@ -18,7 +18,6 @@
     <!-- OwlCarousel Css -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link href="css/slider.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -26,46 +25,16 @@
 <body>
 
     <header>
-        <div class="container-fluid px-md-3 topbar">
+        <div class="container-fluid px-md-5 topbar">
             <div class="row px-lg-1 px-lg-2 px-xl-3">
                 <div class=" px-lg-1 px-lg-3 px-xl-3">
                     <div class="row">
-                        <div class="col-md-5 d-flex align-items-center justify-content-start">
-                            <div class="punchline d-flex align-items-center"><img src="images/flag.jpg" class=""/><span class="mx-2">|</span>Department of Health & Family Welfare | Goverment of Punjab</div>
+                        <div class="col-md-7 d-flex align-items-center justify-content-start">
+                            <div class="punchline">We support to improve access to integrated comprehensive primary
+                                health care</div>
                         </div>
-                        <div class="col-md-7 d-flex align-items-center justify-content-end">
-
-                    <span class="d-flex align-items-center">
-                        <a href="#main" title="Skip to main content" class="skip01 text-decoration-none fw-semibold">Skip to Main
-                                Content</a>
-                                
-                        <span class="partition">|</span>
-                         <a href="#main" title="Skip to main content" class="skip01 text-decoration-none fw-regular">Screen Reader Access</a>
-                          <span class="partition">|</span>
-                         <button role="button" id="btn-decrease" class="font01 mx-2" onclick="decrease()">
-                            -A
-                        </button>
-                        <button role="button" id="btn-orig" class="font01 active01 me-2" onclick="reset()">
-                            A
-                        </button>
-
-                        <button role="button" id="btn-increase" class="font01 me-2" onclick="increase()">
-                            A+
-                        </button><span class="partition">|</span>
-
-
-                    </span>
-                   
-                    <span class="language01 px-2 d-flex align-items-center">
-                        <form id="langForm" method="POST" class="d-flex align-items-center">
-                                 <select name="selectLanguage" class="form-control" id="selectLanguage" onchange="setLanguage(this.value)"> 
-                            <option >Select Language</option><option value="english" selected>🌐 English</option>
-<option value="hindi">🇮🇳 हिन्दी</option>
-<option value="punjabi">🪯 ਪੰਜਾਬੀ</option>  </select>
-                        </form>
-                    </span>
-           
-                            <!-- <div
+                        <div class="col-md-5">
+                            <div
                                 class="calldetails d-flex align-items-center justify-content-lg-end justify-content-start py-2 pe-2">
                                 <div class="phone pe-2 border-end border-1 border-opacity-50 border-light">
                                     <a href="tel:01722232243" class="text-decoration-none"><i
@@ -77,7 +46,7 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
 
                                         itcell.phsc2025@gmail.com</a>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,9 +54,9 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
 
 
         </div>
-        <div class="container-fluid main-menu px-md-3">
-            <div class="row d-flex align-items-center py-1">
-                <div class="col-md-8 col-xl-4 col-lg-4 col-xxl-5 col-12">
+        <div class="container-fluid main-menu px-md-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-8 col-xl-5 col-lg-5 col-12">
                     <div class="logo py-3 position-relative">
                         <img src="images/logo.png" class="position-absolute start-0 top-0 pb-1"  width="60px"/>
                         <h1 class="fw-regular">Hospital Information Management Systems
@@ -95,10 +64,10 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                         <h2 class="fw-normal pt-1">(Government of Punjab) </h2>
                     </div>
                 </div>
-                <div class="col-md-7 col-xl-8 col-lg-8 col-xxl-7 col-12">
+                <div class="col-md-7">
 
-                    <div class="d-flex align-items-center justify-content-end sublinks ">
-   <ul class="d-flex align-items-center list-unstyled mb-0">
+                    <div class="d-flex align-items-center justify-content-end sublinks mt-1">
+   <ul class="d-flex align-items-center list-unstyled">
 
     <li class="me-3">    <a target="_blank" href="https://eaushadhipb.in/IMCS/hissso/loginLogin.imcs" class="text-decoration-none"  key="e-aushdhi"> <i class="fa-solid fa-circle-check me-1"></i>e-AUSHADHI</a>
             </li>
@@ -112,8 +81,7 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                                         class="loginbutton btn btn-md btn-primary-gradient inline-flex align-items-center rounded-pill"><i
                                             class="fa-solid fa-user-lock me-2"></i>Login</a>
                                 </li>
-                                <img src="images/p-logo.png" class="me-2" />
-                                  <img src="images/di.jpg" class="" />
+                                <img src="images/p-logo.png" class="pt-1" width="70px"/>
    </ul>
      
            
@@ -125,7 +93,7 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
             </div>
 
         </div>
-    <div class="row menubg px-md-3">
+    <div class="row menubg px-md-5">
            <div
                     class="col-12 col-md-12 d-flex justify-content-md-start justify-content-start align-items-center justify-content-end">
                     <nav class="navbar navbar-expand-custom p-0">
@@ -142,9 +110,9 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                                 <li class="nav-item"><a class="nav-link fw-semibold" href="#"
                                         style="    color: #1e306e;
     background-color: #bce0f7;">Home</a></li>
-                                <li class="nav-item"><a class="nav-link fw-regular" href="#about">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Departments</a></li>
-                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Features</a>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Services</a></li>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Gallery</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link fw-regular" href="#footer">Contact</a></li>
                                 <li class="nav-item"><a class="nav-link fw-regular" href="#">Dashboard</a></li>
@@ -164,10 +132,10 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
 
     <main>
         <section id="slider" class="position-relative">
-            <div class="container-fluid">
+            <div class="container-fluid px-lg-1 ps-lg-3 pe-lg-2 ps-xl-5 pe-xl-3">
                 <div class="row">
                     <div class="col-md-12 p-0">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"  data-bs-pause="false" >
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                     class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -175,15 +143,39 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                                     aria-label="Slide 2"></button>
                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                                     aria-label="Slide 3"></button>
-                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="23"
-                                    aria-label="Slide 4"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active " data-bs-interval="3000">
+                                <div class="carousel-item active mb-5" data-bs-interval="1000">
                                     <div class="row d-flex align-items-center">
 
+  
+    <div class="col-md-6">  <div
+                                                class="carousel-caption mt-4 position-relative text-start pt-lg-5 pt-2 start-0">
+                                                <h5 class="mb-3 pb-2  fw-semibold ps-2">
+                                                 Smart Hospital Management System<br>For <span class="">Punjab</span>
+                                                    <p class="fw-light punchline d-block mt-4 pb-1">Empowering hospitals with intelligent digital solutions for quicker decisions and enhanced patient care.
+From patient registration to discharge, every process is streamlined through a unified system, reducing delays and improving efficiency.
+</p>
+<p>Driving a healthier Punjab with connected hospitals and smarter healthcare delivery.</p>
+                                                </h5>
+
+                                                <div class="buttons d-flex align-items-center ps-2">
+                                                    <div class="banner-btn">
+                                                        <a class="text-decoration-none" href="" target="_blank">Get In Touch With Us</a>
+                                                    </div>
+
+                                                    <div class="banner-btn-about ms-2">
+                                                        <a class="text-decoration-none" href="" target="_blank">Sign into your account</a>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div></div>    
                                             
-                                             <div class="col-md-12 p-0"><img src="images/banner-1.jpg"  class="img-fluid"/></div>      
+                                             <div class="col-md-6"><img src="images/banner-1-image.png" class="pt-5 img-fluid"/></div>      
                                       
                                     </div>
 
@@ -191,35 +183,37 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                                 </div>
 
 
-                                  <div class="carousel-item" data-bs-interval="5000">
+                                  <div class="carousel-item mb-5" data-bs-interval="5000">
                                     <div class="row d-flex align-items-center">
 
-      
+  
+    <div class="col-md-6">  <div
+                                                class="carousel-caption mt-4 position-relative text-start pt-lg-5 pt-2 start-0">
+                                                <h5 class="mb-3 pb-2  fw-semibold ps-2">
+                                               Integrated Dashboard with Real-Time<br>Management <span class="">Information System</span>
+                                                    <p class="fw-light punchline d-block mt-4 pb-1">Provides comprehensive visibility of hospital operations through real-time data integration and analytics.
+Supports informed decision-making, operational efficiency, and enhanced service delivery.
+</p>
+<p>Empowering hospitals to act faster and deliver better patient outcomes.</p>
+                                                </h5>
+
+                                                <div class="buttons d-flex align-items-center ps-2">
+                                                    <div class="banner-btn">
+                                                        <a class="text-decoration-none" href="" target="_blank">Get In Touch With Us</a>
+                                                    </div>
+
+                                                    <div class="banner-btn-about ms-2">
+                                                        <a class="text-decoration-none" href="" target="_blank">Sign into your account</a>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div></div>    
                                             
-                                             <div class="col-md-12 p-0"><img src="images/banner-2.jpg" class="img-fluid"/></div>      
-                                      
-                                    </div>
-
-
-                                </div>
-
- <div class="carousel-item" data-bs-interval="9000">
-                                    <div class="row d-flex align-items-center">
-
-      
-                                            
-                                             <div class="col-md-12 p-0"><img src="images/banner-4.jpg" class="img-fluid"/></div>      
-                                      
-                                    </div>
-
-
-                                </div>
-                                  <div class="carousel-item" data-bs-interval="12000">
-                                    <div class="row d-flex align-items-center">
-
-      
-                                            
-                                             <div class="col-md-12 p-0"><img src="images/banner-3.jpg" class="img-fluid"/></div>      
+                                             <div class="col-md-6"><img src="images/banner-2-image.png" class="pt-5 img-fluid"/></div>      
                                       
                                     </div>
 
@@ -227,15 +221,6 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                                 </div>
                             </div>
 
-  <!-- 🔥 Left Arrow -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <!-- 🔥 Right Arrow -->
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
 
                         </div>
 
@@ -247,71 +232,41 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
 
             </div>
         </section>
-        <div class="container-fluid px-md-0">
-   <div id="latestnews" class="position-relative bg-white">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-4 col-xl-3" style="background:  #fff4c8;">
-                            <div class="heading position-relative ps-5  py-2">
-                                <i class="fa-regular fa-newspaper bg-white rounded-circle position-absolute p-2"></i>
-                                <h2 class="fw-semibold">Latest & Important Updates</h2>
-                                <p class="fw-light mb-0">Explore our important news</p>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-lg-8 col-xl-9 d-flex align-items-center">
-                            <div class="ticker-wrapper">
-                                <div class="ticker">
-                                    <span>📰 Punjab's AAP government expands healthcare network with 109 new Aam Aadmi Clinics</span>
-                                    <span>📰 AAP govt ramps up Punjab's healthcare with record doctor hiring, new hospitals</span>
-                                    <span>📰 Punjab's Healthcare Revolution: Mukh Mantri Sehat Yojna's Impact</span>
-                                  
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-        </div>
-        <section id="about" class="pt-md-5 pt-lg-5 pt-xl-5 pt-xxl-5 pt-3">
-      
-            <div class="container-fluid px-md-1 px-lg-4 px-xl-2 px-xxl-5 mt-4">
+        <section id="about" class="pt-md-5 pt-lg-5 pt-xl-5 pt-xxl-5 pt-5 mt-5">
+            <div class="container-fluid px-md-2 px-lg-4 px-xl-5 px-xxl-5">
 
                 <div class="row px-lg-2">
-      <div class="col-lg-5 col-md-8"><img src="images/about.png" class="img-fluid"/></div>
-
-                    <div class="col-lg-7 col-md-8 p-0">
-                        <div class="aboutus text-start">
-                                 <h4 class="text-start text-white px-2 py-2 mb-2">About Us</h4>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="aboutus text-center">
+                                 <h4 class="text-uppercase text-center m-auto text-white px-2 py-2 mb-1">About HMIS</h4>
                             <h3>Technology to improve healthcare</h3>
                        
-                            <p class="lh-lg fw-regular pt-3">The Corporation has been incorporated through legislative measures by the state Govt. of Punjab to bring more administrative flexibility for implementation of the <span class="fw-semibold">"Second State Health Systems Development Project"</span> with World Bank assistance to upgrade Health Services at secondary level.</p><p>The Corporation has taken over 150 Institutions which includes District Hospitals, Sub-Divisional Hospitals and Community Health Centres. <span class="fw-semibold">The 86 Medical Institutions are situated in rural areas and 64 are in Urban areas.</span></p>
+                            <p class="lh-lg fw-regular pt-3">The Corporation has been incorporated through legislative measures by the state Govt. of Punjab to bring more administrative flexibility for implementation of the ''Second State Health Systems Development Project" with World Bank assistance to upgrade Health Services at secondary level. The Corporation has taken over 150 Institutions which includes District Hospitals, Sub-Divisional Hospitals and Community Health Centres. <span class="fw-semibold">The 86 Medical Institutions are situated in rural areas and 64 are in Urban areas.</span></p>
 
                          
                         </div>
-                            
-            <div class="row mt-3">
-                         <div class="col-md-12">
+                    </div>
+                    <div class="col-md-12">
    <div class="boxespanel row mb-5 mt-5 mt-lg-4">
-                     <div class="col-md-4 p-2"> <div class="box px-2 py-4  position-relative">
-                                        
+                     <div class="col-md-4"> <div class="box pe-2 py-1 mt-1 pe-lg-4 py-lg-1 mt-lg-3 position-relative">
+                                        <div class="icon text-center rounded-circle position-absolute start-0"><i class="fa-solid fa-check"></i></div>
                                         <h3 class="mb-1 ps-2 pt-1 fw-semibold">Streamline Accurate Reporting</h3>
                                         <p class="fw-light pt-1 ps-2">Helps In Streamlining The Accurate Reporting With The Help of Updated And Accurate Records.
                                         </p>
-                                        <div class="icon mt-3 text-center rounded-circle position-absolute"><img src="images/ar.png" class="img-fluid"/></div>
                                     </div></div> 
-                     <div class="col-md-4 p-2">  <div class="box px-2 py-4 active position-relative">
-                                        
-                                        <h3 class="mb-1 ps-2 pt-1 fw-semibold">Improve Visibility and Transparency</h3>
+                     <div class="col-md-4">  <div class="box pe-2  mt-1 pe-lg-4 mt-lg-2 position-relative">
+                                        <div class="icon text-center rounded-circle position-absolute start-0"><i class="fa-solid fa-check"></i>
+                                        </div>
+                                        <h3 class="mb-1 ps-2 pt-1 fw-semibold">IMPROVE VISIBILITY & TRANSPARENCY</h3>
                                         <p class="fw-light pt-1 ps-2">Improves The Visibility And Transparency In the Complete Management Process And In All Records
 
 </p>
-<div class="icon mt-3 text-center rounded-circle position-absolute "><img src="images/view.png" class="img-fluid"/></div>
                                     </div></div> 
-                     <div class="col-md-4 p-2">
-                                    <div class="box px-2 py-4  position-relative">
-                                  
-                                        <h3 class="mb-1 ps-2 pt-1 fw-semibold">Unlimited User Support</h3>
+                     <div class="col-md-4">
+                                    <div class="box pe-2 pe-lg-4 position-relative">
+                                        <div class="icon text-center rounded-circle position-absolute start-0"><i class="fa-solid fa-check"></i></div>
+                                        <h3 class="mb-1 ps-2 pt-1 fw-semibold">UNLIMITED USER SUPPORT</h3>
                                         <p class="fw-light pt-1 ps-2">Allows Unlimited User Support Whenever Assistance Is Required By The Client</p>
-                                        <div class="icon mt-3 text-center rounded-circle position-absolute"><img src="images/support.png" class="img-fluid"/></div>
                                     </div></div>     
                                
                                    
@@ -326,45 +281,11 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                             </div>
 
                     </div>
-            </div>
-                    </div>
-       
+            
                 </div>
             </div>
-
-
-            
         </section>
-
-        <section id="counter" class="mt-5">
-
-         <div class="container py-3">
-    <div class="row">
-        <div class="four col-md-3">
-            <div class="counter-box colored"> <span class="counter mt-3">226</span>
-                <p class="p-0">Secondary Hospitals</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"><span class="counter mt-3">883</span>
-              <p class="p-0">AAKs</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"> <span class="counter mt-3">2511</span>
-             <p class="p-0">Health and Wellness Centres</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"> <span class="counter mt-3">158</span>
-             <p class="p-0">Ayush HWCs</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </section>
-        <!-- <section id="departments" class="position-relative  py-lg-5">
+        <!-- <section id="services" class="position-relative  py-lg-5">
             <div class="servicebg position-absolute end-0 bottom-0"><img src="images/services-bg.png" /></div>
             <div class="container-fluid">
                 <div class="row">
@@ -495,99 +416,10 @@ itcell.phsc2025@gmail.com" class="text-decoration-none"><i class="fa-solid fa-en
                         </div>
                     </div>
                 </div>
-        </section>
-         -->
-        <section id="services" class="pt-md-4 pt-lg-4 pt-xl-4 pt-xxl-4 pt-4 my-5  position-relative" style="   background: #FFFFFF;
-background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(243, 247, 253, 1) 50%);">
-             <div class="fixed-shape-bottom position-absolute bottom-0 start-0 end-0">
-            <img src="images/2.svg" alt="Shape">
-        </div>
-            <div class="container-fluid px-md-2 px-lg-4 px-xl-5 px-xxl-5">
-      
-              
-                <div class="row px-lg-5">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="aboutus text-center">
-                            <h4 class="text-uppercase text-white px-2 py-2 mb-1 text-align-center m-auto">Core Features</h4>
-                            <h3>We offer Extensive Medical Procedures to Ounbound and Inbound Patients</h3>
-                    
-
-                   <div class="row mt-5">
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-               
-<div class="icon">
-                                <i class="bi bi-receipt-cutoff"></i>
-                            </div>
-                <p class="heading" key="medical-billing" data-dark-mode="true">Medical Billing</p>
-                <div class="text" key="medical-billing-1" data-dark-mode="true">Integrated Medical Billing system for OPD,IPD and Ancillary services.Improved UI on cash collection.</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-                <div class="icon">
-                           <i class="bi bi-card-list"></i>
-                            </div>
-
-                <p class="heading" key="electronic-health-record" data-dark-mode="true">Electronic Health Record</p>
-                <div class="text" key="electronic-health-record-1" data-dark-mode="true">An Electronic Health Record (EHR) is an electronic version of a patient’s longitudinal health record.</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-        <div class="icon">
-                             <i class="bi bi-upc"></i>
-                            </div>
-
-                <p class="heading" key="barcode-integration" data-dark-mode="true">Barcode Integration</p>
-                <div class="text" key="barcode-integration-1" data-dark-mode="true">Do not spend hours in patient registration and lab tests.Smart HMIS system generates a unique.</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-             <div class="icon">
-                              <i class="bi bi-speedometer2"></i>
-                            </div>
-                <p class="heading" key="dashboard" data-dark-mode="true">Dashboard</p>
-                <div class="text" key="dashboard-1" data-dark-mode="true">Integrated Dashboard Works in real time management information system, visual .</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-               <div class="icon">
-                              <i class="bi bi-phone-flip"></i>
-                            </div>
-
-                <p class="heading" key="mobile-application" data-dark-mode="true">Mobile Application</p>
-                <div class="text" key="mobile-application-1" data-dark-mode="true">Provisional Registration services with Aadhaar QR Scan provision through Mobile App.</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-4 mt-5 mt-lg-0 single-item px-4">
-              <div class="listing mb-4">
-              <div class="icon">
-                              <i class="bi bi-person-check"></i>
-                            </div>
-                <p class="heading" key="single-sign-on" data-dark-mode="true">Single Sign On</p>
-                <div class="text" key="single-sign-on-1" data-dark-mode="true">Mechanism that allows users to access multiple applications using a single ID and password</div>
-              </div>
-            </div>
-
-          </div>
-                        </div>
-                    </div>
-               
-                </div>
-            </div>
-        </section>
+        </section> -->
 
     </main>
-    <div style="margin: 0 auto; display: block; text-align: center;"><img src="images/page1.png" class="img-fluid bimage"/></div>
+    <div style="margin: 0 auto; display: block; text-align: center;"><img src="images/page.jpg" /></div>
     <!-- ======= Footer ======= -->
     <!-- <footer id="footer" class="pt-5 pb-1 text-white">
         <div class="footer-top">
@@ -664,7 +496,126 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(243, 247, 253
     <!-- End Footer -->
     <a id="button"><span class="material-symbols-outlined">north</span></a>
     <!-- accessibility panel -->
-
+    <div class="uwaw uw-light-theme gradient-head uwaw-initial paid_widget" id="uw-main">
+        <div class="relative second-panel">
+            <h3>Accessibility Options</h3>
+            <div class="uwaw-close" onclick="closeMain()"></div>
+        </div>
+        <div class="uwaw-body">
+            <div class="h-scroll">
+                <div class="uwaw-features">
+                    <div class="uwaw-features__item reset-feature" id="featureItem_sp"> <button id="speak"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-speaker"> </span> </span>
+                            <span class="uwaw-features__item__name">Text To Speech</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon_sp"
+                                style="display: none"> </span> </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem"> <button id="btn-s9"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-bigger-text"> </span>
+                            </span><span class="uwaw-features__item__name">Bigger Text</span>
+                            <div class="uwaw-features__item__steps reset-steps" id="featureSteps">
+                                <!-- Steps span tags will be dynamically added here -->
+                            </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon"
+                                style="display: none"> </span>
+                        </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-st"> <button id="btn-small-text"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-small-text"> </span>
+                            </span><span class="uwaw-features__item__name">Small Text</span>
+                            <div class="uwaw-features__item__steps reset-steps" id="featureSteps-st">
+                                <!-- Steps span tags will be dynamically added here -->
+                            </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-st"
+                                style="display: none"> </span>
+                        </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-lh"> <button id="btn-s12"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-line-hight"> </span>
+                            </span> <span class="uwaw-features__item__name">Line Height</span>
+                            <div class="uwaw-features__item__steps reset-steps" id="featureSteps-lh">
+                                <!-- Steps span tags will be dynamically added here -->
+                            </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-lh"
+                                style="display: none"> </span>
+                        </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-ht"> <button id="btn-s10"
+                            onclick="highlightLinks()" class="uwaw-features__item__i"
+                            data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-highlight-links"> </span>
+                            </span> <span class="uwaw-features__item__name">Highlight Links</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht"
+                                style="display: none"> </span> </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-ts"> <button id="btn-s13"
+                            onclick="increaseAndReset()" class="uwaw-features__item__i"
+                            data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-text-spacing"> </span>
+                            </span> <span class="uwaw-features__item__name">Text Spacing</span>
+                            <div class="uwaw-features__item__steps reset-steps" id="featureSteps-ts">
+                                <!-- Steps span tags will be dynamically added here -->
+                            </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ts"
+                                style="display: none"> </span>
+                        </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-df"> <button id="btn-df"
+                            onclick="toggleFontFeature()" class="uwaw-features__item__i"
+                            data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-dyslexia-font"> </span>
+                            </span> <span class="uwaw-features__item__name">Dyslexia Friendly</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-df"
+                                style="display: none"> </span> </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-hi"> <button id="btn-s11"
+                            onclick="toggleImages()" class="uwaw-features__item__i"
+                            data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-hide-images"> </span>
+                            </span> <span class="uwaw-features__item__name">Hide Images</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-hi"
+                                style="display: none"> </span> </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-Cursor"> <button id="btn-cursor"
+                            onclick="toggleCursorFeature()" class="uwaw-features__item__i"
+                            data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-cursor"> </span> </span>
+                            <span class="uwaw-features__item__name">Cursor</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-cursor"
+                                style="display: none"> </span> </button> </div>
+                    <div class="uwaw-features__item reset-feature" id="featureItem-ht-dark"> <button id="dark-btn"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__name"> <span class="light_dark_icon"> <input type="checkbox"
+                                        class="light_mode uwaw-featugres__item__i" id="checkbox" /> <label
+                                        for="checkbox" class="checkbox-label">
+                                        <!-- <i class="fas fa-moon-stars"></i> --> <i class="fas fa-moon-stars"> <span
+                                                class="ux4g-icon icon-moon"></span> </i> <i class="fas fa-sun"> <span
+                                                class="ux4g-icon icon-sun"></span> </i> <span class="ball"></span>
+                                    </label> </span> <span class="uwaw-features__item__name">Light-Dark</span> </span>
+                            <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht-dark"
+                                style="display: none; pointer-events: none"> </span> </button> </div>
+                    <!-- Invert Colors Widget -->
+                    <div class="uwaw-features__item reset-feature" id="featureItem-ic"> <button id="btn-invert"
+                            class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                            aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                                class="uwaw-features__item__icon"> <span class="ux4g-icon icon-invert"> </span> </span>
+                            <span class="uwaw-features__item__name">Invert Colors</span> <span
+                                class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ic"
+                                style="display: none"> </span> </button> </div>
+                </div>
+            </div> <!-- Reset Button -->
+        </div>
+        <div class="reset-panel"> <!-- copyright accessibility bar -->
+            <div class="copyrights-accessibility"> <button class="btn-reset-all" id="reset-all" onclick="resetAll()">
+                    <span class="reset-icon"> </span> <span class="reset-btn-text">Reset All Settings</span> </button>
+            </div>
+        </div>
+    </div><button id="uw-widget-custom-trigger" class="uw-widget-custom-trigger" aria-label="Accessibility Widget"
+        data-uw-trigger="true" aria-haspopup="dialog"><img
+            src="data:image/svg+xml,%0A%3Csvg width='32' height='32' alt='accessibility-options' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_1506)'%3E%3Cpath d='M16 7C15.3078 7 14.6311 6.79473 14.0555 6.41015C13.4799 6.02556 13.0313 5.47894 12.7664 4.83939C12.5015 4.19985 12.4322 3.49612 12.5673 2.81719C12.7023 2.13825 13.0356 1.51461 13.5251 1.02513C14.0146 0.535644 14.6383 0.202301 15.3172 0.0672531C15.9961 -0.0677952 16.6999 0.00151652 17.3394 0.266423C17.9789 0.53133 18.5256 0.979934 18.9101 1.55551C19.2947 2.13108 19.5 2.80777 19.5 3.5C19.499 4.42796 19.1299 5.31762 18.4738 5.97378C17.8176 6.62994 16.928 6.99901 16 7Z' fill='white'/%3E%3Cpath d='M27 7.05L26.9719 7.0575L26.9456 7.06563C26.8831 7.08313 26.8206 7.10188 26.7581 7.12125C25.595 7.4625 19.95 9.05375 15.9731 9.05375C12.2775 9.05375 7.14313 7.67875 5.50063 7.21188C5.33716 7.14867 5.17022 7.09483 5.00063 7.05063C3.81313 6.73813 3.00063 7.94438 3.00063 9.04688C3.00063 10.1388 3.98188 10.6588 4.9725 11.0319V11.0494L10.9238 12.9081C11.5319 13.1413 11.6944 13.3794 11.7738 13.5856C12.0319 14.2475 11.8256 15.5581 11.7525 16.0156L11.39 18.8281L9.37813 29.84C9.37188 29.87 9.36625 29.9006 9.36125 29.9319L9.34688 30.0112C9.20188 31.0206 9.94313 32 11.3469 32C12.5719 32 13.1125 31.1544 13.3469 30.0037C13.5813 28.8531 15.0969 20.1556 15.9719 20.1556C16.8469 20.1556 18.6494 30.0037 18.6494 30.0037C18.8838 31.1544 19.4244 32 20.6494 32C22.0569 32 22.7981 31.0162 22.6494 30.0037C22.6363 29.9175 22.6206 29.8325 22.6019 29.75L20.5625 18.8294L20.2006 16.0169C19.9387 14.3788 20.1494 13.8375 20.2206 13.7106C20.2225 13.7076 20.2242 13.7045 20.2256 13.7013C20.2931 13.5763 20.6006 13.2963 21.3181 13.0269L26.8981 11.0763C26.9324 11.0671 26.9662 11.0563 26.9994 11.0438C27.9994 10.6688 28.9994 10.15 28.9994 9.04813C28.9994 7.94625 28.1875 6.73813 27 7.05Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_1506'%3E%3Crect width='32' height='32' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A"><span>Accessibility
+            Options</span></button><!-- accessibility panel end-->
 </body>
 <!-- Placed js at the end of the document so the pages load faster -->
 <!-- jquery latest version -->
@@ -678,24 +629,6 @@ background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(243, 247, 253
         closeIcon.classList.toggle('d-none');
     });</script>
 <script src="js/bootstrap-min.js"></script>
-<script>
-$(document).ready(function() {
-
-$('.counter').each(function () {
-$(this).prop('Counter',0).animate({
-Counter: $(this).text()
-}, {
-duration: 4000,
-easing: 'swing',
-step: function (now) {
-$(this).text(Math.ceil(now));
-}
-});
-});
-
-});
-
-</script>
 <script src="https://img1.digitallocker.gov.in/ux4g/UX4G-CDN-accessibility/js/weights-v1.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/scripts.js"></script>
