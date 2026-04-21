@@ -319,7 +319,7 @@
 
 @media (max-width: 576px) {
 
-     .sticky {width: 97%;}
+     .sticky {width: 97% !important;}
     
     .loginbutton {
         padding: 0.2rem 0.5rem !important;
@@ -333,9 +333,7 @@
         padding: 0 2px;
     }
 
-  
-
-    .logo {
+      .logo {
         padding-left: 53px;
     }
 
