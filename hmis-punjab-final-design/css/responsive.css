@@ -318,6 +318,9 @@
 }
 
 @media (max-width: 576px) {
+
+     .sticky {width: 97%;}
+    
     .loginbutton {
         padding: 0.2rem 0.5rem !important;
         font-size: 13px;
