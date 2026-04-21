@@ -4,6 +4,9 @@ body {
 	font-family: "Noto Sans", sans-serif;
 	overflow-x: hidden;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 * {
 	margin: 0;
