@@ -1,0 +1,697 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HMIS Punjab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/logo.png" rel="icon">
+    <!--  CSS Files -->
+    <link href="css/bootstrap-min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/accesibility-style-v2.1.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" />
+    <!-- OwlCarousel Css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link href="css/slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid px-md-3 topbar">
+            <div class="row px-lg-1 px-lg-2 px-xl-3">
+                <div class=" px-lg-1 px-lg-3 px-xl-3">
+                    <div class="row">
+                        <div class="col-md-5 d-flex align-items-center justify-content-start">
+                            <div class="punchline d-flex align-items-center">We support to improve access to integrated
+                                comprehensive primary health care</div>
+                        </div>
+                        <div class="col-md-7 d-flex align-items-center justify-content-end">
+                            <span class="d-flex align-items-center">
+                                <a href="#main" title="Skip to main content"
+                                    class="skip01 text-decoration-none fw-semibold">Holidays
+                                    Content</a>
+
+                                <span class="partition">|</span>
+                                <a href="#main" title="Skip to main content"
+                                    class="skip01 text-decoration-none fw-regular">OPD Timing (9AM to 3PM)</a>
+                                <span class="partition">|</span>
+                                <button role="button" id="btn-decrease" class="font01 mx-2" onclick="decrease()">
+                                    -A
+                                </button>
+                                <button role="button" id="btn-orig" class="font01 active01 me-2" onclick="reset()">
+                                    A
+                                </button>
+
+                                <button role="button" id="btn-increase" class="font01 me-2" onclick="increase()">
+                                    A+
+                                </button><span class="partition">|</span>
+
+
+                            </span>
+
+                            <span class="darkmode ms-3">Dark Mode</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container-fluid main-menu px-md-3">
+            <div class="row d-flex align-items-center py-1">
+
+
+
+
+                <div class="col-md-4 col-xl-4 col-lg-4 col-xxl-4 col-12">
+                    <div class="logo py-3 position-relative">
+                        <img src="images/logo.png" class="position-absolute start-0 top-0 pb-1" width="60px" />
+                        <h1 class="fw-regular">Hospital Information Management Systems
+                        </h1>
+                        <h2 class="fw-normal pt-1">(Government of Punjab) </h2>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="col-md-8 d-flex justify-content-md-end justify-content-end align-items-center justify-content-end">
+                    <nav class="navbar navbar-expand-custom p-0">
+                        <button
+                            class="navbar-toggler border-0 bg-transparent d-flex align-items-center justify-content-end"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars-staggered  text-white open-icon py-1"></i>
+                            <i class="fa-solid fa-xmark text-white close-icon d-none py-1"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto d-flex align-items-center">
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#about">About</a></li>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Departments</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#services">Features</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link fw-regular" href="#footer">Gallery</a></li>
+
+
+                                <li class="me-3">
+                                    <a href="https://doccure-wp.dreamsmarketplace.com/login"
+                                        class="loginbutton text-decoration-none fw-normal  inline-flex align-items-center rounded-pill">SIGN
+                                        IN</a>
+                                </li>
+
+                                <img src="images/p-logo.png" class="me-2" />
+
+                            </ul>
+                        </div>
+                    </nav>
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="row menubg px-md-3">
+            <div class="col-md-12 col-12">
+
+                <div class="d-flex align-items-center justify-content-center sublinks ">
+                    <ul class="d-flex align-items-center list-unstyled mb-0 p-2">
+
+                        <li class="px-4"> <a target="_blank" href="#" class="text-decoration-none"
+                                key="e-aushdhi">Patient Appointment</a>
+                        </li>
+
+                        <li class="px-4"> <a target="_blank" href="AHIMSG5/hissso/mohallaClinicSignIn"
+                                class="text-decoration-none" key="aam-admi">Aam Aadmi Clinic</a></li>
+
+                        <li class="px-4"> <a target="_blank" href="AHIMSG5/hissso/HWCSignIn"
+                                class="text-decoration-none" key="hwc">HWC</a></li>
+                        <li class="px-4"> <a target="_blank" href="AHIMSG5/hissso/HWCAyushSignIn"
+                                class="text-decoration-none" key="hwca"> Ayush HWC</a></li>
+                        <li class="px-4"> <a target="_blank" href="https://eaushadhipb.in/IMCS/hissso/loginLogin.imcs"
+                                class="text-decoration-none" key="e-aushdhi">e-Aushadhi</a>
+                        </li>
+
+                    </ul>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <main>
+        <section id="slider" class="position-relative">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 p-0">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-pause="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active " data-bs-interval="3000">
+                                    <div class="row d-flex align-items-center">
+
+
+                                        <div class="col-md-12 p-0"><img src="images/banners/banner-1.png"
+                                                class="img-fluid" /></div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <div class="row d-flex align-items-center">
+
+
+
+                                        <div class="col-md-12 p-0"><img src="images/banners/banner-2.png"
+                                                class="img-fluid" /></div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="carousel-item" data-bs-interval="9000">
+                                    <div class="row d-flex align-items-center">
+
+
+
+                                        <div class="col-md-12 p-0"><img src="images/banners/banner-3.png"
+                                                class="img-fluid" /></div>
+
+                                    </div>
+
+
+                                </div>
+                                <div class="carousel-item" data-bs-interval="12000">
+                                    <div class="row d-flex align-items-center">
+
+
+
+                                        <div class="col-md-12 p-0"><img src="images/banner-4.jpg" class="img-fluid" />
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- 🔥 Left Arrow -->
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+
+                            <!-- 🔥 Right Arrow -->
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="container-fluid px-md-0">
+            <div id="latestnews" class="position-relative bg-white">
+                <div class="row">
+                    <div class="col-md-12 d-flex align-items-center justify-content-center">
+                        <div class="ticker-wrapper">
+                            <div class="ticker">
+                                <span>The Online Registration System is working only at District Hospital Fatehgarh
+                                    Sahib</span>
+                                <span>The Online Registration System is working only at District Hospital Fatehgarh
+                                    Sahib. </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <section id="about" class="pt-md-5 pt-lg-5 pt-xl-5 pt-xxl-5">
+
+            <div class="container-fluid px-md-1 px-lg-4 px-xl-2 px-xxl-5">
+
+                <div class="row px-lg-2">
+
+
+                    <div class="col-lg-8 col-md-8 p-0">
+                        <div class="aboutus text-start">
+                            <h3 class="text-transform-uppercase fw-bold">About Us</h3>
+                            <h4 class="text-start text-white py-1 mb-2 fw-semibold">Provide best quality healthcare for
+                                you!</h4>
+
+
+                            <p class=" fw-regular pt-1">The Corporation was established by the Government of Punjab
+                                through legislative measures to
+                                enhance administrative flexibility for the <span class="fw-bold">"Second State Health
+                                    Systems Development Project." </span>
+                                With support from the World Bank, we aim to upgrade health services at the secondary
+                                level.
+                                Currently, the Corporation manages <span class="fw-bold">150 institutions,</span>
+                                including District Hospitals, Sub-Divisional
+                                Hospitals, and Community Health Centres—with <span
+                                    class="bggradient text-white py-1 px-2">86 facilities located in rural areas and 64
+                                    in urban centers.</span></p>
+
+
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="boxespanel row mb-5 mt-5 mt-lg-4">
+                                    <div class="col-md-4 p-2">
+                                        <div class="box px-5 py-2  position-relative">
+                                            <div class="icon mt-3 mb-2"><img src="images/icons/1.png"
+                                                    class="img-fluid" /></div>
+                                            <h3 class="mb-1 ps-2 pt-1 fw-bold">Streamline Accurate Reporting</h3>
+                                            <p class="fw-light pt-1 ps-2">Helps In Streamlining The Accurate Reporting
+                                                With The Help of Updated And Accurate Records.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 p-2">
+                                        <div class="box px-5 py-2  active position-relative">
+                                            <div class="icon mt-3 mb-2"><img src="images/icons/2.png"
+                                                    class="img-fluid" /></div>
+                                            <h3 class="mb-1 ps-2 pt-1 fw-bold">Improve Visibility and Transparency</h3>
+                                            <p class="fw-light pt-1 ps-2">Improves The Visibility And Transparency In
+                                                the Complete Management Process And In All Records
+
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 p-2">
+                                        <div class="box px-5 py-2  position-relative">
+                                            <div class="icon mt-3 mb-2"><img src="images/icons/3.png"
+                                                    class="img-fluid" /></div>
+                                            <h3 class="mb-1 ps-2 pt-1 fw-bold">Unlimited User Support</h3>
+                                            <p class="fw-light pt-1 ps-2">Allows Unlimited User Support Whenever
+                                                Assistance Is Required By The Client</p>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4"><img src="images/about.png" class="img-fluid" /></div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+        <section id="services" class="position-relative  py-lg-5 px-md-5">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="serviceheading position-relative text-white pt-3 ps-3">
+                            <h2 class="fw-semibold">DEPARTMENTS</h2>
+                            <div class="subline fw-light bg-white px-2 py-1">
+                                <span class="fw-semibold">Highlighting the care & Support</span>
+                            </div>
+                            <p class="mt-3">We offer extensive medical procedures to outbound and inbound patients.
+                                Hospital department means a<br> subdivision of a hospital providing administrative
+                                oversight for one or more charge sources.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 position-relative">
+                        <div
+                            class="services-carousel owl-carousel d-lg-flex align-items-center justify-content-end py-4 wow fadeInUp mb-3">
+
+                            <div class="item">
+                                <img src="images/departments/dental.png">
+
+
+                            </div>
+                            <div class="item">
+                                <img src="images/departments/ent.png">
+
+
+
+                            </div>
+                            <div class="item">
+                                <img src="images/departments/gynaecology.png">
+
+
+
+                            </div>
+                            <div class="item">
+                                <img src="images/departments/orthopaedics.png" />
+
+
+
+                            </div>
+
+                            <div class="item">
+                                <img src="images/departments/ent.png">
+
+
+
+                            </div>
+
+                            <div class="item">
+                                <img src="images/departments/ent.png">
+
+
+
+                            </div>
+
+                            <div class="item">
+                                <img src="images/departments/ent.png">
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="features" class="pt-5 position-relative px-0" style="overflow: hidden;">
+            <div class="bg position-absolute end-0 top-0"><img src="images/features-bg.png" /></div>
+            <h2 class="fw-bold px-5">FEATURES</h2>
+            <div class="row d-flex align-items-top ps-5">
+                <div class="col-md-7">
+                    <div class="list mt-5">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="box d-flex align-items-top">
+                                    <div class="icon bg-white px-2 py-2 h-100"><img
+                                            src="images/features-icon/medical.png" width="30px" /></div>
+                                    <div class="content ms-2">
+                                        <h3 class="fw-semibold mb-2">Medical Billing</h3>
+                                        <p>Integrated Medical Billing system for OPD,IPD and Ancillary services.Improved
+                                            UI on cash collection.</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/ehr.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Electronic Health Record</h3>
+<p>An Electronic Health Record (EHR) is an electronic version of a patient’s longitudinal health record.</p>    </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/barcode.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Barcode Integration</h3>
+<p>Do not spend hours in patient registration and lab tests.Smart HMIS system generates a unique.</p>    </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/dashboard.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Dashboard</h3>
+<p>Integrated Dashboard Works in real time management information system, visual .</p>    </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/sign -on.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Single Sign On</h3>
+<p>Mechanism that allows users to access multiple applications using a single ID and password</p>    </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/app.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Mobile Application</h3>
+<p>Provisional Registration services with Aadhaar QR Scan provision through Mobile App.</p>    </div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/medical.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Medical Billing</h3>
+<p>Integrated Medical Billing system for OPD,IPD and Ancillary services.Improved UI on cash collection.</p>    </div>
+
+</div>
+
+</div>
+
+<div class="col-md-6 mb-4">
+<div class="box d-flex align-items-top">
+    <div class="icon bg-white px-2 py-2 h-100"><img src="images/features-icon/medical.png" width="30px"/></div>
+    <div class="content ms-2"><h3 class="fw-semibold mb-2">Medical Billing</h3>
+<p>Integrated Medical Billing system for OPD,IPD and Ancillary services.Improved UI on cash collection.</p>    </div>
+
+</div>
+
+</div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-end p-0">
+                    <img src="images/features-img.png" class="image position-relative" />
+                </div>
+            </div>
+        </section>
+
+        <section id="counter" class="my-5">
+
+            <div class="container">
+                <div class="row border border-dark  border-opacity-25 counters">
+                    <div class="four col-md-3 p-0 py-5  border-end border-dark border-opacity-25">
+                        <div class="image py-2 text-center m-auto d-block">     <img src="images/counters/secondary.png" class=""/></div>
+                   
+                        <div class="counter-box text-center colored"> <span class="counter mt-0">226</span>
+                            <p class="p-0 text-transform-uppercase">Secondary Hospitals</p>
+                        </div>
+                    </div>
+                    <div class="four col-md-3 p-0 py-5  border-end border-dark border-opacity-25">
+                           <div class="image image py-2 text-center m-auto d-block">   <img src="images/counters/aac.png" class=""/></div> 
+                        <div class="counter-box text-center"><span class="counter mt-0">990</span>
+                            <p class="p-0 text-transform-uppercase">AACs</p>
+                        </div>
+                    </div>
+                     <div class="four col-md-3 p-0 py-5  border-end border-dark border-opacity-25">
+                          <div class="image image py-2 text-center m-auto d-block"><img src="images/counters/hwc.png" class=""/></div> 
+                        <div class="counter-box text-center"> <span class="counter mt-0">2511</span>
+                            <p class="p-0 text-transform-uppercase">Health and Wellness Centres</p>
+                        </div>
+                    </div>
+                     <div class="four col-md-3 p-0 py-5  border-end border-dark border-opacity-25">
+                       <div class="image image py-2 text-center m-auto d-block">    <img src="images/counters/ayush.png" class=""/></div> 
+                        <div class="counter-box text-center"> <span class="counter mt-0">158</span>
+                            <p class="p-0 text-transform-uppercase">Ayush HWCs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+       
+    
+
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <!-- <footer id="footer" class="pt-5 pb-1 text-white">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <div class="address contact-details mb-4">
+                            <div class="d-flex align-items-center mb-2"> <i class="fa-solid fa-location-dot me-2"></i>
+                                <h3 class="fw-regular">Address</h3>
+                            </div>
+                            <p class="fw-light"> 1st floor, Procurement cell,<br>
+                                Arogya Bhavan, St.George's Compound,<br>
+                                P.D'Mello Road Mumbai-400001 </p>
+                        </div>
+                        <div class="email contact-details mb-4">
+                            <div class="d-flex align-items-center mb-1"> <i
+                                    class="fa-regular fa-envelope-open me-2"></i>
+                                <h3 class="fw-regular">Email</h3>
+                            </div>
+                            <a href="mailto:eaushadhi.help@gmail.com"
+                                class="text-decoration-none fw-light">eaushadhi.help[AT]gmail[DOT]com</a>
+                        </div>
+                        <div class="phone contact-details mb-4">
+                            <div class="d-flex align-items-center mb-2"> <i class="fa-solid fa-phone me-2"></i>
+                                <h3 class="fw-regular">Phone</h3>
+                            </div>
+                            <a href="tel:02222626124" class="text-decoration-none fw-light">(022) 22626124 / 22626123,
+                                (022)
+                                22631831 / 22651026</a>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="fw-bold text-decoration-none" href="#"><i
+                                        class="fa fa-chevron-right me-1"></i>Home</a></li>
+                            <li><a class="fw-regular text-decoration-none" href="#about"><i
+                                        class="fa fa-chevron-right me-1"></i>About</a></li>
+                            <li><a class="fw-regular text-decoration-none" href="#services"><i
+                                        class="fa fa-chevron-right me-1"></i>Services</a></li>
+                            <li><a class="fw-regular text-decoration-none" href="#photogallery"><i
+                                        class="fa fa-chevron-right me-1"></i>Gallery</a>
+                            </li>
+                            <li><a class="fw-regular text-decoration-none" href="#footer"><i
+                                        class="fa fa-chevron-right me-1"></i>Contact</a></li>
+                            <li><a class="fw-regular text-decoration-none" href="#"><i
+                                        class="fa fa-chevron-right me-1"></i>Dashboard</a></li>
+                            <li><a class="fw-regular text-decoration-none" href="#"><i
+                                        class="fa fa-chevron-right me-1"></i>Tutorials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <h4>Our Location </h4>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.098009879565!2d77.18036662545398!3d31.07920061880611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578b2f3a349e5%3A0xdaa2e85c7f2746dd!2sSDA%20Complex%2C%20Kasumpti%2C%20Shimla%2C%20Himachal%20Pradesh%20171009!5e0!3m2!1sen!2sin!4v1759130310875!5m2!1sen!2sin"
+                            width="100%" height="70%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="social-links mt-3"> </div>
+                    </div>
+                </div>
+                <div class="copyright border-top border-1 border-light border-opacity-25">
+                    <div class="container-fluid copyright text-white fw-regylar py-3">
+                        <div class="text-center">© 2025 Copyright e-Aushadhi. All Rights Reserved | Designed & Developed
+                            by CDAC</div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer> -->
+    <!-- End Footer -->
+    <a id="button"><span class="material-symbols-outlined">north</span></a>
+    <!-- accessibility panel -->
+
+</body>
+<!-- Placed js at the end of the document so the pages load faster -->
+<!-- jquery latest version -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>const toggler = document.querySelector('.navbar-toggler');
+    const openIcon = toggler.querySelector('.open-icon');
+    const closeIcon = toggler.querySelector('.close-icon');
+
+    toggler.addEventListener('click', function () {
+        openIcon.classList.toggle('d-none');
+        closeIcon.classList.toggle('d-none');
+    });</script>
+<script src="js/bootstrap-min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('.counter').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+
+    });
+
+</script>
+<script src="https://img1.digitallocker.gov.in/ux4g/UX4G-CDN-accessibility/js/weights-v1.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
