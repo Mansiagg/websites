@@ -571,7 +571,7 @@ main {
 	padding: 11px 0;
 }
 
-.sticky {
+.sticky { 
   position: sticky;
   top: 0;
   z-index: 100;
