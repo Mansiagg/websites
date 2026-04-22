@@ -867,7 +867,7 @@ button.navbar-toggler {
 #login-form::placeholder {
 	font-size: 17px;
 }
-.seccurebox {border-radius: 24px; box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;}
+.seccurebox {border-radius: 24px; box-shadow:rgb(201 201 213 / 60%) 0px 7px 29px 0px;}
 .securebox .orangetext{ color: #D76322;}
 .securetext p { font-size: 1.3rem;}
 
