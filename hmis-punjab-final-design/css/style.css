@@ -573,21 +573,14 @@ main {
 #header-form .btn input {
 	padding: 11px 0;
 }
-/* 
+
 .sticky {
 	top: 0;
 	z-index: 100;
 	position: fixed;
 	width: 100%;
 	background: var(--bs-white);
-} */
-
-.sticky {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--bs-white);
-}
+} 
 
 #slider {
 	overflow: hidden;
