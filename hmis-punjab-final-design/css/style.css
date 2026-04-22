@@ -814,12 +814,14 @@ button.navbar-toggler {
 #login-form .leftpanel {
 	background: #FFE0D7;
 	background: linear-gradient(180deg, rgba(255, 224, 215, 1) 0%, rgba(255, 255, 255, 1) 52%, rgba(222, 235, 255, 1) 100%);
+	border: 1px solid rgba(0, 0, 0, .5);
 }
 
 #login-form .modal-dialog {
     top:18%;
 	max-width: 95% !important;
 	width: 800px !important;
+	
 }
 
 #login-form .closebtn { cursor: pointer;
