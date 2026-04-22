@@ -5,7 +5,7 @@ body {
 	overflow-x: hidden;
 }
 html, body {
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 * {
@@ -573,8 +573,16 @@ main {
 #header-form .btn input {
 	padding: 11px 0;
 }
+/* 
+.sticky {
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	background: var(--bs-white);
+} */
 
-.sticky { 
+.sticky {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -815,17 +823,18 @@ button.navbar-toggler {
 }
 
 #login-form .closebtn { cursor: pointer;
+    cursor: pointer;
     background: transparent;
     border-radius: 28px;
-    color: #978e8e;
+    color: #b5b0b0;
     font-size: 20px;
     line-height: 21px;
     opacity: 1;
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 3px;
-    top: 9px;
+    right: 28px;
+    top: 10px;
     z-index: 99999;
     border: 0;
 }
@@ -834,11 +843,11 @@ button.navbar-toggler {
 #login-form h1,
 #login-form h2,
 #login-form h3 {
-	font-size: 17px;
+	font-size: 16px;
 }
 
 #login-form .form-control {
-	border-radius: 50px;
+	border-radius: 12px;
 	font-size: 1rem;
 }
 
@@ -862,7 +871,9 @@ button.navbar-toggler {
 .owl-carousel .owl-item { text-align: center;} 
 
 body.modal-blur > *:not(.modal):not(.modal-backdrop) {
-  filter: blur(5px);
+  filter: blur(10px);
   transition: filter 0.3s ease;
 }
 
+#login-form .modal-content {border-radius: 39px;     overflow: hidden; }
+.logininfo, .logininfo a{color:#888888}

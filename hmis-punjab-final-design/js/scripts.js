@@ -7,6 +7,9 @@ $(window).scroll(function () {
     $('header').removeClass('sticky');
   }
 
+
+  
+
   // Ensure body overflow remains hidden
   if ($('body').css('overflow') === 'hidden') {
     $('body').css('overflow', 'hidden');
