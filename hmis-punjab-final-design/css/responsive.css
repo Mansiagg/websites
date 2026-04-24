@@ -1,8 +1,52 @@
 @media (min-width: 1601px) and (max-width:2500px) {}
 
-@media (min-width: 1366px) and (max-width:1500px) {}
+@media (min-width: 1400px) and (max-width:1500px) {
+.punchline{
+    font-size: 0.79rem;}
 
-@media (min-width: 1200px) and (max-width:1365px) {}
+.topbar a{
+    font-size: 0.75rem;} 
+
+.skip01 {
+    line-height: 39px;
+    padding: 0 2px;
+
+}
+
+}
+
+@media (min-width: 1300px) and (max-width:1366px) {
+
+.punchline{
+    font-size: 0.75rem;}
+
+.topbar a{
+    font-size: 0.7rem;} 
+
+.skip01 {
+    line-height: 39px;
+    padding: 0 2px;
+
+}}
+@media (min-width: 1200px) and (max-width:1299px) { 
+
+    .logo h1 {
+    font-size: 1.278rem; }
+
+.punchline{
+    font-size: 0.75rem;}
+
+.topbar a{
+    font-size: 0.6rem;} 
+
+.skip01 {
+    line-height: 39px;
+    padding: 0 2px;
+
+}
+
+}
+
 
 @media (min-width: 1025px) and (max-width:1199px) {
     .navbar-toggler {

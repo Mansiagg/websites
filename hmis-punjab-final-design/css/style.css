@@ -58,7 +58,7 @@ p {
 
 .skip01 {
 	line-height: 39px;
-	padding: 0 12px;
+	padding: 0 8px;
 	display: inline-block;
 	transition: all 1s ease-out;
 }
@@ -95,8 +95,8 @@ p {
 }
 
 .logo h1 {
-	font-size: 1rem;
-	color: rgba(0, 0, 0, 0.8);
+	font-size: 1.3rem;
+	color: rgba(0, 0, 0, 0.9);
 
 }
 
