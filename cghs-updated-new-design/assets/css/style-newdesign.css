@@ -1993,7 +1993,7 @@ footer .logos img {
 
         }
     }
-}
+
     .modalIframe {
         z-index: 999999;
     }
@@ -2046,84 +2046,3 @@ footer .logos img {
     #myInput::placeholder {
         text-align: center;
     }
-
-    /** MAP CSS **/
-
-     .leaflet-control-attribution.leaflet-control {
-            display: none !important;
-        }
-
-#map{
-height:800px; background: transparent;
-width:98%;
-border:1px solid #ccc;
-margin:0 auto; position: relative;
-}
-
-#searchBox {
-            margin: 0 auto;
-            background: white;
-            padding: 10px;
-           
-        }
-#labsmap input:focus { outline: 0; border: 0;}
-#labsmap #searchInput {
-            width: 100%; font-size: 0.8rem;
-            padding: 8px;
-            border: 0;
-            
-        }
-
-#labsmap #searchResults {
-            max-height: 200px;
-            overflow-y: auto;
-         
-        }
-#labsmap .resultItem {
-            padding: 6px;
-            cursor: pointer;
-            border-bottom: 1px solid #eee;
-        }
-#labsmap .resultItem:hover {
-            background: #f1f1f1;
-        }
-
-        /* STATE LABEL STYLE */
-#labsmap #map .stateLabel {
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            color: #000;
-            font-size: 10px;
-            font-weight: bold;
-            text-align: center;
-        }
-#labsmap #adzones-labs, #labsmap .searchlabs{    padding: 0.8rem 0rem 1rem 0;
-    background-color: #fff;
-    box-shadow: 0 2px 1.1rem #0000001a;
-    border-radius: 1rem;}
-#labsmap #adzones-labs h2{    font-size: 1rem;color:rgba(0, 0, 0, 0.0.8)}
-#labsmap #adzones-labs h3{    font-size: 0.9rem;color:rgba(0, 0, 0, 0.0.5) !important}
-.searchicon { top:8px; right: 10px; color:rgba(0, 0, 0, 0.0.8)}
-#labsmap select { width: 100%;    color: #212529;
-    border-radius: 5px;     padding: .55rem .275rem;
-    font-size: 0.8rem;    border: 1px solid #ced4da;
-}
-#labsmap input[type="submit"]{
-      font-size: 0.85rem;
-    border-radius: 2px;
-    background-image: linear-gradient(to left, #3e8ced 0%, #0072ff 61%, #3e8ced 100%);
-    width: 100%;
-    border: 0;
-    color: #ffffff;
-    padding: 7px;
-    border-radius: 4px;
-}
-
-.booktest{
-    background: #17449e;
-    border: 1px solid #17449e;
-}
-.labPopup h3 { font-size: 1rem !important; font-weight: 500; color: #3e8ced !important ;}
-.labPopup .address i{ font-size:1rem; top: 1px;}
-.labPopup .address p {color: #212529 !important;}
