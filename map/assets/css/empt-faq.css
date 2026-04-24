@@ -1,0 +1,231 @@
+:root {
+  --govt-green: #006747;
+  --govt-saffron: #FF9933;
+  --govt-blue: #1a237e;
+  --govt-white: #ffffff;
+  
+}
+
+/* === FORM === */
+.form-card {
+  background: url('/AHIMSG5/hissso/portal/images/popup-bg.jpg') center center/cover no-repeat, #ffffffee;
+  backdrop-filter: blur(5px);
+  padding: 30px 20px;
+  border-left: 10px solid var(--govt-green);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  animation: fadeIn 1s ease;
+  position: relative;
+}
+
+/* Input Fields */
+.form-select, .form-control {
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+.form-select:focus, .form-control:focus {
+  border-color: var(--govt-saffron);
+  box-shadow: 0 0 0 0.2rem rgba(255,153,51,0.4);
+}
+
+/* === BUTTONS === */
+/*.btn-primary {
+  background-color: var(--govt-green);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}*/
+.btn-primary:hover {
+  background-color: #00593a;
+}
+
+.btn-secondary {
+  background: #ec1a47;
+  border: none;
+}
+.btn-secondary:hover {
+  background: #d91b42;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--govt-blue);
+  color: white;
+}
+.btn.btn-primary {
+  background-color: var(--govt-blue) !important;}
+
+#submitBtn1{
+	
+	color:#0a58ca;
+	
+}
+/* === FOOTER === */
+.footer {
+  margin-top: auto;
+  background: var(--govt-green);
+  color: rgba(255, 255, 255, .8);
+  padding: 15px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* === HOSPITAL TABLE === */
+#hospitalTable {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  background: white;
+  animation: fadeInTable 0.6s ease-in;
+#hospitalTable th,
+#hospitalTable td {
+   white-space: normal;   
+}
+}
+
+#hospitalTable thead {
+  background-color: var(--govt-blue);
+  color: white !important;
+  text-align: center;
+}
+
+#hospitalTable thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--govt-blue) !important;
+  z-index: 2;
+  color: white !important;
+}
+
+#hospitalTable th, #hospitalTable td {
+  vertical-align: middle;
+  padding: 12px 15px;
+}
+
+/* === ROW COLORS === */
+#hospitalTable tbody tr:nth-child(even) {
+  background-color: rgba(0, 103, 71, 0.05); /* Light green tint */
+}
+#hospitalTable tbody tr:nth-child(odd) {
+  background-color: rgba(26, 35, 126, 0.03); /* Light blue tint */
+}
+#hospitalTable tbody tr:hover {
+  background-color: rgba(255, 153, 51, 0.15); /* Hover saffron */
+  cursor: pointer;
+}
+
+/* === COLUMN COLORS === */
+#hospitalTable tbody td:nth-child(1) {
+  background-color: #e8f5e9; /* Light green */
+}
+#hospitalTable tbody td:nth-child(2) {
+  background-color: #e3f2fd; /* Light blue */
+}
+#hospitalTable tbody td:nth-child(3) {
+  background-color: #fff3e0; /* Light saffron */
+}
+#hospitalTable tbody td:nth-child(4) {
+  background-color: #fce4ec; /* Light pink */
+}
+#hospitalTable tbody td:nth-child(5) {
+  background-color: #ede7f6; /* Light violet */
+}
+
+/* === DATATABLE SEARCH INPUT === */
+div.dataTables_filter input {
+  width: 300px !important;
+  text-align: center;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+div.dataTables_filter {
+  text-align: center !important;
+  margin-bottom: 15px;
+}
+
+/* === DATATABLE EXPORT BUTTONS === */
+.dt-buttons .btn,
+.btn-export-style {
+  background: var(--govt-blue) !important;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 8px 18px !important;
+  margin: 5px;
+  border: none !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, background-color 0.2s;
+}
+.dt-buttons .btn:hover,
+.btn-export-style:hover {
+  transform: scale(1.05);
+  background-color: #0b5ed7 !important;
+  color: white !important;
+}
+
+/* === PAGINATION === */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 30px;
+  padding: 6px 12px;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  color: #333 !important;
+  transition: all 0.2s ease;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: var(--govt-green) !important;
+  color: white !important;
+  border: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background-color: var(--govt-saffron) !important;
+  color: white !important;
+}
+
+/* === PAGE LENGTH SELECT DROPDOWN === */
+.dataTables_length select {
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  margin: 0 5px;
+}
+
+/* === ANIMATIONS === */
+@keyframes slideInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInRow {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInTable {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* === RESPONSIVENESS === */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.4rem;
+  }
+  .header p {
+    font-size: 0.9rem;
+  }
+  .form-card {
+    padding: 20px 15px;
+  }
+  div.dataTables_filter input {
+    width: 90% !important;
+  }
+}
