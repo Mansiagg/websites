@@ -1,0 +1,580 @@
+@media (min-width: 1919px) {
+
+	.scroll {
+		height: 574px;
+	}
+
+	.searchempanneled {
+		min-height: 284px;
+	}
+
+	.online-support {
+		min-height: 387px;
+	}
+
+	.online-support .item p {
+		font-size: 0.95rem;
+	}
+
+	.scanner h4 {
+		font-size: 0.8rem;
+		line-height: 20px;
+		margin-top: 25px !important;
+	}
+
+	.scanner .box-1 img:first-child,
+	.scanner .box-2 img:first-child {
+		margin-top: 50px !important
+	}
+
+	.scanner .box-1 img:nth-child(2),
+	.scanner .box-2 img:nth-child(2) {
+		margin-bottom: 40px !important
+	}
+
+	.searchempanneled form {
+		margin-top: 30px !important
+	}
+
+	.searchempanneled h2 {
+		font-size: 1rem;
+		padding-top: 40px !important;
+	}
+
+
+}
+
+@media (min-width: 1601px) and (max-width:1950px) {
+
+	.searchempanneled{
+    min-height: 260px; padding: 42px  0!important; background-size: cover !important;
+}
+	.scroll {
+		height: 491px;
+	}
+
+
+	.online-support {
+		min-height: 337px;
+	}
+
+	.searchempanneled form {
+		margin-top: 40px !important
+	}
+
+	.searchempanneled h2 {
+		font-size: 1rem;
+		padding-top: 30px !important;
+	}
+
+}
+
+
+@media (min-width:1500px) and (max-width:1800px) {
+
+		.searchempanneled{
+    min-height: 260px; padding-top: 44px !important;
+   
+}
+	.navbar-nav .nav-item>a span {
+		font-size: 24px;
+
+	}
+
+}
+
+@media (min-width: 1400px) and (max-width:1440px) {
+
+	.online-support {
+		min-height: 292px;
+	}
+
+
+
+}
+
+@media (min-width:1281px) and (max-width:1450px) {
+
+	ul.pdflist .pdfname a {
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 0.85rem;
+	}
+
+	.scroll {
+		height: 382px;
+		overflow-y: auto;
+	}
+
+
+
+
+	.pdfcon {
+		width: 65% !important;
+	}
+
+	header .all-logins a>p {
+		font-size: 0.7rem;
+	}
+
+	.navbar-nav .nav-item>a {
+		font-size: 0.8rem;
+	}
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		padding: 0px 12px;
+	}
+
+	.owl-prev {
+		right: 30px;
+		top: 42%;
+	}
+
+	.shareSocial.call {
+		top: 37%;
+	}
+
+	.loginbuttton {
+		padding: 3px 11px;
+		max-height: 40px;
+
+	}
+
+	.logo h1 {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+}
+
+@media (min-width:1280px) and (max-width:1366px) {
+
+	.online-support .item p,
+	.online-support .item a {
+		font-size: 0.8rem
+	}
+
+	.online-support>p {
+		font-size: 0.76rem
+	}
+
+	.online-support {
+		min-height: 265px;
+	}
+}
+
+@media (min-width:1200px) and (max-width:1280px) {
+
+	.scroll {
+		height: 342px;
+	}
+
+	.searchempanneled {
+		min-height: 192px;
+	}
+
+	.pdfcon {
+		width: 65% !important;
+	}
+
+	.loginbuttton {
+		padding: 3px 2px;
+		font-size: 11px;
+	}
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		font-size: 0.8rem;
+		padding: 0px 9px !important;
+
+	}
+
+
+	.logo h1 {
+		font-size: 13px;
+		line-height: 17px;
+	}
+
+	header .all-logins a {
+		font-size: 11px;
+	}
+
+	.shareSocial.mail {
+		top: 20%;
+
+	}
+
+	.shareSocial.call {
+		top: 26%;
+
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji {
+		top: 34%;
+	}
+}
+
+/* @media (min-width: 992px) {
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      
+     }
+} */
+
+
+
+
+@media (min-width:992px) and (max-width:1199px) {
+	.scroll {
+		height: 267px;
+		overflow-y: auto;
+	}
+
+	#pdfsection .nav-link {
+		font-size: 14px;
+	}
+
+	.pdfcon {
+		width: 75% !important;
+	}
+
+	.searchempanneled h2 {
+		font-size: 0.84rem;
+	}
+
+	.searchempanneled {
+		min-height: 140px;
+	}
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		font-size: 0.78rem;
+		padding: 0px 3px !important;
+	}
+
+	header .all-logins a>p {
+		font-size: 11px;
+	}
+
+	.all-logins span {
+		display: none;
+	}
+
+	.loginbuttton {
+		padding: 2px 4px;
+		font-size: 11px;
+
+	}
+
+
+
+	.logo h1 {
+		font-size: 0.9rem;
+	}
+
+	.logo h2 {
+		font-size: 13px;
+	}
+
+	.logo h3 {
+		font-size: 13px;
+	}
+
+
+	p {
+		font-size: 11px;
+	}
+
+	header .all-logins a {
+		line-height: 17px;
+		font-size: 11px;
+	}
+
+	#topbar .language select {
+		padding: 2px 25px 3px 6px;
+	}
+
+	.footer-links a {
+		font-size: 13px;
+	}
+
+}
+
+@media (max-width: 991px) {
+
+	.handlingdivwidth .col {
+		flex: none !important
+	}
+
+	.navbar {
+		position: absolute !important;
+		top: 58px;
+		right: 6px;
+	}
+
+	header .main-menu {
+		background-color: transparent;
+	}
+
+	.pdfcon {
+		width: 86% !important;
+	}
+
+	.navbar-toggler .close-icon {
+		display: none;
+	}
+
+	.navbar-toggler .close-icon:focus-visible {
+		border: 0;
+		outline: 0;
+	}
+
+	.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+		display: none;
+	}
+
+	.navbar-toggler[aria-expanded="true"] .close-icon {
+		display: inline-block;
+		position: fixed;
+		top: 5px;
+		right: 10px;
+		transition: 0.3s ease-in-out;
+		z-index: 9999999;
+	}
+
+	.navbar-nav .nav-item .dropdown-menu {
+		display: none;
+	}
+
+	.navbar-collapse {
+		position: fixed;
+		display: block !important;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 250px;
+		background-color: rgba(0, 0, 0, 0.9);
+		box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+		transform: translateX(100%);
+		transition: transform 0.3s ease-in-out;
+		z-index: 999999;
+	}
+
+	.navbar-collapse.show {
+		transform: translateX(0);
+	}
+
+	.navbar-nav .nav-item>a {
+		color: rgba(255, 255, 255, 0.9);
+		font-weight: 500;
+		font-size: 0.845rem;
+		padding: 10px 14px;
+
+	}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 10px 18px;
+	}
+
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show>.nav-link {
+		color: rgba(255, 255, 255, 0.9);
+	}
+
+	.navbar-nav .nav-item>a span {
+		margin-top: 0;
+		margin-left: 10px;
+	}
+
+	.dropdown-menu .dropdown-item {
+		white-space: normal;
+	}
+
+	.navbar-nav .nav-item .dropdown-menu li a {
+		padding: 5px 0px;
+		font-size: 13px;
+	}
+
+	.navbar-nav .nav-item .dropdown-menu {
+		padding: 10px 10px;
+	}
+
+
+	#slider .cghsbanner .carousel-caption p {
+		font-size: 13px;
+	}
+
+	.footer-links li+li {
+		padding: 0 0px;
+	}
+
+	.footer-links li:after {
+		content: none;
+	}
+
+	.all-logins span {
+		display: none;
+	}
+
+	.loginbuttton span {
+		display: none;
+	}
+
+	.loginbuttton {
+		padding: 2px 2px;
+		text-align: center;
+	}
+
+}
+
+
+@media (max-width: 768px) {
+	.online-support {
+		min-height: 239px;
+	}
+
+	.pdfcon {
+		width: 86% !important;
+	}
+
+	.training-button {
+		position: relative !important
+	}
+
+	.bannerlogo {
+		width: 130px;
+	}
+
+	.header-carousel .carousel-caption .bannerlogo {
+		margin-top: -57px;
+	}
+
+	.all-logins br {
+		display: none;
+	}
+
+	header .all-logins a {
+		border: 0;
+	}
+
+
+	.navbar-toggler {
+		border: 0;
+		padding: 0;
+	}
+
+
+	.loginbuttton {
+		padding: 8px 5px;
+		text-decoration: none;
+		cursor: pointer;
+		font-size: 12px;
+	}
+
+	.socialboxes p {
+		font-size: 11px;
+	}
+
+
+	#slider .carousel-caption h1 {
+		font-size: 15px;
+	}
+
+	#slider .cghsbanner .carousel-caption h3 {
+		font-size: 13px;
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails {
+		padding-left: 85px;
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails h2 {
+
+		font-size: 16px;
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails b {
+		font-size: 16px;
+
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails h3 {
+		font-size: 15px;
+	}
+
+	.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji h2 {
+		font-size: 19px;
+	}
+
+
+}
+
+@media (max-width: 500px) {
+	.pdfcon {
+		width: 96% !important;
+	}
+
+	.notice.modal .modal-dialog {
+		width: 356px;
+	}
+
+	.notice.modal .modal-body p {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.bannerlogo {
+		width: 100px;
+	}
+
+	#topbar .language select {
+		padding: 5px 26px 6px 10px;
+		font-size: 12px;
+	}
+
+
+	.loginbuttton {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	header .all-logins a>p {
+
+		font-size: 11px;
+	}
+
+	.fixed-buttons {
+		position: fixed;
+		right: 5px;
+		top: 37%;
+	}
+
+	#button {
+		bottom: 15px;
+		right: 110px;
+	}
+
+	.owl-nav {
+		display: none;
+	}
+
+	.logo-carousel .owl-prev {
+		left: 0;
+
+	}
+
+	.logo-carousel .owl-next {
+		right: 0;
+	}
+
+	#page p {
+		font-size: 0.8rem;
+		color: rgba(0, 0, 0, 0.8);
+		text-align: justify;
+		line-height: 25px;
+	}
+
+	.news-categories ul li a {
+		font-size: 0.8rem;
+	}
+
+
+}

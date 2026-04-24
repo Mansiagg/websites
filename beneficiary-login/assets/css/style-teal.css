@@ -1,0 +1,101 @@
+
+
+#rightarea {
+ box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); 
+     background: #f9f9f9;
+}
+
+.punchlines .punchline { color: rgba(0,0,0,0.9);   font-size: clamp(0.8rem, 1.5vw, 1rem); font-weight: 400;}
+.loginarea {margin-top: 60px;}
+/* .loginbox{   background: rgba(255, 255, 255, 0.99); */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+   width: 80%;
+}
+.loginbox .forgot-password {
+    font-size: 0.91rem;
+    color: #025fc2; font-weight: 500;
+    line-height: 40px;
+}
+.title h1{    font-size:32px;
+    /* color: #222222; */
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(109, 164, 226, 0.8);}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.tooltip-error {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  white-space: nowrap;
+}
+.punchline span.fw-bold{    color: #0c3e72;}
+
+
+.saqsham-text {    right: 30px;
+    top: 20%;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);}
+
+footer {    background:#2b2a33;
+    z-index: 999999;
+    color: #ffffff;
+}
+
+.captcha-refresh {
+	cursor: pointer;
+	color: #1e5799;
+	font-size:30px;
+	transition: transform 0.3s;
+}
+
+.captcha-refresh:hover {
+	transform: rotate(90deg);
+}
+.latestnews h2 {
+    flex-shrink: 0;
+}
+#latestnews  .ticker-wrapper {
+   font-size: 13px;
+      overflow: hidden;
+      white-space: nowrap;
+        }
+
+#latestnews    .ticker {
+      display: inline-block;
+      padding-left: 100%;
+      animation: ticker 25s linear infinite;
+    }
+
+   #latestnews .ticker span {
+      margin-right: 50px;
+      display: inline-block;
+    }
+
+    /* Pause on hover */
+     #latestnews .ticker-wrapper:hover .ticker {
+      animation-play-state: paused;
+    }
+
+    @keyframes ticker {
+      0%   { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .punchlinebox{    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out; background-color: #ffffff; border-radius: 5px;    height: 120px;}

@@ -1,0 +1,1260 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<META Http-Equiv="Cache-Control" Content="no-cache" />
+<META Http-Equiv="Cache-Control" Content="no-store" />
+<META Http-Equiv="Pragma" Content="no-cache" />
+<META Http-Equiv="Expires" Content="0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!-- <meta name="viewport"	content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+<meta name="description"
+	content="Central Government Health Scheme Ministry of Health &amp; Family Welfare Government of India" />
+<meta name="author" content="CDAC">
+<meta name="keywords"	content="CGHS,Central Government Health Scheme,Ministry of Health & Family Welfare,mohfw, cdac">
+<title>Central Government Health Scheme</title>
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<!--  CSS Files -->
+ <link href="assets/css/bootstrap-min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/accessibility/accesibility-style-v2.1.css">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/fontawesome/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="assets/css/style-newdesign.css" rel="stylesheet">
+<!-- <link href="assets/css/menu-newdesign.css"
+	rel="stylesheet"> -->
+<link href="assets/css/responsive-newdesign.css" rel="stylesheet">
+<link href="assets/css/owl.carousel.min.css" rel="stylesheet"> 
+	
+	<style>
+	
+	
+	/* Base style for highlighted menu items */
+.cghs-highlight {
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply for CGHS Card */
+.cghs-apply-card {
+  background: #ff0000 !important;
+  animation: pulse 1.2s infinite ease-in-out;
+  z-index: 9;
+}
+.cghs-apply-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Empaneled Hospitals and Labs */
+.cghs-hospitals-labs {
+  background: #62ac5f !important;
+}
+.cghs-hospitals-labs:hover {
+  background-color: #1e7e34;
+  transform: translateY(-5px);
+}
+
+/* Book Online Appointment */
+.cghs-book-appointment {
+  background-color: #ffc107 !important;
+  color: #212529;
+}
+.cghs-book-appointment:hover {
+  background-color: #e0a800;
+  transform: translateY(-5px);
+}
+
+	
+@keyframes scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+   .pulse {
+              animation: pulse 2s infinite;
+          }
+
+ @keyframes pulse {
+               0% {
+                   transform: scale(1);
+               }
+               50% {
+                   transform: scale(1.1);
+               }
+               100% {
+                   transform: scale(1);
+               }
+           }
+           
+  .pulse-badge {
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width:max-content;
+    padding: 6px 14px;
+    border-radius: 2px;
+    transform: rotate(-25deg);   /* <<<< SLANT EFFECT */
+    transform-origin: center;
+    animation: pulse 1.2s infinite ease-in-out;
+    
+    z-index: 999;
+    background-color: blue;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% { transform:  scale(1); }
+    50% { transform:scale(1.1); }
+}
+    
+         	
+	
+	
+	
+/* List Item Style */
+.official-menu-item {
+  list-style: none;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Link Style */
+.official-link {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.official-link:hover {
+  background-color: #f0f0f0;
+  color: #007BFF;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .official-link {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+</style>
+	
+<style>
+/* Tabs (Desktop) */
+.nav-tabs .nav-link {
+  background: #2c2c2c;
+  color: #ccc;
+  border: none;
+  transition: background 0.3s, color 0.3s;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover {
+  
+}
+
+/* Accordion Button (Mobile) */
+.accordion-button {
+  background: #2c2c2c;
+  color: #fff;
+}
+.accordion-button:not(.collapsed) {
+  background: #ff416c;
+  color: #fff;
+}
+
+/* List Scrollbar */
+/* .container-fluid::-webkit-scrollbar {
+  width: 6px;
+}
+.container-fluid::-webkit-scrollbar-thumb {
+  background-color: #ff4b2b;
+  border-radius: 10px;
+}
+.container-fluid::-webkit-scrollbar-track {
+  background: #333;
+} */
+
+/* View More */
+.view-more:hover {
+  background: #ff416c;
+  color: #fff;
+  transition: background 0.4s;
+}
+
+/* Animation */
+.tab-pane, .accordion-body {
+  animation: fadeIn 0.6s ease;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustment */
+@media (max-width: 767px) {
+  #pdfsection .nav-tabs {
+    display: none;
+  }
+  #pdfsection .accordion-header {
+    display: block;
+  }
+
+}
+
+</style>
+	
+	<style>
+@keyframes popupFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+#sharePopup button:hover {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  transform: scale(1.05);
+}
+#sharePopup a:hover {
+  transform: scale(1.2);
+}
+#sharePopup button:last-child:hover {
+  background: #444;
+}
+
+
+
+
+@keyframes popupFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+#closeModalBtn:hover {
+  transform: rotate(90deg);
+}
+@media (max-width: 768px) {
+  #pdfModal {
+    width: 95%;
+    height: 85vh;
+  }
+}
+@media (max-width: 480px) {
+  #pdfModal {
+    width: 98%;
+    height: 80vh;
+  }
+  #pdfModal h2 {
+    font-size: 16px;
+  }
+  #closeModalBtn {
+    font-size: 20px;
+  }
+}
+</style>
+
+
+<style>
+.custom-popup {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 90%;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: slideIn 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+/*to let the important links scroll work */
+.custom-popup-content .content{ 
+	max-height:48vh;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-content {
+    width: 90%;
+    padding: 16px;
+  }
+}
+
+/* Add Unique Styling for Each Popup (Example) */
+.popup1 .popup-content {
+  background-color: #f8f9fa;
+}
+
+.popup2 .popup-content {
+  background-color: #e9ecef;
+}
+
+.popup3 .popup-content {
+  background-color: #f1f3f5;
+}
+</style>
+
+<style>
+.animated-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(45deg, #ff6b81, #f06595);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: none;
+  animation: bounce 1s infinite;
+}
+
+/* Button Hover Animation */
+.animated-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #f06595, #ff6b81);
+}
+
+/* Button Focus Animation */
+.animated-btn:focus {
+  outline: none;
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Adding a subtle bounce effect */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Optional: Adding a "pulse" effect when hovered */
+.animated-btn:active {
+  animation: pulse 0.6s forwards;
+}
+
+/* Pulse Effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+
+<style>
+.popup-img-container {
+  text-align: center;  /* Center the images and descriptions */
+  margin-bottom: 20px;
+}
+
+.popup-img {
+  width: 100%;
+  max-width: 300px; /* Limit the image width */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add a subtle shadow to the image */
+}
+
+.img-description {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.5;
+  font-style: italic;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 90%;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.custom-popup-wrapper {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.custom-popup-box {
+  position: relative;  /* For close button positioning */
+  max-width: 600px;
+  /* width: 90%; */
+  max-height: 90vh;
+  /* NO overflow hidden here */
+}
+
+/* Wrapper for image only, to keep border radius and overflow hidden */
+.image-wrapper {
+  border-radius: 10px;
+  
+  max-height: 90vh;
+}
+
+/* Image fills the wrapper */
+.popup-full-image {
+  display: block;
+  
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Close button positioned at top-right edge of the popup box */
+.custom-close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 38px;
+  height: 38px;
+  font-size: 26px;
+  color: black;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 38px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transition: all 0.3s ease;
+  z-index: 10001;
+}
+
+.custom-close-btn:hover {
+  background: #ff4444;
+  transform: scale(1.1) rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .custom-popup-box {
+    width: 100%;
+  }
+  .custom-close-btn {
+  
+  
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    top: -12px;
+    right: -12px;
+    line-height: 32px;
+  }
+}
+</style>
+
+<!-- ÃÂ°ÃÂÃÂ§ÃÂ&nbsp; JavaScript -->
+
+<script>
+function openPopup(popupId, contentId) {
+  document.getElementById(popupId).style.display = 'flex';
+}
+
+function closePopup(popupId) {
+  document.getElementById(popupId).style.display = 'none';
+}
+</script>
+
+</head>
+
+<body>
+	 
+<form method="post">
+		<input type="hidden" name="tokenCode" value="RnJpIEphbiAwMiAxMDo0MDo0NyBJU1QgMjAyNg==">
+	<input type="hidden" id="fhttf" name="fhttf"></form>
+	
+
+	<header>
+		<div id="topbar" class="container-fluid">
+			<div class="row d-flex align-items-center">
+						<div class="col-12 col-md-4 d-md-block d-none">
+					<div class="d-flex align-items-center">
+					
+						<p class="fw-semibold mb-0 ms-1 tollfree d-flex align-items-center">
+							<span class="material-symbols-outlined me-1">
+								phone_in_talk </span>
+						</p><p data-lang-key="HelpLine" class="m-0">24 X 7 Helpline number: 1800-208-8900</p>
+						
+					</div>
+				</div>
+				<div class="col-12 col-lg-8 col-md-8 d-flex align-items-center justify-content-md-end justify-content-start loginbtn rightarea p-1">
+					
+					
+					
+					<!-- <div
+						class="search border-start border-end border-1 border-white border-opacity-25 px-xl-2 pt-1 d-none d-md-block">
+					<a href="#myInput" style="color: inherit;"><span class="material-symbols-outlined"> search </span></a>
+					</div> -->
+
+					 <a class="text-decoration-none text-white ms-1 d-flex align-items-center fw-regular loginbuttton" href="/AHIMSG5/hissso/benLogin" data-lang-key="CGHSBenLogin">Beneficiary Login</a> 
+						
+			
+						 <a class="text-decoration-none text-white ms-1 d-flex align-items-center fw-regular loginbuttton" href="/AHIMSG5/hissso/cghsLogin" data-lang-key="CGHSLogin">CGHS Login</a>
+						
+						<div class="search ps-xl-1 d-none d-md-block" style="position: relative; cursor: pointer;  padding: 4px 8px; border-radius: 4px; display: inline-block;">
+  <i class="fa-solid fa-magnifying-glass" onclick="focusMainSearch()" style="color: white; font-size: 18px; line-height: 1;">
+  </i>
+</div>
+						
+						
+					<div class="language me-1">
+						<select required="" id="lang" name="lang" aria-label="Language selection" onchange="languageChange();" class="ms-1 form-select">
+							<option value="en" selected="selected">English</option>
+							<option value="hi">Hindi</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		 <div class="container-fluid">
+		 <div class="row p-0 d-flex align-items-center">
+                <div class="col-sm-10 col-12 col-md-4 col-lg-4 d-flex align-items-center">
+                    <div class="logo position-relative pe-1 pt-md-0 pt-2">
+                        <div class="d-flex align-items-center ">
+							<a href="/AHIMSG5/hissso/Login">
+    <img src="assets/images/logo.jpg" width="45px">
+</a>
+							<a href="/AHIMSG5/hissso/Login" style="text-decoration: none; color: inherit;">
+    <div class="ps-1">
+        <h1 class="fw-bold mb-1 pt-1" data-lang-key="cghsFullName">Central Government Health Scheme</h1>
+        <h2 class="mb-0 fw-regular" data-lang-key="MinistryofHealthFamilyWelfare">Ministry of Health &amp; Family Welfare</h2>
+        <h3 class="fw-bold pb-1" data-lang-key="GovernmentOfIndia">Government of India</h3>
+    </div>
+</a>
+						</div>
+					</div>
+
+				</div>
+					<div class="col-lg-8 d-flex justify-content-end">
+				 <div class="all-logins d-lg-flex align-items-center d-none d-sm-none d-md-none">
+						<a class="cghs-highlight cghs-apply-card mx-2" href="javascript:openFrame('applycard');"><i class="fa-solid fa-id-card"></i>
+							<p data-lang-key="applyForCGHSCard" class="mb-0">Apply for CGHS card</p></a>
+							<a href="/AHIMSG5/hissso/empanelledLogin" class="cghs-hospitals-labs cghs-highlight mx-2">
+<i class="fa-solid fa-hospital-user"></i>
+  <p data-lang-key="EmpaneledHospitals" class="mb-0">Empaneled Hospitals and Labs</p>
+</a><a class="cghs-book-appointment cghs-highlight mx-2" href="javascript:openFrame('appointment');"><i class="fa-solid fa-calendar-check"></i>
+							<p data-lang-key="BookOnlineAppointment" class="mb-0">Book Online Appointment</p></a>
+							<div class="logos d-flex align-items-center">
+							<img src="assets/images/satyamev.jpg" class="pe-0">
+							<img src="assets/images/digital-india.jpg" class="">
+							</div>
+							
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+	 <div class="container-fluid main-menu py-1">
+		 <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex align-items-center justify-content-between">
+				  <nav class="navbar navbar-expand-lg position-relative p-0">
+                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <span class="close-icon text-white border-0">X</span> <!-- Close Icon -->
+                        </button><!-- Collapsible Navbar Content -->
+                        <div class="collapse navbar-collapse" id="navbarWithDropdown">
+                            <div class="all-logins d-lg-flex d-block align-items-center d-lg-none d-block mt-4">
+						<a class="text-decoration-none text-white px-md-2 px-lg-1 px-xl-1 px-xxl-2 px-3 border-start-0 d-flex align-items-center fw-semibold justify-content-center" href="javascript:openFrame('applycard');"><span class="material-symbols-outlined me-1"> badge </span>
+							<p data-lang-key="applyForCGHSCard" class="mb-0">Apply for CGHS card</p></a> <a href="" class="text-decoration-none text-white px-md-2 px-lg-1 px-xl-1 px-xxl-2 px-0 d-flex align-items-center fw-semibold justify-content-center">
+  <span class="material-symbols-outlined me-1">home_health</span>
+  <p data-lang-key="EmpaneledHospitals" class="mb-0">Empaneled Hospitals and Labs</p>
+</a> <a class="text-decoration-none text-white px-md-2 px-lg-1 px-xl-1 px-xxl-2 px-3 d-flex align-items-center fw-semibold justify-content-center" href="javascript:openFrame('appointment');"><span class="material-symbols-outlined me-md-1 me-0"> book_online </span>
+							<p data-lang-key="BookOnlineAppointment" class="mb-0">Book Online Appointment</p></a>
+					</div>
+                            
+                            
+                            <ul class="navbar-nav" id="menu"> 
+                        <i class="fa-solid fa-house text-white ps-2 pt-2"></i>
+                            
+                            <li class="nav-item"><a class="nav-link" id="navbarDropdown" role="button" data-submenu-id="11" data-submenu-type="url" href="index.html">Home</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="12" data-submenu-type="" href="#">CGHS At A Glance</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1201" data-submenu-type="html" href="aboutus.html">About CGHS</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1202" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=101">CGHS Organogram</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1203" data-submenu-type="html" href="#">Facilities available under CGHS</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1204" data-submenu-type="html" href="#">Eligibility for Joining CGHS</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1205" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=104">CGHS Covered Cities</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2106" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=105">Geographical Areas Covered Under Wellness Center</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1207" data-submenu-type="html" href="#">Wellness Center Timings And Registrations</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1208" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=107">CGHS Contribution And Ward Entitlement</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1209" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=108">Interactive and Online Services</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1210" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=109">24x7 National CGHS Helpline</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1211" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=10&amp;subGroupId=110">Module Manuals</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="13" data-submenu-type="" href="#">Beneficiary Corner</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1301" data-submenu-type="html" href="#">Procedure for availing facilities</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1302" data-submenu-type="html" href="#">CGHS Rate List</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1303" data-submenu-type="html" href="#">CGHS Empanelled HCOs Details</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1304" data-submenu-type="html" href="#">Medical Reimbursement Claim Status</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1305" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=11&amp;subGroupId=103">Authorised Local Chemists</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1306" data-submenu-type="url" href="/AHIMSG5/hissso/benLogin">Search Location</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1307" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=11&amp;subGroupId=105">CGHS Webinars (PDF)</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="14" data-submenu-type="" href="#">Contact US</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1401" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=12&amp;subGroupId=101">CGHS Directorate</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1402" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=12&amp;subGroupId=102">CGHS Additional Directors Delhi</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1403" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=12&amp;subGroupId=106">CGHS Additional Directors Outside Delhi</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1404" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=12&amp;subGroupId=103">LAC/ZAC committee</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1405" data-submenu-type="url" href="/AHIMSG5/hissso/cghsWCLogin">CGHS Units</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="16" data-submenu-type="" href="#">Circulars</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1601" data-submenu-type="html" href="#">Empanelment Of HCOs</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1602" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=14&amp;subGroupId=102">Advertisements and Tender Notices</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1609" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=14&amp;subGroupId=103">CGHS Card Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1610" data-submenu-type="html" href="#">Medicine Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1611" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=14&amp;subGroupId=105">Ayush Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1612" data-submenu-type="html" href="#">MRC Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1613" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=14&amp;subGroupId=107">WC Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1614" data-submenu-type="html" href="#">Administrative Matters and Functioning</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1615" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=14&amp;subGroupId=109">Archive</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="17" data-submenu-type="" href="#">Download Forms</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1701" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=101">MRC Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1702" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=102">Hearing AID</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1703" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=103">Utilization Certificate</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1704" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=104">Oxygen Concentrator Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1705" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=105">CPAP Related</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1706" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=106">BiPAP and BVS</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1707" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=107">MOA for empanelment of HCOs</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1708" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=108">Restricted Medicine Form</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1709" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=109">Unlisted Procedure Form</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1710" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=110">Staff Forms</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1711" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=111">Application form for renewal of CGHS card&nbsp;Pensioner</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1712" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=15&amp;subGroupId=112">Application form for renewal of CGHS card&nbsp;Serving</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="18" data-submenu-type="" href="#">Grievances</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1801" data-submenu-type="url" href="/AHIMSG5/hissso/benLogin">Lodge Grievance</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1802" data-submenu-type="url" href="https://pgportal.gov.in/cpgoffice/">Online Grievances(CPGRAM)</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1803" data-submenu-type="url" href="/AHIMSG5/hissso/loginLogin">Complaint/ Grievance Redressal</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="19" data-submenu-type="" href="#">Medicine Related</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1901" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=17&amp;subGroupId=101">Jan Aushadhi Brochure</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="1902" data-submenu-type="url" href="/AHIMSG5/hissso/restMedicineLogin">Restricted Medicine</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="22" data-submenu-type="" href="#">Publications</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2201" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=20&amp;subGroupId=101">Publications</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="20" data-submenu-type="" href="#">Citizen Charter</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2001" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=18&amp;subGroupId=101">Citizen's Charter</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2002" data-submenu-type="html" href="#">Upload and publish Information on CGHS Website</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2003" data-submenu-type="url" href="https://cghs.mohfw.gov.in/HISUtilities/dashboard/dashBoardACTION.cnt?groupId=MQ==&amp;dashboardFor=SE1JUw==&amp;hospitalCode=998&amp;seatId=10001&amp;isGlobal=1&amp;isPreview=0">Dashboard</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-submenu-id="21" data-submenu-type="" href="#">RTI</a><ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2101" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=19&amp;subGroupId=101">Proactive Disclosure</a></li><li><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2102" data-submenu-type="files" href="/AHIMSG5/hislogin/fetchCircularDetailsLgnFtr?groupId=19&amp;subGroupId=102">List of Designated CPIOs and Appellate Authorities</a></li></ul></li><li class="nav-item"><a class="nav-link dropdown-item" id="navbarDropdown" role="button" data-submenu-id="2102" data-submenu-type="files" href="faq.html">FAQ</a></li></ul>
+                        </div>
+
+                    </nav> 
+				
+					
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	
+	
+
+	<!-- Carousel Start -->
+
+	
+	<div class="container-fluid px-md-0" id="hideforotherpages">
+   
+<section id="innercontentpage">
+<div id="bannersection" class="container-fluid">
+<div class="page banner position-relative py-4" id="submenu-banner">
+<div class="row px-3">
+<div class="col-md-6">  <div class="title">
+   <h1>FAQ</h1>
+</div></div>
+<div class="col-md-6 ">
+ <div class="breadcrumb d-flex justify-content-end"><a style="cursor: pointer;" href="/AHIMSG5/hissso/Login"><i class="fa-solid fa-house"></i> Home</a><span class="mx-1">/</span><a class="activepage fw-bold">FAQ</a></div>   
+</div>
+  
+</div>
+
+
+    </div></div>
+
+<div id="contentarea"></div>
+
+
+
+</section>
+
+
+
+
+<div class="contentarea position-relative mt-3 mb-5 container">
+
+  <div class="row d-flex align-items-center">
+    <div class="col-md-4"><div class="headingarea">	<h2 class="pt-md-4 pt-5 pt-lg-3 position-relative">Looking for Help?</h2>
+		<p class="mt-2 mb-3">Here are most <b>frequently asked questions</b></p>
+
+</div></div>
+        <div class="col-md-8"><div class="searcharea bg-light pt-3 px-3">
+  <div class="row  d-flex align-items-center" >
+  <div class="col-md-6">
+    <div class="row mb-3 faqsearch"> 
+    <div class="col-md-6  mb-md-0 mb-1" id="divSpacialitySelection">
+        <!-- Search Input   -->
+        <div class=" position-relative"><i class="fa-solid fa-magnifying-glass position-absolute" style="top: 8px;
+    left: 6px;"></i>
+        <input type="text" class="form-control text-start ps-4" id="Search" placeholder="Search... ">
+        </div>
+    	
+        
+    </div>
+    <!-- Ward Selection -->
+	  <div class="col-md-6 p-md-0 " id="divWardSelection">
+            <label for="wardSelect" class="visually-hidden">Select Ward Type</label>
+            <select id="faqSelect" name="faq_type" class="form-control">
+            	<option value="0" selected="">All</option>
+                <option value="1">Beneficiary</option>
+				<option value="5">Card Related</option>
+				<option value="6">Empanelment Related</option>
+				<option value="8">Medicine Related</option>
+				<option value="7">MRC Related</option>
+				<option value="4">others</option>
+            </select>
+        </div></div>
+    
+   
+         </div>
+    <div class="col-md-6"><div class="sorting mb-3 d-flex align-items-center justify-content-end">
+	    <span class="me-2 fw-semibold">Sort By</span>
+	
+	<div class="d-flex align-items-center me-2 ">
+	  <input type="radio" name="sortFaq" value="latest" checked="">
+	    <label class="ms-2">Latest </label>
+	</div>
+	  
+	
+	<div class="d-flex align-items-center me-2">  <input type="radio" name="sortFaq" value="oldest">  <label class="ms-2">
+	      
+	        Oldest
+	    </label></div>
+
+	
+	  	<div class="d-flex align-items-center me-2">  <input type="radio" name="sortFaq" value="az">
+	  	<label class="ms-2">A → Z</label>
+	  	</div>
+	
+	    
+	<div class="d-flex align-items-center me-2"> <input type="radio" name="sortFaq" value="za"> 
+	<label class="ms-2"> Z → A  </label></div>
+	
+	   
+	</div></div>
+  </div>
+  
+  
+  </div>
+  </div>
+	
+
+
+          <div class="bg-white py-2  my-1">
+  
+  
+  
+        
+<div class="row mt-2">
+<div class="accordion " id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       Why do I need to register or log in to the CGHS system?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+       CGHS has moved most services online. Login is required so that <b>your identity, treatment history, prescriptions, lab reports, medicines, reimbursements, and grievances</b> are all linked to one secure account. This avoids repeated form filling and physical visits.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       Is online registration compulsory for CGHS beneficiaries?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+   Yes. Whether you are a <b>serving employee or a pensioner</b>, CGHS services are now managed through the digital system. Without registration/login, you will not be able to book appointments, download prescriptions, or track requests.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreee" aria-expanded="false" aria-controls="collapseThreee">
+        Can I register or log in without visiting a Wellness Centre?
+      </button>
+    </h2>
+    <div id="collapseThreee" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+       Yes. Registration and login are completely online. Physical visits are needed<b> only when CGHS specifically asks for verification</b> or medical examination.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        What information is required to log in?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+        <p  class="fw-semibold">You need:</p>
+        <ul>
+<li>Your <b>registered mobile number or email ID</b></li>
+<li>A <b>One-Time Password (OTP)</b> sent to you</li>
+<li>No password memorization is required.</li>
+</ul>
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        What should I do if OTP does not come?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+       <p  class="fw-semibold">First, wait for a few seconds and retry.</p>
+    <p  class="fw-semibold">If OTP still does not arrive:</p>
+    <ul>
+<li>Check network coverage</li>
+<li>Try email OTP if available</li>
+<li>Contact your Wellness Centre if the mobile number is outdated</li></ul>
+
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Is Aadhaar compulsory for login?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+     <p>  No. Aadhaar is not mandatory.</p>
+<p>However, linking Aadhaar helps in faster identity verification and prevents duplication.</p>
+
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collpaseSix" aria-expanded="false" aria-controls="collpaseSix">
+      Can my spouse or family member log in on my behalf?
+      </button>
+    </h2>
+    <div id="collpaseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+       Yes. Many pensioners allow their spouse or children to manage login and downloads using the beneficiary’s consent and credentials.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Can I use CGHS login on a mobile phone?
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+      <p class="fw-semibold"> Yes. The CGHS portal and mobile application are designed for mobile use. You can:</p>
+      <ul>
+<li>Download cards</li>
+<li>View prescriptions</li>
+<li>Check lab reports</li>
+<li>Track applications</li></ul>
+
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body ps-5 py-2</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body ps-5 py-2</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body ps-5 py-2">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body ps-5 py-2</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collpaseEleven" aria-expanded="false" aria-controls="collpaseEleven">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collpaseEleven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div><div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+</div>
+</div>
+	</div>
+  
+
+
+  
+  
+  </div>
+  
+  
+
+
+
+
+</div>
+	
+
+
+
+	<!-- Copyright Start -->
+
+	<footer>
+		<div class="container">
+	<div
+				class="logo-carousel owl-carousel  logos d-lg-flex align-items-center justify-content-end border-bottom border-light border-opacity-25 py-5 wow fadeInUp">
+				<div class="item mx-md-3 mx-0 text-center">
+					<a href="https://www.india.gov.in/national-health-portal?page=1"
+						target="_blank"><img
+						src="assets/images/logos/nhp.png" /></a>
+				</div>
+				<div class="item mx-md-3 mx-0 text-center">
+					<a href="https://www.mygov.in/" target="_blank"><img
+						src="assets/images/logos/mygov.png" /></a>
+				</div>
+				<div class="item mx-md-3 mx-0 text-center">
+					<a href="https://www.digilocker.gov.in/" target="_blank"> <img
+						src="assets/images/logos/digilocker.png" /></a>
+				</div>
+				<div class="item mx-md-3 mx-0 text-center">
+					<a href="https://rti.gov.in/" target="_blank"> <img
+						src="assets/images/logos/rti.png" /></a>
+				</div>
+				<div class="item mx-md-3 mx-0 text-center">
+					<a href="https://pmnrf.gov.in/en/" target="_blank"> <img
+						src="assets/images/logos/national-relief-fund.png" /></a>
+				</div>
+			</div>
+ 
+			<div class="row mt-5 mb-3">
+				<div class="col-md-8 col-xl-8">
+					<div class="footer-links">
+						<h4 class="" data-lang-key="ImportantLinks">Important Links</h4>
+						    <ul class="list-unstyled pt-3 pb-1 d-lg-flex d-block flex-wrap align-items-md-center justify-content-start footer-linkscon">
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content1')" data-lang-key="PrivacyPolicy">Privacy Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content3')" data-lang-key="HyperLinkingPolivy">Hyper Linking Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content4')" data-lang-key="Copyright">Copyright Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content5')" data-lang-key="ContentReviewPolicy">Content Review Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content6')" data-lang-key="ContentContribution">Content Contribution</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content7')" data-lang-key="ContentArchivalPolicy">Content Archival Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content8')" data-lang-key="PasswordAuthPolicy">CGHS Password and Authentication Policy</a></li>
+    <li class=""><a href="javascript:void(0)" onclick="openCustomPopup('content9')" data-lang-key="AccessibilityStatement">Accessibility Statement</a></li>
+  
+</ul>
+
+					</div>
+				</div>
+					<div class="col-md-4 col-xl-4">
+					<div class="box wow fadeInLeft" style="visibility: hidden; animation-name: none;">
+						<p class="m-0 fw-semibold text-white mb-3 ps-2" data-lang-key="AlsoAvailableOn">ALSO AVAILABLE ON</p>
+						<div class="icon flex-wrap flex-md-nowrap d-flex align-items-top  text-center d-flex justify-content-between" style="flex-basis: auto;">
+						
+						<div class="android mb-2">
+						<a href="https://play.google.com/store/apps/details?id=com.cdac.cghsmobileapp" target="_blank"><img src="assets/images/google-playstore.png" class="mb-2"></a>	
+				      <img src="assets/images/android_qr.png" alt="Android QR Code" width="100" height="95">
+    
+    </div>
+   <div class="ios mb-2">
+   <a href="https://apps.apple.com/in/app/mycghs/id6744057914" target="_blank"><img src="assets/images/apple-store.png" class="mb-2"></a> 
+      <img src="assets/images/ios_qr.png" alt="iOS QR Code" width="100" height="95">
+     
+ 			</div>	
+				
+				<div class="connect wow fadeInRight mb-2" style="visibility: hidden; animation-name: none;">
+						<div class="d-flex align-items-center mb-2">
+						<a class="mb-1 fw-semibold me-2 text-white" data-lang-key="ConnectWithUs" href="https://www.youtube.com/@cghsindia" target="_blank">CONNECT ON</a> 					
+						<a href="https://www.youtube.com/@cghsindia" target="_blank">			<img src="assets/images/youtube.gif"></a> 		
+						</div>
+							
+							
+						  <img src="assets/images/youtube_qr.png" alt="Youtube QR Code" width="100" height="95">
+						</div>		
+						</div>
+					</div>
+
+					
+		
+			</div>
+
+					
+				</div>
+			</div>
+			
+
+
+<!-- Add this inside your page to support the animation -->
+
+		
+	
+
+
+
+
+
+<div class="container-fluid copyright">
+  <div class="best-viewed text-white text-center py-2">
+    <p class="fst-italic p-0 m-0" data-lang-key="BestViewedNote">Note: Best viewed on the latest versions of Mozilla Firefox (v125+) or Google Chrome (v124+), preferably in Incognito/Private Mode for optimal security and performance.</p>
+    <div class="p-0 m-0" data-lang-key="ScreenResolutionNote">Recommended screen resolution: 1366 x 768 pixels or higher. | Last Updated: 20/06/2025 12:30 PM </div>
+   
+  <span data-lang-key="Visitors">Visitors:</span> <strong class="website-counter">189302455</strong>
+    
+      
+  </div>
+  <div class="row py-2" style="background:#1e1f90">
+    <div class="col-md-12 text-center mb-md-0 p-0">
+      <div class="disclaimer text-center" data-lang-key="DisclaimerNote">Disclaimer: Website content managed by Ministry of Health and Family Welfare, GOI Design, Developed and Hosted by Center for Development of Advanced Computing</div>
+    </div>
+  </div>
+</div>
+
+	</footer>
+
+
+
+
+	<a id="button"><span class="material-symbols-outlined">north</span></a>
+	<!-- Copyright End -->
+	<!-- Back to Top -->
+	<!-- accessibility panel -->
+	<div class="uwaw uw-light-theme gradient-head uwaw-initial paid_widget" id="uw-main" style="z-index: 99999">
+		<div class="relative second-panel">
+			<h3>Accessibility Options</h3>
+			<div class="uwaw-close" onclick="closeMain()"></div>
+		</div>
+		<div class="uwaw-body">
+			<div class="h-scroll">
+				<div class="uwaw-features">
+					<div class="uwaw-features__item reset-feature" id="featureItem_sp">
+						<button id="speak" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-speaker"> </span>
+							</span> <span class="uwaw-features__item__name">Text To Speech</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon_sp" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem">
+						<button id="btn-s9" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-bigger-text"> </span>
+							</span><span class="uwaw-features__item__name">Bigger Text</span>
+							<div class="uwaw-features__item__steps reset-steps" id="featureSteps">
+								<!-- Steps span tags will be dynamically added here -->
+							</div>
+							<span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-st">
+						<button id="btn-small-text" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-small-text"> </span>
+							</span><span class="uwaw-features__item__name">Small Text</span>
+							<div class="uwaw-features__item__steps reset-steps" id="featureSteps-st">
+								<!-- Steps span tags will be dynamically added here -->
+							</div>
+							<span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-st" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-lh">
+						<button id="btn-s12" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-line-hight"> </span>
+							</span> <span class="uwaw-features__item__name">Line Height</span>
+							<div class="uwaw-features__item__steps reset-steps" id="featureSteps-lh">
+								<!-- Steps span tags will be dynamically added here -->
+							</div>
+							<span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-lh" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-ht">
+						<button id="btn-s10" onclick="highlightLinks()" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-highlight-links"> </span>
+							</span> <span class="uwaw-features__item__name">Highlight Links</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-ts">
+						<button id="btn-s13" onclick="increaseAndReset()" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-text-spacing"> </span>
+							</span> <span class="uwaw-features__item__name">Text Spacing</span>
+							<div class="uwaw-features__item__steps reset-steps" id="featureSteps-ts">
+								<!-- Steps span tags will be dynamically added here -->
+							</div>
+							<span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ts" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-df">
+						<button id="btn-df" onclick="toggleFontFeature()" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-dyslexia-font"> </span>
+							</span> <span class="uwaw-features__item__name">Dyslexia Friendly</span>
+							<span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-df" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-hi">
+						<button id="btn-s11" onclick="toggleImages()" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-hide-images"> </span>
+							</span> <span class="uwaw-features__item__name">Hide Images</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-hi" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-Cursor">
+						<button id="btn-cursor" onclick="toggleCursorFeature()" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-cursor"> </span>
+							</span> <span class="uwaw-features__item__name">Cursor</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-cursor" style="display: none"> </span>
+						</button>
+					</div>
+					<div class="uwaw-features__item reset-feature" id="featureItem-ht-dark">
+						<button id="dark-btn" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__name"> <span class="light_dark_icon"> <input type="checkbox" class="light_mode uwaw-featugres__item__i" id="checkbox"> <label for="checkbox" class="checkbox-label"> <!-- <i class="fas fa-moon-stars"></i> -->
+										<i class="fas fa-moon-stars"> <span class="ux4g-icon icon-moon"></span>
+									</i> <i class="fas fa-sun"> <span class="ux4g-icon icon-sun"></span>
+									</i> <span class="ball"></span>
+								</label>
+							</span> <span class="uwaw-features__item__name">Light-Dark</span>
+							</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht-dark" style="display: none; pointer-events: none"> </span>
+						</button>
+					</div>
+					<!-- Invert Colors Widget -->
+					<div class="uwaw-features__item reset-feature" id="featureItem-ic">
+						<button id="btn-invert" class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader" aria-pressed="false">
+							<span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-invert"> </span>
+							</span> <span class="uwaw-features__item__name">Invert Colors</span> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ic" style="display: none"> </span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Reset Button -->
+		</div>
+		<div class="reset-panel">
+			<!-- copyright accessibility bar -->
+			<div class="copyrights-accessibility">
+				<button class="btn-reset-all" id="reset-all" onclick="resetAll()">
+					<span class="reset-icon"> </span> <span class="reset-btn-text">Reset
+						All Settings</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<button id="uw-widget-custom-trigger" class="uw-widget-custom-trigger" aria-label="Accessibility Widget" data-uw-trigger="true" aria-haspopup="dialog">
+		<img src="data:image/svg+xml,%0A%3Csvg width='32' height='32' alt='accessibility-options' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_1506)'%3E%3Cpath d='M16 7C15.3078 7 14.6311 6.79473 14.0555 6.41015C13.4799 6.02556 13.0313 5.47894 12.7664 4.83939C12.5015 4.19985 12.4322 3.49612 12.5673 2.81719C12.7023 2.13825 13.0356 1.51461 13.5251 1.02513C14.0146 0.535644 14.6383 0.202301 15.3172 0.0672531C15.9961 -0.0677952 16.6999 0.00151652 17.3394 0.266423C17.9789 0.53133 18.5256 0.979934 18.9101 1.55551C19.2947 2.13108 19.5 2.80777 19.5 3.5C19.499 4.42796 19.1299 5.31762 18.4738 5.97378C17.8176 6.62994 16.928 6.99901 16 7Z' fill='white'/%3E%3Cpath d='M27 7.05L26.9719 7.0575L26.9456 7.06563C26.8831 7.08313 26.8206 7.10188 26.7581 7.12125C25.595 7.4625 19.95 9.05375 15.9731 9.05375C12.2775 9.05375 7.14313 7.67875 5.50063 7.21188C5.33716 7.14867 5.17022 7.09483 5.00063 7.05063C3.81313 6.73813 3.00063 7.94438 3.00063 9.04688C3.00063 10.1388 3.98188 10.6588 4.9725 11.0319V11.0494L10.9238 12.9081C11.5319 13.1413 11.6944 13.3794 11.7738 13.5856C12.0319 14.2475 11.8256 15.5581 11.7525 16.0156L11.39 18.8281L9.37813 29.84C9.37188 29.87 9.36625 29.9006 9.36125 29.9319L9.34688 30.0112C9.20188 31.0206 9.94313 32 11.3469 32C12.5719 32 13.1125 31.1544 13.3469 30.0037C13.5813 28.8531 15.0969 20.1556 15.9719 20.1556C16.8469 20.1556 18.6494 30.0037 18.6494 30.0037C18.8838 31.1544 19.4244 32 20.6494 32C22.0569 32 22.7981 31.0162 22.6494 30.0037C22.6363 29.9175 22.6206 29.8325 22.6019 29.75L20.5625 18.8294L20.2006 16.0169C19.9387 14.3788 20.1494 13.8375 20.2206 13.7106C20.2225 13.7076 20.2242 13.7045 20.2256 13.7013C20.2931 13.5763 20.6006 13.2963 21.3181 13.0269L26.8981 11.0763C26.9324 11.0671 26.9662 11.0563 26.9994 11.0438C27.9994 10.6688 28.9994 10.15 28.9994 9.04813C28.9994 7.94625 28.1875 6.73813 27 7.05Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_1506'%3E%3Crect width='32' height='32' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A"><span>Accessibility
+			Options</span>
+	</button>
+	
+	
+	    <input type="hidden" id="baseURL" name="baseURL" value="cghs.mohfw.gov.in">
+	
+	
+	<!-- accessibility panel end-->
+	
+
+	<script src="assets/js/jquery-3.7.1.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/weights-v1.js"></script>
+	<script src="assets/js/wow.js"></script>
+  	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+	<script src="assets/js/main.js"></script>
+
+	<script src="assets/js/portal.js"></script> 
+
+	
+
+</body></html>
