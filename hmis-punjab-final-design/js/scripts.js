@@ -67,6 +67,36 @@ myModal.addEventListener('hidden.bs.modal', function () {
 });
 
 
+
+const track = document.getElementById("slideTrack");
+
+// duplicate once
+track.innerHTML += track.innerHTML;
+
+// wait for images to load (important)
+window.addEventListener("load", () => {
+  const slides = track.children;
+  const half = slides.length / 2;
+
+  let totalWidth = 0;
+
+  for (let i = 0; i < half; i++) {
+    totalWidth += slides[i].offsetWidth;
+  }
+
+  // include gap
+  const gap = 20; // SAME as CSS gap
+  totalWidth += gap * (half - 1);
+
+  // apply animation dynamically
+  track.style.setProperty("--scroll-width", totalWidth + "px");
+
+  // speed control
+  const speed = 70;
+  track.style.animationDuration = (totalWidth / speed) + "s";
+});
+
+
 var owl = $('.services-carousel');
 owl.owlCarousel({
   items: 5, // adjust number of items per slide

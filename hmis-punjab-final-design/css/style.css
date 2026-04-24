@@ -694,7 +694,38 @@ main {
 
 	/* total items * height */
 }
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
 
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll linear infinite;
+}
+
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  max-width: 100%;
+  display: block;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
 .navbar-toggler:focus {
 	outline: none;
 	box-shadow: none;
