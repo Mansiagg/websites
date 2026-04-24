@@ -694,27 +694,27 @@ main {
 
 	/* total items * height */
 }
-.slider:hover .slide-track {
+.photoslider:hover .slide-track {
   animation-play-state: paused;
 }
 
-.slider {
+.photoslider {
   overflow: hidden;
   width: 100%;
 }
 
-.slide-track {
+.photoslider .slide-track {
   display: flex;
   gap: 20px;
   animation: scroll linear infinite;
 }
 
-.slide {
+.photoslider .slide {
   width: 300px;
   flex-shrink: 0;
 }
 
-.slide img {
+.photoslider .slide img {
   max-width: 100%;
   display: block;
 }
