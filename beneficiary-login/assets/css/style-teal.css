@@ -7,7 +7,7 @@
 }
 
 .punchlines .punchline { color: rgba(0,0,0,0.9);   font-size: clamp(0.8rem, 1.5vw, 1rem); font-weight: 400;}
-.loginarea {margin-top: 60px;
+.loginarea {margin-top: 40px;
 /* .loginbox{   background: rgba(255, 255, 255, 0.99); */
     /* border: 1px solid rgba(255, 255, 255, 0.3); */
   
@@ -17,7 +17,7 @@
     color: #025fc2; font-weight: 500;
     line-height: 40px;
 }
-.title h1{    font-size:32px;
+.title h1{    font-size:29px;
     /* color: #222222; */
     text-transform: capitalize;
     margin-bottom: 0;
