@@ -133,9 +133,9 @@ background: #785c48;
 }
 
 .loginbox  .btn-section .link-btn {
-    font-size: 15px;
+    font-size: 14px;
     float: left;
-    background: #ffffff;
+    background: #efefef;
     font-weight: 400;
     text-align: center;
     text-decoration: none;
@@ -148,7 +148,7 @@ background: #785c48;
 .loginbox  .btn-section .btn-1 {
 border-top-left-radius:5px;border-bottom-left-radius:5px;
     border-right: solid 1px #e6e6e6;
-    background: #d32f2f;
+    background: #1a415e;
     color: #ffffff;
 }
 
