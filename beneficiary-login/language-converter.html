@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Translate Working Fix</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 40px;
+    }
+
+    .lang-btn {
+      padding: 8px 16px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #f5f5f5;
+    }
+
+    .lang-btn:hover {
+      background: #e0e0e0;
+    }
+
+    /* Hide Google UI */
+    .goog-logo-link,
+    .goog-te-banner-frame,
+    .goog-te-balloon-frame,
+    .goog-te-gadget span {
+      display: none !important;
+    }
+
+    body {
+      top: 0 !important;
+    }
+    /* Hide Google Translate top toolbar */
+
+
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.skiptranslate iframe {
+  display: none !important; visibility: hidden !important; opacity: 0 !important;
+}
+
+/* Hide only feedback balloon UI */
+.VIpgJd-yAWNEb-hvhgNd-Ud7fr, .VIpgJd-yAWNEb-hvhgNd-N7Eqid {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Custom Buttons -->
+  <button class="lang-btn" onclick="translateTo('en')">English</button>
+  <button class="lang-btn" onclick="translateTo('hi')">हिंदी</button>
+
+  <!-- Hidden Google Element -->
+  <div id="google_translate_element" style="display:none;"></div>
+
+  <!-- Sample Content -->
+  <h1>Welcome to Healthcare Portal</h1>
+  <p>
+    This portal helps users book appointments, check reports, and access services.
+  </p>
+
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: "hi,en",
+          autoDisplay: false,
+        },
+        "google_translate_element"
+      );
+    }
+
+    // Load script
+    (function () {
+      const script = document.createElement("script");
+      script.src =
+        "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.body.appendChild(script);
+    })();
+
+    // ✅ FINAL FIX FUNCTION
+function translateTo(lang) {
+  const interval = setInterval(() => {
+    const select = document.querySelector(".goog-te-combo");
+
+    if (select) {
+      // STEP 1: Force reset (important)
+      select.value = "en";
+      select.dispatchEvent(new Event("change"));
+
+      // STEP 2: Apply selected language
+      setTimeout(() => {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }, 300);
+
+      clearInterval(interval);
+    }
+  }, 300);
+}
+
+  </script>
+
+  
+
+</body>
+</html>
