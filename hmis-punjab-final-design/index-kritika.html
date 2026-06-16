@@ -26,17 +26,19 @@
                         comprehensive primary health care</div>
                 </div>
                 <div class="col-md-12 col-xxl-7 col-xl-7 col-lg-12 col-12 d-flex align-items-center justify-content-lg-start  justify-content-xl-end"><a
-                        href="#main" title="Skip to main content"
-                        class="skip01 text-decoration-none fw-semibold">Holidays Content</a> <span
-                        class="partition">|</span> <a href="#main" title="Skip to main content"
+                        href="/HIS/hisglobal/assets/PHSC Holiday List 2026.pdf" title="Skip to main content"
+                        class="skip01 text-decoration-none fw-semibold" target="_blank" key='holy-days'>Holidays Content</a> <span
+                        class="partition">|</span> <a  title="Skip to main content"
                         class="skip01 text-decoration-none fw-regular"><span class="fw-semibold">OPD Timings:</span>  Summer(16 Apr – 15 Oct): 8 AM – 2 PM
            , Winter(16 Oct – 15 Apr): 9 AM – 3 PM </a> <span
-                        class="partition">|</span> <button role="button" id="btn-decrease" class="font01 mx-md-1"
-                        onclick="decrease()"> -A </button> <button role="button" id="btn-orig"
-                        class="font01 active01 me-md-1 me-lg-1" onclick="reset()"> A </button> <button role="button"
-                        id="btn-increase" class="font01 me-lg-1 me-md-1 me-1" onclick="increase()"> A+
-                    </button><span class="partition">|</span> <span class="darkmode ms-md-1 ms-lg-2">Dark
-                        Mode</span> </div>
+                        class="partition">|</span> 
+                        
+                        <button role="button" id="decrease-font" class="font01 mx-md-1"
+                       > -A </button> 
+                                         
+                        <button role="button"
+                       id="increase-font" class="font01 me-lg-1 me-md-1 me-1" onclick="increase()"> A+
+                    </button><span class="partition">|</span> <button id="toggle-dark-mode" class="font01 mx-2">Dark Mode</button> </div>
             </div>
 
 
@@ -45,13 +47,15 @@
             <div class="row d-flex align-items-center py-1">
                 <div
                     class="col-xl-5 col-lg-5 col-md-7 col-xxl-5 col-sm-9 col-12 d-flex align-items-center px-md-2 px-1">
-                    <div class="logo py-lg-3 py-2 position-relative"> <img src="images/logo.png"
+                    <div class="logo py-lg-3 py-2 position-relative"> <img src="/HIS/hisglobal/new_login/images/logo.png"
                             class="position-absolute start-0 top-0 pb-1 img-fluid" width="60px" />
+                               <a href="AHIMSG5/hissso/Login" style="text-decoration: none; color: inherit;"></a>
                         <h1 class="fw-semibold">Hospital Information Management Systems </h1>
                         <h2 class="fw-normal pt-1">(Government of Punjab) </h2>
+                           </a>
                     </div>
 
-                    <div class="logobox d-flex align-items-center d-lg-none d-block ms-1"><img src="images/p-logo.png"
+                    <div class="logobox d-flex align-items-center d-lg-none d-block ms-1"><img src="/HIS/hisglobal/new_login/images/p-logo.png"
                             class="" /></div>
 
 
@@ -81,7 +85,7 @@
                                 <li class="me-3 d-lg-block d-none"> <a data-bs-toggle="modal"
                                         data-bs-target="#login-form"
                                         class="loginbutton text-decoration-none fw-normal  inline-flex align-items-center rounded-pill">SIGN
-                                        IN</a> </li> <img src="images/p-logo.png" class="me-2 d-lg-block d-none" />
+                                        IN</a> </li> <img src="/HIS/hisglobal/new_login/images/p-logo.png" class="me-2 d-lg-block d-none" />
                             </ul>
                         </div>
                     </nav>
@@ -93,7 +97,7 @@
             <div class="col-md-12 col-12">
                 <div class="d-flex align-items-center justify-content-center sublinks ">
                     <ul class="d-flex align-items-center list-unstyled mb-0 p-md-2">
-                        <li class="px-lg-3 px-xl-4 px-md-2 px-1"> <a target="_blank" href="#"
+                        <li  style="background: #D76322; padding: 9px; animation: blink 1.2s infinite;" class="px-lg-3 px-xl-4 px-md-2 px-1"> <a onclick="openAppointmentModal();" href="#"
                                 class="text-decoration-none" key="e-aushdhi">Patient Appointment</a> </li>
                         <li class="px-lg-3 px-xl-4 px-md-2 px-1"> <a target="_blank"
                                 href="AHIMSG5/hissso/mohallaClinicSignIn" class="text-decoration-none"
