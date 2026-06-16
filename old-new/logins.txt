@@ -1,0 +1,11 @@
+http://10.10.11.39:8080/UserMgmt/usm/login
+super 
+123456
+admin_raj
+123456
+
+
+http://10.10.11.39:8080/IMCS/login
+
+prachimittal
+123456
